@@ -1,0 +1,77 @@
+25555 x 17639 km
+
+2555 x 1764 px
+
+10km / 1px
+
+5km / 1h
+
+2h / 1px
+
+3px / day on foot (30km)
+
+6px / day on horse (60km)
+
+
+Running = for every success + half movement speed
+Jumping = 1.5+ 1.5m per 2 success is the movement is fully used
+Jumping = 1.5m + 1.5m per 3 successes if movement is half used
+Jumping = 1.5m + 1.5m per 4 successes if movement is not used at all
+Swimming = half movement speed + 1.5m per 2 successes
+
+
+While sneaking, doing a range attack reduce the stealth value by 1 plus the character trying to detect get the advantage.
+Doing a melee attack cancel stealth.
+
+
+Life path directions, the closer the path to the current one the less expensive.  Maybe go with a clock or cardinal points.
+
+
+Need to add a cooking skill
+
+Need to add a lawering skill
+
+Need to change the name of Lifting to Lifting & Pushing
+
+Need to change singing to drawing & painting
+Need to change music to music & singing
+
+Need to change Leather & Textile to Tailoring
+Need to change Manuscripts to Scribbing
+Need to change Metalwork to Metal wroking
+Need to change Stonework to Stonecrafting
+Need to change Woodwork to Woodworking
+
+Need to change Disable & Repair Device to Mechanics
+
+
+Need to add a languages  spoken section
+Three level of understanding: basic, intermediate, fluent
+Character starts with a fluent language
+Every ranks in linguistic allow the character to add one level to one language
+
+
+Need to redo the character sheet; get rid of the skill list.
+
+
+Consider integrating the Aristotelian virtues
+Rashness - Courage - Cowardice (can influence resisting fear and intimidation)
+Debauchery - Temperance - Insensibility (can influence resisting charm when pushed to pleasure)
+Wastefullness - Generosity - Stinginess (can influence resisting persuasion when haggling)
+Obsequious - Friendliness - Surliness (can influence charm)
+Vanity - Magnanimity - Pusillanimity (can influence resisting charm)
+
+The characters have 10 virtues points.  
+Choosing a virtue in the middle cost 4.
+Being between virtue and vice cost 2.
+Choosing a vice is free.
+
+
+Book 0 - Prologue
+Book 1 - The Engine of the Game
+Book 2 - Adventuring
+Book 3 - Character Creation
+Book 4 - Loot, Equipement & Possessions
+Book 5 - Bestiary
+Book 6 - Setting
+Book 7 - Appendix
