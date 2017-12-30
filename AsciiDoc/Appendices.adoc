@@ -1,0 +1,27 @@
+= Appendices
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the glossary of the book
+include::Include.adoc[]
+
+<<<
+
+[appendix]
+== Test
+---
+
+This is a test appendix where some information need to go.
+
+<<<
+
+[appendix]
+== Lexicon
+---
+
+Here is a list of terms which are used in very specific manner.  Every time you see a word written in [lexicWord]#this format#, you can find its definition in this section.
+
+[glossary]
+character:: A person in the game, either controlled by the GM or one of the other players.

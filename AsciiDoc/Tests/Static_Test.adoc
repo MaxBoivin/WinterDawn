@@ -1,0 +1,14 @@
+= Static Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of static test.
+include::../Include.adoc[]
+
+A [lexicWord]#static test# is a roll made against a [lexicWord]#difficulty level# determined by the [lexicWord]#GM#.
+
+[lexicWord]#Difficulty level# should be based on the inherent difficulty of task, not on how difficult the task should be for the [lexicWord]#character#.
+
+The [lexicWord]#skills# chapter and adventuring chapter offer guidelines to determine [lexicWord]#difficulty level#.

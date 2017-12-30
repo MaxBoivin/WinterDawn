@@ -1,0 +1,28 @@
+= Opposed Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of opposed test.
+include::../Include.adoc[]
+
+An [lexicWord]#opposed test# is one where two [lexicWord]#characters# are working against each other for the completion of a task.
+
+A roll is made for each [lexicWord]#character#.
+The difference between those rolls become the number of [lexicWord]#hits# scored by the [lexicWord]#characters# with the most [lexicWord]#MoSes#.
+
+[lexicWord]#Losses# are added to the [lexicWord]#hits# of the winning party.
+
+If both [lexicWord]#characters# roll the same number of [lexicWord]#MoSes#, the status quo is preserved.
+
+In some circumstances, it is impossible or unclear to determine the status quo.
+In those occurrences, the [lexicWord]#GM# should determine if one of the [lexicWord]#characters# has the [lexicWord]#advantage#; this [lexicWord]#character# will win the [lexicWord]#opposed test# in case of a tie.
+
+.Example
+[caption = ""]
+====
+A rogue tries to sneak in a manor.
+Their [lexicWord]#stealth# test will be opposed by a [lexicWord]#perception & vigilance# made by the [lexicWord]#characters# who could spot him.
+The guards expecting intruders and looking for them will have [lexicWord]#advantage# on their tests while the rogue will have [lexicWord]#advantage# when opposed by the unsuspecting occupants of the manor.
+====

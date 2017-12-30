@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Magic Casting</title>
+  <text xml:space="preserve"><note-content version="0.1">Magic Casting
+
+<bold>Wizardry:</bold>
+
+Spell must be learned and stored in a spell books.
+
+Must prepare spell.
+Preparation is first fail rolling test.
+Can spend 2 hours preparing spell between two long rest.
+Each dice pool used to prepare takes 20 min (so 6 rolls per day).
+Feats can reduce this time to 15 or 10 minutes.
+Hits on preparation are lost.
+
+On casting a rolling first fail test is made.  Hits influence the outcome of the spell.
+
+<bold>Witchcraft:</bold>
+
+Spell must be prepared and store in an object.
+Preparation is a first fail rolling test.
+Can spend 2 hours preparing spell between two long rest.
+Each dice pool used to prepare takes 20 min (so 6 rolls per day).
+Feats can reduce this time to 15 or 10 minutes.
+Hits on preparation add charge.
+
+Using require no test.
+
+<bold>Sorcery:</bold>
+
+Spell requires no preparation.
+
+Casting spell gives corruption mark to the caster.
+
+At the end of a day, before a long rest, the corruption mark can be erased by doing a first fail rolling test on any sorcery speciality or charm &amp; persuasion. 
+ 
+Every MoS erased one mark.  
+
+Mos not erased become permanent
+
+Every 10 marks grant a corruption traits.
+
+There is level of corruption traits.
+
+<bold>Shamanism:</bold>
+
+Spells require no preparation but require a material component.
+
+Those materials component are ash for ancestors, parts of animals for beasts, rocks for rocks, a vessel for water, plants for plants.
+
+The material component are not destroyed when used, unless complete failure.
+
+<bold>Mysticism:</bold>
+
+Favours are necessary to cast spells.
+
+Favours are gained by praying and embodying the divinity Ideal.
+
+Praying is a first fail rolling religion test.
+
+Every MoS gives 2 favour.
+
+Praying takes 20 min per dice pool.
+
+Traits can reduce the time to 15 or 10 minutes.
+
+The caster can pray 2 hours between long rest.
+
+Leaning towards a vice espoused by their god gives 2 favour.  
+
+Being on the vice of the deity gives 4 favour.
+
+2 favour are gained for every rank in a skill favoured by the deity.
+
+1 favour is gained for every rank in a secondary skill favoured by the deity. 
+
+1 favour is gained for every ranks in an attribute favoured by the deity.
+</note-content></text>
+  <last-change-date>2016-12-05T16:07:48.1361140-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-05T16:07:48.1403980-05:00</last-metadata-change-date>
+  <create-date>2016-12-05T14:24:34.9941330-05:00</create-date>
+  <cursor-position>2109</cursor-position>
+  <selection-bound-position>2109</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

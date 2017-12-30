@@ -1,0 +1,42 @@
+= Fireball
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the Fireball spell individual file.
+include::../Include.adoc[]
+
+A ball of fire explode, burning everyone in the blast radius.
+
+.Components
+[cols = "3", frame = none, grid = none, caption = ""]
+|===
+| *Essence:* Fire +
+  *Duration:* Instantaneous
+| *Target:* Sphere +
+  *Effect:* Damage + Burning
+| *Range:* Sight +
+  *Save:* Reflex (Dodge)
+|===
+
+== Decription
+
+The radius of the sphere is 1 metre per [lexicWord]#MoS# obtained on the damage roll.
+Every [lexicWord]#character# caught in the first metre from the centre of the sphere will take the full damage rolled.
+The damage is reduced by 1 for every additional metre away from the centre.
+
+Every [lexicWord]#character# caught in the radius of the explosion can do a [lexicWord]#reflex# roll as a [lexicWord]#reaction#.
+For every [lexicWord]#MoS# obtained on that roll, the [lexicWord]#character# can move 1 metre away from the center of the explosion.
+
+.Example
+[caption = ""]
+====
+A sorcerer cast a [lexicword]#fireball# nearby 1 metre away from an enemy.
+Due to a good roll on casting,the Sorcerer rolls 3d8 [lexicword]#burning# damage and obtains 3 [lexicWord]#MoSes#.
+The [lexicWord]#fireball# will thus have a radius of 3 metres.
+
+The enemy situated at 1 metre from the centre of impact would then receive the full 3 level of burning injury.
+This enemy can use their [lexicWord]#reaction# to move away from the centre of the explosion; 2 [lexicWord]#MoSes#.
+Enough to move just at the edge of the blast radius and reducing the damage to 1.
+====

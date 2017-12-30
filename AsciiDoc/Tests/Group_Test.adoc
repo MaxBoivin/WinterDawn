@@ -1,0 +1,23 @@
+= Group Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of group test.
+include::../Include.adoc[]
+
+A [lexicWord]#group# test is in order when multiple allied [lexicWord]#characters# are trying to perform the same action and are covering for each other.
+
+Each [lexicWord]#player# makes a roll.
+The [lexicWord]#MoSes# from every roll are added and compared to the [lexicWord]#difficulty level#.
+
+The [lexicWord]#difficulty level# for a group should be equivalent to the [lexicWord]#difficulty level[lexicWord]# for a single [lexicWord]#character# to perform the task multiplied by the number of individuals in the group.
+
+.Example
+[caption = ""]
+====
+A group of 5 [lexicWord]#characters# need to cross a narrow catwalk over a chasm.
+The [lexicWord]#difficulty level# for an individual [lexicWord]#character# to cross the catwalk would be of 2 on an [lexicWord]#acrobatics# test.
+If the party decide to do it as a group, the [lexicWord]#difficulty level# become 10 but the [lexicWord]#MoSes# of every [lexicWord]#player# are added together.
+====

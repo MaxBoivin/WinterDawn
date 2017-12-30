@@ -1,0 +1,13 @@
+= Open-Ended Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of open-ended test.
+include::../Include.adoc[]
+
+[lexicWord]#Open-ended tests# don’t have [lexicWord]#difficulty levels# but the number of [lexicWord]#MoSes# will determine how well the task is performed.
+In essence, every [lexicWord]#MoS# is a [lexicWord]#hit#.
+
+Examples of tasks for which an [lexicWord]#open-ended test# would be appropriate would include playing a musical instrument, running as fast as one can, cooking a nice meal, building a shelter to spend the night, etc.

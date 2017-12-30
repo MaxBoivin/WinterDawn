@@ -1,0 +1,63 @@
+= WinterDawn: A Fantasy Role-Playing Game
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+//:gameName: WinterDawn
+//:webAddress: http://WinterDawnRPG.com[WinterDawnRPG.com]
+//:title-logo-image: image:winterdawnLogoSingle.svg[width=50%, pdfwidth=50%, scaledwidth=50%, align="center"]
+//:front-cover-image: image:winterdawnLogoSingle.svg[]
+//:preface-title:
+:revnumber: v0.0.1
+:doctype: book
+//:idseparator:
+//:imagesdir: images
+:toc: left
+:toclevels: 4
+//:linkcss:
+//:stylesheet: WinterDawn.css
+//:page-number:
+//:sectnums:
+//:sectnumlevels: 1
+:chapter-label: Book
+:chapter-number: 0
+//:sectanchors:
+//:media: prepress
+//:pdf-style: WinterDawn-theme.yml
+//:pdf-fontsdir: fonts
+//:pdfmark:
+//:sidebarTitle:
+:root: ./
+:description: This is the compilation of the different parts of the book.  I'd like to keep them separate for easier editing.
+include::Include.adoc[]
+
+//image::winterdawnLogoSingle.svg[logo, 50%, pdfwidth=50%, scaledwidth=50%, align="center"]
+
+<<<
+[preface]
+include::Intorduction_Poem.adoc[]
+
+:leveloffset: +1
+
+<<<
+
+include::Prologue.adoc[]
+
+<<<
+
+include::The_SdA_system.adoc[]
+
+<<<
+
+include::Spells.adoc[]
+
+<<<
+
+include::Appendices.adoc[]
+
+<<<
+
+:sectnums!:
+
+[index]
+== Index
+
+<<<

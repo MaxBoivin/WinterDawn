@@ -1,0 +1,129 @@
+Hello, my name is Max Boivin and I am the creator of WinterDawn RPG
+
+Today I'd like to present you the basic dice mechanics of WinterDawn rpg and the different types of test available for different situations.
+
+In WinterDawn, almost everything is a skill test.
+
+There is skills for attacking, there is skills for casting magic, there is a skill for recovering from wounds, etc.
+
+Each skills is linked to one or more attributes.
+
+Six attributes exist: Agility, Power, Constitution, Erudition, Persona and Sagacity.
+
+WinterDawn use a Dice Pool mechanics.
+
+You will need a few sets of polyhedral dice to play WinterDawn.
+
+Whenever you have to make a test, the rank of the skill determine how many dice you're going to use, while the level of the attribute will determine the type of dice to use.
+
+Your Dice Pool contains one dice plus one for every ranks in the skills.
+
+The type of dice composing this dice pool can have no more face than the level of the attribute governing the skill.
+
+For example, if you have to do a stealth test, a skill govern by agility, if you have 2 ranks in stealth and an agility of 8, you can roll 3 dice with 8 faces, refered as 3d8.
+
+Each die showing a 4 or more count as a Measure of Success, refered to as MoS.
+
+If a die show a 8 it will count as 2 MoSes.
+
+If you were to roll bigger dice, like 12 sided or 20 sided dice, every multiple of four gives one MoS.
+
+A die showing between 12 and 16 count for 3 MoSes while a die showing between 16 and 19 count for 4 MoSes and a 20 count for 5 MoSes.
+
+Player's character should not readily access 20 sided dice for their attributes; this is intended for epic monsters like dragons.
+
+All die showing a 1 negate one success.
+
+It is possible to end up with a negative number of success.
+
+If the roll cumulate more MoSes than  the level of difficulty, the roll is successful.  If not, the attempt fails.
+
+This difficulty leve is either determined by the GM, by a roll from an opposing character or from environemental circumstances.
+
+Different situations will requiere different type of test.
+
+A static test is the most basic type of test.
+
+It is when a player rolls against a fixed difficulty level determined by the GM or by environemental circumstances.
+
+An opposed test is used when a character is opposed by a different character.
+
+In this case, each player roll their dice pool and the character with the most MoSes wins.
+
+The previous example of stealth woul be a test opposed by a perception & vigilance test from one or more other character.
+
+The GM should determine before the rolls which side has the advantage, if any.  
+
+In case of a tie, the side with the advantage will be successful.
+
+To continue with the stealth example, if the opposing character is actively looking for intruder, they might have the advantage.
+
+If they are doing something else, the stealthing player will have the advantage.
+
+Open-ended test are for situation where there is no clearly defined difficulty level but where the number of MoSes obtained will determine how well the task is performed. 
+
+Rolling test are for task which can be worked on continiously.  
+
+The player can do multiple roll and add the MoSes togheter.  
+
+Rolling test are sub-divided in two type: First-fail and step-back.
+
+In First-Fail rolling test, the player can keep rolling until the task is successful or until one roll gives no MoS. 
+
+Spell Casting is done through first-fail rolling test.
+
+In Step-Back rolling test, the player can keep rolling until the task is done or until the total number of MoS cumulated reach 0.
+
+Rolls with negative number of MoS reduce the number of cumulated MoS.
+
+Crafting is usually done as Step-Back Rolling test.
+
+In both First-Fail and Step-Back rolling test, each rolls takes an amount of time wich can vary from a few second to days or weeks.
+
+Assisted test are for when more than one character work at a task.
+
+Each player roll their dice pool and add togheter their MoSes.
+
+Having two characters trying to move an heavy rock could be done as an assisted test.
+
+A subtype of the assisted test is the assited test halved, where one main character perform the task while the assistant add only half their moses to the total.
+
+A group test is required when all the characters try to simultanously acheive a task where the outcome is collective.
+
+The difficulty level is multiplied by the number of characters involved and the MoS of each player are added togheter.
+
+It is made to represent how one  overperforming character can help another for their shortcomings.
+
+If a group of characters try to hide from a guard, the perception and vigilance test result of the guard will be multiplied by the number of characters in the group.  
+
+Each player will will then roll their stealth and add the MoSes togheter.
+
+If the total stealth is greater than the multplied perception and vigilance, the group is succesful.  
+
+Composed test require two or more rolls with different skills.
+
+The MoSes are added togheter to beat a difficulty level.
+
+Composed rolling test will have the player alternate between the skills required.
+
+For example, picking a lock require mechanics and sleight of hand.
+
+The lock will have a certain difficulty level and the player will alternate between the two skills, adding their MoSes to beat this difficulty level.
+
+All those types of test can be mixed togheter in different situations.
+
+You can therefore have opposed step-back rolling assisted halved composed test, like in the case of a pursuit, where one side will roll tracking and resist fatigue while the other would roll stealth and resist fatigue.
+
+Those type of test should be seen more as modifiers than as completly separate entity.
+
+Thank you for watching this rather lenghty video.
+
+If you have any questions you can asked them in the comments below or send an email to maxboivin@winterdawnrpg.com.
+
+For more information about WinterDawn RPG you can head to winterdawnrpg.com.
+
+If you are interested in participating in the playtest of WinterDawn, please write to us at PlayTest@winterdawnrpg.com.
+
+The link to our website and our email address can be found in the description below.
+
+In the next video, we will look at resounding succes, complete failure, hits and losses.

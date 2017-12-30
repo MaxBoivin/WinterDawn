@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Never Give Up</title>
+  <text xml:space="preserve"><note-content version="0.1">Never Give Up
+The character is particularly persistent when working on a task.
+Effect
+Once per day, while not in combat, the player can change one first-fail rolling test to a step-back rolling test.
+Prerequisite
+Sagacity greater than 5.
+Cost
+6 experience points from sagacity of 8 background points.
+Nimble Feet
+The character is very mobile.
+Effect
+Difficult terrain is considered as one degree less severe for the character.
+Prerequisite
+Agility greater than 5.
+Cost
+4 experience points from agility or 8 background points.
+Point Blank Shooter
+The character is used deadly with a range weapon when close.
+Effect
+If the character is at half or less the range increment of their weapon to their target, they receive an extra MoS on their attack roll.
+Prerequisite
+At least 2 ranks in a range combat speciality.
+Cost
+12 experience points from range combat or 8 background points.
+Quick Hands
+The character can act faster than most people.
+Effect
+Whenever the initiative of the character is 3 or higher, they can perform 3 actions on their turn, one at their initiative number, one at 0, one at the negative of their initiative number.
+Prerequisite
+At least 2 ranks in reflex.
+Cost
+12 experience points from reflex or 10 background points.
+Quick Hands II
+The character can act faster than the vast majority of people.
+Effect
+Whenever the initiative of the character is 2 or higher, they can perform 3 actions on their turn, one at their initiative number, one at 0, one at the negative of their initiative number.
+Prerequisite
+At least 3 ranks in reflex.
+Must have the traits quick hands.
+Cost
+16 experience points from reflex.
+Quick Hands III
+The character can act faster than practically anybody.
+Effect
+Whenever the initiative of the character is 1 or higher, they can perform 3 actions on their turn, one at their initiative number, one at 0, one at the negative of their initiative number.
+Prerequisite
+At least 4 ranks in reflex.
+Must have the traits quick hands.
+Cost
+20 experience points from reflex.
+Quick Shooter
+The character is particularly apt at shooting moving target.
+Effect
+On their initiative number, the player can declare a target they are keeping an eye on.  If this target perform any action that could cause an attack of opportunity, the character can shoot at them as a reaction.
+Prerequisite
+At least 2 ranks in a range combat speciality.
+Cost
+12 experience points from range combat or 8 background points.
+Racist
+The character is extremely prejudice against one race.
+Effect
+When gaining this trait the player must chose a race or <link:internal>sub-race</link:internal>.
+Whenever the character cause a loss of spirit to a member of the associated race or <link:internal>sub-race</link:internal>, they gain an equivalent amount of spirit.
+Prerequisite
+None.
+Cost
+4 background points.
+Regeneration
+The character possesses a supernatural rate of regenration.
+Effect
+Can make a natural healing test after every short rest.
+MoSes obtained on a natural healing test made after a full night of sleep are doubled.
+Prerequisite
+None.
+Cost
+This trait cannot be purchased.
+Relentless
+The character keeps going, even in situation that would stop most.
+Effect
+The dice pool limit is 1½ times the current number of spirit points.
+Prerequisite
+At least 2 ranks in resist fatigue.
+Cost
+12 experience points from resist fatigue or 8 background points.
+Sadist
+The character like to inflict pain.
+Effect
+Every time the character inflicts a major injury they gain 1 spirit points.
+1 spirit points is gained for every hits on a torture test.
+Prerequisite
+At least 1 ranks in torture.
+The character must lean towards debauchery.
+Cost
+12 experience points from torture or 8 background points.
+Second Skin of Steel
+The character is so used to wear armour that they barely feel it anymore.
+Effect
+The encumbrance from the worn armour is halved.
+Prerequisite
+
+Cost
+
+Shield Master
+
+Effect
+
+Prerequisite
+
+Cost
+
+Short-Sleeper
+The character need much less sleep than the average person.
+Effect
+The effect of a full night of sleep are obtained after only 4 hours of sleep.
+Prerequisite
+At least 2 ranks in resist fatigue.
+Cost
+12 experience points from resist fatigue or 8 background points.</note-content></text>
+  <last-change-date>2016-11-05T17:36:14.1122270-04:00</last-change-date>
+  <last-metadata-change-date>2016-11-05T17:36:14.3378900-04:00</last-metadata-change-date>
+  <create-date>2016-10-30T20:15:59.2038370-04:00</create-date>
+  <cursor-position>0</cursor-position>
+  <selection-bound-position>4123</selection-bound-position>
+  <width>229</width>
+  <height>288</height>
+  <x>1131</x>
+  <y>531</y>
+  <open-on-startup>False</open-on-startup>
+</note>

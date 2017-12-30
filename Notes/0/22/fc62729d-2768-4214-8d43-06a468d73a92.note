@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>race of the character.</title>
+  <text xml:space="preserve"><note-content version="0.1">race of the character.  
+High-Man: 4
+Highland Half-Man: 5
+Lowland Half-Man: 6
+Orc: 5
+Goblin: 4
+Hobgoblin: 5
+Elf: 4
+Faun: 5
+Troll: N/A
+Age
+If chosen as a previous occupation, the character is 15 year older.
+Skills
+The following skills are linked to the occupation.
+Alchemy &amp; Chemistry
+Botany
+Knowledge
+WIzardry
+For previous occupation, the player can distribute 12 experience points amongst those skills.
+Resource
+If this is taken as a previous occupation, the character starts with the following items.
+A sword, an axe, a bow or a crossbow worth nor more than 9 copper pieces.
+A thick wool outfit worth no more than 12 copper pieces.
+5 copper pieces.</note-content></text>
+  <last-change-date>2016-11-04T21:14:47.1285880-04:00</last-change-date>
+  <last-metadata-change-date>2016-11-04T21:14:47.1363690-04:00</last-metadata-change-date>
+  <create-date>2016-10-30T20:15:59.2038370-04:00</create-date>
+  <cursor-position>0</cursor-position>
+  <selection-bound-position>650</selection-bound-position>
+  <width>229</width>
+  <height>288</height>
+  <x>1131</x>
+  <y>531</y>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -1,0 +1,20 @@
+:author: Max Boivin
+:email: <max.boivin@winterdawn.com>
+:gameName: WinterDawn
+:webAddress: http://WinterDawnRPG.com[WinterDawnRPG.com]
+:title-logo-image: image:winterdawnLogoSingle.svg[width=50%, pdfwidth=50%, scaledwidth=50%, align="center"]
+//:front-cover-image: image:winterdawnLogoSingle.svg[]
+:preface-title:
+:idseparator:
+:imagesdir: {root}images
+:linkcss:
+:stylesheet: WinterDawn.css
+:page-number:
+:sectnums:
+:sectnumlevels: 1
+:sectanchors:
+:media: prepress
+:pdf-style: WinterDawn-theme.yml
+:pdf-fontsdir: fonts
+//:pdfmark:
+:sidebarTitle:

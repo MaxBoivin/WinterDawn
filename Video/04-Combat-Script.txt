@@ -1,0 +1,191 @@
+Hello, my name is Max Boivin and I am the creator of WinterDawn RPG
+
+Today we will look at a big part of the game, combat.
+
+When a combat situation artise, initiative should be rolled for every characters.
+
+An initiative roll is either a perception and vigilance or a reflex roll, at the choice of the controlling player.
+
+Combat are divided in rounds.
+
+Every round last an average of 6 seconds.
+
+In a round, every character can act on their turn, at their initiative number.
+
+Characters with an initiative number greater than 0 can decide to hold their action and act on the negative of their initiative number.
+
+Characters can often acts out of turn due to certain circumstances.
+
+This is refered to as a reaction.
+
+Character can do more than one actions and reactions in a round but the total amount of dice used during the round can not be greater than the biggest dice pool used.
+
+Therefore, a character desiring to perform multiple actions or reactions have to split their dice pool and reserve some dice for their next actions.
+
+For example, a character is targeted by a range attack and deciede to try to doge the attack.
+
+They can do a reflex roll as a reaction.  
+
+Their reflex give them access to a dice pool of 2d6.
+
+On their turn they can take an action.
+
+Their 1-handed swords skill give them acces to a dice pool of 3d8.
+
+SInce they already used 2 dice, they can use the left over third dice to perform an attack.
+
+Combat range is divided in 4 categories.
+
+Close range, for unarmed or for short weapons, the combatant standing at  1 metre of each other.
+
+Mid range, for medium weapons like swords and axes.
+
+2 metres separate the fighters.
+
+Long range, for spears and long hafted weapons.
+
+The fighters are standing at about 3 metres appart.
+
+And far range for range combat.
+
+For melee combat, two or more characters must be standing at close to long range. 
+
+On its turn, a character can attack an opponent inside the range of attack of their weapon.
+
+The attacker will do a melee combat roll with the skill related to the weapon used.
+
+The defender is entitled to roll their own melee combat roll if they didn't already used all their dice pool.
+
+If the defender is attakcer from the flank, 1 MoS is subtraced from their roll, 2 if they are attacked from the rear.
+
+The result of the two tests are compared.
+
+If the attacker scores more MoSes than the defender, they can spend their hits to change the circumstances of the battle or to cause damage.
+
+For 1 hit, the attacker can either roll 1 die of damage related to the weapon used or move inside the range of attack of the opponent by 1 metre without causing an attack of opportunity.
+
+For 2 hits, the attacker can reduce the initiative of the defender by 1 or move the defender in a desired direction by 1 metre.
+
+for 4 hits the attacker can disarm the defender.
+
+Multiple effects can be purchased.
+
+If the defender scores more hits than the attacker, they have acces to the same effects except that the damage dice cost 2 hits each.
+
+To deal damage, the character scoring the hits mus be inside the range of attacks of their weapon.
+
+An attack or a defense made outside of the range of attack of the weapon receive minus 1 MoS per range difference.
+
+For example, a dagger wich is a close range weapon, use against a spear at long range receive -2 MoSes on every attack and defence roll.
+
+If the character weilding the dagger suceed at bringing the combat to close range, the spear being of mid or long range suffer a -1 MoS on all attack and defence.
+
+A range weapon will always be listed with a distance next to the far range mention.
+
+This is the range increment.
+
+To attack, the character will roll the appropriate range combat speciality fro the weapon.  
+
+If the target did not use all theior dice pool, they are entitled to do a reflex roll to oppose the range attack.
+
+The distance between the attacker and the target will affect the chance to hit; this is where the range increment is involved.
+
+Every time the range increment is passed, 1 MoS is subtracted from the attack roll.
+
+For example, a tomahawk with a range increment of 5 metres, thrown from 7 metres away will receive -1 MoS on the attack roll.
+
+The size of the target will also influence the difficulty to hit.
+
+Targeting a micro character will give a -2 MoSes to the roll, for a mini, this malus will be of -1 while targeting a large creature will give +1 to the roll and a huge or bigger target will grant +2 MoSes.
+
+Once the rolls are resolved, if the attacker scores hits they can roll 1 die of damage for every hits.
+
+Damage rolls function in the same way as skill rolls.
+
+The number of hits spent determine the number of dice to be used while the weapon, and sometime the power of the character, determine the type of dice to be used.
+
+Weapons can cause different type of damage, and armour will offer more or less protection against each of those type of damage.
+
+THe three main types of damage from weapon are piercing, cutting and bludgeoning.
+
+MoS scored on a damage roll are compared to the appropriate protection rating of the target.
+
+For every hits scored on the damage roll, one injury box must be ticked.
+
+All injury box from an attack must be ticked on the same line.
+
+Two types of injury boxes exist: minor and major.
+
+If a major injury is ticked an effect will be applied to the character.
+
+This effect depends on the type of damage received.
+
+If the damage is of type piercing, a level 1 bleeding wound is caused.
+
+If the damage is of type cutting, a level 2 bleeding wound is caused.
+
+If the damage is of type bludgeoning, the character is stunned.
+
+A character suffefing from bleeding wounds has the choice between reducing every agility and power dice pool by 1 die per bleeding wound or aggravate a bleeding wound by one level.
+
+If a bleeding wound become more severe than level 3, the character become incapacitated an d start bleeding to death.
+
+A character bleeding to death will die after a number of rounds equal to the number of MoSes on a natural healing test plus 1.
+
+This natural healing test does not count as part of the dice pool used.
+
+A stunned character must make a resist shock test.
+
+This test does not count as part of the dice pool used.
+
+On the next round, every dice pool are limited by the number of succes obtained on that test.
+
+THe charactetr will recover one die per round until the effect is dissipated.
+
+If a character needs to tick more injury boxes than what is availaible on a single line, they become incapacitated.
+
+An incapacitated character can not act but is still concious of their environement and can still talk.
+
+If they have bleeding wounds while becoming incapacitated, they will bleed to death as described earlier.
+
+If they are made incapacitated by a bludgeoning blow, they will become unconscious.
+
+A unconscious character will regain consciousness once they will have cumulated 10 MoSes on a resist shock step-back rolling test.
+
+If a character receive any damage while incapacitated, they die.
+
+Character weilding shield can once a turn used them to reduce damage receive.
+
+Every shield comes with a shield defence rating.
+
+This number represent a number of damage dice to be negated before they are rolled.
+
+For example, a character with a shield with a shield defence rating of 3 is attacked and the attakcer score 4 hits.
+
+THe attacker decide to use all those hits as damage dice.
+
+The defender decide to use their shield and negate 3 of those damage dice.
+
+The attacker can therefore only roll 1 damage dice.
+
+Whenever a character recive damage, the player can decide to apply this damage to the armour of the character instead.
+
+To do so, the player permanently reduce the protection offered by the armour for every type of damage by 1 per injury box reduced.
+
+For example, a character with an armour offering a protection of 1 agaisnt piercing, 2 against cutting and 0 agaisnt bludgeoning should receive 1 injury box of damage.
+
+The player decide instead to apply the damage to the armour.
+
+This one will no offer 0 protection against piercing, 1 against cutting and still 0 against bludgeoning. 
+
+Thank you for watching this long video.
+
+If you have any questions you can asked them in the comments below or send an email to maxboivin@winterdawnrpg.com.
+
+For more information about WinterDawn RPG you can head to winterdawnrpg.com.
+
+If you are interested in participating in the playtest of WinterDawn, please write to us at PlayTest@winterdawnrpg.com.
+
+The link to our website and our email address can be found in the description below.
+
+In the next video, we will continue looking at combat with attack of oportunity and grapple.

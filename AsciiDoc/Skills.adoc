@@ -1,0 +1,257 @@
+= Skills
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of the different skills.
+include::Include.adoc[]
+:sectnums!:
+
+[lexicWord]#Skills# are a big part of what defines a [lexicWord]#character#.
+They are the interface with which the characters interact with the world around them.
+
+[lexicWord]#Skills# can be used in many ways, to overcome many types of obstacles.
+It may sometimes seem obvious which skill to use in a certain situation but a [lexicWord]#player# can always think outside the box and take a different approach to solve the problem at hand.
+
+[lexicWord]#Skills# (and [lexicWord]#attributes#) can also give information about how the [lexicWord]#character# should be (role) played; a character with a high [lexicWord]#Confidence & ego# will act differently than one with no [lexicWord]#ranks# in this [lexicWord]#skill#.
+
+In the following chapter, each [lexicWord]#skill# is going to be briefly described and given some example of use.
+Like everything in this book, those are simply guidelines and should not limit the [lexicWord]#players# or [lexicWord]#GM# in the way they want to use the [lexicWord]#skills#.
+
+The [lexicWord]#skills# are presented in alphabetical order.
+
+:leveloffset: +1
+
+'''
+
+include::Skills/Acrobatics.adoc[]
+
+'''
+
+:leveloffset: -1
+
+.{sidebarTitle}Skills
+[sidebar]
+****
+* [lexicWord]#Acrobatics (Agility)#: Balance and nimbleness.
+Used to mitigate fall damage and for doge rolling.
+
+* [lexicWord]#Appraise (Sagacity)#: Used to determine the value and quality of things.
+
+* [lexicWord]#Arts & Performance (Persona)#: Capacity to entertain or move an audience through art.
+
+- [lexicWord]#Acting#: Used to play a role, impersonate, disguise or lie.
+
+- [lexicWord]#Dancing#: The art of gracious movement.
+
+- [lexicWord]#Drawing & Painting#: Creating visual image with paint, ink or charcoal.
+
+- [lexicWord]#Music & singing#: Using musical instruments and one's voice to make beautiful sounds.
+
+- [lexicWord]#Oration & Poetry#: Composing verses and reciting in an appealing manner.
+
+* [lexicWord]#Athleticism (Power)#: The pure physical aptitude of a [lexicWord]#character#.
+
+- [lexicWord]#Climbing#: The ability to move over more or less vertical surface.
+
+- [lexicWord]#Jumping#: Either vertical or horizontal, useful to go over some obstacles.
+
+- [lexicWord]#Lifting & Pushing#: Moving heavy objects.
+
+- [lexicWord]#Running#: Used to cover distance rapidly using one's legs.
+
+- [lexicWord]#Swimming#: The ability to move in water.
+
+* [lexicWord]#Charm & Persuasion (Persona)#: Convincing and seducing people.
+
+* [lexicWord]#Cooking (Sagacity)#: Preparing fancy feast or large quantity of food.
+
+* [lexicWord]#Confidence & ego (Persona or Sagacity)#: Resisting fear and intimidation.
+
+* [lexicWord]#Crafting (Sagacity)#: Using raw material to create finished objects.
+
+- [lexicWord]#Metalworking#: Range from pot and horseshoes to weapons, armour and jewellery.
+
+- [lexicWord]#Scribing#: Writing texts, copying books and everything related to those activities.
+
+- [lexicWord]#Stone-cutting#: Cutting stones, from basics rocks to precious gems.
+
+- [lexicWord]#Tailoring#: Making clothes, sails, drapery and anything made with textile, canvas or leather.
+
+- [lexicWord]#Woodworking#: From framing house to carving spoon, anything made out of wood.
+
+* [lexicWord]#Detect Motive (Sagacity)#: Used to figure out if somebody is lying, to resist being conned or to resist taunt.
+
+* [lexicWord]#Elementalism (Erudition or Persona)#: Magic relying on the study and control of the elements.
+
+- [lexicWord]#Aether#: The element of the spirit and soul, mainly used to control mind.
+
+- [lexicWord]#Air#: Can be controlled to create terrible gust of winds or to fly.
+
+- [lexicWord]#Earth#: Can shape the ground and stone.
+
+- [lexicWord]#Fire#: Control of the flame to devastating effects.
+
+- [lexicWord]#Water#: Can shape and manipulate water to create big wave or to calm the sea.
+
+* [lexicWord]#Insult & Intimidation (Persona)#: To cause fear in someone, to influence them to do as told or to demoralize them and have them flee.
+
+* [lexicWord]#Knowledge (Erudition)#: The mastery and knowledge of the facts of the world.
+
+- [lexicWord]#Geography#: Knowledge of the features of the land and ability to draw and read maps.
+
+- [lexicWord]#Heraldry & Nobility#: Knowledge of the lords and nobles and how to recognize their coat of arms.
+
+- [lexicWord]#History#: Knowledge of the past events.
+
+- [lexicWord]#Linguistic#: Knowledge of different languages.
+
+- [lexicWord]#Religions#: Knowledge of the different systems of beliefs and of their rituals.
+
+* [lexicWord]#Laws & Legal System (Erudition, Persona or Sagacity)#: Mastery of the laws and ability to argue them.
+
+* [lexicWord]#Luck (Persona)#: The inherent good fortune of a character.
+Used in gambling or if a player take wild guess.
+
+* [lexicWord]#Mechanics (Sagacity)#: Ability to understand and repair mechanical devices, notably traps and locks.
+
+* [lexicWord]#Melee Combat (Agility or Power)#: Fighting up close.
+
+- [lexicWord]#1-Handed Swords#: Fighting with swords wielded in one hand.
+
+- [lexicWord]#2-Handed Swords#: Fighting with swords wielded in two hands.
+
+- [lexicWord]#Axes, Clubs & Maces#: Fighting with tip heavy weapons wielded in one hand.
+
+- [lexicWord]#Brawling#: Fighting unarmed or with really short weapons.
+Useful for grapple.
+
+- [lexicWord]#Polearms#: Fighting with longer, hafted weapons, either in one or two hands.
+
+* [lexicWord]#Mysticism (Persona or Sagacity)#: Magic taking its source from the gods.
+
+- [lexicWord]#Bless & Curses#: Used to give benefits or penalty to allies and enemies.
+
+- [lexicWord]#Divination#: Used to see remotely or peek in the past or future.
+
+- [lexicWord]#Cure & Heal#: Used to cure diseases and heal injuries.
+
+- [lexicWord]#Necromancy#: Speaking to, controlling and raising the dead.
+
+- [lexicWord]#Retribution#: Bringing divine furry to defeat one's foes.
+
+* [lexicWord]#Natural Healing (Constitution)#: The capacity of the character to recover from injuries without help.
+
+* [lexicWord]#Range Combat (Agility or Power)#: Fighting from afar, at a distance.
+
+- [lexicWord]#Bows#: Used with arrows, can reach long distance without sacrificing speed.
+
+- [lexicWord]#Crossbows & Firearms#: Powerful but long to reload, once loaded, aim and shoot.
+
+- [lexicWord]#Javelins & Spears#: Long hafted weapons to be thrown.
+
+- [lexicWord]#Slings#: A piece of fabrics used to accelerate and launch stones or bullets.
+
+- [lexicWord]#Thrown#: Used for throwing knives, axes, darts or small improvised projectiles.
+
+* [lexicWord]#Reflex (Agility)#: Can be used for initiative or to avoid dangers.
+
+* [lexicWord]#Resist Cold (Constitution)#: Used to prevent damage and lost of spirit from extreme cold.
+
+* [lexicWord]#Resist Fatigue (Constitution)#: Used to resist the hardship of long travel and lack of sleep.
+
+* [lexicWord]#Resist Heat (Constitution)#: Used to prevent damage and lost of spirit from extreme heat.
+
+* [lexicWord]#Resist Hunger (Constitution)#: Used to prevent damage and lost of spirit from starvation.
+
+* [lexicWord]#Resist Pain (Constitution)#: Used to ignore pain and avoid penalties from suffering.
+
+* [lexicWord]#Resist Poison (Constitution)#: Used to resist toxins, poisons, spoiled food and anything harmful to the body while ingested or once in the blood stream.
+
+* [lexicWord]#Resist Shock (Constitution)#: Used to resist concussive force and being stunned.
+
+* [lexicWord]#Ridding (Agility)#: The ability to ride horses and other mounts.
+
+* [lexicWord]#Science (Erudition)#: The mastery of concepts and theories regarding the natural world.
+
+- [lexicWord]#Alchemy & Chemistry#: Used to create and analyse potions and explosives, so long as they do not rely on magic.
+
+- [lexicWord]#Botany#: Knowledge of plants, their property and how to care for them.
+
+- [lexicWord]#Engineering & Physics#: Used to calculate ballistics trajectory or load bearing for structures.
+
+- [lexicWord]#Medicine#: Used to heal serious and life threatening injuries and diseases.
+
+- [lexicWord]#Zoology#: Knowledge of animals, their habitats, their mode of living, their nutrition, etc.
+
+* [lexicWord]#Seamanship (Sagacity)#: Everything one need to know to operate a ship or a boat.
+
+* [lexicWord]#Shamanism (Sagacity)#: A form of magic coming from the spirits inhabiting nature.
+
+- [lexicWord]#Ancestors#: Allows a shaman to see remote events or to peek in the past or future.
+
+- [lexicWord]#Beast#: Allows the shaman to temporarily gain features from an animal.
+
+- [lexicWord]#Lakes & Rivers#: Allows a shaman to control water.
+
+- [lexicWord]#Mountains & Rocks#: Allows a shaman to shape the ground and stones.
+
+- [lexicWord]#Plants & Trees#: Allows a shaman to control the growth of plants or to animate vegetation.
+
+* [lexicWord]#Sleight of Hands (Agility)#: Manual dexterity, used notably for pickpocketing, cheating while gambling and reloading firearms.
+
+* [lexicWord]#Sorcery (Persona)#: A form of magic coming from pacts with occult force.
+
+- [lexicWord]#Abyssal Magic#: Dealing with demons and devils, the sorcerer can summon them to do their bidding.
+
+- [lexicWord]#Blood Magic#: The sorcerer use the power of fresh blood to control and twist minds and bodies.
+
+- [lexicWord]#Chaos Magic#: The sorcerer tap from the primordial force of the universe to transform and destroys things.
+
+- [lexicWord]#Death Magic#: Dealing directly with Death, the sorcerer can gain power over undeads.
+
+- [lexicWord]#The Unknown#: A mysterious force allowing the sorcerer to see remote events, peek in the future or the past or to drive their opponent insane.
+
+* [lexicWord]#Stealth (Agility)#: The ability to move unseen or unnoticed.
+
+* [lexicWord]#Survival (Sagacity)#: The ability to survive and thrive in the wild.
+
+- [lexicWord]#First-Aid#: Used to heal superficial wounds and to stop light bleeding.
+
+- [lexicWord]#Foraging & Hunting#: Used to find food while in the wild.
+
+- [lexicWord]#Navigation#: Used to avoid getting lost while travelling.
+
+- [lexicWord]#Sheltering#: Used to make camps and rest comfortably while in the wild.
+
+- [lexicWord]#Tracking*: Used to follow signs and trails left by a character or creature.
+
+* [lexicWord]#Taming & Training (Persona)#: The ability to domesticate wild animals and to teach tricks to domesticated ones.
+
+* [lexicWord]#Torture (Persona or Sagacity)#: Used to inflict pain without killing, either to extract information or simply for pleasure.
+
+* [lexicWord]#Witchcraft (Erudition or Sagacity)#: A form of magic used to create magical trinkets, wands, potions, etc.
+
+- [lexicWord]#Balms & Potions#: Used to create balms and potions with all kind of effects.
+
+- [lexicWord]#Curios#: Used to create magical objects.
+
+- [lexicWord]#Fumes & Phials#: Used to create bottles of liquid and gas to be thrown and broken to release the effect,
+
+- [lexicWord]#Third Eye#: Used to see remotely or peek in the past or future.
+
+- [lexicWord]#Wands & Staffs#: Used to create magical wands and staffs.
+
+* [lexicWord]#Wizardry (Erudition)#: Form of magic based on the study of ancient formulas and rituals.
+
+- [lexicWord]#Abjuration#: Protective and defensive form of magic.
+
+- [lexicWord]#Conjuration#: Allows a wizard to summons creatures and have them serve them or to move instantaneously from one point to another.
+
+- [lexicWord]#Enchantment#: Used to alter the abilities of allies, enemies or objects.
+
+- [lexicWord]#Evocation#: Allows a wizard to create energy from nothing, mainly used to cause damage and destruction.
+
+- [lexicWord]#Illusion#: Used to confound people and create images and sounds that aren't there.
+****

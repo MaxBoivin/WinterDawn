@@ -1,0 +1,17 @@
+= Mixed Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of mixed test.
+include::../Include.adoc[]
+
+
+A [lexicWord]#mixed test# is simply a test that combines more than one of the previous types.
+
+.Example
+[caption = ""]
+====
+If two [lexicWord]#characters# are working on building a cart, they can make an [lexicWord]#open-ended assisted test#.
+====

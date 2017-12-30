@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Invitation Letter</title>
+  <text xml:space="preserve"><note-content version="0.1">Invitation Letter
+
+You must provide a letter of invitation from the person inviting you to Canada. The letter must be written by the host and should have specific information about the host and invitee.
+
+The letter should state the purpose and length of the visit, the nature of the relationship between you and the host, the contact information of the host, etc.
+
+If you are being invited to conduct business in Canada, a letter of invitation should be printed on the company's letterhead and include:
+
+the host's full name, title and business contact information
+a brief summary of the reason for the invitation, including details of the business or trade to be undertaken
+the full names of all employees from your company who are being invited by your host
+the intended duration and a detailed itinerary of the visit
+a statement specifying who will be responsible for all travel-related expenses
+
+<link:url>http://www.cic.gc.ca/english/visit/letter.asp</link:url>
+</note-content></text>
+  <last-change-date>2017-11-23T20:16:51.7957020-05:00</last-change-date>
+  <last-metadata-change-date>2017-11-23T20:16:51.7998410-05:00</last-metadata-change-date>
+  <create-date>2017-11-23T20:00:21.9247410-05:00</create-date>
+  <cursor-position>898</cursor-position>
+  <selection-bound-position>898</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>1920</x>
+  <y>674</y>
+  <open-on-startup>False</open-on-startup>
+</note>

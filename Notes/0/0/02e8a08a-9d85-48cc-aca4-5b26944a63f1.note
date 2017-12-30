@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Virtues</title>
+  <text xml:space="preserve"><note-content version="0.1">Virtues
+
+Coward - Brave - Rash
+
+Coward gives malus to confidence, courage &amp; ego test to resist fear and intimidation
+
+Rash gives malus to detect motive test to resist taunt
+
+Coward loses spirit when forced to stay in dangerous situation
+
+Rash loses spirit when avoiding dangerous situation
+
+Surly - Friendly - Fawning
+
+Surly gives malus to charm &amp; persuasion
+
+Fawning give malus to insult &amp; intimidation
+
+Surly loses spirit in prolonged social situations
+
+Fawning loses spirit when deprive of social contact
+
+
+Stingy - Generous - Lavish
+
+Stingy gives malus to confidence, courage &amp; ego test to resist lost of spirit due to lost of material
+
+Lavish gives malus to appraise test and to resist fatigue when in poor sleeping conditions
+
+Stingy loses spirit when losing money or spending more money then needed (like not renting the cheapest room) or they desired (like losing a persuasion test to lower a price)
+
+Lavish loses spirit when settling for less than the best (like not renting the most pricey room in an inn or not getting the best, most beautiful swords in the stand)
+
+
+Meek - Dignified - Vain
+
+Meek gives malus to confidence, courage &amp; ego test to resist insult
+
+Vain gives malus to detect motive to resist charm &amp; persuasion
+
+Meek loses spirit when they are the centre of attention
+
+Vain loses spirit when they are not the centre of attention
+
+
+Debauched - Tempered - Insensitive
+
+Debauched gives malus to resist hunger, resist fatigue and resist pain test
+
+Insensitive gives malus to confidence, courage &amp; ego to regain spirits from feast or arts &amp; performance
+
+Debauched loses spirit when they are a long time without a feast or without sexual intercourse
+
+Insensitive loses spirit when they are around people enjoying themselves
+</note-content></text>
+  <last-change-date>2016-09-04T16:17:12.2230900-04:00</last-change-date>
+  <last-metadata-change-date>2016-09-04T16:17:12.2242220-04:00</last-metadata-change-date>
+  <create-date>2016-09-04T11:02:29.9287190-04:00</create-date>
+  <cursor-position>1669</cursor-position>
+  <selection-bound-position>1669</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>946</x>
+  <y>243</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

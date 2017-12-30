@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon"
+	type="image/png"
+	href="../images/favIcon.png" />
+<title>WinterDawn RPG - Character Creator</title>
+
+<link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+<div class = "unfinishedSec">
+
+
+	<p style="text-align:center;">Sorry, the section you are trying to display is currently unfinished.</p>
+
+</div>
+
+<div class = "secRace">
+
+	<p>9 playable races, divided in 3 civilizations, are available to the player. The high-men, highland half-men and lowland half-men represent the human civilization. The 		orcs, goblins and hobgoblins form the green-skin civilization. The elves, fauns and trolls belong to the faes civilization.</p>
+
+	<select name="selRace" style="width:30%" onchange="displayImport(this.value,'raceDescription')">
+	<option value = ""></option>
+	<option value="highMan">High-Man</option>
+	<option value="highlander">Highland Half-Man</option>
+	<option value="lowlander">Lowland Half-man</option>
+	<option value="orc">Orc</option>
+	<option value="goblin">Goblin</option>
+	<option value="hobgoblin">Hobgoblin</option>
+	<option value="elf">Elf</option>
+	<option value="faun">Faun</option>
+	<option value="troll">Troll</option>
+	</select>
+
+	<section id="raceDescription" style="text-align:left;"></section>
+	
+	<br>
+	
+	<button type="button" id = "buttAddRace" onclick = '' >Select this Race and Subrace</button>
+
+</div>
+
+<div class ="highMan">
+
+	<h3>High-Man</h3>
+
+	<p>High-men are defined by their adaptability. It allowed them to spread out wide and far faster than any other human or orchish race. <br>
+		Their settlement are quite diverse, going from small agglomeration of huts to huge bustling cities.  <br>
+		It is not too unlikely to find high-men living amongst other races or member from the other races living in high-men cities.<br><br>
+		<b>Size:</b> Medium<br>
+		<b>Speed:</b> 9m per round, 90mper minute, 50km per day (10 hours)<br>
+		<b>Age:</b> Minimum 16 years old<br>
+		<b>Attributes:</b> Choose between the following array:
+		<ul><li>7, 6, 6, 6, 5, 4<checkbox><li>7, 7, 6, 5, 5, 4</ul><br>
+		<b>Skills:</b> Start with experience in the following skills:
+		<ul><li>Brawling (2) <li>Detect Motive (3) <li>Linguistic (4) <li>Riding (3) <li>Perception & Vigilance (2)</ul><br>
+		<b>Traits:</b>: Start with the following traits:
+		<ul><li>Natural Talent <li>Fast Learner</ul></p>
+	
+	<section style="text-align:center;">
+		<h2 style="text-align:center;">Sub-Races</h2>
+		
+		<pHigh-men are divided in 3 subraces.>
+		
+		<select name="selSubraceHighMan" style="width:30%" onchange="displayImport(this.value,'subraceDescription')">
+		<option value= ""></option>
+		<option value = "northerner">Northerner</option>
+		<option value = "riverlander">Riverlander</option>
+		<option value = "sandman">Sandman</option>
+		</select>
+	</section>
+	
+	<section id= "subraceDescription"></section>	
+
+</div>
+
+<div class = "northerner">
+	
+	<p>They come from the north. They live of farming, fishing and raiding the population from the south. <br>
+		Their society respect strength. They are a feudal society with an inherited nobility but any individuals can challenge their direct ruler to a duel to take their place. 			<b>Background cost:</b> 1<br>
+		<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+		<b>Skills: </b>Gain experience in the following skills:
+		<ul><li>One Handed Swords (3)<li>Resist Cold (4)<li>Seamanship (3)<li>Confidence & Ego</ul><br>
+		<b>Traits: </b> Heat Conservation<br><br>
+		The courage of the character cannot lean towarrds cowardice</p>
+	
+</div>
+
+<div class = "highlander">
+
+	<h3>Highlander Half-Man</h3>
+
+	<p>Highland half-men, often shorten to highlanders, are short and stocky humans living in the mountains.<br>
+		They carve grandiose citadels on the side of mountains. Those extraordinary construction extend deep inside mountains. <br>
+		Highlanders are outstanding craftsmen. They take great pride in the quality and ornamentation of the things they produce.<br>
+		Highlanders rely on trade to survive since they do not produce food themselves.<br>
+		Highland half-men live in a very structured society. Professional guilds control the politics of the citadels. Each guild is represented by a patriarch, 
+		usually the most experience members of the guild. Those patriarchs form a councils managing the citadels..<br><br>
+		<b>Size:</b> Medium<br>
+		<b>Speed:</b> 7m per round, 70mper minute, 40km per day (10 hours)<br>
+		<b>Age:</b> Minimum 23 years old<br>
+		<b>Attributes:</b> Agility: 4, Power: 7, Constitution: 7, Erudition: 6, Persona: 5, Sagacity: 6<br>
+		<b>Skills:</b> Start with experience in the following skills:
+		<ul><li>Crafting (4) <li>Lifting & Pushing (4) <li>Resist Fatigue (2) <li>Resist Shcock (2) <li>Resist Poison (3)</ul><br>
+		<b>Traits:</b>: Start with the following traits:
+		<ul><li>Low Light Vision<li>Beast of Burden</ul></p>
+</div>		
+
+
+<div class = "secOrigin">
+
+	<p>The environment where the character has been raised will have an impact on the development of this one.</p>
+	
+	<select name="selOrigin" style="width:30%" onchange="displayImport(this.value,'originDescription')">
+	<option value = ""></option>
+	<option value="highMenCity">High-Men City</option>
+	<option value="highMenTown">High-Men Town</option>
+	<option value="highMenVillage">High-Men Village</option>
+	<option value="highlanderCitadel">Highlander Citadel</option>
+	<option value="lowlanderVillage">Lowlander Village</option>
+	<option value="orchishHamlet">Orchish Hamlet</option>
+	<option value="elvenVillage">Elven Village</option>
+	<option value="faunCommunity">Fau Communityn</option>
+	<option value="trollCamp">Troll Camp</option>
+	<option value="wild">In the Wild</option>
+	</select>
+	
+	<section id="originDescription" style="text-align:left;"></section>
+
+</div>
+
+</body>
+</html>

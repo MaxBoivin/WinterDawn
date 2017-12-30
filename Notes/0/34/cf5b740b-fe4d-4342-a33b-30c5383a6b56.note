@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Making Camp</title>
+  <text xml:space="preserve"><note-content version="0.1">Making Camp
+
+When making camp for a long rest, the party can take the following actions.
+
+Sheltering: Step Back rolling test.  Can be assisted.  Each test takes an hour.  Every MoS can shelter one party member.  Sheltered party member regain twice as much spirit point from sleeping.
+
+Foraging &amp; Hunting: Step Back rolling test.  Can be assisted.  Every test takes 1 hour.  Every MoS can feed one person. 
+
+Arts &amp; Performance: Step Back rolling test.  Can be assisted. Every test takes 20 minutes.  Every MoS can give back 1 spirit point to a member of the audience.
+
+Watch: Must make a perception &amp; vigilance and resist fatigue test.  For every hours spent keeping watch, 1 MoS of resist fatigue or of Perception &amp; vigilance is negated.  If the perception &amp; vigilance falls to 0, the character falls asleep.
+
+Sleep: After sleeping a resist fatigue test is made with a difficulty level equals to 6 - the number of hours slept.  For every missing MoS one spirit point is loss.
+
+If a character sleeps 6 hours they regain a number of spirit points equals to half their constitution.
+
+</note-content></text>
+  <last-change-date>2016-12-06T13:27:41.8864210-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-06T13:27:41.8889410-05:00</last-metadata-change-date>
+  <create-date>2016-12-06T12:03:59.8894930-05:00</create-date>
+  <cursor-position>283</cursor-position>
+  <selection-bound-position>283</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>617</x>
+  <y>161</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

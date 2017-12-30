@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Damage Types</title>
+  <text xml:space="preserve"><note-content version="0.1">Damage Types
+
+Piercing
+Cutting
+Bludgeoning
+Burning
+Freezing
+<link:internal>Poisonous</link:internal>
+Decay
+Chemical</note-content></text>
+  <last-change-date>2016-12-02T14:05:33.6037390-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-22T13:39:12.6180030-05:00</last-metadata-change-date>
+  <create-date>2016-12-02T14:04:08.8181210-05:00</create-date>
+  <cursor-position>84</cursor-position>
+  <selection-bound-position>84</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>692</x>
+  <y>135</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -1,0 +1,301 @@
+= The SdA system: Engine of the Game
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the base mechanics of the game.
+include::{root}Include.adoc[]
+
+<<<
+
+== Basic Mechanics
+
+In order to add some objectivity and some randomness to role-playing games, some mechanics are used to define what a [lexicWord]#character# can and can't do, how well-equipped they are to overcome different challenges and if they succeed or fail at whatever they are trying to accomplish.
+
+'''
+
+=== Attributes
+
+Six [lexicWord]#attributes# define every [lexicWord]#character#.
+Those are [lexicWord]#agility#, [lexicWord]#power#, [lexicWord]#constitution#, [lexicWord]#erudition#, [lexicWord]#persona# and [lexicWord]#sagacity#.
+
+[lexicWord]#Attributes# for a humanoid [lexicWord]#character# will usually vary between 4 and 12.
+The highest the [lexicWord]#attribute# score the better.
+
+* Scores below 4 are crippling, since no test with that attribute can be rolled.
+* Scores of 5 or 4 are considered weak.
+* An average attribute has a value of 6 or 7.
+* Scores of 8 or 9 are considered strong.
+* Scores of 10 or 11 are considered exceptional.
+* Scores of 12 are considered heroic.
+* Scores of 20 or higher are considered supernatural.
+
+==== Agility
+
+This [lexicWord]#attribute# represents the dexterity and nimbleness of the [lexicWord]#character#.
+It covers fine motor skills, eye-hand coordination and balance.
+
+==== Power
+
+[lexicWord]#Power# represents the physical strength and explosiveness of a [lexicWord]#character#.
+
+==== Constitution
+
+A [lexicWord]#character#'s [lexicWord]#constitution# represent not only his health but also their resistance to different types of punishment.
+
+[lexicWord]#Constitution# also affect the rate at which a [lexicWord]#character# recover from injuries.
+
+==== Erudition
+
+[lexicWord]#Erudition# is the [lexicWord]#attribute# for formal learning, academic knowledge and book-smartness.
+
+==== Persona
+
+This [lexicWord]#attribute# represents the strength of personality and charisma of the [lexicWord]#character#.
+[lexicWord]#Characters# with a high persona score tend to be very polarizing individuals and will leave a strong impression on the people they meet.
+
+==== Sagacity
+
+[lexicWord]#Sagacity# is the wisdom and common sense of the [lexicWord]#character#.
+A down to earth, no non-sense, resourceful [lexicWord]#character# would be one with a high [lexicWord]#sagacity# score.
+
+If [lexicWord]#erudition# is the book-smart, [lexicWord]#sagacity# will cover the street-smart.
+While [lexicWord]#erudition# is very theoretical, [lexicWord]#sagacity# is the practical side of things.
+
+'''
+
+=== Dice
+
+{gameName} is played with [lexicWord]#polyhedral dice#.
+6 types of dice are used: 4 sided, 6 sided, 8 sided, 10 sided, 12 sided and 20 sided.
+
+Those dice are usually referred to by the letter “d” followed by the number of faces (d4, d6, d8, etc).
+If a number is noted before the letter “d”, it is to represent the number of dice.
+
+.Example
+[caption = ""]
+====
+“3d12” means 3 12 sided dice.
+====
+
+'''
+
+=== Skills
+
+A large array of different [lexicWord]#skills# covers what a [lexicWord]#character# can reasonably be expected to do.
+Each of those [lexicWord]#skills# is linked to one or, sometime, two or three [lexicWord]#attributes#.
+
+Some [lexicWord]#skills# have five [lexicWord]#specialities# under them.
+Those [lexicWord]#specialities# are added to the [lexicWord]#parent skill# when relevant.
+
+Each [lexicWord]#skill# is going to be described in the following chapter.
+
+==== Skill specialities
+
+Some [lexicWord]#skills# are subdivided into [lexicWord]#specialities#.
+Those [lexicWord]#skills# should not be tested directly but tests should be made with one of the sub-skills.
+
+The [lexicWord]#ranks# of the [lexicWord]#skill# and of the [lexicWord]#speciality# being tested should always be added together.
+
+'''
+
+=== Skill Test
+
+Whenever a [lexicWord]#player# desires to attempt an action with a chance of failure, the [lexicWord]#GM# can ask to perform a [lexicWord]#skill test#.
+
+The number of dice to be rolled for a [lexicWord]#skill test# is 1 + the number of [lexicWord]#ranks# in the [lexicWord]#skill# being tested.
+The type of dice is determined by the [lexicWord]#attribute[lexicWord]# governing the [lexicWord]#skill# being tested; the dice used must have no more face than the value of the [lexicWord]#attribute#.
+
+The combination of number of dice plus type of dice is called the [lexicWord]#dice-pool#.
+
+Some [lexicWord]#skills# are governed by more than one [lexicWord]#attribute#.
+In some cases, the circumstances will determine the appropriate [lexicWord]#attribute# to use while in other, the choice will be left to the [lexicWord]#player#.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#skill# with a rank of 3 will allow the [lexicWord]#player# to roll 4 dice.
+If this [lexicWord]#skill# is governed by an [lexicWord]#attribute# with a value of 7, the [lexicWord]#player# can roll 6 sided dice.
+His [lexicWord]#dice-pool# for this test would then be of 4d6.
+====
+
+Even if a [lexicWord]#character# has no rank in a [lexicWord]#skill#, the [lexicWord]#player# can always at least roll 1 die.
+
+A test can involve more than one [lexicWord]#roll# and/or more than one [lexicWord]#dice-pool#.
+The different types of test will be discussed later in this chapter.
+
+A [lexicWord]#skill test# should only be asked for if the success or failure of an action will impact the narrative outcome.
+
+==== Dice Pool and Roll
+
+A [lexicWord]#dice-pool# represents the number and type of dice available to a [lexicWord]#player# for their [lexicWord]#character# to perform a certain task or action.
+
+A [lexicWord]#roll# is the actual dice used to perform the task or action.
+
+In most circumstances [lexicWord]#dice-pools# and [lexicWord]#rolls# will be the same but in some cases, a [lexicWord]#player# can decide to roll fewer dice than their [lexicWord]#dice-pool# would allow.
+
+'''
+
+=== Success and Failure
+
+To succeed on a [lexicWord]#skill test#, a number of [lexicWord]#measure of success (MoS)# equal or superior to a [lexicWord]#difficulty level# must be obtained.
+
+'''
+
+=== MoS (Measure of Success)
+
+* Every dice showing 4 through 7, inclusively, represent 1 [lexicWord]#MoS#.
+* Dice showing from 8 to 11 represent 2 [lexicWord]#MoSes#.
+* Dice showing between 12 and 15 count for 3 [lexicWord]#MoSes#.
+* Dice showing between 16 and 19 count for 4 [lexicWord]#MoSes#.
+* Dice showing 20 count for 5 [lexicWord]#MoSes#.
+
+
+'''
+
+=== Loss
+
+Dice showing 1 subtract 1 [lexicWord]#MoS#.
+It is possible to end up with a negative number of [lexicWord]#MoSes# which are called [lexicWord]#losses#.
+
+Many situations have dire consequences for rolling [lexicWord]#losses#.
+
+'''
+
+=== Difficulty Level
+
+There is a vast difference in difficulty between different tasks; some are mundane and some can be near impossible.
+
+*Easy tasks* need 1 [lexicWord]#MoS# to be accomplished.
+
+Such tasks have 50% chance of being successful when attempted by an average [lexicWord]#character# untrained in the [lexicWord]#skill# used.
+
+*Moderate tasks* need 2 [lexicWord]#MoSes# to be accomplished.
+An average [lexicWord]#character# need to be at least initiated in the [lexicWord]#skill# to be tested to be able to succeed at such a task.
+
+*Difficult tasks* need 3 [lexicWord]#MoSes# to be accomplished.
+Those tasks will be challenging for any average [lexicWord]#character#, even if this one is well-trained in the [lexicWord]#skill# being tested.
+
+*Very difficult* tasks need 4 [lexicWord]#MoSes# to be accomplished.
+Even a [lexicWord]#character# highly trained in the [lexicWord]#skill# being tested can be expected to fail such tasks about 2 times out of 3.
+
+*Near impossible* tasks need 5 [lexicWord]#MoSes# to be accomplished.
+A [lexicWord]#character# accomplishing such a task in front of an audience will leave them in awe.
+
+*Legendary tasks* need 6 or more [lexicWord]#MoSes# to be accomplished.
+Witnesses of such accomplishment will have a hard time finding people to believe their recounting of the event.
+
+Those numbers are for simple tasks which can be done in one action, in a short amount of time.
+
+The [lexicWord]#difficulty level# is either determined by the [lexicWord]#GM#, by a [lexicWord]#roll# made by an opponent or by different environmental factors.
+
+'''
+
+=== Hits
+
+[lexicWord]#MoSes# exceeding the [lexicWord]#difficulty level# are called [lexicWord]#hits#.
+
+Many [lexicWord]#skills#, [lexicWord]#spells# and other abilities have varying degree of effectiveness depending on the number of [lexicWord]#hits# obtained on a [lexicWord]#roll#.
+
+'''
+
+include::Types_of_Test.adoc[leveloffset=+2]
+
+'''
+
+=== Bonus and Malus
+
+[lexicWord]#Characters# can gain bonus or suffer malus depending on the situation they have to perform a task.
+
+Bonuses come in two form: Additional [lexicWord]#MoSes# or additional dice to a [lexicWord]#dice-pool#.
+
+Bonuses to [lexicWord]#MoSes# are noted by a simple +1 [lexicWord]#MoS#.
+Bonuses to a [lexicWord]#dice-pool# are noted as +1d.
+
+To benefit from bonus [lexicWord]#MoSes# a player must have dice leftover in their [lexicWord]#dice-pool#.
+
+Bonuses giving extra dice can be used even with a depleted [lexicWord]#dice-pool#.
+
+Malus removes [lexicWord]#MoSes# from a roll.  They are noted as -1 [lexicWord]#MoS#.
+
+'''
+
+=== Resounding Success
+
+For a roll to be considered a [lexicWord]#resounding success# two conditions must be met:
+
+. The task attempted must be successful and
+. The number of [lexicWord]#MoSes# obtained on the roll (before adding any bonus [lexicWord]#MoSes#) must be equal or greater to the number of dice granted by the [lexicWord]#dice-pool# for this task.
+
+[lexicWord]#Resounding success# can be used to regain [lexicWord]#spirit# or gain [lexicWord]#experience#.
+Details are given further in this chapter.
+
+=== Complete Failure
+
+A roll ending up with [lexicWord]#Losses# (before any malus has been applied) is a [lexicWord]#complete failure# of the [lexicWord]#character#.
+
+A [lexicWord]#complete failure# can cause a lost of [lexicWord]#spirit# or a gain of [lexicWord]#experience#.
+While outside of combat, if a player rolls a [lexicWord]#complete failure# they must make a [lexicWord]#Confidence & ego# test with a [lexicWord]#difficulty level# equals to 1 + the number of [lexicWord]#losses#.
+If this roll is successful, the [lexicWord]#player# can put an [lexicWord]#experience points# in the failed [lexicWord]#skill#.
+If the roll is unsuccessful, the [lexicWord]#character# loses 1 [lexicWord]#spirit point# per [lexicWord]#ranks# in the failed [lexicWord]#skill#.
+
+[lexicWord]#Complete failures# can also imply a complication.
+Some examples are given in the description of certain tasks.
+
+In case of a [lexicWord]#complete failure# on an [lexicWord]#opposed test#, the [lexicWord]#losses# are generally added to the roll of the opposing [lexicWord]#character#.
+
+include::Spirit.adoc[leveloffset=+2]
+
+include::Improving_Skills_and_Attributes.adoc[leveloffset=+2]
+
+.{sidebarTitle}What is a character made off?
+[sidebar]
+****
+* Name: What the [lexicWord]#character# is known as.
+* [lexicWord]#Race#: The racial make up of the [lexicWord]#character#.
+Chose between High-Man, Highland Half-Man, Lowland Half-Man, Orc, Goblin, Hobgoblin, Elf, Faun and Troll.
+
+* Description: The gender, age, height, weight and other details of the physical appearance of the [lexicWord]#character#.
+
+* [lexicWord]#Attributes#: [lexicWord]#Agility#, [lexicWord]#power#, [lexicWord]#constitution#, [lexicWord]#erudition#, [lexicWord]#sagacity# and [lexicWord]#persona#.
+Those represent the base disposition of the [lexicWord]#character# in each of these domains.
+
+* [lexicWord]#Skills#: The list of [lexicWord]#skills# the [lexicWord]#character# knows or has [lexicWord]#experience# in.
+
+* [lexicWord]#Experience spent#: The amount of [lexicWord]#experience points# the [lexicWord]#player# spent to purchase [lexicWord]#skills#, [lexicWord]#attributes# or [lexicWord]#traits#
+
+* [lexicWord]#Traits#: Special features making the [lexicWord]#character# unique.
+Some are gained on [lexicWord]#character creation# while others can be gained while playing.
+
+* [lexicWord]#Spirit#: A mix between moral and stamina, this is what keep the [lexicWord]#character# going.
+
+* Health: The number and type of [lexicWord]#injuries# the [lexicWord]#character# is currently suffering from as well as the different effects caused by those [lexicWord]#injuries#.
+
+* Arsenal: The list of weapons the [lexicWord]#character# currently has on them ready to use.
+
+* Armour: The current armour worn by the [lexicWord]#character# and the tally of the total passive defence offered by this one.
+
+* Equipment: All the different piece of equipment the [lexicWord]#character# carries on their person.
+
+* Wealth: The money carried by the [lexicWord]#character# by denomination.
+Three types of coins exist: Copper, Silver and Gold.
+
+* [lexicWord]#Encumbrance#: A mix of weight and inconvenience of the equipment carried by the [lexicWord]#character# including the weapons, armour, money, food and water.
+
+* [lexicWord]#Morality#: Where the [lexicWord]#character# falls on the good and evil axis, their honour and faith.
+
+* [lexicWord]#Vice & Virtues#: Represent the inclination of the character towards different [lexicWord]#vices and virtues#.
+Each virtue lies between two vice.
+The five virtues are [lexicWord]#courage#, [lexicWord]#temperance#, [lexicWord]#generosity#, [lexicWord]#magnanimity# and [lexicWord]#friendliness#.
+****
+
+<<<
+
+include::Skills.adoc[leveloffset=+1]
+
+<<<
+
+include::Combat.adoc[leveloffset=+1]
+
+<<<

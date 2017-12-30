@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Charge</title>
+  <text xml:space="preserve"><note-content version="0.1">Charge
+A charge consist of running followed by an attack.
+To perform a charge a character must be at a distance to their target at least equal to their movement speed.  
+The charging character must make a running test.  Each MoS allow the character to move an extra 2 metres.  The MoSes unused to reach the target can be added to the charge attack roll.
+The target of the charge is entitled to an attack of opportunity (if the charging character enter their range of attack) but both characters are considered attackers. 
+A charge can not cause a disarm.
+Defensive Stance
+A defensive stance is a way for a character to trade all offensive capability for a more effective defence.  
+To enter a defensive stance, on their initiative turn a character can roll a melee combart open-ended test.  The MoSes obtained can be kept until the start on the character next turn and spent to oppose the melee attack rolls made against the character.  
+Example: A character adopts a defensive stance and rolls 4 MoSes.   A first opponent attack them and obtaine 3 MoSes on their attack roll.  The defending character uses 3 of their MoSes to nullify the attack of the opponent.  If a second opponent attacks the defender and obtained 2 MoSes, the defender can use their left over MoS to reduce the attack to 1 hits.
+Dodge rolling
+A character can move by doing a dodge roll, making them harder to be hit by range attacks.
+The player must make an acrobatics test.  For every MoS obtained the character can dodge roll for 1 metre.
+For every metre moved in this way, all range attack made against this character during this round receive -1 MoS.
+If the character rolling pass in the range of attack of one or more opponents,  they can make an attack of opportunity. 
+Mounted Combat
+Moving with a mount does not require a test.
+Bringing a mount which is not combat trained in the range of attack of an opponent require a riding test.  The difficulty level of such a test is equal to 1 + 1 per size category bigger than the mount.  If the mount is entering the range of attack of multiple opponents, the difficulty level is added for all those opponents and a single test is made.  If the test is failed, the mount refuse to enter the range of attack.  
+Mount have their own dice pool but act on the initiative of the rider. 
+A charge made while mounted use the running skill and dice pool of the mount.
+Jumping over obstacles require a ridding test from the rider and an jumping test from the mount.  The difficulty level for both those tests is related to the obstacle to overcome, as per the athleticism rules.  The hits from the riding test can be transferred to the mount’s jumping test. If the riding test fails, the mount refuse to jump.  If the jumping test fails, the mount fails to pass the obstacle. 
+When the mount or the rider receive a major injury the rider must make a riding test to remain on the horse.  The difficulty level for this test is equal to the number of major injury suffered by the rider and the mount (added together).
+If a rider falls from a mount they may suffer damage as per the regular falling rules.
+Mounted characters cannot perform dodge rolling nor shield wall. 
+While fighting an opponent on foot, the mounted character is considered to be on high ground.
+A character on foot cannot choke a mounted character and all their control attacks cost 1 extra hits. 
+More detailed on mounted combat in the chapter about vehicle.  
+Prone
+A character can chose to get prone or become prone due to adverse circumstances.
+Getting prone takes 2 metres of movement.
+Getting up from being prone takes half a character’s movement. 
+While prone, moving takes twice as much movement (every metre moved count as 2 metres).
+A prone character receives -2 MoSes on all melee combat rolls against a standing character.
+A prone character receives -2 MoSes on all range combat rolls except crossbows &amp; firearms rolls, which receive +1d.
+A character targeting a prone character with a range attack receive -1 MoS on their attack rolls and the range increment malus is doubled.
+Getting prone behind cover can increase the protection offered, at the GM discretion.
+Kick Up
+A prone character can get up by doing an acrobatics test.  Every MoS reduce the movement needed to get up by 1 metres.  This provoke attacks of opportunity. 
+Reassessing the Situation
+A player can use their action or part of their action to reroll their initiative.  They must use the new initiative number even if it is lower.
+Inspire
+A character can make a short speech to motivate their allies.
+The player do a oratory &amp; poetry test.  For every MoS they can distribute 1 spirit points amongst their allies (excluding themself). 
+Intimidation
+A character can try to intimidate an opponent.
+The player makes a insult &amp; intimidation roll opposed by a Confidence &amp; ego test from the target.
+The Confidence &amp; ego test of the target does not count as part of their dice pool.
+Intimidation functions as a far range weapon with a range increment of 5 metres for the distance malus.  There is no size modifier. 
+For every hits on the insult &amp; intimidation roll, the target lose 2 spirit points.
+Taunt
+A character can provoke a target.
+The player must make a insult &amp; intimidation test opposed by a detect motive test by the target.
+The detect motive test of the target does not count as part of their dice pool.
+Taunt functions as a far range weapon with a range increment of 5 metres for the distance malus.  There is no size modifier. 
+Starting from their next turn, every actions not directed against the taunting character have a dice pool reduce by -1d per hits on the insult &amp; intimidation roll.  The dice pool  of the target recover 1 dice per turn.
+Example: A character tries to taunt an opponent.  The taunter rolls 4 MoSes on their insult &amp; intimidation roll.  The target rolls only 1 MoS on a detect motive rolls.  The taunter scores 3 hits. On their next turn, if the target does any action not targeted against the taunter, their dice pool will be reduced by 3 dice.  On the following turn, the malus will be reduced to 2 dice, then 1 dice, then the effect will be dissipated.
+Shield Wall
+If two or more characters are wielding a shield with the special hide behind shield, they can form a shield wall.
+Every frontal attacks made against characters in a shield wall receive -1 MoS, on top of any malus granted by the hide behind shield special.
+While used to make a shield wall, shield cannot be used to reduce attack hits for damage in their regular manner.
+Characters in a shield wall can only move at the speed on the slowest character.
+Characters in a shield wall act at their regular initiative but every movement must be made at the lowest initiative amongst the party of the shield wall.
+Throwing Non-Range Weapon
+Every weapons and objects can be thrown with the thrown skills.
+Every thrown attack made with a weapon or object not specifically made for throwing receive a malus.  
+Small objects and weapons which can be more or less contained in one hand (knives, small rocks, tomatoes, mugs, etc) receive -1 MoS and have a range increment of 5 metres.  
+Medium objects and weapons which are used with one hand (arming swords, skillets, books, etc) receive -2 MoSes and have a range increment of 4 metres.
+Large objects and weapons which usually require two hands to use (great swords, chairs, pumpkins, etc) receive -3 MoSes and have a range increment of 3 metres.  
+Two Weapons Fighting
+Characters equipped with a weapon in each hand can do two attacks on the same initiative number.
+The dice pool must be split normally. 
+The second attack receive -1 MoS. </note-content></text>
+  <last-change-date>2016-11-07T16:23:36.2524820-05:00</last-change-date>
+  <last-metadata-change-date>2016-11-07T16:23:36.2552340-05:00</last-metadata-change-date>
+  <create-date>2016-10-30T20:15:59.2038370-04:00</create-date>
+  <cursor-position>7446</cursor-position>
+  <selection-bound-position>7446</selection-bound-position>
+  <width>229</width>
+  <height>288</height>
+  <x>1131</x>
+  <y>531</y>
+  <open-on-startup>False</open-on-startup>
+</note>

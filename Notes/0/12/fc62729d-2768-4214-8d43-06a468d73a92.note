@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>he character raised.</title>
+  <text xml:space="preserve"><note-content version="0.1">he character raised.
+High-Men City: 2
+High-Men Town: 1
+High-Men Village: 0
+Highlander Citadel: 3
+Lowlander Village: 0
+Orchish Hamlet: 0
+Elven Village: 3
+Faun Community: 0
+Troll Camp: 0
+In the wild: 0
+Skills
+The player can pick 3 skills form the occupation of the custodians.
+2 experience points is gained in each of those skills.
+The player can distribute an additional 4 experience points amongst those skills.
+Resources
+If the occupation of the custodians require special tools, the character receives some of them, up to a maximum value of 10 copper piece. </note-content></text>
+  <last-change-date>2016-11-02T21:25:56.8043580-04:00</last-change-date>
+  <last-metadata-change-date>2016-11-02T21:25:56.8076390-04:00</last-metadata-change-date>
+  <create-date>2016-10-30T20:15:59.2038370-04:00</create-date>
+  <cursor-position>0</cursor-position>
+  <selection-bound-position>560</selection-bound-position>
+  <width>229</width>
+  <height>288</height>
+  <x>1145</x>
+  <y>531</y>
+  <open-on-startup>False</open-on-startup>
+</note>

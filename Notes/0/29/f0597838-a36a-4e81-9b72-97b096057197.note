@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Magic Cost and drawbacks</title>
+  <text xml:space="preserve"><note-content version="0.1">Magic Cost and drawbacks
+
+
+Elementalism: Cost Spirit
+
+Mysticism: Require favour
+
+Shamanism: Require focus
+
+Sorcery: Gain corruption marks
+
+Witchcraft: Spell in object
+
+Wizardry: Require preparation</note-content></text>
+  <last-change-date>2016-12-02T17:20:29.9027900-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-02T17:20:29.9035830-05:00</last-metadata-change-date>
+  <create-date>2016-12-02T17:18:33.7563510-05:00</create-date>
+  <cursor-position>10</cursor-position>
+  <selection-bound-position>25</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

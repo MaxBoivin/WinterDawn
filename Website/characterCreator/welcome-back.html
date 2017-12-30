@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon"
+	type="image/png"
+	href="../images/favIcon.png" />
+<title>WinterDawn RPG - Character Creator</title>
+
+<link rel="stylesheet" href="../styles.css">
+
+<script src="../generalUtilityFunction.js"></script>
+
+<section style="position:fixed; top:0%; left:0%; width:100%; height:15%;">
+
+<img id "logo1" src="../images/winterdawnLogoSingle.svg" alt="WinterDawn RPG ;" style="width:auto;height:95%;position:absolute;left:8.75%;top:50%;transform: translate(-50%, -50%);">
+
+<img id "logo2" src="../images/winterdawnLogoSingle.svg" alt="WinterDawn RPG ;" style="width:auto;height:95%;position:absolute;left:92.25%;top:50%;transform: translate(-50%, -50%);">
+
+<img id "name" src="../images/WinterDawnName.svg" alt="WinterDawn RPG ;" style="width:auto;height:100%;max-width:60%;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);">
+
+</section>
+
+<section style="position:fixed; top:10%;left:0%;height:60px;width:100%;overflow:hidden;">
+
+<h1>Character Creation Tool</h1>
+
+</section>
+
+</head>
+
+<body style="font-family:liberation;text-align:center;">
+
+<!--<link rel="import" href="characterCreation.html" id="characterCreationInfo">-->
+
+
+<script>
+
+"use strict";
+
+function objSkill (parName, parAttribute, parExp, parRank, parSubSkills)
+{
+	this.strName = parName;
+	this.strAttribute = parAttribute;
+	this.intExp = parExp;
+	this.intRank = parRank;
+	this.objSubSkils = parSubSkills;
+}
+
+function initSkill()
+{
+	var skillsList = 
+	{
+		acrobatics: (new objSkill("Acrobatics", "Agility", 0, 0)),
+		appraise: (new objSkill("Appraise", "Sagacity", 0, 0)),
+		artsPerformance: (new objSkill("Arts & Performance", "Persona", 0, 0)),
+		athleticism: (new objSkill("Athleticism", "Power", 0, 0)),
+		charmPersuasion: (new objSkill("Charms & Persuasion", "Persona", 0, 0)),
+		confidenceEgo: (new objSkill("Confidence & Ego", "Persona or Sagacity", 0, 0)),
+		cooking: (new objSkill("Cooking", "Sagacity", 0, 0)),
+		crafting: (new objSkill("Crafting", "Sagacity", 0, 0)),
+		deductionLogic: (new objSkill("Deduction & Logic", "Sagacity", 0, 0)),
+		detectMotive: (new objSkill("Detect Motive", "sagacity", 0, 0)),
+		elementalism: (new objSkill("Erudition or Persona", "Agility", 0, 0)),
+		insultIntimidation: (new objSkill("Insult & Intimidation", "Persona", 0, 0)),
+		knowledge: (new objSkill("Knowledge", "Erudition", 0, 0)),
+		lawsLegalSystems: (new objSkill("Laws & Legal Systems", "Erudition, Sagacity or Persona", 0, 0)),
+		luck: (new objSkill("Luck", "Persona", 0, 0)),
+		mechanics: (new objSkill("Mechanics", "Sagacity", 0, 0)),
+		meleeCombat: (new objSkill("Melee Combat", "Agility or Power", 0, 0)),
+		mysticism: (new objSkill("Mysticism", "Persona or Sagacity", 0, 0)),
+		naturalHealing: (new objSkill("Natural Healing", "Constitution", 0, 0)),
+		perceptionVigilance: (new objSkill("Perception & Vigilance", "Agility", 0, 0)),
+		rangeCombat: (new objSkill("Range Combat", "Agility or Power", 0, 0)),
+		reflex: (new objSkill("Reflex", "Agility", 0, 0)),
+		resistCold: (new objSkill("Resist Cold", "Constitution", 0, 0)),
+		resistFatigue: (new objSkill("Resist Fatigue", "Constitution", 0, 0)),
+		resistHeat: (new objSkill("Resist Heat", "Constitution", 0, 0)),
+		resistHunger: (new objSkill("Resist Hunger", "Constitution", 0, 0)),
+		resistPain: (new objSkill("Resist Pain", "Constitution", 0, 0)),
+		resistPoison: (new objSkill("Resist Poison", "Constitution", 0, 0)),
+		resistShock: (new objSkill("Resist Shock", "Constitution", 0, 0)),
+		riding: (new objSkill("Riding", "Agility", 0, 0)),
+		science: (new objSkill("Science", "Erudition", 0, 0)),
+		seamanship: (new objSkill("Seamanship", "Sagacity", 0, 0)),
+		shamanism: (new objSkill("Shamanism", "Sagacity", 0, 0)),
+		sleightOfHand: (new objSkill("Sleight of Hand", "Agility", 0, 0)),
+		sorcery: (new objSkill("Sorcery", "Persona", 0, 0)),
+		stealth: (new objSkill("Stealth", "Agility", 0, 0)),
+		survival: (new objSkill("Survival", "Sagacity", 0, 0)),
+		tamingTraining: (new objSkill("Taming & Training", "Persona", 0, 0)),
+		torture: (new objSkill("Torture", "Persona or Sagacity", 0, 0)),
+		witchcraft: (new objSkill("Witchcraft", "Erudition or Sagacity", 0, 0)),
+		wizardry: (new objSkill("Wizardry", "Erudition", 0, 0))
+	};
+	
+	skillsList.artsPerformance.objSubSkills = 
+	{
+		acting: (new objSkill("Acting", "Persona", 0, 0)),
+		dancing: (new objSkill("Acrobatics", "Persona", 0, 0)),
+		drawingPainting: (new objSkill("Drawing & Painting", "Persona", 0, 0)),
+		musicSinging: (new objSkill("Music & Singing", "Persona", 0, 0)),
+		oratoryPoetry: (new objSkill("Oratory & Poetry", "Persona", 0, 0))
+	};
+	
+	skillsList.athleticism.objSubSkills = 
+	{
+		climbing: (new objSkill("Climbing", "Power", 0, 0)),
+		jumping: (new objSkill("Jumping", "Power", 0, 0)),
+		liftingPushing: (new objSkill("Lifting & Pushing", "Power", 0, 0)),
+		running: (new objSkill("Running", "Power", 0, 0)),
+		swimming: (new objSkill("Swimming", "Power", 0, 0))
+	};
+	
+	skillsList.crafting.objSubSkills = 
+	{
+		metalworking: (new objSkill("Metalworking", "Sagacity", 0, 0)),
+		scribing: (new objSkill("Scribing", "Sagacity", 0, 0)),
+		stonecutting: (new objSkill("Stonecutting", "Sagacity", 0, 0)),
+		tailoring: (new objSkill("Tailoring", "Sagacity", 0, 0)),
+		woodworking: (new objSkill("Woodworking", "Sagacity", 0, 0))
+	};
+	
+	skillsList.elementalism.objSubSkills = 
+	{
+		aether: (new objSkill("Aether", "Erudition or Persona", 0, 0)),
+		air: (new objSkill("Air", "Erudition or Persona", 0, 0)),
+		earth: (new objSkill("Earth", "Erudition or Persona", 0, 0)),
+		fire: (new objSkill("Fire", "Erudition or Persona", 0, 0)),
+		water: (new objSkill("Water", "Erudition or Persona", 0, 0))
+	};
+	
+	skillsList.knowledge.objSubSkills = 
+	{
+		geography: (new objSkill("Geography", "Erudition", 0, 0)),
+		heraldryNobility: (new objSkill("Heraldry & Nobility", "Erudition", 0, 0)),
+		history: (new objSkill("History", "Erudition", 0, 0)),
+		linguistic: (new objSkill("Linguistic", "Erudition", 0, 0)),
+		religions: (new objSkill("Religions", "Erudition", 0, 0))
+	};
+	
+	skillsList.meleeCombat.objSubSkills = 
+	{
+		axesMaces: (new objSkill("Axes and Maces", "Agility or Power", 0, 0)),
+		brawling: (new objSkill("Brawling", "Agility or Power", 0, 0)),
+		oneHanded: (new objSkill("One Handed Swords", "Agility or Power", 0, 0)),
+		polearms: (new objSkill("Polearms", "Agility or Power", 0, 0)),
+		twoHanded: (new objSkill("Two Handed Swords", "Agility or Power", 0, 0))
+	};
+	
+	skillsList.mysticism.objSubSkills = 
+	{
+		blessCurse: (new objSkill("Bless & Curse", "Persona or Sagacity", 0, 0)),
+		cureHeal: (new objSkill("Cure & Heal", "Persona or Sagacity", 0, 0)),
+		divination: (new objSkill("Divination", "Persona or Sagacity", 0, 0)),
+		necromancy: (new objSkill("Necromancy", "Persona or Sagacity", 0, 0)),
+		retribution: (new objSkill("Retribution", "Persona or Sagacity", 0, 0))
+	};
+	
+	skillsList.rangeCombat.objSubSkills = 
+	{
+		bows: (new objSkill("Bows", "Agility or Power", 0, 0)),
+		crossbowsFirearms: (new objSkill("Crossbows & Firearms", "Agility or Power", 0, 0)),
+		javelinsSpears: (new objSkill("Javelins & Spears", "Agility or Power", 0, 0)),
+		slings: (new objSkill("Slings", "Agility or Power", 0, 0)),
+		thrown: (new objSkill("Thrown", "Agility or Power", 0, 0))
+	};
+	
+	skillsList.science.objSubSkills = 
+	{
+		alchemyChemistry: (new objSkill("Alchemy & Chemistry", "Erudition", 0, 0)),
+		botany: (new objSkill("Botany", "Erudition", 0, 0)),
+		engineeringPhysics: (new objSkill("Engineering & Physics", "Erudition", 0, 0)),
+		medicine: (new objSkill("Medicine", "Erudition", 0, 0)),
+		zoology: (new objSkill("Zoology", "Erudition", 0, 0))
+	};
+	
+	skillsList.shamanism.objSubSkills = 
+	{
+		ancestors: (new objSkill("Ancestors", "Sagacity", 0, 0)),
+		beasts: (new objSkill("Beasts", "Sagacity", 0, 0)),
+		lakesRivers: (new objSkill("Lake & Rivers", "Sagacity", 0, 0)),
+		mountainsRocks: (new objSkill("Mountains & rocks", "Sagacity", 0, 0)),
+		plantsTrees: (new objSkill("Plants & Trees", "Sagacity", 0, 0))
+	};
+	
+	skillsList.sorcery.objSubSkills = 
+	{
+		abyssal: (new objSkill("Abyssal", "Persona", 0, 0)),
+		blood: (new objSkill("Blood", "Persona", 0, 0)),
+		chaos: (new objSkill("Chaos", "Persona", 0, 0)),
+		death: (new objSkill("Death", "Persona", 0, 0)),
+		unknown: (new objSkill("The Unknown", "Persona", 0, 0))
+	};
+	
+	skillsList.survival.objSubSkills = 
+	{
+		firstAid: (new objSkill("First-Aid", "Sagacity", 0, 0)),
+		foragingHunting: (new objSkill("Foraging & Hunting", "Sagacity", 0, 0)),
+		navigation: (new objSkill("Navigation", "Sagacity", 0, 0)),
+		sheltering: (new objSkill("Sheltering", "Sagacity", 0, 0)),
+		tracking: (new objSkill("Tracking", "Sagacity", 0, 0))
+	};
+	
+	skillsList.witchcraft.objSubSkills = 
+	{
+		balmsPotions: (new objSkill("Balms & Potions", "Erudition or Sagacity", 0, 0)),
+		curios: (new objSkill("Curios", "Erudition or Sagacity", 0, 0)),
+		fumesPhials: (new objSkill("Fumes & Phials", "Erudition or Sagacity", 0, 0)),
+		staffsWands: (new objSkill("Staff & Wands", "Erudition or Sagacity", 0, 0)),
+		thirdEye: (new objSkill("Third Eye", "Erudition or Sagacity", 0, 0))
+	};
+	
+	skillsList.wizardry.objSubSkills = 
+	{
+		abjuration: (new objSkill("Abjuration", "Erudition", 0, 0)),
+		conjuration: (new objSkill("Conjuration", "Erudition", 0, 0)),
+		enchantment: (new objSkill("Enchantment", "Erudition", 0, 0)),
+		evocation: (new objSkill("Evocation", "Erudition", 0, 0)),
+		illusion: (new objSkill("Illusion", "Erudition", 0, 0))
+	};
+	
+	return skillsList;
+}
+
+var character = 
+{
+	player:"",
+	charName:"John Doe",
+	race:"High-Man",
+	subRace:"",
+	gender:"???",
+	age:16,
+	strSize:"Medium",
+	speed:"9m",
+	attributes:{agility:{rank:6, exp:0}, power:{rank:6, exp:0}, constitution:{rank:6, exp:0}, erudition:{rank:6, exp:0}, persona:{rank:6, exp:0}, sagacity:{rank:6, exp:0}},
+	skills:initSkill(),
+	languages:["common"],
+	values:{honour:0, morality:2, faith:0},
+	virtues:{courage:0, friendliness:0, dignity:0, generosity:0, temperance:0},
+	backgrounds:{origin:"", reason:"",motivation:"", events:[], occupations:[]},
+	traits:[],
+	equipment:[],
+	backgroundCost:0,
+	
+	characterString: function()
+		{
+				var maxEncumbrance = 0;
+				switch (character.strSize)
+				{
+					case "Small":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 1.5;
+					break;
+					
+					case "Medium":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 2;
+					break;
+					
+					case "Large":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 2.5;
+					break;
+				}
+				var resultString = "<pre><b>Character</b>" +
+					"<hr><br>" +
+					"<b>Name: </b>" + this.charName +
+					"<b>		Race: </b>" + this.race + ", " + this.subRace +
+					 "				<b>Background Cost:</b> " + character.backgroundCost + 
+					"<br><b>Age: </b>" + this.age +
+					"	<b>Gender: </b>" + this.gender +
+					"	<b>Size: </b>" + this.strSize + 
+					"	<b>Speed: </b>" + this.speed + "m" +
+					"	<b>Maximum Spirit: </b>" + (this.attributes.constitution.rank + this.attributes.persona.rank + this.attributes.sagacity.rank) +
+					"	<b>Maximum Encumbrance: </b>" + maxEncumbrance +
+					"<hr><b>Attributes: </b><br>" +
+					"<b>Agility: </b> rank[ " + this.attributes.agility.rank + " ] <small>exp[ " + this.attributes.agility.exp + " ]</small>" +
+					"	<b>Power: </b> rank[ " + this.attributes.power.rank + " ] <small>exp[ " + this.attributes.power.exp + " ]</small>" +
+					"	<b>Constitution: </b> rank[ " + this.attributes.constitution.rank + " ] <small>exp[ " + this.attributes.constitution.exp + " ]</small><br>" +
+					"<b>Erudition: </b> rank[ " + this.attributes.erudition.rank + " ] <small>exp[ " + this.attributes.erudition.exp + " ]</small>" +
+					"	<b>Persona: </b> rank[ " + this.attributes.persona.rank + " ] <small>exp[ " + this.attributes.persona.exp + " ]</small>" +
+					"	<b>Sagacity: </b> rank[ " + this.attributes.sagacity.rank + " ] <small>exp[ " + this.attributes.sagacity.exp + " ]</small><hr>" +
+					"<b>Skills:</b>" +
+					"<table style='width:90%; position:relative; left:5%;text-align:left;'>" +
+					"<tr><td><b>Acrobatics</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.acrobatics.intRank + " ] <small>exp[ " + this.skills.acrobatics.intExp + " ]</small>" +
+					"<td><b>Laws & Legal Systems</b> <small>(Eru/Per/Sag)</small>: <br>	rank[ " + this.skills.lawsLegalSystems.intRank + " ] <small>exp[ " + this.skills.lawsLegalSystems.intExp + " ]</small>" +
+					"<td><b>Seamanship</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.seamanship.intRank + " ] <small>exp[ " + this.skills.seamanship.intExp + " ]</small>" +
+					"<tr><td><b>Appraise</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.appraise.intRank + " ] <small>exp[ " + this.skills.appraise.intExp + " ]</small>" +
+					"<td><b>Luck</b> <small>(Per)</small>: <br>	rank[ " + this.skills.luck.intRank + " ] <small>exp[ " + this.skills.luck.intExp + " ]</small>" +
+					"<td><b>Shamanism</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.shamanism.intRank + " ] <small>exp[ " + this.skills.shamanism.intExp + " ]</small>" +
+					"<tr><td><b>Arts & Performance</b> <small>(Per)</small>: <br>	rank[ " + this.skills.artsPerformance.intRank + " ] <small>exp[ " + this.skills.artsPerformance.intExp + " ]</small>" +
+					"<td><b>Mechanics</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.mechanics.intRank + " ] <small>exp[ " + this.skills.mechanics.intExp + " ]</small>" +
+					"<td>   <i>Ancestors</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.ancestors.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.ancestors.intExp + " ]</small>" +
+					"<tr><td>   <i>Acting</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.acting.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.acting.intExp + " ]</small>" +
+					"<td><b>Melee Combat</b> <small>(Agi/Pow)</small>: <br>	rank[ " + this.skills.meleeCombat.intRank + " ] <small>exp[ " + this.skills.meleeCombat.intExp + " ]</small>" +
+					"<td>   <i>Beasts</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.beasts.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.beasts.intExp + " ]</small>" +
+					"<tr><td>   <i>Dancing</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.dancing.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.dancing.intExp + " ]</small>" +
+					"<td><i>   One Handed Swords</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.oneHanded.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.oneHanded.intExp + " ]</small>" +
+					"<td>   <i>Lakes & Rivers</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.lakesRivers.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.lakesRivers.intExp + " ]</small>" +
+					"<tr><td>   <i>Drawing & Painting</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.drawingPainting.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.drawingPainting.intExp + " ]</small>" +
+					"<td><i>   Two Handed Swords</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.twoHanded.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.twoHanded.intExp + " ]</small>" +
+					"<td>   <i>Mountains & Rocks</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.mountainsRocks.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.mountainsRocks.intExp + " ]</small>" +
+					"<tr><td>   <i>Music & Singing</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.musicSinging.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.musicSinging.intExp + " ]</small>" +
+					"<td><i>   Axes & Maces</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.axesMaces.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.axesMaces.intExp + " ]</small>" +
+					"<td>   <i>Plants & Trees</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.plantsTrees.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.plantsTrees.intExp + " ]</small>" +
+					"<tr><td>   <i>Oratory & Poetry</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.oratoryPoetry.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.oratoryPoetry.intExp + " ]</small>" +
+					"<td><i>   Brawling</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.brawling.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.brawling.intExp + " ]</small>" +
+					"<td><b>Sleight of Hand</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.sleightOfHand.intRank + " ] <small>exp[ " + this.skills.sleightOfHand.intExp + " ]</small>" +
+					"<tr><td><b>Athleticism</b> <small>(Pow)</small>: <br>	rank[ " + this.skills.athleticism.intRank + " ] <small>exp[ " + this.skills.athleticism.intExp + " ]</small>" +
+					"<td><i>   Polearms</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.polearms.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.polearms.intExp + " ]</small>" +
+					"<td><b>Sorcery</b> <small>(Per)</small>: <br>	rank[ " + this.skills.sorcery.intRank + " ] <small>exp[ " + this.skills.sorcery.intExp + " ]</small>" +
+					"<tr><td>   <i>Climbing</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.climbing.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.climbing.intExp + " ]</small>" +
+					"<td><b>Mysticism</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.mysticism.intRank + " ] <small>exp[ " + this.skills.mysticism.intExp + " ]</small>" +
+					"<td>   <i>Abyssal</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.abyssal.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.abyssal.intExp + " ]</small>" +
+					"<tr><td>   <i>Jumping</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.jumping.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.jumping.intExp + " ]</small>" +
+					"<td>   <i>Bless & Curse</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.blessCurse.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.blessCurse.intExp + " ]</small>" +
+					"<td>   <i>Blood</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.blood.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.blood.intExp + " ]</small>" +
+					"<tr><td>   <i>Lifting & Pushing</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.liftingPushing.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.liftingPushing.intExp + " ]</small>" +
+					"<td>   <i>Cure & Heal</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.cureHeal.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.cureHeal.intExp + " ]</small>" +
+					"<td>   <i>Chaos</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.chaos.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.chaos.intExp + " ]</small>" +
+					"<tr><td>   <i>Running</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.running.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.running.intExp + " ]</small>" +
+					"<td>   <i>Divination</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.divination.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.divination.intExp + " ]</small>" +
+					"<td>   <i>Death</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.death.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.death.intExp + " ]</small>" +
+					"<tr><td>   <i>Swimming</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.swimming.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.swimming.intExp + " ]</small>" +
+					"<td>   <i>Necromancy</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.necromancy.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.necromancy.intExp + " ]</small>" +
+					"<td>   <i>The Unknown</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.unknown.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.unknown.intExp + " ]</small>" +
+					"<tr><td><b>Charm & Persuasion</b> <small>(Per)</small>: <br>	rank[ " + this.skills.charmPersuasion.intRank + " ] <small>exp[ " + this.skills.charmPersuasion.intExp + " ]</small>" +
+					"<td>   <i>Retribution</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.retribution.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.retribution.intExp + " ]</small>" +
+					"<td><b>Stealth</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.stealth.intRank + " ] <small>exp[ " + this.skills.stealth.intExp + " ]</small>" +
+					"<tr><td><b>Confidence & Ego</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.confidenceEgo.intRank + " ] <small>exp[ " + this.skills.confidenceEgo.intExp + " ]</small>" +
+					"<td><b>Natural Healing</b> <small>(Con)</small>: <br>	rank[ " + this.skills.naturalHealing.intRank + " ] <small>exp[ " + this.skills.naturalHealing.intExp + " ]</small>" +
+					"<td><b>Survival</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.survival.intRank + " ] <small>exp[ " + this.skills.survival.intExp + " ]</small>" +
+					"<tr><td><b>Cooking</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.cooking.intRank + " ] <small>exp[ " + this.skills.cooking.intExp + " ]</small>" +
+					"<td><b>Perception & Vigilance</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.perceptionVigilance.intRank + " ] <small>exp[ " + this.skills.perceptionVigilance.intExp + " ]</small>" +
+					"<td>   <i>First-Aid</i>: <br>	rank[ " + this.skills.survival.objSubSkills.firstAid.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.firstAid.intExp + " ]</small>" +
+					"<tr><td><b>Crafting</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.crafting.intRank + " ] <small>exp[ " + this.skills.crafting.intExp + " ]</small>" +
+					"<td><b>Range Combat</b> <small>(Agi/Pow)</small>: <br>	rank[ " + this.skills.rangeCombat.intRank + " ] <small>exp[ " + this.skills.rangeCombat.intExp + " ]</small>" +
+					"<td>   <i>Foraging & Hunting</i>: <br>	rank[ " + this.skills.survival.objSubSkills.foragingHunting.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.foragingHunting.intExp + " ]</small>" +
+					"<tr><td>   <i>Metalworking</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.metalworking.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.metalworking.intExp + " ]</small>" +
+					"<td><i>   Bows</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.bows.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.bows.intExp + " ]</small>" +
+					"<td>   <i>Navigation</i>: <br>	rank[ " + this.skills.survival.objSubSkills.navigation.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.navigation.intExp + " ]</small>" +
+					"<tr><td>   <i>Scribing</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.scribing.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.scribing.intExp + " ]</small>" +
+					"<td><i>   Crossbows & Firearms</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.crossbowsFirearms.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp + " ]</small>" +
+					"<td>   <i>Sheltering</i>: <br>	rank[ " + this.skills.survival.objSubSkills.sheltering.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.sheltering.intExp + " ]</small>" +
+					"<tr><td>   <i>Stonecutting</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.stonecutting.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.stonecutting.intExp + " ]</small>" +
+					"<td><i>   Javelins & Spears</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.javelinsSpears.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.javelinsSpears.intExp + " ]</small>" +
+					"<td>   <i>Tracking</i>: <br>	rank[ " + this.skills.survival.objSubSkills.tracking.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.tracking.intExp + " ]</small>" +
+					"<tr><td>   <i>Tailoring</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.tailoring.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.tailoring.intExp + " ]</small>" +
+					"<td><i>   Slings</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.slings.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.slings.intExp + " ]</small>" +
+					"<td><b>Taming & Training</b> <small>(Per)</small>: <br>	rank[ " + this.skills.tamingTraining.intRank + " ] <small>exp[ " + this.skills.tamingTraining.intExp + " ]</small>" +
+					"<tr><td>   <i>Woodworking</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.woodworking.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.woodworking.intExp + " ]</small>" +
+					"<td><i>   Thrown</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.thrown.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.thrown.intExp + " ]</small>" +
+					"<td><b>Torture</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.torture.intRank + " ] <small>exp[ " + this.skills.torture.intExp + " ]</small>" +
+					"<tr><td><b>Deduction & Logic</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.deductionLogic.intRank + " ] <small>exp[ " + this.skills.deductionLogic.intExp + " ]</small>" +
+					"<td><b>Reflex</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.reflex.intRank + " ] <small>exp[ " + this.skills.reflex.intExp + " ]</small>" +
+					"<td><b>Witchcraft</b> <small>(Eru/Sag)</small>: <br>	rank[ " + this.skills.witchcraft.intRank + " ] <small>exp[ " + this.skills.witchcraft.intExp + " ]</small>" +
+					"<tr><td><b>Detect Motive</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.detectMotive.intRank + " ] <small>exp[ " + this.skills.detectMotive.intExp + " ]</small>" +
+					"<td><b>Resist Cold</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistCold.intRank + " ] <small>exp[ " + this.skills.resistCold.intExp + " ]</small>" +
+					"<td>   <i>Balms & Potions</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.balmsPotions.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.balmsPotions.intExp + " ]</small>" +
+					"<tr><td><b>Elementalism</b> <small>(Eru/Per)</small>: <br>	rank[ " + this.skills.elementalism.intRank + " ] <small>exp[ " + this.skills.elementalism.intExp + " ]</small>" +
+					"<td><b>Resist Fatigue</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistFatigue.intRank + " ] <small>exp[ " + this.skills.resistFatigue.intExp + " ]</small>" +
+					"<td>   <i>Curios</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.curios.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.curios.intExp + " ]</small>" +
+					"<tr><td>   <i>Aether</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.aether.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.aether.intExp + " ]</small>" +
+					"<td><b>Resist Heat</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistHeat.intRank + " ] <small>exp[ " + this.skills.resistHeat.intExp + " ]</small>" +
+					"<td>   <i>Fumes & Phials</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.fumesPhials.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.fumesPhials.intExp + " ]</small>" +
+					"<tr><td>   <i>Air</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.air.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.air.intExp + " ]</small>" +
+					"<td><b>Resist Hunger</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistHunger.intRank + " ] <small>exp[ " + this.skills.resistHunger.intExp + " ]</small>" +
+					"<td>   <i>Staffs & Wands</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.staffsWands.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.staffsWands.intExp + " ]</small>" +
+					"<tr><td>   <i>Earth</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.earth.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.earth.intExp + " ]</small>" +
+					"<td><b>Resist Pain</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistPain.intRank + " ] <small>exp[ " + this.skills.resistPain.intExp + " ]</small>" +
+					"<td>   <i>Third Eye</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.thirdEye.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.thirdEye.intExp + " ]</small>" +
+					"<tr><td>   <i>Fire</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.fire.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.fire.intExp + " ]</small>" +
+					"<td><b>Resist Poison</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistPoison.intRank + " ] <small>exp[ " + this.skills.resistPoison.intExp + " ]</small>" +
+					"<td><b>Wizardry</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.wizardry.intRank + " ] <small>exp[ " + this.skills.wizardry.intExp + " ]</small>" +
+					"<tr><td>   <i>Water</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.water.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.water.intExp + " ]</small>" +
+					"<td><b>Resist Shock</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistShock.intRank + " ] <small>exp[ " + this.skills.resistShock.intExp + " ]</small>" +
+					"<td>   <i>Abjuration</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.abjuration.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.abjuration.intExp + " ]</small>" +
+					"<tr><td><b>Insult & Intimidation</b> <small>(Per)</small>: <br>	rank[ " + this.skills.insultIntimidation.intRank + " ] <small>exp[ " + this.skills.insultIntimidation.intExp + " ]</small>" +
+					"<td><b>Riding</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.riding.intRank + " ] <small>exp[ " + this.skills.riding.intExp + " ]</small>" +
+					"<td>   <i>Conjuration</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.conjuration.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.conjuration.intExp + " ]</small>" +
+					"<tr><td><b>Knowledge</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.knowledge.intRank + " ] <small>exp[ " + this.skills.knowledge.intExp + " ]</small>" +
+					"<td><b>Science</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.science.intRank + " ] <small>exp[ " + this.skills.science.intExp + " ]</small>" +
+					"<td>   <i>Enchantment</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.enchantment.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.enchantment.intExp + " ]</small>" +
+					"<tr><td>   <i>Geography</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.geography.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.geography.intExp + " ]</small>" +
+					"<td><i>   Alchemy & Chemistry</i>: <br>	rank[ " + this.skills.science.objSubSkills.alchemyChemistry.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.alchemyChemistry.intExp + " ]</small>" +
+					"<td>   <i>Evocation</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.evocation.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.evocation.intExp + " ]</small>" +
+					"<tr><td>   <i>Heraldry & Nobility</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.heraldryNobility.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.heraldryNobility.intExp + " ]</small>" +
+					"<td><i>   Botany</i>: <br>	rank[ " + this.skills.science.objSubSkills.botany.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.botany.intExp + " ]</small>" +
+					"<td>   <i>Illusion</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.illusion.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.illusion.intExp + " ]</small>" +
+					"<tr><td>   <i>History</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.history.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.history.intExp + " ]</small>" +
+					"<td><i>   Engineering & Physics</i>: <br>	rank[ " + this.skills.science.objSubSkills.engineeringPhysics.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.engineeringPhysics.intExp + " ]</small>" +
+					"<tr><td>   <i>Linguistic</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.linguistic.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.linguistic.intExp + " ]</small>" +
+					"<td><i>   Medicine</i>: <br>	rank[ " + this.skills.science.objSubSkills.medicine.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.medicine.intExp + " ]</small>" +
+					"<tr><td>   <i>Religions</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.religions.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.religions.intExp + " ]</small>" +
+					"<td><i>   Zoology</i>: <br>	rank[ " + this.skills.science.objSubSkills.zoology.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.zoology.intExp + " ]</small>" +
+					"</table>" +
+					"<hr><b>Languages: </b><br>	" + character.languages.join("<br>	") +
+					"<hr><b>Values:<br>	Honour: </b>" + character.values.honour +
+					"	<b>Morality: </b>" + character.values.morality +
+					"	<b>Faith: </b>" + character.values.faith +
+					"<br><b>Virtues:<br>	Courage: </b>" + character.virtues.courage +
+					"	<b>Friendliness: </b>" + character.virtues.friendliness +
+					"	<b>Dignity: </b>" + character.virtues.dignity +
+					"	<b>Generosity: </b>" + character.virtues.generosity +
+					"	<b>Temperance: </b>" + character.virtues.temperance +
+					"<hr><b>Background</b><br>" +
+					"<b>Origin: </b>" + character.backgrounds.origin +
+					"<br><b>Reason to Adventure: </b>" + character.backgrounds.reason +
+					"<br><b>Motivation: </b>" + character.backgrounds.motivation +
+					"<br><b>Life Events: </b><br>	" + character.backgrounds.events.join("<br>	") +
+					"<br><b>Occupations: </b><br>	" + character.backgrounds.occupations.join("<br>	") +
+					"<br><b>Traits: </b><br>	" + character.traits.join("<br>	") +
+					"<hr><b>Equipment:</b><br>	" + character.equipment.join("<br>	") +
+					"</pre>";
+					
+				return resultString;
+			}
+}
+
+function updateCharacter()
+{
+	character = 
+	{
+		player:"",
+		charName:"John Doe",
+		race:"High-Man",
+		subRace:"",
+		gender:"???",
+		age:16,
+		strSize:"Medium",
+		speed:9,
+		attributes:{agility:{rank:6, exp:0}, power:{rank:6, exp:0}, constitution:{rank:6, exp:0}, erudition:{rank:6, exp:0}, persona:{rank:6, exp:0}, sagacity:{rank:6, exp:0}},
+		skills:initSkill(),
+		languages:["common"],
+		values:{honour:0, morality:2, faith:0},
+		virtues:{courage:0, friendliness:0, dignity:0, generosity:0, temperance:0},
+		backgrounds:{origin:"", reason:"",motivation:"", events:[], occupations:[]},
+		traits:[],
+		equipment:[],
+		backgroundCost:0,
+		characterString: function()
+			{
+				var maxEncumbrance = 0;
+				switch (character.strSize)
+				{
+					case "Small":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 1.5;
+					break;
+					
+					case "Medium":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 2;
+					break;
+					
+					case "Large":
+						maxEncumbrance = (this.attributes.constitution.rank + this.attributes.power.rank) * 2.5;
+					break;
+				}
+				var resultString = "<pre><b>Character</b>" +
+					"<hr><br>" +
+					"<b>Name: </b>" + this.charName +
+					"<b>		Race: </b>" + this.race + ", " + this.subRace +
+					 "				<b>Background Cost:</b> " + character.backgroundCost + 
+					"<br><b>Age: </b>" + this.age +
+					"	<b>Gender: </b>" + this.gender +
+					"	<b>Size: </b>" + this.strSize + 
+					"	<b>Speed: </b>" + this.speed + "m" +
+					"	<b>Maximum Spirit: </b>" + (this.attributes.constitution.rank + this.attributes.persona.rank + this.attributes.sagacity.rank) +
+					"	<b>Maximum Encumbrance: </b>" + maxEncumbrance +
+					"<hr><b>Attributes: </b><br>" +
+					"<b>Agility: </b> rank[ " + this.attributes.agility.rank + " ] <small>exp[ " + this.attributes.agility.exp + " ]</small>" +
+					"	<b>Power: </b> rank[ " + this.attributes.power.rank + " ] <small>exp[ " + this.attributes.power.exp + " ]</small>" +
+					"	<b>Constitution: </b> rank[ " + this.attributes.constitution.rank + " ] <small>exp[ " + this.attributes.constitution.exp + " ]</small><br>" +
+					"<b>Erudition: </b> rank[ " + this.attributes.erudition.rank + " ] <small>exp[ " + this.attributes.erudition.exp + " ]</small>" +
+					"	<b>Persona: </b> rank[ " + this.attributes.persona.rank + " ] <small>exp[ " + this.attributes.persona.exp + " ]</small>" +
+					"	<b>Sagacity: </b> rank[ " + this.attributes.sagacity.rank + " ] <small>exp[ " + this.attributes.sagacity.exp + " ]</small><hr>" +
+					"<b>Skills:</b>" +
+					"<table style='width:90%; position:relative; left:5%;text-align:left;'>" +
+					"<tr><td><b>Acrobatics</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.acrobatics.intRank + " ] <small>exp[ " + this.skills.acrobatics.intExp + " ]</small>" +
+					"<td><b>Laws & Legal Systems</b> <small>(Eru/Per/Sag)</small>: <br>	rank[ " + this.skills.lawsLegalSystems.intRank + " ] <small>exp[ " + this.skills.lawsLegalSystems.intExp + " ]</small>" +
+					"<td><b>Seamanship</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.seamanship.intRank + " ] <small>exp[ " + this.skills.seamanship.intExp + " ]</small>" +
+					"<tr><td><b>Appraise</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.appraise.intRank + " ] <small>exp[ " + this.skills.appraise.intExp + " ]</small>" +
+					"<td><b>Luck</b> <small>(Per)</small>: <br>	rank[ " + this.skills.luck.intRank + " ] <small>exp[ " + this.skills.luck.intExp + " ]</small>" +
+					"<td><b>Shamanism</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.shamanism.intRank + " ] <small>exp[ " + this.skills.shamanism.intExp + " ]</small>" +
+					"<tr><td><b>Arts & Performance</b> <small>(Per)</small>: <br>	rank[ " + this.skills.artsPerformance.intRank + " ] <small>exp[ " + this.skills.artsPerformance.intExp + " ]</small>" +
+					"<td><b>Mechanics</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.mechanics.intRank + " ] <small>exp[ " + this.skills.mechanics.intExp + " ]</small>" +
+					"<td>   <i>Ancestors</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.ancestors.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.ancestors.intExp + " ]</small>" +
+					"<tr><td>   <i>Acting</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.acting.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.acting.intExp + " ]</small>" +
+					"<td><b>Melee Combat</b> <small>(Agi/Pow)</small>: <br>	rank[ " + this.skills.meleeCombat.intRank + " ] <small>exp[ " + this.skills.meleeCombat.intExp + " ]</small>" +
+					"<td>   <i>Beasts</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.beasts.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.beasts.intExp + " ]</small>" +
+					"<tr><td>   <i>Dancing</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.dancing.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.dancing.intExp + " ]</small>" +
+					"<td><i>   One Handed Swords</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.oneHanded.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.oneHanded.intExp + " ]</small>" +
+					"<td>   <i>Lakes & Rivers</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.lakesRivers.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.lakesRivers.intExp + " ]</small>" +
+					"<tr><td>   <i>Drawing & Painting</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.drawingPainting.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.drawingPainting.intExp + " ]</small>" +
+					"<td><i>   Two Handed Swords</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.twoHanded.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.twoHanded.intExp + " ]</small>" +
+					"<td>   <i>Mountains & Rocks</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.mountainsRocks.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.mountainsRocks.intExp + " ]</small>" +
+					"<tr><td>   <i>Music & Singing</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.musicSinging.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.musicSinging.intExp + " ]</small>" +
+					"<td><i>   Axes & Maces</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.axesMaces.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.axesMaces.intExp + " ]</small>" +
+					"<td>   <i>Plants & Trees</i>: <br>	rank[ " + this.skills.shamanism.objSubSkills.plantsTrees.intRank + " ] <small>exp[ " + this.skills.shamanism.objSubSkills.plantsTrees.intExp + " ]</small>" +
+					"<tr><td>   <i>Oratory & Poetry</i>: <br>	rank[ " + this.skills.artsPerformance.objSubSkills.oratoryPoetry.intRank + " ] <small>exp[ " + this.skills.artsPerformance.objSubSkills.oratoryPoetry.intExp + " ]</small>" +
+					"<td><i>   Brawling</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.brawling.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.brawling.intExp + " ]</small>" +
+					"<td><b>Sleight of Hand</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.sleightOfHand.intRank + " ] <small>exp[ " + this.skills.sleightOfHand.intExp + " ]</small>" +
+					"<tr><td><b>Athleticism</b> <small>(Pow)</small>: <br>	rank[ " + this.skills.athleticism.intRank + " ] <small>exp[ " + this.skills.athleticism.intExp + " ]</small>" +
+					"<td><i>   Polearms</i>: <br>	rank[ " + this.skills.meleeCombat.objSubSkills.polearms.intRank + " ] <small>exp[ " + this.skills.meleeCombat.objSubSkills.polearms.intExp + " ]</small>" +
+					"<td><b>Sorcery</b> <small>(Per)</small>: <br>	rank[ " + this.skills.sorcery.intRank + " ] <small>exp[ " + this.skills.sorcery.intExp + " ]</small>" +
+					"<tr><td>   <i>Climbing</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.climbing.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.climbing.intExp + " ]</small>" +
+					"<td><b>Mysticism</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.mysticism.intRank + " ] <small>exp[ " + this.skills.mysticism.intExp + " ]</small>" +
+					"<td>   <i>Abyssal</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.abyssal.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.abyssal.intExp + " ]</small>" +
+					"<tr><td>   <i>Jumping</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.jumping.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.jumping.intExp + " ]</small>" +
+					"<td>   <i>Bless & Curse</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.blessCurse.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.blessCurse.intExp + " ]</small>" +
+					"<td>   <i>Blood</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.blood.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.blood.intExp + " ]</small>" +
+					"<tr><td>   <i>Lifting & Pushing</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.liftingPushing.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.liftingPushing.intExp + " ]</small>" +
+					"<td>   <i>Cure & Heal</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.cureHeal.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.cureHeal.intExp + " ]</small>" +
+					"<td>   <i>Chaos</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.chaos.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.chaos.intExp + " ]</small>" +
+					"<tr><td>   <i>Running</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.running.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.running.intExp + " ]</small>" +
+					"<td>   <i>Divination</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.divination.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.divination.intExp + " ]</small>" +
+					"<td>   <i>Death</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.death.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.death.intExp + " ]</small>" +
+					"<tr><td>   <i>Swimming</i>: <br>	rank[ " + this.skills.athleticism.objSubSkills.swimming.intRank + " ] <small>exp[ " + this.skills.athleticism.objSubSkills.swimming.intExp + " ]</small>" +
+					"<td>   <i>Necromancy</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.necromancy.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.necromancy.intExp + " ]</small>" +
+					"<td>   <i>The Unknown</i>: <br>	rank[ " + this.skills.sorcery.objSubSkills.unknown.intRank + " ] <small>exp[ " + this.skills.sorcery.objSubSkills.unknown.intExp + " ]</small>" +
+					"<tr><td><b>Charm & Persuasion</b> <small>(Per)</small>: <br>	rank[ " + this.skills.charmPersuasion.intRank + " ] <small>exp[ " + this.skills.charmPersuasion.intExp + " ]</small>" +
+					"<td>   <i>Retribution</i>: <br>	rank[ " + this.skills.mysticism.objSubSkills.retribution.intRank + " ] <small>exp[ " + this.skills.mysticism.objSubSkills.retribution.intExp + " ]</small>" +
+					"<td><b>Stealth</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.stealth.intRank + " ] <small>exp[ " + this.skills.stealth.intExp + " ]</small>" +
+					"<tr><td><b>Confidence & Ego</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.confidenceEgo.intRank + " ] <small>exp[ " + this.skills.confidenceEgo.intExp + " ]</small>" +
+					"<td><b>Natural Healing</b> <small>(Con)</small>: <br>	rank[ " + this.skills.naturalHealing.intRank + " ] <small>exp[ " + this.skills.naturalHealing.intExp + " ]</small>" +
+					"<td><b>Survival</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.survival.intRank + " ] <small>exp[ " + this.skills.survival.intExp + " ]</small>" +
+					"<tr><td><b>Cooking</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.cooking.intRank + " ] <small>exp[ " + this.skills.cooking.intExp + " ]</small>" +
+					"<td><b>Perception & Vigilance</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.perceptionVigilance.intRank + " ] <small>exp[ " + this.skills.perceptionVigilance.intExp + " ]</small>" +
+					"<td>   <i>First-Aid</i>: <br>	rank[ " + this.skills.survival.objSubSkills.firstAid.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.firstAid.intExp + " ]</small>" +
+					"<tr><td><b>Crafting</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.crafting.intRank + " ] <small>exp[ " + this.skills.crafting.intExp + " ]</small>" +
+					"<td><b>Range Combat</b> <small>(Agi/Pow)</small>: <br>	rank[ " + this.skills.rangeCombat.intRank + " ] <small>exp[ " + this.skills.rangeCombat.intExp + " ]</small>" +
+					"<td>   <i>Foraging & Hunting</i>: <br>	rank[ " + this.skills.survival.objSubSkills.foragingHunting.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.foragingHunting.intExp + " ]</small>" +
+					"<tr><td>   <i>Metalworking</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.metalworking.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.metalworking.intExp + " ]</small>" +
+					"<td><i>   Bows</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.bows.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.bows.intExp + " ]</small>" +
+					"<td>   <i>Navigation</i>: <br>	rank[ " + this.skills.survival.objSubSkills.navigation.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.navigation.intExp + " ]</small>" +
+					"<tr><td>   <i>Scribing</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.scribing.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.scribing.intExp + " ]</small>" +
+					"<td><i>   Crossbows & Firearms</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.crossbowsFirearms.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp + " ]</small>" +
+					"<td>   <i>Sheltering</i>: <br>	rank[ " + this.skills.survival.objSubSkills.sheltering.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.sheltering.intExp + " ]</small>" +
+					"<tr><td>   <i>Stonecutting</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.stonecutting.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.stonecutting.intExp + " ]</small>" +
+					"<td><i>   Javelins & Spears</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.javelinsSpears.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.javelinsSpears.intExp + " ]</small>" +
+					"<td>   <i>Tracking</i>: <br>	rank[ " + this.skills.survival.objSubSkills.tracking.intRank + " ] <small>exp[ " + this.skills.survival.objSubSkills.tracking.intExp + " ]</small>" +
+					"<tr><td>   <i>Tailoring</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.tailoring.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.tailoring.intExp + " ]</small>" +
+					"<td><i>   Slings</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.slings.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.slings.intExp + " ]</small>" +
+					"<td><b>Taming & Training</b> <small>(Per)</small>: <br>	rank[ " + this.skills.tamingTraining.intRank + " ] <small>exp[ " + this.skills.tamingTraining.intExp + " ]</small>" +
+					"<tr><td>   <i>Woodworking</i>: <br>	rank[ " + this.skills.crafting.objSubSkills.woodworking.intRank + " ] <small>exp[ " + this.skills.crafting.objSubSkills.woodworking.intExp + " ]</small>" +
+					"<td><i>   Thrown</i>: <br>	rank[ " + this.skills.rangeCombat.objSubSkills.thrown.intRank + " ] <small>exp[ " + this.skills.rangeCombat.objSubSkills.thrown.intExp + " ]</small>" +
+					"<td><b>Torture</b> <small>(Per/Sag)</small>: <br>	rank[ " + this.skills.torture.intRank + " ] <small>exp[ " + this.skills.torture.intExp + " ]</small>" +
+					"<tr><td><b>Deduction & Logic</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.deductionLogic.intRank + " ] <small>exp[ " + this.skills.deductionLogic.intExp + " ]</small>" +
+					"<td><b>Reflex</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.reflex.intRank + " ] <small>exp[ " + this.skills.reflex.intExp + " ]</small>" +
+					"<td><b>Witchcraft</b> <small>(Eru/Sag)</small>: <br>	rank[ " + this.skills.witchcraft.intRank + " ] <small>exp[ " + this.skills.witchcraft.intExp + " ]</small>" +
+					"<tr><td><b>Detect Motive</b> <small>(Sag)</small>: <br>	rank[ " + this.skills.detectMotive.intRank + " ] <small>exp[ " + this.skills.detectMotive.intExp + " ]</small>" +
+					"<td><b>Resist Cold</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistCold.intRank + " ] <small>exp[ " + this.skills.resistCold.intExp + " ]</small>" +
+					"<td>   <i>Balms & Potions</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.balmsPotions.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.balmsPotions.intExp + " ]</small>" +
+					"<tr><td><b>Elementalism</b> <small>(Eru/Per)</small>: <br>	rank[ " + this.skills.elementalism.intRank + " ] <small>exp[ " + this.skills.elementalism.intExp + " ]</small>" +
+					"<td><b>Resist Fatigue</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistFatigue.intRank + " ] <small>exp[ " + this.skills.resistFatigue.intExp + " ]</small>" +
+					"<td>   <i>Curios</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.curios.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.curios.intExp + " ]</small>" +
+					"<tr><td>   <i>Aether</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.aether.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.aether.intExp + " ]</small>" +
+					"<td><b>Resist Heat</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistHeat.intRank + " ] <small>exp[ " + this.skills.resistHeat.intExp + " ]</small>" +
+					"<td>   <i>Fumes & Phials</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.fumesPhials.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.fumesPhials.intExp + " ]</small>" +
+					"<tr><td>   <i>Air</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.air.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.air.intExp + " ]</small>" +
+					"<td><b>Resist Hunger</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistHunger.intRank + " ] <small>exp[ " + this.skills.resistHunger.intExp + " ]</small>" +
+					"<td>   <i>Staffs & Wands</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.staffsWands.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.staffsWands.intExp + " ]</small>" +
+					"<tr><td>   <i>Earth</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.earth.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.earth.intExp + " ]</small>" +
+					"<td><b>Resist Pain</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistPain.intRank + " ] <small>exp[ " + this.skills.resistPain.intExp + " ]</small>" +
+					"<td>   <i>Third Eye</i>: <br>	rank[ " + this.skills.witchcraft.objSubSkills.thirdEye.intRank + " ] <small>exp[ " + this.skills.witchcraft.objSubSkills.thirdEye.intExp + " ]</small>" +
+					"<tr><td>   <i>Fire</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.fire.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.fire.intExp + " ]</small>" +
+					"<td><b>Resist Poison</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistPoison.intRank + " ] <small>exp[ " + this.skills.resistPoison.intExp + " ]</small>" +
+					"<td><b>Wizardry</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.wizardry.intRank + " ] <small>exp[ " + this.skills.wizardry.intExp + " ]</small>" +
+					"<tr><td>   <i>Water</i>: <br>	rank[ " + this.skills.elementalism.objSubSkills.water.intRank + " ] <small>exp[ " + this.skills.elementalism.objSubSkills.water.intExp + " ]</small>" +
+					"<td><b>Resist Shock</b> <small>(Con)</small>: <br>	rank[ " + this.skills.resistShock.intRank + " ] <small>exp[ " + this.skills.resistShock.intExp + " ]</small>" +
+					"<td>   <i>Abjuration</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.abjuration.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.abjuration.intExp + " ]</small>" +
+					"<tr><td><b>Insult & Intimidation</b> <small>(Per)</small>: <br>	rank[ " + this.skills.insultIntimidation.intRank + " ] <small>exp[ " + this.skills.insultIntimidation.intExp + " ]</small>" +
+					"<td><b>Riding</b> <small>(Agi)</small>: <br>	rank[ " + this.skills.riding.intRank + " ] <small>exp[ " + this.skills.riding.intExp + " ]</small>" +
+					"<td>   <i>Conjuration</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.conjuration.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.conjuration.intExp + " ]</small>" +
+					"<tr><td><b>Knowledge</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.knowledge.intRank + " ] <small>exp[ " + this.skills.knowledge.intExp + " ]</small>" +
+					"<td><b>Science</b> <small>(Eru)</small>: <br>	rank[ " + this.skills.science.intRank + " ] <small>exp[ " + this.skills.science.intExp + " ]</small>" +
+					"<td>   <i>Enchantment</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.enchantment.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.enchantment.intExp + " ]</small>" +
+					"<tr><td>   <i>Geography</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.geography.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.geography.intExp + " ]</small>" +
+					"<td><i>   Alchemy & Chemistry</i>: <br>	rank[ " + this.skills.science.objSubSkills.alchemyChemistry.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.alchemyChemistry.intExp + " ]</small>" +
+					"<td>   <i>Evocation</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.evocation.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.evocation.intExp + " ]</small>" +
+					"<tr><td>   <i>Heraldry & Nobility</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.heraldryNobility.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.heraldryNobility.intExp + " ]</small>" +
+					"<td><i>   Botany</i>: <br>	rank[ " + this.skills.science.objSubSkills.botany.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.botany.intExp + " ]</small>" +
+					"<td>   <i>Illusion</i>: <br>	rank[ " + this.skills.wizardry.objSubSkills.illusion.intRank + " ] <small>exp[ " + this.skills.wizardry.objSubSkills.illusion.intExp + " ]</small>" +
+					"<tr><td>   <i>History</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.history.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.history.intExp + " ]</small>" +
+					"<td><i>   Engineering & Physics</i>: <br>	rank[ " + this.skills.science.objSubSkills.engineeringPhysics.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.engineeringPhysics.intExp + " ]</small>" +
+					"<tr><td>   <i>Linguistic</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.linguistic.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.linguistic.intExp + " ]</small>" +
+					"<td><i>   Medicine</i>: <br>	rank[ " + this.skills.science.objSubSkills.medicine.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.medicine.intExp + " ]</small>" +
+					"<tr><td>   <i>Religions</i>: <br>	rank[ " + this.skills.knowledge.objSubSkills.religions.intRank + " ] <small>exp[ " + this.skills.knowledge.objSubSkills.religions.intExp + " ]</small>" +
+					"<td><i>   Zoology</i>: <br>	rank[ " + this.skills.science.objSubSkills.zoology.intRank + " ] <small>exp[ " + this.skills.science.objSubSkills.zoology.intExp + " ]</small>" +
+					"</table>" +
+					"<hr><b>Languages: </b><br>	" + character.languages.join("<br>	") +
+					"<hr><b>Values:<br>	Honour: </b>" + character.values.honour +
+					"	<b>Morality: </b>" + character.values.morality +
+					"	<b>Faith: </b>" + character.values.faith +
+					"<br><b>Virtues:<br>	Courage: </b>" + character.virtues.courage +
+					"	<b>Friendliness: </b>" + character.virtues.friendliness +
+					"	<b>Dignity: </b>" + character.virtues.dignity +
+					"	<b>Generosity: </b>" + character.virtues.generosity +
+					"	<b>Temperance: </b>" + character.virtues.temperance +
+					"<hr><b>Background</b><br>" +
+					"<b>Origin: </b>" + character.backgrounds.origin +
+					"<br><b>Reason to Adventure: </b>" + character.backgrounds.reason +
+					"<br><b>Motivation: </b>" + character.backgrounds.motivation +
+					"<br><b>Life Events: </b><br>	" + character.backgrounds.events.join("<br>	") +
+					"<br><b>Occupations: </b><br>	" + character.backgrounds.occupations.join("<br>	") +
+					"<br><b>Traits: </b><br>	" + character.traits.join("<br>	") +
+					"<hr><b>Equipment:</b><br>	" + character.equipment.join("<br>	") +
+					"</pre>";
+					
+				return resultString;
+			}
+	};
+	
+	switch (document.getElementById("selRace").value)
+	{
+		case "highMan":
+			if (document.getElementById("taAgility").value != "" && document.getElementById("taAgility").value != null
+				&& document.getElementById("taPower").value != "" && document.getElementById("taPower").value != null
+				&& document.getElementById("taConstitution").value != "" && document.getElementById("taConstitution").value != null
+				&& document.getElementById("taErudition").value != "" && document.getElementById("taErudition").value != null
+				&& document.getElementById("taPersona").value != "" && document.getElementById("taPersona").value != null
+				&& document.getElementById("taSagacity").value != "" && document.getElementById("taSagacity").value != null)
+			{
+				character.attributes.agility.rank = document.getElementById("taAgility").value * 1;
+				character.attributes.power.rank = document.getElementById("taPower").value * 1;
+				character.attributes.constitution.rank = document.getElementById("taConstitution").value * 1;
+				character.attributes.erudition.rank = document.getElementById("taErudition").value * 1;
+				character.attributes.persona.rank = document.getElementById("taPersona").value * 1;
+				character.attributes.sagacity.rank = document.getElementById("taSagacity").value * 1;
+				
+				character.skills.meleeCombat.objSubSkills.brawling.intExp += 2;
+				character.skills.detectMotive.intExp += 3;
+				character.skills.knowledge.objSubSkills.linguistic.intExp += 4;
+				character.skills.riding.intExp += 3;
+				character.skills.perceptionVigilance.intExp += 2;
+				
+				character.traits.push("Natural talent");
+				character.traits.push("Fast learner");
+				
+				character.race = "High-Man";
+				
+				character.age = 16;
+				character.strSize = "Medium";
+				character.speed = 9;
+			
+				switch(document.getElementById("selSubraceHighMan").value)
+				{
+					case "northerner":
+						character.subRace = "Northerner";
+						character.backgroundCost += 1;
+						character.attributes.constitution.exp += 6;
+						character.skills.meleeCombat.objSubSkills.oneHanded.intExp += 2;
+						character.skills.resistCold.intExp += 4;
+						character.skills.seamanship.intExp += 3;
+						character.skills.confidenceEgo.intExp += 2;
+						character.traits.push("Heat conservation");
+						break;
+						
+					case "riverlander":
+						character.subRace = "Riverlander";
+						character.backgroundCost += 0;
+						character.attributes.sagacity.exp += 6;
+						character.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp += 2;
+						character.skills.knowledge.objSubSkills.heraldryNobility.intExp += 4;
+						character.skills.survival.intExp += 2;
+						character.skills.riding.intExp += 4;
+						break;
+						
+					case "sandman":
+						character.subRace = "Sandman";
+						character.backgroundCost += 3;
+						character.attributes.persona.exp += 6;
+						character.skills.appraise.intExp += 2;
+						character.skills.charmPersuasion.intExp += 4;
+						character.skills.resistHeat.intExp += 4;
+						character.skills.sorcery.intExp += 2;
+						character.traits.push("Heat expansion");
+						break;
+				}
+			}
+			else 
+			{
+				alert("Please choose the attributes of your character.");
+				return;
+			}
+			break;
+			
+		case "highlander":
+			character.attributes.agility.rank = 4;
+			character.attributes.power.rank = 7;
+			character.attributes.constitution.rank = 7;
+			character.attributes.erudition.rank = 6;
+			character.attributes.persona.rank = 5;
+			character.attributes.sagacity.rank = 6;
+			
+			character.skills.crafting.intExp += 4;
+			character.skills.athleticism.objSubSkills.liftingPushing.intExp += 4;
+			character.skills.resistFatigue.intExp += 2;
+			character.skills.resistShock.intExp += 2;
+			character.skills.resistPoison.intExp += 3;
+			
+			character.traits.push("Low light vision");
+			character.traits.push("Beast of burden");
+			
+			character.race = "Highland Half-Man";
+			
+			character.age = 23;
+			character.strSize = "Medium";
+			character.speed = 7;
+			
+			switch(document.getElementById("selSubraceHighlander").value)
+			{
+				case "deepDweller":
+					character.subRace = "Deep Dweller";
+					character.backgroundCost += 3;
+					character.attributes.constitution.exp += 6;
+					character.skills.athleticism.intExp += 4;
+					character.skills.meleeCombat.objSubSkills.brawling.intExp += 4;
+					character.skills.resistFatigue.intExp += 2;
+					character.skills.stealth.intExp += 2;
+					
+					character.traits.push("Dark vision");
+					for (i = 0; i < character.traits.length; i++)
+					{
+						if (character.traits[i] === "Low light vision")
+						{
+							character.traits.splice(i, 1);						
+						}
+					}
+				break;
+				
+				case "flatDweller":
+					character.subRace = "Flat Dweller";
+					character.backgroundCost += 0;
+					character.attributes.sagacity.exp += 6;
+					character.skills.appraise.intExp += 4;
+					character.skills.knowledge.objSubSkills.geography.intExp += 2;
+					character.skills.meleeCombat.objSubSkills.polearms.intExp += 2;
+					character.skills.crafting.objSubSkills.stonecutting.intExp += 2;
+				break;
+				
+				case "peakDweller":
+					character.subRace = "Peak Dweller";
+					character.backgroundCost += 1;
+					character.attributes.erudition.exp += 6;
+					character.skills.meleeCombat.objSubSkills.twoHanded.intExp += 2;
+					character.skills.science.objSubSkills.engineeringPhysics.intExp += 4;
+					character.skills.knowledge.intExp += 3;
+					character.skills.resistCold.intExp += 3;
+				break;
+			}
+
+		break;
+			
+		case "lowlander" :
+			character.attributes.agility.rank = 7;
+			character.attributes.power.rank = 4;
+			character.attributes.constitution.rank = 5;
+			character.attributes.erudition.rank = 6;
+			character.attributes.persona.rank = 6;
+			character.attributes.sagacity.rank = 7;
+			
+			character.skills.cooking.intExp += 4;
+			character.skills.luck.intExp += 4;
+			character.skills.reflex.intExp += 3;
+			character.skills.stealth.intExp += 2;
+			character.skills.sleightOfHand.intExp += 2;
+			
+			character.traits.push("Low light vision");
+			character.traits.push("Lucky");
+			
+			character.race = "Lowland Half-Man";
+			
+			character.age = 18;
+			character.strSize = "Small";
+			character.speed = 9;
+			
+			switch(document.getElementById("selSubraceLowlander").value)
+			{
+				case "hillFolk":
+					character.subRace = "Hill Folk";
+					character.backgroundCost += 0;
+					character.attributes.persona.exp += 6;
+					character.skills.artsPerformance.intExp += 4;
+					character.skills.charmPersuasion.intExp += 2;
+					character.skills.rangeCombat.objSubSkills.slings.intExp += 3;
+					character.skills.tamingTraining.intExp += 4;
+					
+					character.traits.push("Merrymaker");
+				break;
+				
+				case "woodsFolk":
+					character.subRace = "Woods Folk";
+					character.backgroundCost += 2;
+					character.attributes.sagacity.exp += 6;
+					character.skills.rangeCombat.objSubSkills.bows.intExp += 2;
+					character.skills.perceptionVigilance.intExp += 3;
+					character.skills.stealth.intExp += 3;
+					character.skills.survival.intExp += 3;
+				break;
+			}
+			
+		break;
+		
+		case "orc" :
+			character.attributes.agility.rank = 6;
+			character.attributes.power.rank = 7;
+			character.attributes.constitution.rank = 6;
+			character.attributes.erudition.rank = 4;
+			character.attributes.persona.rank = 7;
+			character.attributes.sagacity.rank = 5;
+			
+			character.skills.meleeCombat.objSubSkills.axesMaces.intExp += 3;
+			character.skills.athleticism.intExp += 4;
+			character.skills.confidenceEgo.intExp += 3;
+			character.skills.insultIntimidation.intExp += 3;
+			character.skills.resistPain.intExp += 2;
+			
+			character.traits.push("Fearsome");
+			character.traits.push("Strong grip");
+			
+			character.race = "Orc";
+			
+			character.age = 15;
+			character.strSize = "Medium";
+			character.speed = 9;
+			
+			switch(document.getElementById("selSubraceOrc").value)
+			{
+				case "blackSkinned":
+					character.subRace = "Black Skinned";
+					character.backgroundCost += 3;
+					character.attributes.constitution.exp += 6;
+					character.skills.meleeCombat.objSubSkills.brawling.intExp += 3;
+					character.skills.stealth.intExp += 4;
+					character.skills.perceptionVigilance.intExp += 1;
+					character.skills.resistPain.intExp += 2;
+				break;
+				
+				case "pigRider":
+					character.subRace = "Pig Rider";
+					character.backgroundCost += 0;
+					character.attributes.persona.exp += 6;
+					character.skills.meleeCombat.objSubSkills.polearms.intExp += 3;
+					character.skills.resistPoison.intExp += 3;
+					character.skills.riding.intExp += 4;
+					character.skills.tamingTraining.intExp += 2;
+				break;
+				
+				case "tideCrasher":
+					character.subRace = "Tide Crasher";
+					character.backgroundCost += 1;
+					character.attributes.constitution.exp += 6;
+					character.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp += 3;
+					character.skills.resistCold.intExp += 3;
+					character.skills.seamanship.intExp += 4;
+					character.skills.survival.intExp += 2;
+				break;
+			}
+			
+		break;
+		
+		case "goblin" :
+			character.attributes.agility.rank = 7;
+			character.attributes.power.rank = 4;
+			character.attributes.constitution.rank = 6;
+			character.attributes.erudition.rank = 7;
+			character.attributes.persona.rank = 6;
+			character.attributes.sagacity.rank = 5;
+			
+			character.skills.appraise.intExp += 4;
+			character.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp += 2;
+			character.skills.knowledge.intExp += 3;
+			character.skills.science.intExp += 3;
+			character.skills.stealth.intExp += 3;
+			
+			character.traits.push("Dark vision");
+			character.traits.push("Greed");
+			
+			character.race = "Goblin";
+			
+			character.age = 21;
+			character.strSize = "Small";
+			character.speed = 9;
+			
+			switch(document.getElementById("selSubraceGoblin").value)
+			{
+				case "night":
+					character.subRace = "Night";
+					character.backgroundCost += 3;
+					character.attributes.agility.exp += 6;
+					character.skills.meleeCombat.objSubSkills.brawling.intExp += 2;
+					character.skills.sleightOfHand.intExp += 4;
+					character.skills.stealth.intExp += 4;
+					character.skills.survival.intExp += 2;
+				break;
+				
+				case "ravenous":
+					character.subRace = "Ravenous";
+					character.backgroundCost += 0;
+					character.attributes.constitution.exp += 6;
+					character.skills.charmPersuasion.intExp += 2;
+					character.skills.meleeCombat.objSubSkills.polearms.intExp += 2;
+					character.skills.resistPoison.intExp += 3;
+					character.skills.riding.intExp += 4;
+				break;
+				
+				case "redcap":
+					character.subRace = "Redcap";
+					character.backgroundCost += 0;
+					character.attributes.sagacity.exp += 6;
+					character.skills.meleeCombat.objSubSkills.axesMaces.intExp += 2;
+					character.skills.confidenceEgo.intExp += 3;
+					character.skills.mechanics.intExp += 3;
+					character.skills.seamanship.intExp += 4;
+				break;
+			}
+			
+		break;
+		
+		case "hobgoblin" :
+			
+			character.skills.meleeCombat.objSubSkills.axesMaces.intExp += 2;
+			character.skills.athleticism.intExp += 3;
+			character.skills.detectMotive.intExp += 4;
+			character.skills.insultIntimidation.intExp += 4;
+			character.skills.reflex.intExp += 2;
+			
+			character.traits.push("Low light vision");
+			character.traits.push("Infertile");
+			character.traits.push("Fearless");
+			
+			character.race = "Hobgoblin";
+			
+			character.age = 18;
+			character.strSize = "Medium";
+			character.speed = 9;
+			
+			switch(document.getElementById("selSubraceHobgoblin").value)
+			{
+				case "orcFathered":
+					
+					if (!(document.getElementsByName("orcFatheredSkills")[0].checked) &&
+						!(document.getElementsByName("orcFatheredSkills")[1].checked))
+					{
+						alert("Please select a skill for your subrace.");
+						return;
+					}
+				
+					character.attributes.agility.rank = 7;
+					character.attributes.power.rank = 6;
+					character.attributes.constitution.rank = 6;
+					character.attributes.erudition.rank = 4;
+					character.attributes.persona.rank = 7;
+					character.attributes.sagacity.rank = 5;
+				
+					character.subRace = "Fathered by an Orc";
+					character.backgroundCost += 3;
+					character.skills.meleeCombat.objSubSkills.axesMaces.intExp += 2;
+					character.skills.confidenceEgo.intExp += 3;
+					character.skills.insultIntimidation.intExp += 3;
+					if (document.getElementsByName("orcFatheredSkills")[0].checked)
+					{
+					character.skills.seamanship.intExp += 4;	
+					}
+					else 
+					{
+						character.skills.tamingTraining.intExp += 4;
+					}
+				break;
+				
+				case "goblinFathered":
+					if (!(document.getElementsByName("goblinFatheredSkills")[0].checked) &&
+						!(document.getElementsByName("goblinFatheredSkills")[1].checked))
+					{
+						alert("Please select a skill for your subrace.");
+						return;
+					}
+				
+					character.attributes.agility.rank = 7;
+					character.attributes.power.rank = 4;
+					character.attributes.constitution.rank = 6;
+					character.attributes.erudition.rank = 6;
+					character.attributes.persona.rank = 7;
+					character.attributes.sagacity.rank = 5;
+				
+					character.subRace = "Fathered by a Goblin";
+					character.backgroundCost += 0;
+					character.skills.rangeCombat.objSubSkills.crossbowsFirearms.intExp += 2;
+					character.skills.knowledge.intExp += 3;
+					character.skills.science.intExp += 3;
+					if ((document.getElementsByName("goblinFatheredSkills")[1]).checked)
+					{
+					character.skills.mechanics.intExp += 4;	
+					}
+					else 
+					{
+						character.skills.appraise.intExp += 4;
+					}
+				break;
+			}
+			
+		break;
+		
+		case "elf" :
+			character.attributes.agility.rank = 7;
+			character.attributes.power.rank = 6;
+			character.attributes.constitution.rank = 4;
+			character.attributes.erudition.rank = 7;
+			character.attributes.persona.rank = 5;
+			character.attributes.sagacity.rank = 6;
+			
+			character.skills.rangeCombat.objSubSkills.bows.intExp += 2;
+			character.skills.reflex.intExp += 3;
+			character.skills.resistHunger.intExp += 4;
+			character.skills.stealth.intExp += 3;
+			character.skills.perceptionVigilance.intExp += 3;
+			
+			character.traits.push("Ascetic");
+			character.traits.push("Nimble feet");
+			character.traits.push("Spirit tree");
+			
+			character.race = "Elf";
+			
+			character.age = 35;
+			character.strSize = "Medium";
+			character.speed = 9;
+			
+			switch(document.getElementById("selSubraceElf").value)
+			{
+				case "seelie":
+					character.subRace = "Summer Court";
+					character.backgroundCost += 0;
+					character.attributes.persona.exp += 6;
+					character.skills.meleeCombat.objSubSkills.oneHanded.intExp += 2;
+					character.skills.artsPerformance.intExp += 4;
+					character.skills.charmPersuasion.intExp += 4;
+					character.skills.resistHeat.intExp += 2;
+				break;
+				
+				case "unseelie":
+					character.subRace = "Winter Court";
+					character.backgroundCost += 1;
+					character.attributes.sagacity.exp += 6;
+					character.skills.meleeCombat.objSubSkills.twoHanded.intExp += 2;
+					character.skills.detectMotive.intExp += 3;
+					character.skills.perceptionVigilance.intExp += 4;
+					character.skills.resistCold.intExp += 3;
+				break;
+				
+				case "twilight":
+					character.subRace = "Twilight Court";
+					character.backgroundCost += 3;
+					character.attributes.erudition.exp += 6;
+					character.skills.elementalism.intExp += 2;
+					character.skills.knowledge.intExp += 4;
+					character.skills.stealth.intExp += 3;
+					character.skills.resistFatigue.intExp += 3;
+				break;
+			}
+			
+		break;
+	}
+	console.log(character);
+	document.getElementById("display").innerHTML = character.characterString();
+}
+
+</script>
+			
+<section style="position:fixed; top:10%; left:5%; width:40%; height:75%;transform: translate(0, 60px);overflow:auto;">
+
+	<h2 style="position:relative;">Race  <button type="button" id = "buttRace" onclick = 'toggleSection("secRace", this)' style="position:absolute; top:50%;right:0%;transform: translate(-50%, -50%);">+</button></h2>
+	
+	<section id = "secRace" style="display:none;">
+	
+		<p>9 playable races, divided in 3 civilizations, are available to the player. The high-men, highland half-men and lowland half-men represent the human civilization. 
+			The orcs, goblins and hobgoblins form the green-skin civilization. The elves, fauns and trolls belong to the faes civilization.</p>
+		
+		<select id = "selRace" name="selRace" style="width:30%" onchange="toggleSectionList(this)">
+			<option value = ""></option>
+			<optgroup label="Human">
+				<option value="highMan">High-Man</option>
+				<option value="highlander">Highland Half-Man</option>
+				<option value="lowlander">Lowland Half-man</option>
+			</optgroup>
+			<optgroup label="Orchish">
+				<option value="orc">Orc</option>
+				<option value="goblin">Goblin</option>
+				<option value="hobgoblin">Hobgoblin</option>
+			</optgroup>
+			<optgroup label="Fae">
+				<option value="elf">Elf</option>
+				<option value="faun">Faun</option>
+				<option value="troll">Troll</option>
+			</optgroup>
+		</select>
+		
+		<br>
+		
+		<!--<button type="button" id = "buttAddRace" onclick = '' >Select this Race and Subrace</button>-->
+	
+		<section id = "highMan" style="display:none;text-align:left;">
+		
+			<h3>High-Man</h3>
+		
+			<p>High-men are defined by their adaptability. It allowed them to spread out wide and far faster than any other human or orchish race. <br>
+				Their settlement are quite diverse, going from small agglomeration of huts to huge bustling cities.  <br>
+				It is not too unlikely to find high-men living amongst other races or member from the other races living in high-men cities.<br><br>
+				<b>Size:</b> Medium<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age:</b> Minimum 16 years old<br>
+				<b>Attributes:</b> Choose between the following array:
+				<ul><li>7, 6, 6, 6, 5, 4<li>7, 7, 6, 5, 5, 4</ul>
+				
+				<script>
+					var highManArray1 = [7,6,6,6,5,4];
+					var highManArray2 = [7,7,6,5,5,4];
+					
+					function validateHighManAttributes(textAreaField)
+					{
+						var arrAttributes = [
+						(document.getElementById("taAgility").value),
+						(document.getElementById("taPower").value),
+						(document.getElementById("taConstitution").value),
+						(document.getElementById("taErudition").value),
+						(document.getElementById("taPersona").value),
+						(document.getElementById("taSagacity").value)];
+						
+						var entryValid1 = false;
+						var entryValid2 = false;
+						
+						var tempArray1 = highManArray1.slice();
+						var tempArray2 = highManArray2.slice();
+						
+						for (i = 0; i < 6; i++)
+						{
+							if (arrAttributes[i] != null && arrAttributes[i] != "")
+							{
+								entryValid1 = false;
+								for (j = 0; j < 6; j++)
+								{
+									if (arrAttributes[i] == tempArray1[j])
+									{
+										entryValid1 = true;
+										tempArray1[j] = null;
+										break;
+									}
+								}
+								if (!entryValid1)
+								{
+									break;						
+								}
+							}
+						}
+						for (i = 0; i < 6; i++)
+						{
+							if (arrAttributes[i] != null && arrAttributes[i] != "")
+							{
+								entryValid2 = false;
+								for (j = 0; j < 6; j++)
+								{
+									if (arrAttributes[i] == tempArray2[j])
+									{
+										entryValid2 = true;
+										tempArray2[j] = null;
+										break;
+									}
+								}
+								if (!entryValid2)
+								{
+									break;						
+								}
+							}
+						}
+						if (!entryValid1 && !entryValid2)
+						{
+							textAreaField.value = null;
+						}
+						
+					}
+				</script>
+				
+				<table style="width:80%; position:relative; left:5%;text-align:right;">
+				<tr><td>Agility:<textarea id="taAgility" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td>
+				<td>Power:<textarea id="taPower" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td>
+				<td>Constitution:<textarea id="taConstitution" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td></tr>
+				<tr><td>Erudition:<textarea id="taErudition" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td>
+				<td>Persona:<textarea id="taPersona" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td>
+				<td>Sagacity:<textarea id="taSagacity" maxlength="1" rows="1" cols="1" onchange="validateHighManAttributes(this)"></textarea></td></tr>
+				</table>
+				<br>
+				<b>Skills:</b> Start with experience in the following skills:
+				<ul><li>Brawling (2) <li>Detect Motive (3) <li>Linguistic (4) <li>Riding (3) <li>Perception & Vigilance (2)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Natural Talent <li>Fast Learner</ul></p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>High-men are divided in 3 cultures.</p>
+				
+				<select id = "selSubraceHighMan" name="selSubraceHighMan" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "northerner">Northerner</option>
+					<option value = "riverlander">Riverlander</option>
+					<option value = "sandman">Sandman</option>
+				</select>
+			</section>
+			
+			<section id = "northerner" style = "display:none;">
+			
+				<h4>Northerner</h4>
+			
+				<p>They come from the north. They live of farming, fishing and raiding the population from the south. <br>
+					Their society respect strength. They are a feudal society with an inherited nobility but any individuals can challenge their direct ruler to a duel to take their place.<br><br>
+					<b>Background cost:</b> 1<br>
+					<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>One Handed Swords (3)<li>Resist Cold (4)<li>Seamanship (3)<li>Confidence & Ego (2)</ul>
+					<b>Traits: </b> Heat conservation<br><br>
+					The courage of the character cannot lean towards cowardice.
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "riverlander" style = "display:none;">
+			
+				<h4>Riverlander</h4>
+				
+				<p>Riverlander live in the temperate region between the frozen north and the arid desert. 
+					They get their name from the large number of rivers coursing through their land. 
+					They don’t use the name riverlanders themselves, this is a name given to them by the other high-men, 
+					but refer to themselves by the name of the specific kingdom they come from. <br>
+					They have the most feudal society, with a very rigid system of nobility. Many kings claim dominion over part of the riverland. 
+					The borders of those kingdoms are quite fluid since wars are frequent. <br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Crossbows & Firearms (2)<li>Heraldry & Nobility (4)<li>Survival (2)<li>Riding (4)</ul>
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+			<section id = "sandman" style = "display:none;">
+			
+				<h4>Sandman</h4>
+				
+				<p>Sandmen live in the desert south of the riverland. They have a darker complexion to resist the scorching sun.<br>
+					They live mostly in cities built on oasis. Those cities are the oldest of the human cities.<br>
+					Sandmen society rely heavily on trade. They still live in a feudal systems but their nobility is not too involved in the everyday life and politics of their cities. 
+					Rich merchants can become quite powerful and often time form councils which tend to hold the real political power. <br><br><br>
+					<b>Background cost: </b>3<br>
+					<b>Attributes: </b>Receive 6 experience points in persona.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Appraise (2)<li>Charm & Persuasion (4)<li>Resist Heat (4)<li>Sorcery (2)</ul>
+					<b>Traits: </b> Heat expansion<br><br>
+					The temperance of the character can not lean towards insensitivity.
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+	
+		</section>
+		
+		<section id = "highlander" style="display:none;text-align:left;">
+		
+			<h3>Highland Half-Man</h3>
+			
+			<p>Highland half-men, often shorten to highlanders, are short and stocky humans living in the mountains.<br>
+				They carve grandiose citadels on the side of mountains. Those extraordinary construction extend deep inside mountains. <br>
+				Highlanders are outstanding craftsmen. They take great pride in the quality and ornamentation of the things they produce.<br>
+				Highlanders rely on trade to survive since they do not produce food themselves.<br>
+				Highland half-men live in a very structured society. Professional guilds control the politics of the citadels. 
+				Each guild is represented by a patriarch, usually the most experience members of the guild. 
+				Those patriarchs form a councils managing the citadels.<br><br>
+				<b>Size: </b>Medium<br>
+				<b>Speed:</b> 7m per round, 70m per minute, 40km per day (10 hours)<br>
+				<b>Age:</b> Minimum 23 years old<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 4, Power: 7, Constitution: 7, Erudition: 6, Persona: 5, Sagacity: 6</p>
+				<p style = "text-align:left"><b>Skills: </b>Start with experience in the following skills:
+				<ul><li>Crafting (4)<li>Lifting & Pushing (3)<li>Resist Fatigue (2)<li>Resist Shock (2)<li>Resist Poison (3)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Low Light Vision<li>Beast of Burden</ul>
+			</p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Highlander are divided in 3 castes.</p>
+				
+				<select id = "selSubraceHighlander" name="selSubraceHiglander" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "deepDweller">Deep Dweller</option>
+					<option value = "flatDweller">Flat Dweller</option>
+					<option value = "peakDweller">Peak Dweller</option>
+				</select>
+			</section>
+			
+			<section id = "deepDweller" style = "display:none;">
+			
+				<h4>Deep Dweller</h4>
+				
+				<p>Deep dwellers are the highlander living deep in the lower level of the citadels. They are the miners collecting the raw material for the artisans. <br>
+					They barely come to the surface and their skin is often of a light grey tone.<br>
+					They have their own sort of micro-society where the strict laws and traditions of the half-man don’t stand as firmly.<br><br>
+					<b>Background cost: </b>3<br>
+					<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Athleticism (4)<li>Brawling (4)<li>Resist Fatigue (2)<li>Stealth (2)</ul>
+					<b>Traits: </b> Deep dweller have the traits dark vision instead of low light vision.<br>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "flatDweller" style = "display:none;">
+			
+				<h4>Flat Dweller</h4>
+				
+				<p>Flat dwellers live either at the base of mountains or relatively low on a peak.<br>
+					They are the ones carving the entrance to the citadels and the ones trading with the outside world.  
+					They are the most accessible of highlanders and the ones the most likely to be seen outside of a citadel. <br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Appraise (4)<li>Geography (2)<li>Polearms (2)<li>Stonecutting (4)</ul>
+					The temperance of the character can not lean towards debauchery.
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "peakDweller" style = "display:none;">
+			
+				<h4>Peak Dweller</h4>
+				
+				<p>Peak dwellers live high in the mountain, in place hard to reach for non-highlander. <br>
+					They are the scholars and the ones designing machines and complex contraptions. <br><br>
+					<b>Background cost: </b>1<br>
+					<b>Attributes: </b>Receive 6 experience points in erudition.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Two Handed Swords (2)<li>Engineering & Physics (4)<li>Knowledge (3)<li>Resist Cold (3)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+		</section>
+		
+		<section id = "lowlander" style="display:none;text-align:left;">
+		
+			<h3>Lowland Half-Man</h3>
+		
+			<p>Lowland half-men, often shorten to lowlander, are short and nimble humans living in the hills at the base of mountains or in the edge of forest.<br>
+				They used to be the lowest cast of the half-men society, forced to live outside the safety of the citadel and provide food to its inhabitants. 
+				A long time ago, they revolted and created their own society.<br>
+				They now live in small villages without much formal organization. Each village has a mayor but it is unclear if this role hold any real power or responsibility. <br>
+				They are a very peaceful and leisurely race. They live simple live and enjoy simple pleasures.<br><br>
+				<b>Size:</b> Small<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age: </b> Minimum 18 years old.<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 7, Power: 4, Constitution: 5, Erudition: 6, Persona: 6, Sagacity: 7</p>
+				<p style="display:none;text-align:left;">
+				<b>Skills:</b> Start with experience in the following skills:
+				<ul><li>Cooking (4) <li>Luck (4)<li>Reflex (3)<li>Stealth (2)<li>Sleight of Hand (2)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Low light vision<li>Lucky</ul></p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Lowlander are divided in 2 types of community.</p>
+				
+				<select id = "selSubraceLowlander" name="selSubraceLowlander" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "hillFolk">Hill Folk</option>
+					<option value = "woodsFolk">Woods Folk</option>
+				</select>
+			</section>
+			
+			<section id = "hillFolk" style = "display:none;">
+			
+				<h4>Hill Folk</h4>
+			
+				<p>Hill folks have their farm in the foothills at the bottom of mountains. <br>
+					They live in very well maintained turf houses. They raises mostly goats and sheep and grow wheat and corn.<br>
+					They like to spend their evening gathered together, signing or telling stories.<br><br>
+					<b>Background cost:</b> 0<br>
+					<b>Attributes: </b>Receive 6 experience points in persona.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Arts & Performance (4)<li>Charm & Persuasion (2)<li>Slings (3)<li>Taming & Training (4)</ul>
+					<b>Traits: </b> Merrymaker<br><br>
+					The friendliness of the character cannot lean towards surliness.
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "woodsFolk" style = "display:none;">
+			
+				<h4>Woods Folk</h4>
+				
+				<p>Wood folks live at the edge of forest in little log cabins. 
+					They live mostly of hunting, fishing and foraging. They trade furs with the other races to compensate for their lack of farming.<br><br>
+					<b>Background cost: </b>2<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Bows (2)<li>Perception & Vigilance (3)<li>Stealth (3)<li>Survival (4)</ul>
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+	
+		</section>
+		
+		<section id = "orc" style="display:none;text-align:left;">
+		
+			<h3>Orc</h3>
+		
+			<p>Orcs are brawny humanoid with a skin colour going from a yellowish-green to dark green, almost black. 
+				They generally have tusk protruding from their mouth. <br>
+				They live in small village or agglomeration.  
+				They now live in small villages without much formal organization. Each village has a mayor but it is unclear if this role hold any real power or responsibility. <br>
+				Every family own a farm where they usually cultivate cereals and vegetables or raises boars.<br><br>
+				<b>Size:</b> Medium<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age: </b> Minimum 15 years old.<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 6, Power: 7, Constitution: 6, Erudition: 4, Persona: 7, Sagacity: 5</p>
+				<p style="display:none;text-align:left;">
+				<b>Skills:</b> Start with experience in the following skills:
+				<ul><li>Axes & Maces (3)<li>Athleticism (4)<li>Confidence & Ego (3)<li>Insult & Intimidation (3)<li>Resist Pain (2)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Fearsome<li>Strong grip</ul></p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Orchish society is divided in 3 subraces.</p>
+				
+				<select id = "selSubraceOrc" name="selSubraceOrc" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "blackSkinned">Black Skinned</option>
+					<option value = "pigRider">Pig Rider</option>
+					<option value = "tideCrasher">Tide Crasher</option>
+				</select>
+			</section>
+			
+			<section id = "blackSkinned" style = "display:none;">
+			
+				<h4>Black Skinned</h4>
+			
+				<p>Black-Skinend orcs live in the desert and jungle in the south. 
+					They get their name from their dark green, almost black, complexion. <br>
+					They like to cover their body with tattoos, despite the facts that those are barely visible against their dark skin.<br>
+					They tend to rely more on ambush tactics than others orcs and do not consider this type of approach has dishonourable.<br><br>
+					<b>Background cost:</b> 3<br>
+					<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Brawling (3)<li>Stealth (4)<li>Perception & Vigilance (1)<li>Resist Pain (2)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "pigRider" style = "display:none;">
+			
+				<h4>Pig Rider</h4>
+				
+				<p>Pig riders live in the temperate region of the continent. They are name after the giant boars they raise and mount to battle. <br>
+					They value honour highly and will often rather die than be dishonoured.  
+					This sentiment often put them at odd with the black-skinned orcs. <br>
+					They drink abundantly a strong ale that would knock down any non-orcs but do not seem affected by it.<br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in persona.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Polearms (3)<li>Resist Poison (3)<li>Riding (4)<li>Taming & training (2)</ul>
+					The honour of the character is moved 1 rank toward honourable.
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+			<section id = "tideCrasher" style = "display:none;">
+			
+				<h4>Tide Crasher</h4>
+				
+				<p>Tide crasher orcs live on coasts. 
+					They are know for their ship building, allowing them to land by surprise anywhere close to the sea or a river. 
+					It is said that the northerner learned their ship building from them.<br>
+					They value honour highly and will often rather die than be dishonoured.  
+					They farm and raise boar of regular size, not the monster their cousins developed. <br>
+					They like to wear jewellery like earrings and tuskbands and are sometime ridiculed by the other orcs for that habits.<br><br>
+					<b>Background cost: </b>1<br>
+					<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Crossbows & Firearms (3)<li>Resist Cold (3)<li>Seamanship (4)<li>Survival (2)</ul>
+					The honour of the character is moved 1 rank toward honourable.
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+	
+		</section>
+		
+		<section id = "goblin" style="display:none;text-align:left;">
+		
+			<h3>Goblin</h3>
+		
+			<p>Goblins live amongst the orcs; on every orchish farm you can expect to see at least a family of goblins living there.<br>
+				They are very good craftsman; their creation might not the prettiest but they are quite functional. <br>
+				Goblins recently discovered a black powder that burns very quickly, releasing a lot of energy. 
+				They are now experimenting with rudimentary firearms. 
+				Those weapons might be slow to reload but they can cause quite a bit of damage.<br>
+				Goblins also enjoy trading and bargaining. Despite the facts that some of them make a very good living from commerce, they don’t seems to live richly.<br><br>
+				<b>Size:</b> Small<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age: </b> Minimum 21 years old.<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 7, Power: 4, Constitution: 6, Erudition: 7, Persona: 6, Sagacity: 5</p>
+				<p style="display:none;text-align:left;">
+				<b>Skills:</b> Start with experience in the following skills:
+				<ul><li>Apprasie (4)<li>Crossbows & Firearms (2)<li>Knowledge (3)<li>Science (3)<li>Stealth (3)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Dark vision<li>Greed</ul></p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Goblins are divided in 3 subraces.</p>
+				
+				<select id = "selSubraceGoblin" name="selSubraceGoblin" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "night">Night</option>
+					<option value = "ravenous">Ravenous</option>
+					<option value = "redcap">Redcap</option>
+				</select>
+			</section>
+			
+			<section id = "night" style = "display:none;">
+			
+				<h4>Night</h4>
+			
+				<p>Night goblins live with the black-skinned orcs. They act as scout for the raids and ambushes. <br>
+					They do not tend to rely on range weapons and prefer sneaking on their target and stabbing them before being seen.<br>
+					They tend to dress in black silk and will sometime cover their face with soot to darken it.<br><br>
+					<b>Background cost:</b> 3<br>
+					<b>Attributes: </b>Receive 6 experience points in agility.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Brawling (2)<li>Sleight of hand (4)<li>Stealth (4)<li>Survival (2)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "ravenous" style = "display:none;">
+			
+				<h4>Ravenous</h4>
+				
+				<p>The ravenous goblins live with inside the continent, with the pig rider orcs.<br>
+					They travel a lot for trade, selling produce from the orcs and their contraptions.<br>
+					They are redoubtable negotiator and will always ensure that every transaction benefits them.<br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in constitution.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Charm & Persuasion (2)<li>Polearms (3)<li>Resist Poison (3)<li>Riding (4)</ul>
+					Their generosity can not lean towards lavishness.
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+			<section id = "redcap" style = "display:none;">
+			
+				<h4>Redcap</h4>
+				
+				<p>Red cap goblins live on the coast with the tide crasher orcs. <br>
+					They are the masters of war machines design.<br>
+					It is not unheard of to have redcap goblins leading a pack of orcs on a raid.<br>
+					They get their name from a red beret they often wears. 
+					This hat is a sign of someone who went raiding, the red representing the blood they drew from their enemy.<br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Axes & Maces (2)<li>Confidence & Ego (3)<li>Mechanics (3)<li>Seamanship (4)</ul>
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+			
+	
+		</section>
+		
+		<section id = "hobgoblin" style="display:none;text-align:left;">
+		
+			<h3>Hobgoblin</h3>
+		
+			<p>Hobgoblins are the offspring of a frown upon relationship between a goblin and an orc.<br>
+				They are bigger than goblins but typically not as bulky as orcs. <br>
+				Orchish society frown upon the creation those half-breed, mainly due to the fact that they are infertile. <br>
+				The life of an hobgoblin is not easy; growing up with people talking behind you back, knowing you are the fruit of frown upon relationship.<br><br>
+				<b>Size:</b> Medium<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age: </b> Minimum 18 years old.<br>
+				<b>Attributes:</b>Hobgoblins’ attributes depend on their subrace. <br>
+				<b>Skills:</b> Start with experience in the following skills:
+				<ul><li>Axes & Maces (2)<li>Athleticism (3)<li>Detect Motive (4)<li>Insult & Intimidation (4)<li>Reflex (2)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Fearless<li>Infertile<li>Low light vision</ul></p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Hobgoblins are divided based on their parentage.</p>
+				
+				<select id = "selSubraceHobgoblin" name="selSubraceHobgoblin" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "orcFathered">Fathered by an Orc</option>
+					<option value = "goblinFathered">Fathered by a Goblin</option>
+				</select>
+			</section>
+			
+			<section id = "orcFathered" style = "display:none;">
+			
+				<h4>Fathered by an Orc</h4>
+			
+				<p>An orc for father and a goblin for mother.<br><br>
+					<b>Background cost:</b> 3<br>
+					<b>Attributes:</b> <br>
+					</p><p style = "text-align:center">Agility: 7, Power: 6, Constitution: 6, Erudition: 4, Persona: 7, Sagacity: 5</p>
+					<p style="display:none;text-align:left;">
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Axes & Maces (2)<li>Confidence & Ego (3)<li>Insult & Intimidation (3)<li><input type = "radio" name = "orcFatheredSkills" value = "seamanship">Seamanship (4)</input> or <br>
+					<input type = "radio" name = "orcFatheredSkills" value = "tamingTraining">Taming & Training (4)</input></ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "goblinFathered" style = "display:none;">
+			
+				<h4>Fathered by a Goblin</h4>
+				
+				<p>A goblin for father and an orc for mother.<br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes:</b> <br>
+					</p><p style = "text-align:center">Agility: 7, Power: 4, Constitution: 6, Erudition: 6, Persona: 7, Sagacity: 5</p>
+					<p style="display:none;text-align:left;">
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Crossbows & Firearms (2)<li>Knowledge (3)<li>Science (3)<li><input type = "radio" name = "goblinFatheredSkills" value = "appraise">Appraise (4)</input> or <br>
+					<input type = "radio" name = "goblinFatheredSkills" value = "mechanics">Mechanics (4)</input></ul>
+				</p>
+					
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>			
+				
+			</section>
+	
+		</section>
+		
+		<section id = "elf" style="display:none;text-align:left;">
+		
+			<h3>Elf</h3>
+			
+			<p>The elvish race is the oldest sentient race in the world. They are the ones who taught humans and orcs the basis of botanic and farming. <br>
+				Elves have very smooth features, their skin colour goes from very pale, almost blueish-white, to olive colour.<br>
+				Elves live in multi-level villages, located in the forest, in harmony with the plant and trees. 
+				Houses are more grown than built; trees are tutored and guided to offer adequate shelter to the elves.<br>
+				Elves are the leader of the lose coalition of the faes. 
+				A lot of tension with the other races have risen in the last centuries due to the fact that those younger races expand rapidly and encroached on the wild. <br>
+				The elves are now determined to not let the younger races encroach any more on their land.<br><br>
+				<b>Size: </b>Medium<br>
+				<b>Speed:</b> 9m per round, 90m per minute, 50km per day (10 hours)<br>
+				<b>Age:</b> Minimum 35 years old<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 7, Power: 6, Constitution: 4, Erudition: 7, Persona: 5, Sagacity: 6</p>
+				<p style = "text-align:left"><b>Skills: </b>Start with experience in the following skills:
+				<ul><li>Bows (2)<li>Reflex (3)<li>Resist Hunger (4)<li>Stealth (3)<li>Perception & Vigilance (3)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Ascetic<li>Nimble feet<li>Spirit tree</ul>
+			</p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Elves are divided in 3 courts.</p>
+				
+				<select id = "selSubraceElf" name="selSubraceElf" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "seelie">Summer Court (Seelie)</option>
+					<option value = "unseelie">Winter Court (Unseelie)</option>
+					<option value = "twilight">Twilight Court (Elves of Dusk and Dawn)</option>
+				</select>
+			</section>
+			
+			<section id = "seelie" style = "display:none;">
+			
+				<h4>Summer Court (Seelie)</h4>
+				
+				<p>The Seelie elves of the summer court are the ones leading the faes in the warm summer years. 
+					They are more optimist and cheeful than the other elves. <br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in persona.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>One handed swords (2)<li>Arts & Performance (4)<li>Charm & Persuasion (4)<li>Resist Heat (2)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "unseelie" style = "display:none;">
+			
+				<h4>Winter Court (Unseelie)</h4>
+				
+				<p>The unseelie elves of the winter court are the ones leading the faes in the cold winter years.  
+					They tend to be melancholic and untrusting.<br><br>
+					<b>Background cost: </b>1<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Two handed swords (2)<li>Detect Motive (3)<li>Perception & Vigilance (4)<li>Resist Cold (3)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "twilight" style = "display:none;">
+			
+				<h4>Twilight Court (Elves of Dusk and Dawns)</h4>
+				
+				<p>The elves of dusk and dawn are the ones which refuse to take part in the politics of the faes.  
+					They are called the twilight court but are not a real hierarchical court like the summer court or the winter court.<br><br>
+					<b>Background cost: </b>3<br>
+					<b>Attributes: </b>Receive 6 experience points in erudition.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Elementalism (2)<li>Knowledge (4)<li>Stealth (3)<li>Resist Fatigue (3)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+		</section>
+	
+		<section id = "faun" style="display:none;text-align:left;">
+		
+			<h3>Faun</h3>
+			
+			<p>The fauns live in small semi-nomadic community in the woods. They live in small cabins on wheel or in yourts. <br>
+				Fauns have goat-like legs and horns and a human upper body.  
+				Their skin, eyes and fur colour varies in the combine range of humans and goats.  
+				Their ears are slightly pointed and longer than human ears.<br>
+				Unlike the other faes, fauns are not worried by the expansion of the other races.  
+				They consider those other races as part of the natural world and see their expansion as a simple change in nature.<br>
+				Fauns like to play tricks and to challenge people. They are decent craftsman but do not care about money.  
+				If they accept to trade their product they’ll usually ask for a favour or the completion of a quest.  
+				Those favour and quest will often be strange or pointless.  
+				They can be asked just for the amusement of the faun or to teach a lesson to the quester.<br><br>
+				<b>Speed:</b> 11m per round, 110m per minute, 60km per day (10 hours)<br>
+				<b>Age:</b> Minimum 16 years old<br>
+				<b>Attributes:</b> <br>
+				</p><p style = "text-align:center">Agility: 7, Power: 6, Constitution: 4, Erudition: 7, Persona: 5, Sagacity: 6</p>
+				<p style = "text-align:left"><b>Skills: </b>Start with experience in the following skills:
+				<ul><li>Bows (2)<li>Reflex (3)<li>Resist Hunger (4)<li>Stealth (3)<li>Perception & Vigilance (3)</ul>
+				<b>Traits:</b>: Start with the following traits:
+				<ul><li>Ascetic<li>Nimble feet<li>Spirit tree</ul>
+			</p>
+			
+			<section style="text-align:center;">	
+			
+				<h2 style="text-align:center;">Sub-Races</h2>
+				
+				<p>Elves are divided in 3 courts.</p>
+				
+				<select id = "selSubraceElf" name="selSubraceElf" style="width:30%" onchange="toggleSectionList(this)">
+					<option value= ""></option>
+					<option value = "seelie">Summer Court (Seelie)</option>
+					<option value = "unseelie">Winter Court (Unseelie)</option>
+					<option value = "twilight">Twilight Court (Elves of Dusk and Dawn)</option>
+				</select>
+			</section>
+			
+			<section id = "seelie" style = "display:none;">
+			
+				<h4>Summer Court (Seelie)</h4>
+				
+				<p>The Seelie elves of the summer court are the ones leading the faes in the warm summer years. 
+					They are more optimist and cheeful than the other elves. <br><br>
+					<b>Background cost: </b>0<br>
+					<b>Attributes: </b>Receive 6 experience points in persona.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>One handed swords (2)<li>Arts & Performance (4)<li>Charm & Persuasion (4)<li>Resist Heat (2)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "unseelie" style = "display:none;">
+			
+				<h4>Winter Court (Unseelie)</h4>
+				
+				<p>The unseelie elves of the winter court are the ones leading the faes in the cold winter years.  
+					They tend to be melancholic and untrusting.<br><br>
+					<b>Background cost: </b>1<br>
+					<b>Attributes: </b>Receive 6 experience points in sagacity.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Two handed swords (2)<li>Detect Motive (3)<li>Perception & Vigilance (4)<li>Resist Cold (3)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+			<section id = "twilight" style = "display:none;">
+			
+				<h4>Twilight Court (Elves of Dusk and Dawns)</h4>
+				
+				<p>The elves of dusk and dawn are the ones which refuse to take part in the politics of the faes.  
+					They are called the twilight court but are not a real hierarchical court like the summer court or the winter court.<br><br>
+					<b>Background cost: </b>3<br>
+					<b>Attributes: </b>Receive 6 experience points in erudition.<br>
+					<b>Skills: </b>Gain experience in the following skills:
+					<ul><li>Elementalism (2)<li>Knowledge (4)<li>Stealth (3)<li>Resist Fatigue (3)</ul>
+				</p>
+				
+				<br>
+				
+				<section style = "text-align:center;">
+					<button type="button" onclick = 'updateCharacter()'>Select this Race and Subrace</button>
+				</section>
+			
+			</section>
+			
+		</section>
+		
+	</section>
+			
+	<hr>
+	
+	<h2 style="position:relative;">Place of Origin  <button type="button" id = "buttOrigin" onclick = 'toggleSection("secOrigin", this)' style="position:absolute; top:50%;right:0%;transform: translate(-50%, -50%);">+</button></h2>
+	
+	<section id = "secOrigin">
+	
+	</section>
+	
+	<hr>
+
+</section>
+
+<section style="position:fixed; top:10%; left:46%; width:50%; height:75%;transform: translate(0, 60px);overflow:auto;">
+
+	<p id = "display" style = "text-align:left"></p>
+
+</section>
+
+<script>
+	updateCharacter();
+</script>
+
+</body>
+</html>

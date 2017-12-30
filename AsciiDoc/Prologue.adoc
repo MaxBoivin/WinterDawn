@@ -1,0 +1,135 @@
+= Prologue
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the introduction of the book, what is a RPG, who am I, etc.
+include::Include.adoc[]
+
+<<<
+
+[partintro]
+== Introduction
+---
+
+My name is {author}.
+I am the creator of [lexicWord]#{gameName}# and the [lexicWord]#SdA system# and I would like to begin this book by thanking you for your interest in [lexicWord]#{gameName}#.
+I hope you and your friends will get countless hours of enjoyment and excitement from this game.
+Make sure to visit our website at {webAddress} for printable character sheets, cheat sheets and other game help.
+
+=== What is a Role Playing Game?
+
+The chances are that most of you are already familiar with the concept of role-playing game (RPG) but it seems to be a tradition that every RPG book start with an explanation of what is an RPG.
+
+If you have picked up this book without any prior knowledge of what it is about, hopefully this section will enlighten you.
+If you are a veteran role player, you may safely skip this section but, reading it might give you a clue as to how I perceive role-playing.
+
+A role-playing game, as the name indicate, is a game where you play a role.
+Players create a [lexicWord]#character# with their own personality, qualities, flaws, past, [lexicWord]#skills#, etc.
+Those [lexicWord]#characters# will venture together, overcome obstacles, gather treasures, defeat villains, become villains, save the day, fail and sometimes die.
+
+Unlike most games, the players don't compete against each other and there are no winners and losers.
+Role playing games are fundamentally collaborative group games.
+There is no well define goal to reach, number of points to get or conditions for victory; the goal of the game is to create an interesting and entertaining story as a group and the only way to “win the game” is by having fun.
+
+Since there is no clear end-point in a role-playing game, the length of the game can vary greatly; some games will last for only a few hours but most games will extend on many play session of a few hours each and can end up lasting years!
+
+=== The Game Master
+
+(((Game Master, GM)))
+Another big particularity of RPGs is that one of the player hold a special role: the Game Master ([lexicWord]#GM#).
+Unlike the other players, the [lexicWord]#GM# does not play a specific [lexicWord]#character# but will give life to all the secondary [lexicWord]#characters# and antagonists the [lexicWord]#characters# of the other player will meet and face.
+Those [lexicWord]#characters# are called [lexicWord]#non-player characters# or [lexicWord]#NPCs#.
+The [lexicWord]#GM# also create and populate the world in which the adventures take place and will describe the sceneries and events of this world to the other players.
+The [lexicWord]#GM# has the responsibility to prepare some kind of adventure for the [lexicWord]#characters#, propose the players hooks to allow their [lexicWord]#character# to jump on such adventures and present encounters and challenges for the [lexicWord]#characters# to overcome.The [lexicWord]#GM# will also act in a way as a referee for the game.
+In a RPG, players can have their [lexicWord]#characters# attempt to do anything.
+It would be impossible to try to cover every situation with a clear cut rule describing how such situation is to be resolved.
+This is where the [lexicWord]#GM# as referee comes in; [lexicWord]#GMs# have the responsibility to interpret the rules and decide how the plans of the players can be translated to the available mechanics.
+The [lexicWord]#GM# also possesses a veto on basically everything in the game.
+They can decide to change or ignore a rule or to declare the plan of a player as unrealistic and not allow it.
+This power should be used with parsimony and restrained; if you want to alter or ignore a rule, make sure to discuss it with your player before encountering a situation where the rule is called upon (ideally before starting the game).
+If a player wants to attempt some crazy actions, instead of saying a strict no, the [lexicWord]#GM# can try to tweak this action with the player to try to bring it back at an appropriate level of realism for the game being played or make the action extremely unlikely to succeed.
+If the [lexicWord]#GM# decides to take this later road, once they allowed a player to attempt an action, even if they attributed to this action a difficulty level they were sure the [lexicWord]#character# would fail, if this last one succeed by good fortune, the [lexicWord]#GM# need to let the action be accomplished; it is now to late for veto.
+Being the [lexicWord]#GM# of a group is more work but it is extremely gratifying.
+You get to create a world and present it to the other players, control many [lexicWord]#characters#, and you take your friends on great adventure.
+Although it is the job of the [lexicWord]#GM# to bring opposition to the [lexicWord]#characters#, they do not oppose the players; [lexicWord]#GM# and the other players work together to create a dramatic story.
+For this story to be interesting it will need challenges to overcome and this is the main responsibility of the [lexicWord]#GM#.
+
+=== What Material Do You Need to Play RPGs?
+
+(((Dice, Polyhedral Dice, Material)))
+In order to play a role-playing game in general, you will need pencils, erasers, paper and dice.
+Some specific games require special material like playing cards, tokens, jenga(TM) blocks, etc.
+
+To play [lexicWord]#{gameName}# specifically, all you need is the basic material required by most RPGs: something to write with, something to write on and [lexicWord]#polyhedral dice#.
+
+[lexicWord]#Polyhedral dice# are dice of various shape and number of face.
+The classic set of polyhedral dice comes with 6 or 7 dice and include one die with 4 faces (d4, shaped as a pyramid), one die with 6 faces (d6, the cube used by so many games), one die with 8 faces (d8), one or two dice with 10 faces (d10, when two are included, one will usually be marked with “00”, “10”, “20”, “30”,... , up to “90”; this dice is sometime referred as a percentile dice, d% or d00), one die with 12 faces (d12) and one die with 20 faces (d20).
+[lexicWord]#{gameName}# uses all those dice (except the percentile one) and it would facilitate play to own a few full sets.
+
+Although they are not required, many groups use miniatures for a visual representation of combats and other situation where knowing the precise position of each member of the party is important.
+Of course, any kind of distinctive token can used in place of miniatures.
+Some groups will also completely forgo the use of such visual aids and rely completely on imagination and accurate description.
+There is no right or wrong answer here and this is simply a matter of preferences.
+
+One more thing you will need to play a role-playing game is at least one other person; you need to be at least two [lexicWord]#players#, one impersonating a [lexicWord]#character# and the other one taking the role of the [lexicWord]#GM#.
+
+=== Why I Play RPGs And Why You Should Give it a Try?
+
+There is no other type of games that give you more freedom than role playing games.
+In RPGs, you are truly solely limited by your and your friends imagination.
+Video games can be a great hobby but your option will always be limited by what the developer thought off (or by the bugs they left in that you can exploit).
+Board games are also a lot of fun but you have clearly defined actions you can do and strict rules framing and narrowing your possibilities.
+
+In role-playing games, you can have your [lexicWord]#character# attempt to do almost anything (doesn't mean they're going to succeed).
+Whenever you face an obstacle, the obvious solution is not always the best and the best approach can be different from [lexicWord]#character# to [lexicWord]#character#.
+RPGs really encourage the [lexicWord]#players# to think outside of the box and [lexicWord]#GM# should rewards imaginative solution (as long as they are realistic in the [lexicWord]#game world#).
+
+Role playing games are also a good way to spend some social time with live people, away from the screen (of course, nowadays you can play online through video call but at least you are looking at someone's face).
+The fact that RPGs have so little limits as to the actions you can take and the story you can create, each game is truly unique and will create long-lasting shared memories with your friends.
+
+There are other benefits from playing role-playing games that may be more specific to certain situations.
+Since playing RPGs is about getting into the skin of somebody else (your [lexicWord]#character#), it can help develop empathy and empathy is what will save the world (or the lack thereof will doom it).
+
+There is also many stories of stutterers who, while impersonating their [lexicWord]#character#, lose their stutter, and sometimes, like in my own personal case, they can learn to lose their stutter in everyday life as well.
+
+Role playing game can also be a fantastic teaching and learning tool.
+They can be used with children to have them solve problems in an engaging way, or to help them realize that their actions have consequences.
+It can also be used among adults to explore different “what if” scenarii or philosophical ideas and bring them to their logical conclusions in a ludic manner.
+
+RPGs can also help anybody playing them develop their imagination, their problem solving skills, their confidence, their creative writing, their improvisation skill, their acting, their outgoingness and many other useful qualities.
+
+=== What Qualities Do You Need to Play RPGs?
+
+The only quality you really need to a RPG is to be able to spend a few hours with your fellow [lexicWord]#players# without arguing and fighting over menial things.
+
+Being imaginative and outgoing help but don't worry if you are not; those qualities will develop over time as you play.
+
+Playing [lexicWord]#{gameName}# may require you to do some additions and subtractions but I tried to keep those to a minimum and to keep all maths very simple.
+The maths involved should be accessible to everybody able to count to a hundred and then some.
+
+So, if you are able to spend an evening with some friends without it devolving into chaos and violence, congratulations, you have what it takes to play role-playing games.
+
+=== Why Did I Create this System and Wrote this Book?
+
+There is many role-playing systems (rule set) and games out there and a lot of them are very good, so why create a new one?
+Because there are many systems out there containing wonderful ideas.
+I admit it, I shamelessly pillage a lot of ideas from my favourite RPG systems, tweaked them and mashed them together to create [lexicWord]#{gameName}#.
+I also added some of my original ideas that I came up with over my years of playing RPGs.
+
+I also had the desire to create a system more realist than many popular RPGs while keeping it simple enough to not be overcome with rules and details and to not slow the pace of the game too much.
+
+While developing the [lexicWord]#SdA system#, I tired to homogenize the rules so [lexicWord]#players# have fewer mechanics to learn and the vast majority of the time, whenever they have to roll dice, the same mechanics are going to be used; almost everything in the [lexicWord]#SdA system# is a [lexicWord]#skill check#.
+The name [lexicWord]#SdA# refers to the way most RPGs using polyhedral dice describe the number and type of dice to roll.
+5d6 means to roll 5 dice with 6 faces.
+The “S” in SdA represents the [lexicWord]#skill# level (+1) the [lexicWord]#player# is about to test and the “A” represent the [lexicWord]#attribute# governing this [lexicWord]#skill#.
+For example, a [lexicWord]#character# with an [lexicWord]#acrobatics# [lexicWord]#skill# of 2 and an [lexicWord]#agility# (the [lexicWord]#attribute# governing [lexicWord]#acrobatics#) of 6, will roll 3d6 whenever they need to test their [lexicWord]#acrobatics#.
+Combat will work in the same way, as casting magic, as resisting the effect of a spell or from the elements; all those are [lexicWord]#skills# based.
+
+The reason I went with this dice system is that it gives a good tactile feedback of the ability of your [lexicWord]#character#.
+You can feel in your hand, before you roll, the difference between a task you are good at and one you are mediocre.
+Unlike when you are always rolling a 20 sided dice and adding different number to represent your competency, you can feel the varying odd of success, in you favour when you roll 5d12, not so much if you can only roll 1d4.
+
+The other things that was important for me to include in the [lexicWord]#SdA systems# were a dynamic combat based on choice and trade-off from the player where you don’t just spend your time waiting for your [lexicWord]#initiative# number, damage and [lexicWord]#injuries# with consequences, different types of armours and weapons which matter for more than cosmetic reasons, [lexicWord]#characters# not based on classes and a progression not based on level but where [lexicWord]#skills# increase as they are used.
+Most of those mechanics exist in other systems in one way or another, I recognize that, but I wanted to bring them all together in harmony, in the same system, in a coherent and easy to learn manner.

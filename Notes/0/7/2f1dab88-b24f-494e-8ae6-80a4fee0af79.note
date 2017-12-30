@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Character Creation</title>
+  <text xml:space="preserve"><note-content version="0.1">Character Creation
+
+Each questions give 10 points
+
+Race define where your attributes start
+
+Average attributes should start at 6
+Below average 5
+Low 4
+Above average 7
+High 8
+
+Attributes increase by gaining ranks
+
+1 ExP must be spent in each skills, the remainder can be spread out.
+
+</note-content></text>
+  <last-change-date>2016-10-04T13:26:26.6520360-04:00</last-change-date>
+  <last-metadata-change-date>2016-10-30T20:15:46.7520290-04:00</last-metadata-change-date>
+  <create-date>2016-09-28T17:21:27.9803920-04:00</create-date>
+  <cursor-position>281</cursor-position>
+  <selection-bound-position>283</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>890</x>
+  <y>430</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

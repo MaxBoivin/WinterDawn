@@ -1,0 +1,33 @@
+= Composed Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of composed test.
+include::../Include.adoc[]
+
+[lexicWord]#Composed test# are tests which require two or more rolls made with different [lexicWord]#skills#.
+The [lexicWord]#MoSes# are added together to beat the [lexicWord]#difficulty level#.
+
+.Example
+[caption = ""]
+====
+Disabling a trap can be made with a [lexicWord]#composed test# of [lexicWord]#mechanics#, to understand the trap design, and [lexicWord]#sleight of hands#, to disable it without triggering it.
+====
+
+== Rolling Composed Test
+
+In some case, a test is both composed and rolling.
+
+In such a situation, the [lexicWord]#skills# involved are alternated.
+
+At least one roll of each [lexicWord]#Skill# must be made.
+
+.Example
+[caption = ""]
+====
+Picking a lock will require [lexicWord]#mechanics# to understand the lock and [lexicWord]#sleight of hand# to pick it.
+Difficult lock will have high [lexicWord]#difficulty level# and will require multiple roll.
+The [lexicWord]#player# will have to alternate between [lexicWord]#mechanics# and [lexicWord]#sleight of hand# every roll, until the lock is unlocked or until they fail the roll.
+====

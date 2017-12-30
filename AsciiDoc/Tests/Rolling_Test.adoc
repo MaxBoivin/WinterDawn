@@ -1,0 +1,39 @@
+= Rolling Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of rolling test.
+include::../Include.adoc[]
+
+[lexicWord]#Rolling test# are tests that can be made in multiple rolls.
+The [lexicWord]#MoSes# from every roll are added together to beat the [lexicWord]#difficulty level#.
+They are used for tasks which can be worked on over time.
+Each roll will represent a certain amount of time passed.
+
+Two types of [lexicWord]#rolling test# exist: [lexicWord]#first fail# and [lexicWord]#step back#.
+
+== First Fail Rolling Test
+
+A [lexicWord]#first fail rolling test# allows the [lexicWord]#player# to keep rolling and adding their [lexicWord]#MoSes# until one roll get no [lexicWord]#MoSes#.
+
+.Example
+[caption = ""]
+====
+A thief trying to pick a lock could do so as a [lexicWord]#first fail rolling test#; for every roll 6 seconds pass, if a roll obtain no [lexicWord]#MoSes# before they reach the [lexicWord]#difficulty level# they fail and have to start again.
+====
+
+== Step Back Rolling Test
+
+A [lexicWord]#step back rolling test# does not fail upon a roll with no [lexicWord]#MoSes# or on a roll with [lexicWord]#loses#.
+The [lexicWord]#loses# are simply subtracted from the [lexicWord]#MoSes# accumulated.
+If the number of accumulated [lexicWord]#MoSes# drop to 0, the test fails.
+
+.Example
+[caption = ""]
+====
+A woodworker is building a cart.
+Every day they can make a [lexicWord]#Woodworking# roll.
+If on a day they score some [lexicWord]#loses#, they not only make no progress on that day but damage something they already built.
+====

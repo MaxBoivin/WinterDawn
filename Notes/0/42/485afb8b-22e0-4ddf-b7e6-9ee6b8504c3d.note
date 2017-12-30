@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Poisonous</title>
+  <text xml:space="preserve"><note-content version="0.1">Poisonous
+
+Poisonous weapon have a strength listed as a number of dice and type of dice.
+
+If a poisoned weapon cause damage, the target become poisoned.
+
+Every turn a poisoned character takes damage from the poison.  Damage is mitigated by a resist poison test.
+
+If the damage is completely negated for 3 turns, the poison is dissipated.</note-content></text>
+  <last-change-date>2016-12-22T13:43:50.3611230-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-22T13:43:50.3631830-05:00</last-metadata-change-date>
+  <create-date>2016-12-22T13:38:55.7679050-05:00</create-date>
+  <cursor-position>337</cursor-position>
+  <selection-bound-position>337</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>206</x>
+  <y>308</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

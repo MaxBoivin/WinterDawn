@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1473557988 source:/home/maxboivin/Documents/WinterDawn/Dice Roller/WinterDawn Dice Roller/main.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+

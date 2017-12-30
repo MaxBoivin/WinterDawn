@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Falling</title>
+  <text xml:space="preserve"><note-content version="0.1">Falling
+
+Fall Damage
+For every meter fallen, roll 1 dice of bludgeoning damage.
+The size of the dice if determined by the size of the character.
+Acrobatics and bludgeoning passive defence reduce the number of dice to be rolled.
+
+Micro d4
+Mini d4
+Small d6
+Medium d8
+Large d10
+Huge + d12
+</note-content></text>
+  <last-change-date>2016-12-14T18:33:11.4891470-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-14T18:33:11.4925720-05:00</last-metadata-change-date>
+  <create-date>2016-12-14T18:31:49.0610480-05:00</create-date>
+  <cursor-position>228</cursor-position>
+  <selection-bound-position>229</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>228</x>
+  <y>288</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

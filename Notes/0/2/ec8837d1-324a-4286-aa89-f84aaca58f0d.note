@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Sub-Race</title>
+  <text xml:space="preserve"><note-content version="0.1">Sub-Race
+
+High-Men:
+	Northerners
+	Desert People
+	Riverlanders
+
+Highlander Half-Men:
+	Deep Dwellers
+	Peak Dwellers
+	Flat Dwellers
+
+Lowlander Half-Men:
+	Hills Folks
+	Woods Folks
+
+Orcs:
+	Pig-Faced Orcs
+	Ape-Faced Orcs
+	Black Orcs
+
+Goblins:
+	Night Goblins
+	Redcaps
+	Fallens
+
+Hobgoblins:
+	Orcssons
+	Goblinssons
+
+Elves:
+	Summer Court (Seelie)
+	Winter Court (Unseelie)
+	Twilight Court (Dawn &amp; Dusk)
+
+Fauns:
+	Spring Court (short)
+	Fall Court (tall)
+
+Trolls:
+	Blood Clan
+	Stone Clan
+	Shadow Clan</note-content></text>
+  <last-change-date>2016-10-04T14:24:14.2201160-04:00</last-change-date>
+  <last-metadata-change-date>2016-10-04T14:24:14.2255610-04:00</last-metadata-change-date>
+  <create-date>2016-10-04T13:26:39.9633190-04:00</create-date>
+  <cursor-position>440</cursor-position>
+  <selection-bound-position>440</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>923</x>
+  <y>29</y>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -1,0 +1,87 @@
+= Improving Skills and Attributes
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of mechanics to improve ailities and skills.
+include::Include.adoc[]
+
+[lexicWord]#Experience# is gained per [lexicWord]#skills# and per [lexicWord]#attributes# and cannot be transferred.
+
+A [lexicWord]#character# can gain [lexicWord]#experience# for their [lexicWord]#skills# in a few different ways:
+
+* While outside combat, rolling a [lexicWord]#resounding success# grant 1 [lexicWord]#experience point# in the [lexicWord]#skill# used.
+
+* While outside combat, a [lexicWord]#player# rolling a [lexicWord]#complete failure# could gain an [lexicWord]#experience point# if they succeed a [lexicWord]#Confidence & ego# test.
+Details in the [lexicWord]#complete failure# section.
+
+* At the end of a combat, the [lexicWord]#GM# should count the number of [lexicWord]#injuries boxes#, major and minor, of all the [lexicWord]#characters# opposing the party of [lexicWord]#players#.
+This sum represents the number of [lexicWord]#experience points# to be divided among the [lexicWord]#players#.
+The [lexicWord]#players# are free to distribute the [lexicWord]#experience# they receive between the [lexicWord]#skills# they used during this combat as they see fit.
+
+* Finally, the [lexicWord]#GM# is free to award [lexicWord]#experience points# to a [lexicWord]#player# when this one uses a [lexicWord]#skill# in an original manner to advance a significant plot point.
+
+A [lexicWord]#player# can raise the [lexicWord]#rank# of a [lexicWord]#skill# at any moment by spending an amount of [lexicWord]#experience points# linked to that [lexicWord]#skill# equal to the current [lexicWord]#rank# of the [lexicWord]#skill# plus 1, multiplied by 4.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#skill# at a [lexicWord]#rank# of 2 will cost 12 [lexicWord]#experience points# ((2 + 1)*4) to be raised to 3.
+====
+
+[lexicWord]#Skills# subdivided in [lexicWord]#specialities# does not directly gain [lexicWord]#experience# but [lexicWord]#experience# is attributed to the [lexicWord]#speciality# being tested.
+
+[lexicWord]#speciality ranks# are raised in the same manner as for [lexicWord]#skills# but the [lexicWord]#rank# of the [lexicWord]#parent skill# should always be added to the [lexicWord]#rank# of the [lexicWord]#speciality# for calculation of the cost.
+
+[lexicWord]#Skills# subdivided in [lexicWord]#specialites# are raised by lowering the rank of three different child [lexicWord]#specialities# by 1 to raise the [lexicWord]#parent skill# rank by 1.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# with an [lexicWord]#athleticism# rank of 1, with the [lexicWord]#specialities# [lexicWord]#climbing# 2, [lexicWord]#running# 1 and [lexicWord]#jumping# 1, can subtract 1 from those three [lexicWord]#specialities#, brining back [lexicWord]#climbing# to 1, [lexicWord]#jumping# and [lexicWord]#running# to 0 to increase [lexicWord]#athleticism# to 2.
+This will not affect the [lexicWord]#dice-pool# of any of the three [lexicWord]#specialities# which were part of the trade but will increase the [lexicWord]#dice-pool# of the other two [lexicWord]#athleticism# [lexicWord]#specialities#, [lexicWord]#lifting & pushing# and [lexicWord]#swimming#.
+====
+
+Every time a [lexicWord]#player# uses [lexicWord]#experience# to raise the level of a [lexicWord]#skill# or a [lexicWord]#speciality#, they can add 2 [lexicWord]#experience points# in the [lexicWord]#attribute# governing this [lexicWord]#skill#.
+If this [lexicWord]#skill# is governed by more than one [lexicWord]#attribute#, the [lexicWord]#experience# can be split between the governing [lexicWord]#attributes#.
+
+[lexicWord]#Attributes# can be raised by spending an amount of [lexicWord]#experience points# equal to the current level of the [lexicWord]#attribute#.
+
+Some [lexicWord]#traits# can be purchased using [lexicWord]#skill# or [lexicWord]#attribute experience#.
+Details in the [lexicWord]#character creation# section.
+
+Whenever a [lexicWord]#player# spend [lexicWord]#experience#, either to raise a [lexicWord]#skill#, raise an [lexicWord]#attribute# or purchase a [lexicWord]#trait#, they should note the amount of [lexicWord]#experience# spent in the [lexicWord]#experience spent# space of the [lexicWord]#character# sheet.
+This has no mechanical advantages and serve solely for the [lexicWord]#GM# to balance the challenges presented to the [lexicWord]#players#.
+
+Lowering [lexicWord]#specialities ranks# to increase the [lexicWord]#parent skill# does not give [lexicWord]#attribute experience# and should not be included in then [lexicWord]#experience spent#.
+
+== Mentoring
+
+A [lexicWord]#character# can help another improve a [lexicWord]#skill# by [lexicWord]#mentoring#.
+The mentor’s [lexicWord]#skill rank# must be above the [lexicWord]#skill rank# of the apprentice by at least 2.
+
+When the mentor uses the [lexicWord]#skill# to perform a task, the apprentice has a chance of [lexicWord]#gaining experience#.
+
+If the task is of a type which can be [lexicWord]#assisted#, the apprentice must assist with their own [lexicWord]#dice-pool#.
+Whenever the mentor rolls a [lexicWord]#resounding success#, both him and the apprentice can gain an [lexicWord]#experience point# in the [lexicWord]#skill#.
+If the apprentice rolls a [lexicWord]#resounding success#, the normal rule apply.
+
+If the task is one where [lexicWord]#assistance# is impossible or impractical, the apprentice must looks closely.
+If the mentor rolls a [lexicWord]#resounding success#, the [lexicWord]#experience point# is [lexicWord]#attributed# to the apprentice.
+
+== Training and sparing
+
+Two [lexicWord]#characters# can work together to improve [lexicWord]#skills# which require [lexicWord]#opposed test# (can be the same or two different [lexicWord]#skills#).
+
+The two [lexicWord]#characters# each make their roll normally but, whenever one of them rolls a [lexicWord]#resounding success# both can put an [lexicWord]#experience points# in the [lexicWord]#skill# they were training.
+
+Sparing is training for combat [lexicWord]#skills#.
+The rules are the same as for regular combat but damage does not have to be rolled.
+For the [lexicWord]#characters# to be eligible to gain any [lexicWord]#experience# the combat must last 5 [lexicWord]#rounds#.
+
+The [lexicWord]#characters# sparring do not gain [lexicWord]#experience# based on the [lexicWord]#injuries boxes# of their opponent but on the number of round they sparred.
+
+For every 5 [lexicWord]#rounds#, each [lexicWord]#character# gain 1 [lexicWord]#experience point#.
+
+Sparing is not limited to two [lexicWord]#characters#.

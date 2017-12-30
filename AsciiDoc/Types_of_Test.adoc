@@ -1,0 +1,34 @@
+= Types of Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of the different type of tests.
+include::Include.adoc[]
+
+Not all situation call for the same type of test; in some situations a [lexicWord]#character# can take their time to overcome a static obstacle while in other circumstances time is of the essence.
+Sometimes an additional [lexicWord]#character# will work against them or assist them.
+Some tasks are complex and will involve multiple [lexicWord]#skills# and some others don’t have a precise objective and a [lexicWord]#character# will simply try to do as good as they can.
+
+The different types of tests for those different situations are described below.
+
+:levleoffset: +1
+
+include::Tests/Static_Test.adoc[]
+
+include::Tests/Opposed_Test.adoc[]
+
+include::Tests/Open-ended_Test.adoc[]
+
+include::Tests/Rolling_Test.adoc[]
+
+include::Tests/Assisted_Test.adoc[]
+
+include::Tests/Group_Test.adoc[]
+
+include::Tests/Composed_Test.adoc[]
+
+include::Tests/Mixed_Test.adoc[]
+
+:leveloffset: -1

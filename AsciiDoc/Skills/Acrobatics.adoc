@@ -1,0 +1,22 @@
+= Acrobatics
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the Acrobatics skill individual file.
+include::../Include.adoc[]
+
+.*_Attributes: Agility_*
+
+[lexicWord]#Acrobatics# represents the capacity of a [lexicWord]#character# to tumble, roll and balance themself.
+
+[lexicWord]#Acrobatics# can be used to mitigate damage from falls, to walk on narrow ledges or pathways or to move while avoiding range attacks.
+
+Every [lexicWord]#MoS# rolled on an acrobatics test can negate one die from a damage roll [lexicWord]#dice-pool# from falling (falling damage are explained in the adventuring chapter).
+
+While performing a [lexicWord]#dodge roll manoeuvre#, every [lexicWord]#MoS# allow the [lexicWord]#character# to move 1 metre.
+For every metre moved in this way, one [lexicWord]#MoS# is subtracted from every range attack targeting the [lexicWord]#character#.
+
+Narrow ledge and pathway may reduced [lexicWord]#movement speed# dramatically (details in the adventuring chapter).
+Every [lexicWord]#MoS# on an [lexicWord]#acrobatics# roll can add 1 meters per [lexicWord]#rounds# to the [lexicWord]#movement speed#, up to the regular [lexicWord]#movement speed# of the [lexicWord]#character#.

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Weather</title>
+  <text xml:space="preserve"><note-content version="0.1">Weather
+
+Extreme Weather
+On a resist cold and resist heat test, for every missing MoS 1 spirit point is lost and for every 2 MoSes missing 1 minor injury is received.
+
+
+Cold	&lt; 10º Celsius	Difficulty = 1 per 2 hours
+Hot		&gt; 30º Celsius	Difficulty = 1 per 2 hours
+
+Freezing		&lt;  0º Celsius		Difficulty = 1 per 1 hours
+Scorching	&gt; 40º Celsius	Difficulty = 1 per 1 hours
+
+Frigid		&lt; -15º Celsius	Difficulty = 1 per ½ hours
+Blistering	&gt; 50º Celsius	Difficulty = 1 per ½ hours
+
+</note-content></text>
+  <last-change-date>2016-12-15T17:46:15.8962920-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-15T17:46:15.8984850-05:00</last-metadata-change-date>
+  <create-date>2016-12-15T17:38:20.3573280-05:00</create-date>
+  <cursor-position>440</cursor-position>
+  <selection-bound-position>467</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>76</x>
+  <y>238</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

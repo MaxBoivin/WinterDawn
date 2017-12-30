@@ -1,0 +1,24 @@
+= Assisted Test
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the description of assisted test.
+include::../Include.adoc[]
+
+In some circumstances two or more [lexicWord]#characters# can work together on a task.
+When doing so, each [lexicWord]#character# can make a roll and the [lexicWord]#MoSes# are added together to beat a [lexicWord]#difficulty level#.
+
+The [lexicWord]#GM# can put a limit on the number of [lexicWord]#characters# who can effectively work on a task.
+
+.Example
+[caption = ""]
+====
+Two [lexicWord]#characters# try to move a large log; they can work together and add their [lexicWord]#MoSes# to beat the [lexicWord]#difficulty level#.
+====
+
+== Assisted Test, Halved
+
+[lexicWord]#Halved assisted test# are used for tasks where an assistant help but does not double the efficiency of the work being done.
+In those cases, the main performer of the task count their [lexicWord]#MoSes# normally while the assistants will only add half their [lexicWord]#MoSes# to the total.

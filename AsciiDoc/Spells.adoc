@@ -1,0 +1,23 @@
+= Spells
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of the different spells available to the caster.
+include::Include.adoc[]
+
+<<<
+
+[partintro]
+== Introduction
+
+This is place holder text.
+
+== Spell Description
+
+:leveloffset: +2
+
+include::Spells/Fireball.adoc[]
+
+:leveloffset: -2

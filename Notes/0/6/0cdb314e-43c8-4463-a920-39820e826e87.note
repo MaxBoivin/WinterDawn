@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Book Organisation</title>
+  <text xml:space="preserve"><note-content version="0.1">Book Organisation
+
+Book 0: Prologue
+
+Book 1: The SdA System: Engine of the Game
+	Basic rules
+	Skills
+	Combat
+	Health and Spirit
+	Magic
+
+Book 2: <link:internal>Character Creation</link:internal>
+	Creating a character
+	Race
+	Where was the character raised
+	Raised By
+	Relationship with custodian
+	Extended family member of note
+	Childhood &amp; Teenage years
+	Why go adventuring
+	Main motivation
+	occupations
+	Traits
+
+Book 3: Spell
+	Mysticism spell list
+	Sorcery spell list
+	Elementalism spell list
+	Wizardry spell list
+	Witchcraft spell list
+	Shamanism spell list
+	Spell description
+
+Book 4: Adventuring
+	Travelling
+	Dangers and Opportunity
+	Equipment
+
+Book 5: Bestiary
+	A book of monsters &amp; villains
+	Animals
+	Animated Objects
+	Arcane
+	Atrocities
+	Demons
+	Devils
+	Divine
+	Faes
+	Fantastical beasts
+	Giants
+	Great Worms
+	Humans
+	Orcs
+	Planar
+	Shapeshifters
+	Undeads
+	Vegetal
+
+Book 6: Setting
+
+Book 7: Appendices</note-content></text>
+  <last-change-date>2016-10-07T10:00:45.5696750-04:00</last-change-date>
+  <last-metadata-change-date>2016-10-07T10:00:45.5924400-04:00</last-metadata-change-date>
+  <create-date>2016-09-24T23:42:03.4142500-04:00</create-date>
+  <cursor-position>370</cursor-position>
+  <selection-bound-position>371</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>890</x>
+  <y>273</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>True</open-on-startup>
+</note>

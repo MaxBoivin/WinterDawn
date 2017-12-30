@@ -1,0 +1,558 @@
+= Combat
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the Acrobatics skill individual file.
+include::Include.adoc[]
+
+A good story requires drama.
+Drama is conflict and conflicts can often turn to combats.
+
+Different [lexicWord]#characters# can adopt different approach to combat but the end goal is usually the same: survival.
+
+'''
+
+== Initiative
+
+At the start of a combat, [lexicWord]#initiative# should be rolled for every [lexicWord]#character#.
+An [lexicWord]#initiative# roll is an [lexicWord]#open-ended composed test#  of [lexicWord]#reflex# and [lexicWord]#perception & vigilance#.
+
+[lexicWord]#Characters# act in order of their [lexicWord]#initiative#, from the highest to the lowest.
+
+The [lexicWord]#initiative number# of a [lexicWord]#character# can change during a combat.
+
+The prevalent causes of [lexicWord]#initiative# change are detailed further in this chapter.
+
+'''
+
+== Rounds
+
+Combats are organized in [lexicWord]#rounds#.
+A [lexicWord]#round# is about 6 seconds (there are 10 rounds in a minute).
+This is more of an average than a fix measure.
+
+Every [lexicWord]#round#, the [lexicWord]#GM# should called [lexicWord]#initiative number# from the highest [lexicWord]#initiative# counting down until every [lexicWord]#character# had their turn.
+
+Each [lexicWord]#character# can perform one or two [lexicWord]#actions# and one [lexicWord]#movement# on their [lexicWord]#initiative number#.
+
+[lexicWord]#Characters# with an [lexicWord]#initiative# greater than 0 can decide to delay their turn to the negative of their [lexicWord]#initiative number#.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# with an [lexicWord]#initiative# of 3 could decide to wait to act at -3.
+====
+
+If a [lexicWord]#character# delay their turn, their [lexicWord]#initiative# return to normal on the following [lexicWord]#round#.
+
+If two or more have the same [lexicWord]#initiative# score, the [lexicWord]#character# with the most [lexicWord]#spirit# acts first.
+
+=== Surprise
+
+If some [lexicWord]#characters# are surprised at the start of a combat, they roll [lexicWord]#initiative# normally but can only act on the first [lexicWord]#round# at the negative of their roll, if this one is greater than 0.
+If they roll 0 or less, they can only act from the second [lexicWord]#round#.
+
+The number of dice used to roll [lexicWord]#initiative# are also deduced from any other [lexicWord]#dice-pool# the surprised [lexicWord]#characters# are going to use during the first [lexicWord]#round#.
+
+'''
+
+== Actions
+
+Every [lexicWord]#round#, each [lexicWord]#character# can move up to their [lexicWord]#movement speed# and do one or two of the following actions:
+
+* Melee Attack
+* Range Attack
+* Casting a [lexicWord]#Spell#
+* [lexicWord]#Athleticism# or [lexicWord]#Acrobatics# action
+* Stop bleeding through [lexicWord]#Medicine# or [lexicWord]#First Aid#
+* [lexicWord]#Intimidation#
+* Inspire their ally
+* [lexicWord]#Reassess the situation#
+* Use or interact with an object
+* Any other action that can realistically be performed inside of roughly 6 seconds, at the [lexicWord]#GM# discretion.
+
+Those actions will be described in more details further in this chapter.
+
+'''
+
+== Performing Two Actions
+
+[lexicWord]#Character# with an [lexicWord]#initiative# greater than 0 can perform two actions in a [lexicWord]#round#.
+The first action must be performed at their normal [lexicWord]#initiative number# while the second action will be performed at the negative of their [lexicWord]#initiative#.
+
+Some situations can also allow a [lexicWord]#character# to perform a second action, regardless of their [lexicWord]#initiative#, as a [lexicWord]#reaction#.
+[lexicWord]#Reactions# are described further in this chapter.
+
+If a [lexicWord]#character# decide to perform two actions instead of one, they must split their [lexicWord]#dice-pool# between the two actions.
+
+'''
+
+== Dice Pool Splitting
+
+If a [lexicWord]#player# wants their [lexicWord]#character# to perform two actions in a [lexicWord]#round#, they must split their [lexicWord]#dice-pool# between the two actions.
+
+The total number of dice used for both actions cannot be greater than the number of dice granted by the actions allowing the actions giving the biggest [lexicWord]#dice-pool#.
+Only the number of dice and not the type of dice is of concern in [lexicWord]#dice-pool# splitting.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#player# wants to [lexicWord]#intimidate# a target before attacking it.
+The [lexicWord]#character’s# [lexicWord]#insult & intimidation skill# grant them a [lexicWord]#dice-pool# of 3d6 while their [lexicWord]#melee attack skill# allow them a [lexicWord]#dice-pool# of 5d8.
+The [lexicWord]#player# decide to use 2d6 for the [lexicWord]#intimidation# roll, which they will do at their [lexicWord]#initiative number#.
+That would leave them 3d8 for their attack, which will be done at the negative of their [lexicWord]#initiative number#.
+====
+
+'''
+
+== Free Actions
+
+[lexicWord]#Free actions# are actions which do not count as part of the two actions allowed in a [lexicWord]#round#.
+They are either very swift actions or actions which can be performed simultaneously to other actions or [lexicWord]#movement#.
+
+Talking, drawing a weapon (but not sheathing) or dropping a held object are example of [lexicWord]#free actions#.
+
+[lexicWord]#Free actions# do not require a test; If a task require a test, it is not a [lexicWord]#free action#.
+
+'''
+
+== Reactions
+
+[lexicWord]#Reactions# are actions which can be performed out of the [lexicWord]#initiative# order, when some conditions are met.
+
+[lexicWord]#Reactions# do not count as part of the two allowed actions but any dice used in a [lexicWord]#reaction# must be subtracted from the [lexicWord]#dice-pools# of any other action performed as per the [lexicWord]#dice-pool# splitting rule.
+
+[lexicWord]#Reactions# are very common in a [lexicWord]#round#.
+The most common type of [lexicWord]#reactions# are:
+
+* Defending against a melee attacked
+
+* Avoiding a range attack
+
+* Resisting [lexicWord]#intimidation# or a [lexicWord]#spell#
+
+* [lexicWord]#Attack of opportunity#
+
+More details further in this chapter.
+
+'''
+
+== Movement
+
+A [lexicWord]#character# can move up to their [lexicWord]#movement speed# in a [lexicWord]#round#.
+This [lexicWord]#movement# can be split, evenly or not, part of it being performed at the [lexicWord]#initiative number#, the rest happening at the negative of the [lexicWord]#initiative#.
+
+The [lexicWord]#movement# can be made before or after an action or on its own.
+
+Most humanoid [lexicWord]#characters# have a [lexicWord]#movement speed# of 9 meters per [lexicWord]#rounds#.
+
+The type of terrain can affect the distance a [lexicWord]#character# can move in a [lexicWord]#round#.
+Details further in this chapter.
+
+'''
+
+== Range of Attack
+
+The [lexicWord]#range of attack# represent the distance at which a weapon can effectively attack.
+Every weapon has at least one [lexicWord]#range of attack# but some are effective at a variety of [lexicWord]#range of attack#.
+
+[lexicWord]#Range of attacks# are divided into four types: [lexicWord]#close#, [lexicWord]#medium#, [lexicWord]#long# and [lexicWord]#far#.
+
+=== Close, Medium and Long Range
+
+Those ranges are used for melee combat.
+
+[lexicWord]#Close range# is for unarmed combat or very short weapons like knives and daggers.
+In [lexicWord]#close range# the opponent face each other with no more than a metre between them.
+
+In [lexicWord]#medium range# the opponent are facing each other with 1 and 2 metres between them.
+Most swords, mace and one handed axes are most effective in medium range.
+
+When two opponents are facing each other with 2 or 3 metres between them they are considered at [lexicWord]#long range#.
+Spears, halberds and great swords are at their best at [lexicWord]#long range#.
+
+If a weapon is noted with a [lexicWord]#range of attack# followed by a negative number, the weapon can still be used at this range (and cause damage) but [lexicWord]#MoSes# are subtracted from any attack roll made at this range.
+
+More details about melee combat further in this chapter.
+
+=== Far Range
+
+[lexicWord]#Far range# is for thrown or projectile weapons.
+
+Every weapon effective at far range will be noted with a number next to the far range mention.
+This number represents the range increment in metres.
+
+More details about the far range and range increment further in this chapter.
+
+'''
+
+== Melee Attack
+
+If a [lexicWord]#character# has an opponent inside the [lexicWord]#range of attack# of a wielded melee weapon, they can attack this opponent on their [lexicWord]#initiative# turn.
+
+Every melee weapon has one or more melee combat [lexicWord]#specialities# associated with it; the [lexicWord]#player# choose one of those [lexicWord]#specialities# to perform the attack.
+If an [lexicWord]#attribute# is noted next to a [lexicWord]#speciality#, this [lexicWord]#attribute# must be used to build the [lexicWord]#dice-pool#, otherwise, the [lexicWord]#player# can choose between using [lexicWord]#power# or [lexicWord]#agility#.
+
+=== Defending Against Melee Attack
+
+If the [lexicWord]#character# targeted by the attack has not used their whole [lexicWord]#dice-pool# on this [lexicWord]#round#, as a [lexicWord]#reaction#, they can make a melee combat roll of their own to defend against the attack.
+
+If the attacker is outside the [lexicWord]#range of attack# of the defender, the defender will suffer malus to their roll.
+1 [lexicWord]#MoSes# is subtracted per difference in the [lexicWord]#range of attack#.
+
+.Example
+[caption = ""]
+====
+A defender with a [lexicWord]#close range# weapon defending against a [lexicWord]#long range# weapon will suffer -2 [lexicWord]#MoSes# from the melee combat roll while a defender wielding a [lexicWord]#medium range# weapon fighting at [lexicWord]#close range# will receive -1 [lexicWord]#MoS# on their roll.
+====
+
+=== Attacker & Defender
+
+Whenever two [lexicWord]#characters# are facing each other, one is considered the attacker while the other is considered the defender.
+
+The attacker has to announce the number of dice they intend to use for the attack before they roll.
+The defender can use this information to select the number of dice they are going to use for their defence.
+The defender cannot change the number of dice used for their defence after the attacker made their roll.
+
+The [lexicWord]#character# acting on their [lexicWord]#initiative# turn to attack will be considered the attacker while the [lexicWord]#character# acting out of turn as a [lexicWord]#reaction# is considered the defender.
+
+In the case where the two [lexicWord]#characters# have the same [lexicWord]#initiative# number, they are both considered attackers.
+In this situation, the [lexicWord]#character# with the most [lexicWord]#spirit# announce the number of dice they are going to use first.
+
+If a [lexicWord]#character# uses a reaction to perform an [lexicWord]#attack of opportunity#, they are considered the attacker while the target is considered the defender.
+
+=== Flanking and Rearing
+
+If a [lexicWord]#character# is attacked by from the side or the back, they can still defend against the attack but will receive malus to their roll.
+
+If attacked from the flanks, they receive -1 [lexicWord]#MoS# on their roll.
+
+If attacked from the rear, they receive -2 [lexicWord]#MoSes# on their roll.
+
+If they win the engagement or on their turn, a [lexicWord]#character# can pivot to face their opponent without spending any [lexicWord]#movement# or causing [lexicWord]#attack of opportunity#.
+
+=== Resolving a Melee Attack
+
+The [lexicWord]#MoSes# obtained on the melee combat roll of the [lexicWord]#characters# facing each other are compared.
+The difference between the result of the two rolls is the number of [lexicWord]#hits# scored by the [lexicWord]#character# with the most [lexicWord]#MoSes#.
+
+The [lexicWord]#character# the [lexicWord]#hits# have been scored against lose 1 [lexicWord]#spirit points# per [lexicWord]#hits#.
+
+The [lexicWord]#hits# scored can also be used for control, damage or for a mix of both.
+
+Damage can only be dealt if the [lexicWord]#character# the [lexicWord]#hits# are scored against is inside the [lexicWord]#range of attack# of the weapon used by the [lexicWord]#character# scoring the [lexicWord]#hits#.
+
+=== Control
+
+Control are effects to change the situation of the combat in the favour of the [lexicWord]#character# performing them.
+
+A [lexicWord]#character# can spend [lexicWord]#hits# to apply one or more of the following effect:
+
+* 1 [lexicWord]#hits#: The [lexicWord]#character# can move 1 metre inside the [lexicWord]#range of attack# of their opponent without causing an [lexicWord]#attack of opportunity#.
+This only protect against the [lexicWord]#attack of opportunity# from the [lexicWord]#character# the [lexicWord]#hits# has been scored against.
+This can allow a [lexicWord]#character# to move in the middle of the attack resolution.
+
+* 2 [lexicWord]#hits#: The [lexicWord]#initiative# of the [lexicWord]#character# the [lexicWord]#hits# have been scored against is lowered by 1.
+
+* 2 [lexicWord]#hits#: The [lexicWord]#character# the [lexicWord]#hits# have been scored against is moved by 1 metre in a direction decided by the [lexicWord]#player# which scored the [lexicWord]#hits#.
+A [lexicWord]#character# moved in this way can trigger [lexicWord]#attack of opportunity#.
+To push a [lexicWord]#character# of a ledge or in a hole in this way, 1 additional [lexicWord]#hit# must be expended.
+
+* 4 [lexicWord]#hits#: The [lexicWord]#character# the [lexicWord]#hits# have been scored against is [lexicWord]#disarmed#.
+The weapon falls at the feet of their feet.
+The [lexicWord]#character# who scored the [lexicWord]#hits# can spend additional [lexicWord]#hits# to send the weapon flying in a random direction.
+The weapon will land 1 metre away per additional [lexicWord]#hits# spent.
+
+Multiple effects (or the same effect multiple time) can be applied on the same attack.
+
+'''
+
+== Range Attack
+
+If a [lexicWord]#character# has a line of sight on an opponent and is equipped with a range weapon, they can try to hit them from a distance.
+
+Every range weapon has one or more range combat [lexicWord]#specialities# associated with it; the [lexicWord]#player# choose one of those [lexicWord]#specialities# to perform the attack.
+
+If an [lexicWord]#attribute# is noted next to a [lexicWord]#speciality#, this [lexicWord]#attribute# must be used to build the [lexicWord]#dice-pool#, otherwise, the [lexicWord]#player# can choose between using [lexicWord]#power# or [lexicWord]#agility#.
+
+Doing a range attack in the [lexicWord]#range of attack# of an opponent will grant this one an [lexicWord]#attack of opportunity#.
+
+=== Dodging a Range Attack
+
+If a [lexicWord]#character# is target by a range attack and is conscious of it, they can try to avoid the projectile by doing a [lexicWord]#reflex# roll.
+The number of [lexicWord]#MoSes# obtained on that roll will be subtracted from the range combat roll of the attacker.
+
+Dodging cause [lexicWord]#attack of opportunity#.
+
+=== Size Modifier
+The [lexicWord]#size# of a [lexicWord]#character# impact how hard they are to hit at range.
+
+* Range attacks targeting [lexicWord]#mini characters# receive -1 [lexicWord]#MoS#.
+
+* Range attacks targeting [lexicWord]#micro characters# receive -2 [lexicWord]#MoSes#.
+
+* Range attacks targeting [lexicWord]#large characters# receive +1 [lexicWord]#MoS#.
+
+* Range attacks targeting [lexicWord]#huge characters# or bigger receive +2 [lexicWord]#MoSes#.
+
+=== Range Increment
+
+The [lexicWord]#range increment# of a [lexicWord]#far range# weapon represent the maximum distance at which an attack can be made without suffering any malus.
+
+Every time the range increment is passed 1 [lexicWord]#MoS# is subtracted from the attack roll.
+
+.Example
+[caption = ""]
+====
+A weapon with a [lexicWord]#range increment# of 5 metres can be used up to this distance without any malus.
+If this weapon is used between 5 and 10 metres, 1 [lexicWord]#MoS# is subtracted from the attack roll.
+If it is used between 10 and 15 metres, 2 [lexicWord]#MoSes# are subtracted from the attack roll.
+If it is used between 15 and 20 metres, 3 [lexicWord]#MoSes# are subtracted and so forth.
+====
+
+=== Resolving Range Attack
+
+The attacker rolls their attack roll with the appropriate range combat [lexicWord]#speciality#.
+From the [lexicWord]#MoSes# obtained are subtracted all the malus which apply: the [lexicWord]#MoSes# from the [lexicWord]#reflex# roll of the target, the penalty inflicted by a [lexicWord]#dodge# roll, the [lexicWord]#size# modifier and the [lexicWord]#range increment# penalty.
+
+The remaining [lexicWord]#MoSes# are the [lexicWord]#hits# of the attack.
+For every [lexicWord]#hit# one die of damage can be rolled.
+There is no control effects in range attack and the defender can’t affect the attacker.
+
+'''
+
+== Damage
+
+If the [lexicWord]#character# scoring the [lexicWord]#hits# is the attacker, they can roll 1 damage die per [lexicWord]#hits# used.
+If they are the defender, 1 damage die is rolled for every 2 [lexicWord]#hits# used.
+
+The type of dice to be used for damage can not have more face than the damage indicated by the weapon.
+If the weapon’s damage is noted as an [lexicWord]#attribute# plus a number (usually [lexicWord]#power#), the total is the maximum size of dice to be used.
+
+Before rolling the damage, the type of damage must be announced.
+Most weapons can deal one or more of the three following type of damage: [lexicWord]#piercing#, [lexicWord]#cutting# and [lexicWord]#bludgeoning#.
+
+If a type of damage is followed by a negative number, the weapon can still cause this type of damage but [lexicWord]#MoSes# are subtracted from the damage roll.
+
+The [lexicWord]#MoSes# rolled on the damage roll are compared to the corresponding passive defence of the armour of the target.
+The difference is the [lexicWord]#hits# of the damage roll.
+
+For every [lexicWord]#hits# on the damage roll the [lexicWord]#character# receiving the damage must thick one [lexicWord]#injury box#.
+All the [lexicWord]#injuries boxes# ticked must be on the same line.
+The [lexicWord]#character# receiving the injury can decide if the [lexicWord]#injury boxes# are ticked on a new line (if one is available) or if they are added to a line with previously ticked [lexicWord]#injury boxes#.
+
+If the amount of [lexicWord]#injury boxes# is greater than what is available on a line, the [lexicWord]#character# becomes [lexicWord]#incapacitated#.
+
+If a damage roll cause a [lexicWord]#major injury# or worst, extra effects are added to the injury depending on the type of attack.
+
+=== Damage Effect
+
+If a [lexicWord]#major injury# box is ticked, an additional effect is applied depending on the type of damage.
+
+[lexicWord]#Cutting# and [lexicWord]#piercing# attacks cause [lexicWord]#bleeding wounds# while [lexicWord]#bludgeoning# attack can stunned the target.
+
+==== Bleeding
+
+[lexicWord]#Piercing# major injuries cause a level 1 [lexicWord]#bleeding wounds# while [lexicWord]#cutting# major injuries cause a level 2 [lexicWord]#bleeding wounds#.
+
+For every [lexicWord]#bleeding wounds# a [lexicWord]#character# suffer they can either subtract one die from every [lexicWord]#power# and [lexicWord]#agility# [lexicWord]#dice-pool# or one [lexicWord]#bleeding wounds# get one level more severe.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# received 1 [lexicWord]#piercing# [lexicWord]#major injury# and 1 [lexicWord]#cutting# [lexicWord]#major injury#.
+Both are [lexicWord]#bleeding#, the first one is a level 1 wound while the second one is a level 2 wound.
+The [lexicWord]#character’s# melee combat [lexicWord]#dice-pool# is of 5d8.
+If the [lexicWord]#player# rolls the whole 5 dice, the [lexicWord]#bleeding wound# from the [lexicWord]#piercing# injury will advance to level 2 while the [lexicWord]#bleeding wound# from the [lexicWord]#cutting# injury will advance to 3.
+The [lexicWord]#player# decide to roll 4 dice.
+Their [lexicWord]#bleeding wounds# from the [lexicWord]#piercing# injury will advance to 2 but the [lexicWord]#bleeding wound# from the [lexicWord]#cutting# injury will remain at 2.
+====
+
+If a level 3 [lexicWord]#bleeding wound# is aggravated, the [lexicWord]#character# becomes [lexicWord]#incapacitated# and start [lexicWord]#bleeding to death#.
+
+==== Stunned
+
+[lexicWord]#Bludgeoning# [lexicWord]#major injury# cause the [lexicWord]#character# receiving it to become [lexicWord]#stunned#.
+The [lexicWord]#player# must make a [lexicWord]#resist shock# test.
+This test does not count as part of the [lexicWord]#dice-pool# for the [lexicWord]#round# but has its own [lexicWord]#dice-pool#.
+
+The number of [lexicWord]#MoSes# obtained is the limit of dice which can be used on the next [lexicWord]#round#.
+This limit is raised by 1 on every subsequent [lexicWord]#rounds# until the end of the combat or until every [lexicWord]#dice-pool# is back to normal.
+
+==== Incapacitated
+
+If a [lexicWord]#character# becomes [lexicWord]#incapacitated# they fall [lexicWord]#prone#, their [lexicWord]#movement speed# is reduced to 0 and all their [lexicWord]#dice-pool# are reduced to 0 dice.
+The [lexicWord]#character# is still aware of its surrounding but cannot perform any action.
+They can only talk very low.
+
+If a [lexicWord]#character# becomes [lexicWord]#incapacitated# while suffering one or more [lexicWord]#bleeding wound# start [lexicWord]#bleeding to death#.
+
+If a [lexicWord]#character# becomes [lexicWord]#incapacitated# through a [lexicWord]#bludgeoning# attack, they become [lexicWord]#unconscious#.
+
+==== Bleeding to Death
+
+When a [lexicWord]#character# starts [lexicWord]#bleeding to death#, the [lexicWord]#player# must make a [lexicWord]#natural healing# test.
+The [lexicWord]#character# will die after a number of minutes equal to the [lexicWord]#MoSes# obtained on the [lexicWord]#natural healing# test + 1.
+
+==== Unconscious
+
+If a [lexicWord]#character# is made [lexicWord]#incapacitated# by a [lexicWord]#bludgeoning# weapon, they become [lexicWord]#unconscious#.
+
+While [lexicWord]#unconscious#, the [lexicWord]#character# is totally oblivious to its surrounding.
+The only action the [lexicWord]#character# can do is a [lexicWord]#resist shock# [lexicWord]#rolling (step back) test#.
+The [lexicWord]#character# regain consciousness when 10 [lexicWord]#MoSes# are accumulated or at the end of the scene.
+
+==== Dead
+
+If a [lexicWord]#character# receive any damage while [lexicWord]#incapacitated#, they die.
+
+An ally can try to reanimate a dead character with a [lexicWord]#first-aid# [lexicWord]#static test# or a [lexicWord]#medicine# [lexicWord]#rolling (first fail) test#.
+The [lexicWord]#difficulty level# for both those test is equal to the number of minutes passed since the [lexicWord]#character# died plus 1.
+Each roll takes one minute.
+
+==== Shield defence
+
+[lexicWord]#Characters# wielding shield can, once per [lexicWord]#round#, used it to protect themselves against damage.
+
+Shield have the special attribute [lexicWord]#shield defence#, a number representing the protection offered.
+
+The [lexicWord]#player# willing to cause damage to the [lexicWord]#character# using their shield must spend an amount of their attack hits equal to the [lexicWord]#shield defence# before they can spend [lexicWord]#hits# to roll damage.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# is attacking an opponent wielding a shield with a [lexicWord]#shield defence# of 1.
+The attacker scores 3 [lexicWord]#hits# on their attack roll and wants to roll damage.
+The defender decide to use their shield so the attacker must spend one [lexicWord]#hit# to overcome the [lexicWord]#shield defence# and can then roll 2 damage dice.
+====
+
+==== Damage to Armour
+
+When a [lexicWord]#character# is receiving damage, instead of ticking [lexicWord]#injury boxes# they can permanently reduce the protection of every type offered by one piece of armour by 1 per [lexicWord]#injury boxes#.
+
+If the protection of a piece armour of armour is dropped to 0 for all types, the piece is ruined and fall apart.
+
+Damage can not be reduce in this way by natural armour.
+
+'''
+
+=== Attack of Opportunity
+
+An [lexicWord]#attack of opportunity# is a melee attack done as a [lexicWord]#reaction# to certain conditions.
+
+The most common cause of [lexicWord]#attack of opportunity# are:
+* A [lexicWord]#character# moving inside the [lexicWord]#range of attack# of an opponent.
+
+* A [lexicWord]#character# doing a range attack inside the [lexicWord]#range of attack# of an opponent.
+
+* A [lexicWord]#character# casting a [lexicWord]#spell# inside the [lexicWord]#range of attack# of an opponent.
+
+* A [lexicWord]#character# fixing a wound inside the [lexicWord]#range of attack# of an opponent.
+
+* A [lexicWord]#character# reloading a weapon inside the [lexicWord]#range of attack# of an opponent.
+
+* A [lexicWord]#character# doing a [lexicWord]#reflex# roll to avoid a range attack.
+
+* Any other action made inside the [lexicWord]#range of attack# of an opponent that require to take the attention away from this opponent.
+
+A [lexicWord]#character# can only do one [lexicWord]#attack of opportunity# per [lexicWord]#round#.
+
+A [lexicWord]#character# is only entitled to an [lexicWord]#attack of opportunity# if the triggering condition happens in his [lexicWord]#line of sight# (in front of him or on his flanks).
+[lexicWord]#Attacks of opportunity# done on a target on one of the flank receive -1 [lexicWord]#MoS#.
+
+If a [lexicWord]#character# moves inside the [lexicWord]#range of attack# of an opponent, the [lexicWord]#attack of opportunity# can only be done at the start of the [lexicWord]#movement# (if the [lexicWord]#character# is already inside the [lexicWord]#range of attack# and [lexicWord]#line of sight#) or when the [lexicWord]#character# enters the [lexicWord]#range of attack# or [lexicWord]#line of sight# (If the [lexicWord]#movement# started outside the [lexicWord]#range of attack# or [lexicWord]#line of sight#).
+
+If a [lexicWord]#character# is inside the [lexicWord]#range of attack# of multiple opponent, they can provoke multiple [lexicWord]#attacks of opportunity#.
+
+While performing an [lexicWord]#attack of opportunity#, a [lexicWord]#character# is always considered the attacker.
+The target of an [lexicWord]#attack of opportunity# is normally considered the defender, even if the attack happens on their turn.
+
+[lexicWord]#Attacks of opportunity# grant the attacker +1d to their roll, therefore, even if a [lexicWord]#character’s# [lexicWord]#dice-pool# is completely depleted they can still roll at least one die (of the appropriate type for the [lexicWord]#attribute# they use for the attack).
+
+'''
+include::Combat/Grappling.adoc[leveloffset=+2]
+
+'''
+
+=== Spirit Surge
+At the end of a combat, every [lexicWord]#character# on the victorious side can roll either a [lexicWord]#resist fatigue# or a [lexicWord]#Confidence & ego# [lexicWord]#open-ended test#.
+Each [lexicWord]#character# gains 2 [lexicWord]#spirit points# per [lexicWord]#MoSes# they obtained on their roll.
+
+'''
+
+include::Combat/Special_Manoeuvres.adoc[leveloffset=+2]
+
+'''
+
+=== Terrain Modifiers
+
+Different types of terrain can affect combat.
+Terrain can hinder or advantage [lexicWord]#characters# depending on the situation and on how they use the different obstacles.
+
+==== Cover
+
+[lexicWord]#Cover# makes a [lexicWord]#character# harder to hit.
+
+[lexicWord]#Cover# is divided in 4 categories according to how much of the [lexicWord]#character’s# body is hidden.
+
+* ¼ [lexicWord]#cover#: Attacks made against a [lexicWord]#character# behind this type of cover receive -1 [lexicWord]#MoS#.
+
+* ½ [lexicWord]#cover#: Attacks made against a [lexicWord]#character# behind this type of [lexicWord]#cover# receive -2 [lexicWord]#MoSes#.
+
+* ¾ [lexicWord]#cover#: Attacks made against a [lexicWord]#character# behind this type of [lexicWord]#cover# receive -3 [lexicWord]#MoSes#.
+
+* Full [lexicWord]#cover#: Attacks cannot be made against [lexicWord]#character# fully covered.
+
+It is possible that a [lexicWord]#cover# apply to both opponents simultaneously.
+
+[lexicWord]#Character# of different [lexicWord]#size# can receive different protection from the same [lexicWord]#cover#.
+
+==== Difficult Terrain
+
+Different types of terrain can hinder the [lexicWord]#movement# of [lexicWord]#characters#.
+
+[lexicWord]#Difficult terrains# are divided in four categories, according to how much they hinder [lexicWord]#movement#.
+
+* Minor impediment: Every 2 metres moved count for 3.
+If a [lexicWord]#character# runs on such terrain, 1 [lexicWord]#MoS# is used not to fall.
++
+.Example
+[caption = ""]
+====
+Loose rocks on the ground or large exposed tree roots.
+====
+
+* Medium impediment: Every metre moved on such terrain counts for 2.
+If a [lexicWord]#character# runs on such terrain, 2 [lexicWord]#MoSes# are used not to fall.
++
+.Example
+[caption = ""]
+====
+Muddy ground or moderately steep hill.
+====
+
+* Severe impediment: Every metre moved on such terrain counts for 3.
+If a [lexicWord]#character# runs on such terrain, 3 [lexicWord]#MoSes# are used not to fall.
++
+.Example
+[caption = ""]
+====
+Icy ground or marshy land.
+====
+
+* Extreme impediment: Every metre moved on such terrain counts for 4.
+It is impossible to run on such terrain but an [lexicWord]#athleticism# or [lexicWord]#acrobatics# test can increase the movement at the [lexicWord]#GM# discretion.
++
+.Example
+[caption = ""]
+====
+Thick bush or jagged rocks.
+====
+
+==== High Ground
+
+Attacking a [lexicWord]#character# on lower ground gives the [lexicWord]#character# on [lexicWord]#high ground# +1d.
+
+'''

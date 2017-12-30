@@ -1,0 +1,88 @@
+page:
+  margin: [1in, 1in, 1in, 1in]
+  size: Letter
+font:
+  catalog:
+    Liberation:
+      normal: LiberationSerif-Regular.ttf
+      italic: LiberationSerif-Italic.ttf
+      bold: LiberationSerif-Bold.ttf
+      bold_italic: LiberationSerif-BoldItalic.ttf
+
+base:
+  border_color: #000000
+  font_color: #000000
+  font_family: Liberation
+  font_size: 12
+  line_height_length: 16
+  line_height: $base_line_height_length / $base_font_size
+vertical_spacing: $base_line_height_length
+title_page:
+  align: right
+  title:
+    font_size: 48
+    top: 55%
+  subtitle:
+    font-size: 24
+  authors:
+    font-color: #ffffff
+  revision:
+    font-color: #ffffff
+heading:
+  font_size: 30
+  font_style: bold
+  margin_top: 20
+  margin_bottom: $base_line_height_length
+  h1:
+    align: right
+    font_size: 48
+  h2:
+    align: center
+    font_size: 30
+  h3:
+    font_size: 20
+link:
+  font_color: #000000
+thematic_break:
+  border_color: #000000
+  border_width: 2
+toc:
+  h1_font_size: 20
+  h1_font_style: bold
+  h2_font_size: 16
+  h2_font_style: bold
+  h3_font_size: 14
+  h4_font_size: 12
+  h4_font_style: italic
+  title_font_size: 24
+  dot_leader:
+    content: " ."
+    levels: 2, 3, 4, 5
+header:
+  background_color: #000000
+  font:
+    color: #ffffff
+    size: 14
+    style: bold
+  height: 0.75in
+  verso:
+    left:
+      content: "[underline]#{chapter-title}#"
+  recto:
+    right:
+      content: "[underline]#{section-title}#"
+footer:
+  background_color: #000000
+  font:
+    color: #ffffff
+    size: 16
+    style: bold
+  height: 0.75in
+  verso:
+    left:
+      content: "{page-number}"
+  recto:
+    right:
+      content: "{page-number}"
+outline_list:
+  indent: $base_font_size * 1.5

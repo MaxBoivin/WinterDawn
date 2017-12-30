@@ -1,0 +1,211 @@
+= Special Manoeuvres
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the special manoeuvres description.
+include::../Include.adoc[]
+
+Some special manoeuvre allow a [lexicWord]#character# to perform two actions on the same [lexicWord]#initiative number#.
+
+Special manoeuvre still require the [lexicWord]#character# to split their [lexicWord]#dice-pool#.
+
+== Charge
+A [lexicWord]#charge# consist of [lexicWord]#running# followed by an attack.
+
+To perform a [lexicWord]#charge# a [lexicWord]#character# must be at a distance to their target at least equal to their [lexicWord]#movement speed#.
+
+The charging [lexicWord]#character# must make a [lexicWord]#running# test.
+Each [lexicWord]#MoS# allow the [lexicWord]#character# to move an extra 2 metres.
+The [lexicWord]#MoSes# unused to reach the target can be added to the [lexicWord]#charge# attack roll.
+
+The target of the [lexicWord]#charge# is entitled to an [lexicWord]#attack of opportunity# (if the charging [lexicWord]#character# enter their [lexicWord]#range of attack#) but both [lexicWord]#characters# are considered attackers.
+
+A [lexicWord]#charge# can not cause a [lexicWord]#disarm#.
+
+== Defensive Stance
+
+A [lexicWord]#defensive stance# is a way for a [lexicWord]#character# to trade all offensive capability for a more effective defence.
+
+To enter a [lexicWord]#defensive stance#, on their [lexicWord]#initiative# turn a [lexicWord]#character# can roll a melee combat [lexicWord]#open-ended test#.
+The [lexicWord]#MoSes# obtained can be kept until the start on the [lexicWord]#character# next turn and spent to oppose the melee attack rolls made against the [lexicWord]#character#.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# adopts a [lexicWord]#defensive stance# and rolls 4 [lexicWord]#MoSes#.
+A first opponent attack them and obtains 3 [lexicWord]#MoSes# on their attack roll.
+The defending [lexicWord]#character# uses 3 of their [lexicWord]#MoSes# to nullify the attack of the opponent.
+If a second opponent attacks the defender and obtained 2 [lexicWord]#MoSes#, the defender can use their left over [lexicWord]#MoS# to reduce the attack to 1 [lexicWord]#hits#.
+====
+
+== Dodge rolling
+
+A [lexicWord]#character# can move by doing a [lexicWord]#dodge roll#, making them harder to be [lexicWord]#hit# by range attacks.
+
+The [lexicWord]#player# must make an [lexicWord]#acrobatics# test.
+For every [lexicWord]#MoS# obtained the [lexicWord]#character# can [lexicWord]#dodge roll# for 1 metre.
+
+For every metre moved in this way, all range attack made against this [lexicWord]#character# during this [lexicWord]#round# receive -1 [lexicWord]#MoS#.
+
+If the [lexicWord]#character# rolling pass in the [lexicWord]#range of attack# of one or more opponents, they can make an [lexicWord]#attack of opportunity#.
+
+== Mounted Combat
+
+Moving with a mount does not require a test.
+
+Bringing a mount which is not combat trained in the [lexicWord]#range of attack# of an opponent require a [lexicWord]#riding# test.
+The [lexicWord]#difficulty level# of such a test is equal to 1 + 1 per [lexicWord]#size# category bigger than the mount.
+If the mount is entering the [lexicWord]#range of attack# of multiple opponents, the [lexicWord]#difficulty level# is added for all those opponents and a single test is made.
+If the test is failed, the mount refuse to enter the [lexicWord]#range of attack#.
+
+Mount have their own [lexicWord]#dice-pool# but act on the [lexicWord]#initiative# of the rider.
+
+A [lexicWord]#charge# made while mounted use the [lexicWord]#running skill# and [lexicWord]#dice-pool# of the mount.
+
+Jumping over obstacles require a [lexicWord]#ridding# test from the rider and a [lexicWord]#jumping# test from the mount.
+The [lexicWord]#difficulty level# for both those tests is related to the obstacle to overcome, as per the [lexicWord]#athleticism# rules.
+The [lexicWord]#hits# from the [lexicWord]#riding# test can be transferred to the mount’s [lexicWord]#jumping# test.
+If the [lexicWord]#riding# test fails, the mount refuse to jump.
+If the [lexicWord]#jumping# test fails, the mount fails to pass the obstacle.
+
+When the mount or the rider receive a [lexicWord]#major injury# the rider must make a [lexicWord]#riding# test to remain on the mount.
+The [lexicWord]#difficulty level# for this test is equal to the number of [lexicWord]#major injury# suffered by the rider and the mount (added together).
+
+If a rider falls from a mount they may suffer damage as per the regular falling rules.
+
+Mounted [lexicWord]#characters# cannot perform [lexicWord]#dodge rolling# nor [lexicWord]#shield wall#.
+
+While fighting an opponent on foot, the mounted [lexicWord]#character# is considered to be on [lexicWord]#high ground#.
+
+A [lexicWord]#character# on foot cannot [lexicWord]#choke# a mounted [lexicWord]#character# and all their control attacks cost 1 extra [lexicWord]#hits#.
+
+More detailed on mounted combat in the chapter about vehicle.
+
+==Prone
+
+A [lexicWord]#character# can chose to get [lexicWord]#prone# or become [lexicWord]#prone# due to adverse circumstances.
+
+Getting [lexicWord]#prone# takes 2 metres of [lexicWord]#movement#.
+
+Getting up from being [lexicWord]#prone# takes half a [lexicWord]#character’s# [lexicWord]#movement#.
+
+While [lexicWord]#prone#, moving takes twice as much [lexicWord]#movement# (every metre moved count as 2 metres).
+
+A [lexicWord]#prone# [lexicWord]#character# receives -2 [lexicWord]#MoSes# on all melee combat rolls against a standing [lexicWord]#character#.
+
+A [lexicWord]#prone# [lexicWord]#character# receives -2 [lexicWord]#MoSes# on all range combat rolls except [lexicWord]#crossbows & firearms# rolls, which receive +1d.
+
+A [lexicWord]#character# targeting a [lexicWord]#prone# [lexicWord]#character# with a range attack receive -1 [lexicWord]#MoS# on their attack rolls and the [lexicWord]#range increment# malus is doubled.
+
+Getting [lexicWord]#prone# behind cover can increase the protection offered, at the [lexicWord]#GM# discretion.
+
+== Kick Up
+
+A [lexicWord]#prone# [lexicWord]#character# can get up by doing an [lexicWord]#acrobatics# test.
+Every [lexicWord]#MoS# reduce the [lexicWord]#movement# needed to get up by 1 metres.
+This provoke [lexicWord]#attacks of opportunity#.
+
+== Reassessing the Situation
+
+A [lexicWord]#player# can use their action or part of their action to reroll their [lexicWord]#initiative#.
+They must use the new [lexicWord]#initiative# number even if it is lower.
+
+== Inspire
+
+A [lexicWord]#character# can make a short speech to motivate their allies.
+
+The [lexicWord]#player# does an [lexicWord]#oratory & poetry# test.
+For every [lexicWord]#MoS# they can distribute 2 [lexicWord]#spirit points# among their allies (excluding themself).
+
+== Intimidation
+
+A [lexicWord]#character# can try to [lexicWord]#intimidate# an opponent.
+
+The [lexicWord]#player# makes an [lexicWord]#insult & intimidation# roll opposed by a [lexicWord]#Confidence & ego# test from the target.
+
+The [lexicWord]#Confidence & ego# test of the target does not count as part of their [lexicWord]#dice-pool#.
+
+[lexicWord]#Intimidation# functions as a [lexicWord]#far range# weapon with a [lexicWord]#range increment# of 5 metres for the distance malus.
+
+There is no [lexicWord]#size# modifier.
+
+For every [lexicWord]#hits# on the [lexicWord]#insult & intimidation# roll, the target lose 2 [lexicWord]#spirit points#.
+
+== Taunt
+
+A [lexicWord]#character# can provoke a target.
+
+The [lexicWord]#player# must make an [lexicWord]#insult & intimidation# test opposed by a [lexicWord]#detect motive# test by the target.
+
+The [lexicWord]#detect motive# test of the target does not count as part of their [lexicWord]#dice-pool#.
+
+[lexicWord]#Taunt# functions as a [lexicWord]#far range# weapon with a [lexicWord]#range increment# of 5 metres for the distance malus.
+There is no [lexicWord]#size# modifier.
+
+Starting from their next turn, every action not directed against the taunting [lexicWord]#character# have a [lexicWord]#dice-pool# reduce by -1d per hits on the [lexicWord]#insult & intimidation# roll.
+The [lexicWord]#dice-pool# of the target recover 1 dice per turn.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# tries to taunt an opponent.
+The taunter rolls 4 [lexicWord]#MoSes# on their [lexicWord]#insult & intimidation# roll.
+The target rolls only 1 [lexicWord]#MoS# on a [lexicWord]#detect motive# rolls.
+The taunter scores 3 [lexicWord]#hits#.
+On their next turn, if the target does any action not targeted against the taunter, their [lexicWord]#dice-pool# will be reduced by 3 dice.
+On the following turn, the malus will be reduced to 2 dice, then 1 dice, then the effect will be dissipated.
+====
+
+== Shield Wall
+
+If two or more [lexicWord]#characters# are wielding a shield with the special attribute [lexicWord]#hide behind shield#, they can form a [lexicWord]#shield wall#.
+
+Every frontal attacks made against [lexicWord]#characters# in a [lexicWord]#shield wall# receive -1 [lexicWord]#MoS#, on top of any malus granted by the [lexicWord]#hide behind shield# special.
+
+While used to make a [lexicWord]#shield wall#, shield cannot be used to reduce attack [lexicWord]#hits# for damage in their regular manner.
+
+[lexicWord]#Characters# in a [lexicWord]#shield wall# can only move at the speed on the slowest character.
+
+[lexicWord]#Characters# in a [lexicWord]#shield wall# act at their regular [lexicWord]#initiative# but every [lexicWord]#movement# must be made at the lowest [lexicWord]#initiative# among the party of the [lexicWord]#shield wall#.
+
+== Shrugging Off Wounds
+
+A [lexicWord]#character# can decide to spend their turn or part of their turn [lexicWord]#shrugging off wounds#.
+
+To do so, the [lexicWord]#player# must chose a line of [lexicWord]#injury boxes# with [lexicWord]#minor injuries# ticked but no [lexicWord]#major injury#.
+The [lexicWord]#player# than do a [lexicWord]#resist pain# test with a [lexicWord]#difficulty level# equals to the total number of [lexicWord]#injury boxes# ticked.
+If the roll is successful, one [lexicWord]#injury box# can be unticked.
+
+In case of a [lexicWord]#complete failure#, one more [lexicWord]#injury box# is ticked for every [lexicWord]#loss#.
+
+== Throwing Non-Range Weapon
+
+Every weapon and objects can be thrown with the [lexicWord]#thrown skills#.
+
+Every [lexicWord]#thrown# attack made with a weapon or object not specifically made for throwing receive a malus.
+
+* Small objects and weapons which can be more or less contained in one hand (knives, small rocks, tomatoes, mugs, etc) receive -1 [lexicWord]#MoS# and have a [lexicWord]#range increment# of 5 metres.
+
+* Medium objects and weapons which are used with one hand (arming swords, skillets, books, etc) receive -2 [lexicWord]#MoSes# and have a [lexicWord]#range increment# of 4 metres.
+
+* Large objects and weapons which usually require two hands to use (great swords, chairs, pumpkins, etc) receive -3 [lexicWord]#MoSes# and have a [lexicWord]#range increment# of 3 metres.
+
+== Two Weapons Fighting
+
+[lexicWord]#Characters# equipped with a weapon in each hand can do two attacks on the same [lexicWord]#initiative number#.
+
+The [lexicWord]#dice-pool# must be split normally.
+
+The second attack receive -1 [lexicWord]#MoS#.
+
+== Casting Spell
+
+[lexicWord]#Characters# with spell casting abilities can cast [lexicWord]#spells# in combat.
+
+Casting a [lexicWord]#spell# causes [lexicWord]#attack of opportunity#.
+
+If attack [lexicWord]#hits# are scored against a [lexicWord]#character# while they are casting a [lexicWord]#spell#, the casting fails.
+
+More details on casting spell in the magic chapter.

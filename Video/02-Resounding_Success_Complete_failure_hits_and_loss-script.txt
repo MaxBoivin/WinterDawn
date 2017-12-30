@@ -1,0 +1,43 @@
+Hello, my name is Max Boivin and I am the creator of WinterDawn RPG
+
+Today we will look at resounding success, complete failure, hits, and losses. 
+
+When rolling for a test, two special outcomes can happen: The resounding success and the complete failure.
+
+A resounding success happen if the task is successful and if a single roll give as many moses as the number of dice available in the dice pool.
+
+In case of a resounding success, the character can either regain spirit points or gain experience for the skill rolled.
+
+A complete failure is when a single roll gives a negative number of MoSes, when more 1 are rolled than the number of MoSes rolled. 
+
+When a complete failure is rolled, the player must rolled a confidence and ego test with a difficulty level equals to 1 plus the number of negative success.  
+
+If this confiedence and ego test is successful, the character can gain 1 experience point in the skill failed.  
+
+If the confidence and ego test is failed, the character lose 1 spirit point per rank in the skill failed.
+
+hits are MoSes over the difficulty level.
+
+Hits often come with special effects.
+
+Some tasks will necessitate hits to have any real effect.
+
+Losses are the negative moses, when you roll more 1s than MoS.
+
+In an opposed test, losses are added to an opponent roll.
+
+Losses can also imply a complication on top of the task being a failure.
+
+For example, losses on a damage roll will lead to the weapon used being damaged.
+
+Thank you for watching.
+
+If you have any questions you can asked them in the comments below or send an email to maxboivin@winterdawnrpg.com.
+
+For more information about WinterDawn RPG you can head to winterdawnrpg.com.
+
+If you are interested in participating in the playtest of WinterDawn, please write to us at PlayTest@winterdawnrpg.com.
+
+The link to our website and our email address can be found in the description below.
+
+In the next video, we will look at a central mechanic of WinterDawn, Spirit.

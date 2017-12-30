@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Athleticism</title>
+  <text xml:space="preserve"><note-content version="0.1">Athleticism
+
+Running
+ ½ movement * MoSes
+
+Climbing
+-Tree: 1m * MoSes
+-Rough cliff: (1m * (MoSes / 2)) – 1
+-If climbing a smooth cliff: (1m * (MoSes / 3)) – 1
+-Rough wall: (1m * (MoSes / 3)) – 1
+-Smooth wall: (1m * (MoSes / 4)) - 1
+
+Jumping (Standing)
+1m + (1m * (MoSes / 3))
+
+
+Jumping (Running Start)
+- ½ movement used: 1m + (1m * (MoSes / 2))
+-All movement used: 1m + (1m * (MoSes)
+-All movement used and running: 1m + (1m * (MoSes + used MoSes from running test))
+
+Jumping (Vertical)
+½ metre + (½ metre * (MoSes / 3))
+
+
+Swimming
+½ movement  + (1m * MoSes)
+
+Lifting
+45kg + (45kg * MoSes)
+
+Pushing
+-Something flat: 45kg + (45kg * MoSes)
+-Something round: 90kg + (90kg * MoSes)
+</note-content></text>
+  <last-change-date>2016-12-14T17:53:46.1492140-05:00</last-change-date>
+  <last-metadata-change-date>2016-12-14T17:53:46.1590510-05:00</last-metadata-change-date>
+  <create-date>2016-12-13T10:08:44.6010580-05:00</create-date>
+  <cursor-position>557</cursor-position>
+  <selection-bound-position>558</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>120</x>
+  <y>214</y>
+  <tags>
+    <tag>system:notebook:WinterDawn</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

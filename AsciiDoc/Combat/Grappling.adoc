@@ -1,0 +1,74 @@
+= Grappling
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ../
+:description: This is the grappling individual file.
+include::../Include.adoc[]
+
+Grappling an opponent give access to special control effects.
+To initiate a grapple the [lexicWord]#character# must be at [lexicWord]#close range# and score at least 2 [lexicWord]#hits# on a [lexicWord]#brawling# attacks.
+
+To perform a [lexicWord]#brawling# attack the [lexicWord]#character# must be at [lexicWord]#close range# and wielding the appropriate type of weapon or have at least one free hand.
+
+Once a [lexicWord]#character# is [lexicWord]#grappled#, their [lexicWord]#movement speed# becomes 0, and they receive -1 [lexicWord]#MoS# on all their [lexicWord]#power# and [lexicWord]#agility# rolls.
+
+Both the grappler and the grappled can only attack each other (but can defend against other) and every attacks other than [lexicWord]#brawling# ones receive an additional -1 [lexicWord]#MoS#.
+Neither can use their [lexicWord]#shield defence#.
+
+A grappled [lexicWord]#character# can reverse the situation and become the grappler by spending 1 [lexicWord]#hit# from a [lexicWord]#brawling# attack against their grappler.
+
+Two or more [lexicWord]#characters# can grapple an opponent together.
+Each potential grappler must make their attack to enter grapple normally.
+The malus suffered by the grappled [lexicWord]#character# are cumulative.
+
+== Moving
+
+When a [lexicWord]#character# is grappling an opponent, they can move with this last one in any direction by 1 metre per [lexicWord]#hit# scored on a [lexicWord]#brawling# roll.
+
+This control effect cannot be used to move the grappled [lexicWord]#character# off the ledge of a building or in a hole.
+To do so, the throw effect is in order.
+
+== Throw
+
+A throw allows a grappled to send the grappled [lexicWord]#character# to the ground.
+
+In order to do so, 2 [lexicWord]#hits# from a [lexicWord]#brawling# roll must be spent.
+
+The grappled [lexicWord]#character# is now [lexicWord]#prone#.
+The grappler can either go [lexicWord]#prone# with the thrown [lexicWord]#character# and make it [lexicWord]#pinned# or release the grapple and remain standing.
+
+== Pinned
+
+A pinned [lexicWord]#character# suffer the same restrictions as a grapple [lexicWord]#character# but receive an additional -1 [lexicWord]#MoS# on their [lexicWord]#power# and [lexicWord]#agility# roll (-2 [lexicWord]#MoSes# total).
+
+A pinned [lexicWord]#character# can reverse the situation and become the one doing the pinning by spending 2 [lexicWord]#hits# from a [lexicWord]#brawling# attack against the [lexicWord]#character# pinning them.
+
+== Choke
+
+A grappling [lexicWord]#character# can attempt to choke the grappled [lexicWord]#character#.
+
+To do so, the grappling [lexicWord]#character# must spend 3 [lexicWord]#hits# from a [lexicWord]#brawling# roll.
+
+A choke can be broken by the chocked [lexicWord]#character# by spending 2 [lexicWord]#hits# from a [lexicWord]#brawling# roll.
+
+A chocked [lexicWord]#character# cannot become the grappler until they break the choke.
+
+At the start of their turn, on every [lexicWord]#round#, a chocked [lexicWord]#character# must make a [lexicWord]#resist fatigue# test with a [lexicWord]#difficulty level# equal to the number of [lexicWord]#round# passed since the beginning of the choke.
+This test does not count against the [lexicWord]#dice-pool# for this [lexicWord]#round# or as an action.
+If the test is failed, the [lexicWord]#character# become [lexicWord]#unconscious#.
+The [lexicWord]#character# can regain consciousness when 10 [lexicWord]#MoSes# are accumulated on a [lexicWord]#resist fatigue# [lexicWord]#rolling (step back) test#.
+
+== Cutting and Piercing Attack While Grappling
+
+If a grappling [lexicWord]#character# scored some [lexicWord]#hits# on a [lexicWord]#brawling# roll against the grappled [lexicWord]#character#, they can use some of those [lexicWord]#hits# to roll for damage.
+If the damage is of type [lexicWord]#cutting# or [lexicWord]#piercing#, the protection from the armour is ignored.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# grappling an opponent try to stab the grappled [lexicWord]#character# with a dagger.
+They score 2 [lexicWord]#hits# and decide to use them for [lexicWord]#piercing# damage.
+The damage roll result in 4 [lexicWord]#MoSes#, those do not need to be compared to armour so the grappled character must tick 4 [lexicWord]#injury boxes# on the same line.
+====

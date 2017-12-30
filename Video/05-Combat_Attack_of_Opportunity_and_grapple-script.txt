@@ -1,0 +1,91 @@
+Hello, my name is Max Boivin and I am the creator of WinterDawn RPG
+
+Today we will look at attack of opportunity and grapple rules.
+
+Attack of opportunity is an attack that can be made as a reaction when some cirumstances arise.
+
+The most common circumstances allowing you to perfrom an attack of opportunity are the following:
+
+A character moving inside your range of attack.
+
+A character doing a range attack inside your range of attack.
+
+A character casting a spell inside your range of attack.
+
+A character fixing a wound inside your range of attack.
+
+A character reloading a weapon inside your range of attack.
+
+A character doing a reflex roll to avoid a range attack.
+
+Any other actions made inside your range of attack that require the character to devote its attention to something else than fighting you.
+
+When performing an attack of opportunity, you recive an additional 1 die to your dice pool.  
+
+Therefore, even if you used all your dice pool, you can still perform an attack of opportunity with one die.
+
+Only one attack of opportunity can be done per round.
+
+Grappling give access to special options in combat.
+
+To grapple someone, you must be a close range and have a brawling close range weapon or a free hand and score 2 hits on a brawling attack.
+
+A grappled character receive -1 MoS on all their power and agility rolls.
+
+Their speed is also reduced to 0.
+
+The grappler and the grappled can only attack each other.
+
+A grappled character can become the grappler by scoring 1 hit on a brawling attack.
+
+Tow or more character can grapple a target.
+
+In this case, the more numerous side will always be the grappler.
+
+THe malus on power and agility roll suffered by the grappled character is cumulative.
+
+Grappling give acces to some special control actions.
+
+For 1 hit, the grappler can move with the grapppled 1 metre.
+
+For 2 hits, the grappler can throw the grappled character on the ground or off a ledge.
+
+The grappled can decide to go on the ground with the grappled and make them pinned.
+
+A pinened character receive -2 MoS to all their power and agility rolls.
+
+A pinned character can reverse the situation by spending 2 hits on a brawling attack.
+
+A grappling character can try to choke the grappled character by spending 3 hits on a brawling attacks.
+
+A choke can be broken by spending 2 hits on a brawling attack.
+
+A chocked character can not become the grappler until they break the choke first.
+
+At the start of their turn, a chocked character must make a resist fatigue test.
+
+This test does not count as part of the dice pool used.
+
+The difficulty for this test is equals to the number of rounds passed since the start of the choke.
+
+If the test is failed, the character becomes unconcious.
+
+The character can regain consciousness by scoring 10 MoS on a resist fatigue step-back rolling test.
+
+It is possible to cause damage to a grappled character.
+
+The hits scored on a brawling attack can be used to roll damage dice.
+
+If the damage is of type piercing or cutting, the protection from the armour is ignored.
+
+Thank you for watching this video.
+
+If you have any questions you can asked them in the comments below or send an email to maxboivin@winterdawnrpg.com.
+
+For more information about WinterDawn RPG you can head to winterdawnrpg.com.
+
+If you are interested in participating in the playtest of WinterDawn, please write to us at PlayTest@winterdawnrpg.com.
+
+The link to our website and our email address can be found in the description below.
+
+In the next video, we will continue looking at combat with special manoeuvres.

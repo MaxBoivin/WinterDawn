@@ -1,0 +1,49 @@
+Hello, my name is Max Boivin and I am the creator of WinterDawn RPG
+
+Today we will look at a central mechanics of WinterDawn, spirit.
+
+Spirit represent a mix of the stamina and the moral of the character.
+
+Spirit will vary greatly during the game.
+
+Being in harsh conditions, fighting, starving, lacking sleep will al reduce drain the spirit of the character.
+
+Mery making, having resounding success, participating in a feast and similar activities can help a character recover spirit.
+
+Spirit limit the size of the dice pool of the character.
+
+A dice pool can never have more dice than the amount of spirit points held by the character.
+
+In effect, if a character has their spirit reduced to 0, they can not perform any test.
+
+Spirit can also be spent to increase a dice pool.
+
+You can spend 1 spirit points per dice currently in your dice pool to add an extra die.
+
+You can add multiple dice in that way but you can not double your dice pool in that way.
+
+For example, a character with 2 ranks in stealth will have a dice pool with 3 dice.  
+
+The player can decide to purchase an additional dice for a roll by spending 3 spirit points.
+
+If the player wants a second extra dice, raising their dice pool to 5 dice, they must spend an additional 4 spirit points.
+
+The player can not purchase a third dice since this would double the dice pool.
+
+Skills with no ranks can not be increased via spirit points.
+
+The maximum amount of spirit points a character has is equals to thier constitution plus their sagacity plus their persona.
+
+Increasing one of those attributes will increase the maximum amount of spirit points.
+
+Thank you for watching.
+
+If you have any questions you can asked them in the comments below or send an email to maxboivin@winterdawnrpg.com.
+
+For more information about WinterDawn RPG you can head to winterdawnrpg.com.
+
+If you are interested in participating in the playtest of WinterDawn, please write to us at PlayTest@winterdawnrpg.com.
+
+The link to our website and our email address can be found in the description below.
+
+In the next video, we will look at a big part of the game, combat.

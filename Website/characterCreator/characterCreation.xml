@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<characterCreation>
+    <class id="Race">
+        <intro id="raceIntro">9 playable races, divided in 3 civilizations, are available to the player. The high-men, highland half-men and lowland half-men represent the human civilization.  The orcs, goblins and hobgoblins form the green-skin civilization. The elves, fauns and trolls belong to the faes civilization.</intro>
+        <entry id="highman">
+            <intro />
+        </entry>
+    </class>
+</characterCreation>
