@@ -20,7 +20,7 @@ A ball of fire explode, burning everyone in the blast radius.
   *Save:* Reflex (Dodge)
 |===
 
-== Decription
+== Description
 
 The radius of the sphere is 1 metre per [lexicWord]#MoS# obtained on the damage roll.
 Every [lexicWord]#character# caught in the first metre from the centre of the sphere will take the full damage rolled.

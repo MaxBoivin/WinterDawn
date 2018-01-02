@@ -11,7 +11,7 @@
 //:idseparator:
 //:imagesdir: images
 :toc: left
-:toclevels: 4
+:toclevels: 3
 //:linkcss:
 //:stylesheet: WinterDawn.css
 //:page-number:

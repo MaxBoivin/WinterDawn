@@ -22,22 +22,26 @@ An [lexicWord]#initiative# roll is an [lexicWord]#open-ended composed test#  of 
 [lexicWord]#Characters# act in order of their [lexicWord]#initiative#, from the highest to the lowest.
 
 The [lexicWord]#initiative number# of a [lexicWord]#character# can change during a combat.
-
 The prevalent causes of [lexicWord]#initiative# change are detailed further in this chapter.
 
 '''
 
 == Rounds
 
-Combats are organized in [lexicWord]#rounds#.
+Combats are divided in [lexicWord]#rounds#.
 A [lexicWord]#round# is about 6 seconds (there are 10 rounds in a minute).
 This is more of an average than a fix measure.
 
-Every [lexicWord]#round#, the [lexicWord]#GM# should called [lexicWord]#initiative number# from the highest [lexicWord]#initiative# counting down until every [lexicWord]#character# had their turn.
+Every [lexicWord]#round#, the [lexicWord]#GM# should called [lexicWord]#initiative number# from the highest [lexicWord]#initiative# counting down to the lowest.
 
-Each [lexicWord]#character# can perform one or two [lexicWord]#actions# and one [lexicWord]#movement# on their [lexicWord]#initiative number#.
+When a [lexicWord]#character's# [lexicword]#initiative number# comes up, it is their [lexiword]#turn# to act.
+On their turn, a character can perform actions and move up to their [lexicword]#movement speed#.
 
-[lexicWord]#Characters# with an [lexicWord]#initiative# greater than 0 can decide to delay their turn to the negative of their [lexicWord]#initiative number#.
+If their [lexicword]#initiative# is greater than 0, a [lexicword]#character# can delay their turn to the negative of their [lexicword]#initiative number#.
+
+If a [lexicWord]#character# delay their turn, their [lexicWord]#initiative# return to normal on the following [lexicWord]#round#.
+
+If two or more have the same [lexicWord]#initiative# score, the [lexicWord]#character# with the most [lexicWord]#spirit# acts first.
 
 .Example
 [caption = ""]
@@ -45,29 +49,20 @@ Each [lexicWord]#character# can perform one or two [lexicWord]#actions# and one 
 A [lexicWord]#character# with an [lexicWord]#initiative# of 3 could decide to wait to act at -3.
 ====
 
-If a [lexicWord]#character# delay their turn, their [lexicWord]#initiative# return to normal on the following [lexicWord]#round#.
-
-If two or more have the same [lexicWord]#initiative# score, the [lexicWord]#character# with the most [lexicWord]#spirit# acts first.
-
-=== Surprise
-
-If some [lexicWord]#characters# are surprised at the start of a combat, they roll [lexicWord]#initiative# normally but can only act on the first [lexicWord]#round# at the negative of their roll, if this one is greater than 0.
-If they roll 0 or less, they can only act from the second [lexicWord]#round#.
-
-The number of dice used to roll [lexicWord]#initiative# are also deduced from any other [lexicWord]#dice-pool# the surprised [lexicWord]#characters# are going to use during the first [lexicWord]#round#.
-
 '''
 
 == Actions
 
-Every [lexicWord]#round#, each [lexicWord]#character# can move up to their [lexicWord]#movement speed# and do one or two of the following actions:
+Every [lexicWord]#round#, a [lexicWord]#character# can choose amongst the following actions:
 
 * Melee Attack
 * Range Attack
+* Relaoding a firearm or crossbow
 * Casting a [lexicWord]#Spell#
 * [lexicWord]#Athleticism# or [lexicWord]#Acrobatics# action
 * Stop bleeding through [lexicWord]#Medicine# or [lexicWord]#First Aid#
 * [lexicWord]#Intimidation#
+* [lexicWord]#Taunt#
 * Inspire their ally
 * [lexicWord]#Reassess the situation#
 * Use or interact with an object
@@ -77,65 +72,68 @@ Those actions will be described in more details further in this chapter.
 
 '''
 
-== Performing Two Actions
+=== Performing Two Actions
 
-[lexicWord]#Character# with an [lexicWord]#initiative# greater than 0 can perform two actions in a [lexicWord]#round#.
-The first action must be performed at their normal [lexicWord]#initiative number# while the second action will be performed at the negative of their [lexicWord]#initiative#.
-
-Some situations can also allow a [lexicWord]#character# to perform a second action, regardless of their [lexicWord]#initiative#, as a [lexicWord]#reaction#.
-[lexicWord]#Reactions# are described further in this chapter.
-
-If a [lexicWord]#character# decide to perform two actions instead of one, they must split their [lexicWord]#dice-pool# between the two actions.
-
-'''
-
-== Dice Pool Splitting
-
-If a [lexicWord]#player# wants their [lexicWord]#character# to perform two actions in a [lexicWord]#round#, they must split their [lexicWord]#dice-pool# between the two actions.
-
-The total number of dice used for both actions cannot be greater than the number of dice granted by the actions allowing the actions giving the biggest [lexicWord]#dice-pool#.
-Only the number of dice and not the type of dice is of concern in [lexicWord]#dice-pool# splitting.
+If a [lexicword]#character# has an [lexicword]#initiative# greater than 0, they can choose to split their turn between their regular [lexicword]#initiative number# and the negative of their [lexicword]#initiative number#.
+By splitting their turn, a [lexicword]#character# can perform two actions, divide their movement or both.  If the [lexicword]#player# decide to perform two actions, the total number of dice used for both actions cannot be greater than the largest [lexicword]#dice-pool# of those two actions.
 
 .Example
 [caption = ""]
 ====
-A [lexicWord]#player# wants to [lexicWord]#intimidate# a target before attacking it.
-The [lexicWord]#character’s# [lexicWord]#insult & intimidation skill# grant them a [lexicWord]#dice-pool# of 3d6 while their [lexicWord]#melee attack skill# allow them a [lexicWord]#dice-pool# of 5d8.
-The [lexicWord]#player# decide to use 2d6 for the [lexicWord]#intimidation# roll, which they will do at their [lexicWord]#initiative number#.
-That would leave them 3d8 for their attack, which will be done at the negative of their [lexicWord]#initiative number#.
+A [lexicword]#character# with an [lexicword]#initiative# of 4 decide to split their turn in two.
+On their [lexicword]#initiative number# they will [lexicword]#intimidate# an opponent.  Their [lexicword]#insult & intimidation skill# grant them a [lexicword]#dice-pool# of 5d6.
+They also intend to perform a [lexicword]#melee attack# as their second action, at -4 [lexicword]#initiative#.
+Their relevant [lexicword]#melee attack skill# grant them 6d8.
+The total number of dice used for both actions can therefore not exceed 6 dice.
+
+The [lexicword]#player# decide to use 4 dice for the [lexicword]#intimidation# and the remaining 2 for the [lexicword]#melee attack#.
+====
+
+'''
+
+== Reaction
+
+[lexicword]#Reactions# are actions performed out of turn.
+They do not count as part of the actions a [lexicword]#character# can perform and have their own [lexicword]#dice-pool#.
+
+The most common [lexicword]#reactions# a player can perform in a rounds are the following:
+
+* Defending against a melee attack
+
+* Avoiding a range attack or spell attack
+
+* Performing an [lexicWord]#attack of opportunity#
+
+//* Resisting [lexicWord]#intimidation# or a [lexicWord]#taunt#
+
+More details about the specific of those [lexicWord]#reactions# further in this chapter.
+
+The total number of dice used for [lexicword]#reactions# in a [lexicword]#round# cannot exceed the number of dice granted by the [lexicword]#reaction# granting the largest [lexicword]#dice-pool#.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# is being targeted by a [lexicWord]#range attack# and decide to [lexicWord]#dodge#.
+Their [lexicWord]#acrobatics skill# grant them 2d6, the [lexicWord]#player# decides to use them.
+
+Later in the same [lexicWord]#round#, some circumstances would grant an [lexicWord]#attack of opportunity# to the [lexicWord]#character#.
+The relevant [lexicWord]#melee attack skill# of the [lexicWord]#character# would allow them 3d10.
+Since they already used 2 dice for a [lexicWord]#reaction#, they can only roll 1 die for their [lexicWord]#attack of opportunity#.
 ====
 
 '''
 
 == Free Actions
 
-[lexicWord]#Free actions# are actions which do not count as part of the two actions allowed in a [lexicWord]#round#.
-They are either very swift actions or actions which can be performed simultaneously to other actions or [lexicWord]#movement#.
+[lexicWord]#Free actions# are actions which are either very swift to perfrom or can be done in simultanouesly to an other [lexicWord]#action# or [lexicWord]#movement#.
 
-Talking, drawing a weapon (but not sheathing) or dropping a held object are example of [lexicWord]#free actions#.
+Talking, drawing a weapon (but not sheathing one) or dropping a held object are examples of common [lexicWord]#free actions#.
+Those [lexicWord]#free actions# does not requiere any dice roll.
 
-[lexicWord]#Free actions# do not require a test; If a task require a test, it is not a [lexicWord]#free action#.
+In some case, a [lexicWord]#character# can be entitled to a [lexicWord]#free actions# which will requiere a dice roll.
+Resisting an [lexicWord]#intimidation# or [lexicWord]#taunt# attempt are typical exemples of [lexicWord]#free actions# calling for a [lexicWord]#test#.
 
-'''
-
-== Reactions
-
-[lexicWord]#Reactions# are actions which can be performed out of the [lexicWord]#initiative# order, when some conditions are met.
-
-[lexicWord]#Reactions# do not count as part of the two allowed actions but any dice used in a [lexicWord]#reaction# must be subtracted from the [lexicWord]#dice-pools# of any other action performed as per the [lexicWord]#dice-pool# splitting rule.
-
-[lexicWord]#Reactions# are very common in a [lexicWord]#round#.
-The most common type of [lexicWord]#reactions# are:
-
-* Defending against a melee attacked
-
-* Avoiding a range attack
-
-* Resisting [lexicWord]#intimidation# or a [lexicWord]#spell#
-
-* [lexicWord]#Attack of opportunity#
-
-More details further in this chapter.
+If a [lexicWord]#free action# require a [lexicWord]#test#, the dice used do not count as part of the dice used for [lexicWord]#actions# nor [lexicWord]#reactions#.
 
 '''
 
@@ -149,31 +147,62 @@ The [lexicWord]#movement# can be made before or after an action or on its own.
 Most humanoid [lexicWord]#characters# have a [lexicWord]#movement speed# of 9 meters per [lexicWord]#rounds#.
 
 The type of terrain can affect the distance a [lexicWord]#character# can move in a [lexicWord]#round#.
-Details further in this chapter.
+Details will be provided further in this chapter.
+
+'''
+
+== Surprise
+
+If some [lexicWord]#characters# are surprised at the start of a combat, they roll [lexicWord]#initiative# normally but every dice used for the [lexicWord]#perception & vigilance# roll are calculated as part of the [lexicWord]#actions# [lexicWord]#dice-pool# and the dice rolled for the [lexicWord]#reflex# roll are counted as part of the [lexicWord]#reaction# [lexicWord]#dice-pool# for the first round.
+The [lexicWord]#player# can choose to roll less than the normal amount of dice granted by their [lexicWord]#perception & vigilance# or [lexicWord]#reflex# in order to keep more dice available for their [lexicWord]#action# and [lexicWord]#reaction#.
+
+//Furthermore, the [lexicWord]#character# will only be able to act on the first round on the negative of their [lexicWord]#initiative number#, if this one is greater than 0.
+//If their [lexicWord]#initiative# is 0 or lower, the [lexicWord]#character# will have to wait for the second round to act.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# is being ambushed by some opponents.
+They would have acces to 3 and 2 dice from their [lexicWord]#perception & vigilance# and [lexicWord]#reflex# [lexicWord]#skills# respectively.
+The [lexicWord]#player# decide to roll 2 dice for each, keeping an extra dice for their [lexicWord]#action#.
+
+//Unfortunately, they obtained no [lexicWord]#MoSes# on their rolls.
+//They will thus have to wait for the second round to act.
+
+====
 
 '''
 
 == Range of Attack
 
 The [lexicWord]#range of attack# represent the distance at which a weapon can effectively attack.
-Every weapon has at least one [lexicWord]#range of attack# but some are effective at a variety of [lexicWord]#range of attack#.
+Every weapon has at least one [lexicWord]#range of attack# but some are effective at more than one [lexicWord]#range of attack#.
 
 [lexicWord]#Range of attacks# are divided into four types: [lexicWord]#close#, [lexicWord]#medium#, [lexicWord]#long# and [lexicWord]#far#.
 
-=== Close, Medium and Long Range
+=== Close, Medium and Long Ranges
 
 Those ranges are used for melee combat.
 
-[lexicWord]#Close range# is for unarmed combat or very short weapons like knives and daggers.
+* [lexicWord]#Close range# is for unarmed combat or very short weapons like knives and daggers.
 In [lexicWord]#close range# the opponent face each other with no more than a metre between them.
 
-In [lexicWord]#medium range# the opponent are facing each other with 1 and 2 metres between them.
+* In [lexicWord]#medium range# the opponent are facing each other with 1 and 2 metres between them.
 Most swords, mace and one handed axes are most effective in medium range.
 
-When two opponents are facing each other with 2 or 3 metres between them they are considered at [lexicWord]#long range#.
+* When two opponents are facing each other with 2 or 3 metres between them they are considered at [lexicWord]#long range#.
 Spears, halberds and great swords are at their best at [lexicWord]#long range#.
 
-If a weapon is noted with a [lexicWord]#range of attack# followed by a negative number, the weapon can still be used at this range (and cause damage) but [lexicWord]#MoSes# are subtracted from any attack roll made at this range.
+A melee weapon can still be used outside of it's [lexicWord]#range of attack#, but one [lexicWord]#MoSes# will be subtracted for every range outside of it's effective [lexicWord]#range of attack#.
+
+.Example
+[caption = ""]
+====
+Using a spear, a [lexicWord]#long range# weapon, at [lexicWord]#medium range# will give a 1 [lexicWord]#MoS# penality on every roll.
+Using the same spear at [lexicWord]#close range# will grant a 2 [lexicWord]#MoSes# penality on every roll.
+====
+
+A [lexicWord]#character# cannot cause damage to an opponent outside of the [lexicWord]#range of attack# of the weapon used for the attack, but the [lexicWord]#control# effect can be applied normally.
 
 More details about melee combat further in this chapter.
 
@@ -181,8 +210,9 @@ More details about melee combat further in this chapter.
 
 [lexicWord]#Far range# is for thrown or projectile weapons.
 
-Every weapon effective at far range will be noted with a number next to the far range mention.
-This number represents the range increment in metres.
+Every [lexicWord]#far range# weapon will be noted with a number next to the far range mention.
+This number represents the [lexicWord]#range increment# in metres.
+Every time the [lexicWord]#range increment# is passed, 1 [lexicWord]#MoS# is subtracted from the attack roll.
 
 More details about the far range and range increment further in this chapter.
 
