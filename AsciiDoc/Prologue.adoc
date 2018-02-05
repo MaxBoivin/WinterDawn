@@ -195,7 +195,9 @@ This 0th rule suggest that, since [lexicWord]#RPGs# are entertainment, the group
 If a [lexicWord]#player# or the [lexicWord]#GM# suggest something that is not strictly by the rules as written (RaW) but is truly awesome, just go with it.
 
 Of course, if the "rule of cool" is invoked too frequently, it will lose it's impact.
+As it is for spice, a touch can improve a meal, but too much will spoil it.
 Like in most things, it is a matter of balance.
+
 The right amount of adherence to the RaW will vary from group to group.
 You will, over time, find the style of play that is right for you, that you enjoy the most.
 
@@ -208,31 +210,67 @@ Remember that [lexicWord]#RPGs# are intended to be games; if you completely igno
 
 === Exposing my Biases
 
-I tried to design the SdA system to allow different styles of play.
-Some people prefer more fantastic games, some prefer more gritty one.
-Some GM will run game of epic proportions where the characters need to save the world while other will present scenarii much more toned down.
-There is no correct type of game.
-The best option is the one your group of players enjoys the most.
+The [lexicWord]#SdA system# has been design in a way to allow a variety of style of play, from epic fantasy game to more tone done gritty one.
+The power level of the [lexicWord]#player character# can easily be scale to fit the type of game your group enjoy the most.
+However, despite my effort to minimize my biases towards one type of play, some will inevitably find their way in this tome.
+For the sake of transparency, I decided to be upfront about those inclinations.
+This is not done to push you towards a specific type of play, but it might help explain some design decisions I made.
 
-Even though I tried to minimize my bias towards one specific type of play, some will still be apparent in the fundamental design of the system.
-In a desire of transparency, I decided to be upfront about it and declare my biases right here, in the introduction of the book.
-I hope you won't take this as meaning that if your preferences vary, WinterDawn won't be adapted for your style of play (and I hope even more that it is not the case).
+==== Magic
 
-When it comes to magic, I always preferred setting where magic is rare, strange and scary.
-Only a few people can practice it, sometimes it has to be done underground, without the authorities or the non-initiated finding out.
+I always preferred setting where magic is rare, strange and scary and only a few people can practice it.
+Maybe it has to be kept underground, without the authorities or the non-initiated finding out.
+The unbegun are unable to make the distinction between the different types or sources of magic.
 
-As for the power level of the characters, I always enjoy starting out a game with characters who are barely more competent than the average person of the setting.
-Slightly above average.
-I truly enjoy experiencing the growth of a character until they become exceptional individuals.
-I believe that what makes someone a hero is not their aptitudes, skills and abilities but the way they act in extraordinary situations.
+If the setting proposes a world where magic is ubiquitous, the implication of such powers should be accounted for.
+Those ramifications would be far reaching and impact every aspect of life from food production to political structures.
 
-I can see the appeal of epic game but I've always been more inclined towards more toned down scope, campaign where characters pursue more personal goals.
-I like those characters to be mostly good but, to have them in very grey situations where there is no perfectly palatable solution.
+==== Power Level
 
-I also enjoy more realistic game with deadly combats, where you have to think twice before resorting to violence.
+I tend to enjoy a type of game where the [lexicWord]#player characters# begins their adventures barely more competent than the average person of the setting, just slightly above average.
+I believe that what makes someone a hero is not having exceptional powers, but acting in an exceptional way in critical situations.
+Experiencing the growth of a character from humble beginnings to super-human capabilities.
 
-I usually run combats with miniatures on a hexagonal grid with the characters facing towards a point (instead of an edge) so there are two hexes in front of the character two on their side (one on each) and two in their back.
+==== Scope
 
-Finally, I have to add, I always add a bias towards orcs and against elves.
-I tried to keep all the race more or less balanced but, even though there are not necessarily more powerful, I find the orcs cooler than the rest.
-I'm sure many people will disagree with me and that is perfect.
+I can see the appeal of epic game where the [lexicWord]#PCs# have to save the world from a great evil.
+I, however, always preferred more toned-down campaigns, where [lexicWord]#characters# pursue more personal goals.
+My predilections are towards narrative where the heroes are mostly good, but confronted to morally grey situations.
+Those kinds of scenarii are a good opportunity to explore different philosophical concepts and their logical conclusions.
+
+==== Combats
+
+In my opinion, violence in [lexicWord]#RPGs# should be treated seriously.
+Combats are better when deadly and force players to think twice before engaging their [lexicWord]#characters# in bloodshed.
+
+Representing skirmishes using miniatures and a grid facilitates the exercise.
+It prevents confusions and allows the [lexicWord]#players# to use more elaborate tactics.
+
+I tend to prefer hexagonal grid, having the [lexicWord]#characters# facing a point of the hexagon (instead of an edge).
+In this configuration, out of the six hexes surrounding a [lexicWord]#character#, two are considered the front, two are in the rear and two are on the sides (one each).
+
+Square grids have the advantage of fitting well with most artificial structures (usually built in rectangle shape).
+They do come with the inconvenient of making diagonal movement messy.
+
+Nothing prevent a group to use both systems in their campaign; hexagonal grids for wilderness encounters and square one for interior ones.
+
+==== Racial Bias
+
+Here, I must admit to the shameful fact that I possess racial prejudices... when it comes to fantasy races.
+
+Since playing Warcraft(TM) has a youth, I always had a soft sport for Orcs and Goblins.
+
+
+On the other hand, Elves usually bore me (although, I'm happy with the spin I gave them in this game).
+
+
+I tried to keep all the difference races as balanced as possible.
+Perfect evenness can never be achieved since the potency of a different features is dependent upon the setting and type of game you're engaging in.
+
+In the end, I don't believe that any race is absolutely better or worse than the rest.
+Each have their own advantages and drawbacks.
+I might find some cooler than the others, but your opinion might (and hopefully will) vary.
+
+
+Please take note that the different races (which are more like species) presented in this book are from the realm of fantasy.
+They do not represent any real-world racial or cultural groups.
