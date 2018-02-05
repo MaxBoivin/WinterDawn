@@ -177,9 +177,62 @@ Most of those mechanics exist in other systems in one way or another, I recogniz
 
 '''
 
-=== Guidelines, Not Rules
+=== Rules or Guidelines
 
-The goal of a role-playing game should be to collaboratively create a story.  All the players, including the GM, should work together towards this goal.  If the rules ever get in the way of the story, the GM can always decide to put them aside, tweak them, bend them.
-It is also always possible at the start of a new campaign to have a discussion amongst the players and decide if some rules are going to be ignores or modified.  If you do so, it would be advisable to keep the modification throughout the game or, if you realize it was a mistake or that it need a little more modifications, make sure to discuss it with everyone involved before changing anything.
-In reason of the flexibility of the rules, I rather see them as guidelines.  This is not a rules book but a guide book.  Throughout this book, I will still use the term “rules” but it is always intended as soft rules or guidelines.
-Of course, every modification of those guidelines need to be approved by the GM.  As part f their role as referee. GMs always have the last word when it comes to guidelines interpretation, modification or abolition.
+The goal of role-playing games usually is to collaboratively create a story where the [lexicWord]#player character# are the protagonists.
+The [lexicWord]#players# and [lexicWord]#GM#, should work together towards this goal.
+If the rules get in the way of the story, the [lexicWord]#GM# can decide to put them aside, tweak them, bend them.
+
+At the start of a new campaign, feel free to have a discussion amongst your group and decide if some rules are going to be ignores or modified.
+Those changes are referred to as "house rules" or "homebrew".
+If you realize that those alterations are a detriment to the game, don't hesitate to take a moment to re-open the conversation with your group, preferably not mid-session.
+
+Of course, every adjustment of the rules need to be approved by the [lexicWord]#GM#.
+[lexicWord]#GMs# always have the last word when it comes to guidelines interpretation, adaptation or abolition.
+
+There is a maxim that is often considered to apply to all [lexicWord]#RPGs#: the "rule zero", sometimes referred to as "the rule of cool".
+This 0th rule suggest that, since [lexicWord]#RPGs# are entertainment, the group should do whatever is necessary to make the game as entertaining as possible.
+If a [lexicWord]#player# or the [lexicWord]#GM# suggest something that is not strictly by the rules as written (RaW) but is truly awesome, just go with it.
+
+Of course, if the "rule of cool" is invoked too frequently, it will lose it's impact.
+Like in most things, it is a matter of balance.
+The right amount of adherence to the RaW will vary from group to group.
+You will, over time, find the style of play that is right for you, that you enjoy the most.
+
+In reason of the flexibility of the rules, they could be seem more as guidelines.
+This does not mean that they should be seen as mere suggestions; a great amount of thoughts and considerations has been put in the conception of this system to offer engaging experiences.
+
+Remember that [lexicWord]#RPGs# are intended to be games; if you completely ignore the rules, you'll lose that aspect of the activity.
+
+'''
+
+=== Exposing my Biases
+
+I tried to design the SdA system to allow different styles of play.
+Some people prefer more fantastic games, some prefer more gritty one.
+Some GM will run game of epic proportions where the characters need to save the world while other will present scenarii much more toned down.
+There is no correct type of game.
+The best option is the one your group of players enjoys the most.
+
+Even though I tried to minimize my bias towards one specific type of play, some will still be apparent in the fundamental design of the system.
+In a desire of transparency, I decided to be upfront about it and declare my biases right here, in the introduction of the book.
+I hope you won't take this as meaning that if your preferences vary, WinterDawn won't be adapted for your style of play (and I hope even more that it is not the case).
+
+When it comes to magic, I always preferred setting where magic is rare, strange and scary.
+Only a few people can practice it, sometimes it has to be done underground, without the authorities or the non-initiated finding out.
+
+As for the power level of the characters, I always enjoy starting out a game with characters who are barely more competent than the average person of the setting.
+Slightly above average.
+I truly enjoy experiencing the growth of a character until they become exceptional individuals.
+I believe that what makes someone a hero is not their aptitudes, skills and abilities but the way they act in extraordinary situations.
+
+I can see the appeal of epic game but I've always been more inclined towards more toned down scope, campaign where characters pursue more personal goals.
+I like those characters to be mostly good but, to have them in very grey situations where there is no perfectly palatable solution.
+
+I also enjoy more realistic game with deadly combats, where you have to think twice before resorting to violence.
+
+I usually run combats with miniatures on a hexagonal grid with the characters facing towards a point (instead of an edge) so there are two hexes in front of the character two on their side (one on each) and two in their back.
+
+Finally, I have to add, I always add a bias towards orcs and against elves.
+I tried to keep all the race more or less balanced but, even though there are not necessarily more powerful, I find the orcs cooler than the rest.
+I'm sure many people will disagree with me and that is perfect.
