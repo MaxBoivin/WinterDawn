@@ -260,9 +260,7 @@ Here, I must admit to the shameful fact that I possess racial prejudices... when
 
 Since playing Warcraft(TM) has a youth, I always had a soft sport for Orcs and Goblins.
 
-
 On the other hand, Elves usually bore me (although, I'm happy with the spin I gave them in this game).
-
 
 I tried to keep all the difference races as balanced as possible.
 Perfect evenness can never be achieved since the potency of a different features is dependent upon the setting and type of game you're engaging in.
@@ -271,6 +269,60 @@ In the end, I don't believe that any race is absolutely better or worse than the
 Each have their own advantages and drawbacks.
 I might find some cooler than the others, but your opinion might (and hopefully will) vary.
 
+Obviously, the races (species would be a better term) depicted in this book are from the realm of fantasy.
+None of them represent any real-world racial or cultural group.
 
-Please take note that the different races (which are more like species) presented in this book are from the realm of fantasy.
-They do not represent any real-world racial or cultural groups.
+'''
+
+=== About the Organization of this Book
+
+I tried to present the information in this book in the manner that made the most sense to me.
+
+Following this introduction, I'll present the basic rules that everybody should master.
+After reading this section, if you were to be handed a pregenerated [lexicWord]#character# (some can be found on our website), you would know enough to begin play.
+
+Playing a pregenerated [lexicWord]#character# could allow you to quickly jump into the action, but creating your own is a big part of the fun or [lexicWord]#RPGs#.
+The section concerning [lexicWord]#character# creation will imediatly follow the presentation of the basic rules.
+
+If the [lexicWord]#character# you created is a magic user, you'll have to pay some attention to the spell section.
+
+The adventuring section contains the more circumstantial rules that might not be relevant in every session.
+It would be good if the [lexicWord]#GM# and maybe at least one other [lexicWord]#player# would be familiar with those rules, at least enough to know they exist and to be able to reference them quickly if need be.
+
+The following two sections are the purview of the [lexicWord]#GM#.
+The bestiary presents a variety of creature to populate the world with.
+They can be used to offer opposition as well as support to the [lexicWord]#players#.
+
+The GMing section is a collection of advice about preparing and running the game.
+Experienced [lexicWord]#GMs# in other [lexicWord]#RPGs# might not get much from it, but, it you are new to the activity, you'll sure find some valuable insight.
+
+At the complete end of the book, you'll find an appendices section.
+Once you're familiar with the rules, you should basically be able to run the game completely from those appendices.
+
+'''
+
+=== About the Writing Style of this Book
+
+My focus while writing this book was to be as clear as possible.
+When I had to make the choice between style and clarity, I went with the later.
+This might leave the prose a little dry, but I believe it makes the rules easier to digest.
+
+You'll notice that the [lexicWord]#SdA system# design is based on the metric system.
+Movement and weapon ranges are calculated in metres, weights are calculated in kilograms and temperatures in Celsius.
+
+I decided to favour the metric system over the imperial one for its international adoption and simplicity.
+Even someone who has never been exposed to the metrics systems can grasp its way of being subdivided rather quickly.
+Admittedly, having a good mental representation of the different distances, weights and temperatures described might take some time getting used to.
+
+It is much easier to remember and calculate with a system where everything is based on base 10.
+Remembering that 16 ounces make a pound and 14 pounds make a stone but 12 inches make a foot while 3 feet make a yard but it takes 1760 yards to make a mile can be confusing, even for people used to the imperial system.
+
+The metric system also avoid confusion when a decimal notation is used.
+Knowning that 5.3 pounds is actually 5 pounds and 4 ounces and 6 drachms and 1 scruple and some minims is not necessarily intuitive.
+And this is not even mentioning the possible confusion between ounces and troy ounces!
+
+If you categorically refuse to use the metric system, a conversion chart is available at the end of the book with corresponding measure not exact but close enough to not break the systems and simple enough to calculate mentally (for example, 1 metre become 3 feet instead of 3 feet and 3 inches, a.k.a 3¼ or 3.25 feet).
+
+'''
+
+==
