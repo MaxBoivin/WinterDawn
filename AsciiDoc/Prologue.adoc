@@ -296,7 +296,7 @@ They can be used to offer opposition as well as support to the [lexicWord]#playe
 The GMing section is a collection of advice about preparing and running the game.
 Experienced [lexicWord]#GMs# in other [lexicWord]#RPGs# might not get much from it, but, it you are new to the activity, you'll sure find some valuable insight.
 
-At the complete end of the book, you'll find an appendices section.
+At the end of the book, you'll find an appendices section.
 Once you're familiar with the rules, you should basically be able to run the game completely from those appendices.
 
 '''
@@ -314,15 +314,41 @@ I decided to favour the metric system over the imperial one for its internationa
 Even someone who has never been exposed to the metrics systems can grasp its way of being subdivided rather quickly.
 Admittedly, having a good mental representation of the different distances, weights and temperatures described might take some time getting used to.
 
-It is much easier to remember and calculate with a system where everything is based on base 10.
 Remembering that 16 ounces make a pound and 14 pounds make a stone but 12 inches make a foot while 3 feet make a yard but it takes 1760 yards to make a mile can be confusing, even for people used to the imperial system.
 
-The metric system also avoid confusion when a decimal notation is used.
-Knowning that 5.3 pounds is actually 5 pounds and 4 ounces and 6 drachms and 1 scruple and some minims is not necessarily intuitive.
+The metric system also avoid confusion when decimal notations are used.
+5.3 pounds is actually 5 pounds and 4 ounces and 6 drachms and 1 scruple and some minims.
+This is far from intuitive.
 And this is not even mentioning the possible confusion between ounces and troy ounces!
 
-If you categorically refuse to use the metric system, a conversion chart is available at the end of the book with corresponding measure not exact but close enough to not break the systems and simple enough to calculate mentally (for example, 1 metre become 3 feet instead of 3 feet and 3 inches, a.k.a 3¼ or 3.25 feet).
+If you categorically refuse to use the metric system, a conversion chart is available at the end of the book with corresponding measurement, not exact, but close enough to not break the system and simple enough to calculate mentally (1 metre become 3 feet instead of 3 feet and 3 inches, a.k.a 3¼ or 3.25 feet).
 
-'''
+<<<
 
-==
+== Terms Definition
+
+As you might have already noticed in this introduction, some terms are written in italics.
+This is an indication that the term is used in a precise way to refer to a specific element of the game.
+Those terms will be explained as they are introduced and their definition can also be found in the glossary at the end of this book.
+Some of the terms are so fundamentals that I will define them below.
+If you are familiar with [lexicWord]#RPGs#, those terms should already be known.
+
+[glossary]
+Attributes::
+The physical and mental aptitudes of a character.  6 attributes compose a character: Agility, Power, Constitution, Erudition. Persona and Sagacity.
+
+character::
+A character refers to an individual in the game world, either controlled by the GM or by another player.
+
+GM (Game Master)::
+A player fulfilling a special role of describing the scene, impersonating the characters not controlled by the other players and acting as a referee.
+
+Player::
+The term player refers to a real world person sitting at the table, either controlling an in-game character or being the GM.
+
+Skills::
+Represent the different types of action a character can perform and how competent they are at it.
+
+Test (Skill Test)::
+Whenever a player attempts an action that could succeed or fail (and if there is dramatic outcome to success or failure) a skill test can be demanded by the GM.
+Different types of test exist for different situations and each one will be covered later in this book.
