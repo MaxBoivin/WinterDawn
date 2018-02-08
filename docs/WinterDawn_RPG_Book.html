@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="description" content="This is the compilation of the different parts of the book.  I'd like to keep them separate for easier editing.">
+<meta name="author" content="Max Boivin">
+<title>WinterDawn: A Fantasy Role-Playing Game</title>
+<link rel="stylesheet" href="./WinterDawn.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>WinterDawn: A Fantasy Role-Playing Game</h1>
+<div class="details">
+<span id="author" class="author">Max Boivin</span><br>
+<span id="email" class="email">&lt;<a href="mailto:max.boivin@winterdawn.com">max.boivin@winterdawn.com</a>&gt;</span><br>
+<span id="revnumber">version v0.0.1</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_prologue">1. Prologue</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction">Introduction</a>
+<ul class="sectlevel3">
+<li><a href="#_whatisaroleplayinggame">What is a Role Playing Game?</a></li>
+<li><a href="#_thegamemaster">The Game Master</a></li>
+<li><a href="#_whatmaterialdoyouneedtoplayrpgs">What Material Do You Need to Play RPGs?</a></li>
+<li><a href="#_whyiplayrpgsandwhyyoushouldgiveitatry">Why I Play RPGs And Why You Should Give it a Try?</a></li>
+<li><a href="#_whatqualitiesdoyouneedtoplayrpgs">What Qualities Do You Need to Play RPGs?</a></li>
+<li><a href="#_whydidicreatethissystemandwrotethisbook">Why Did I Create this System and Wrote this Book?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_thesdasystemengineofthegame">2. The SdA system: Engine of the Game</a>
+<ul class="sectlevel2">
+<li><a href="#_basicmechanics">Basic Mechanics</a>
+<ul class="sectlevel3">
+<li><a href="#_attributes">Attributes</a></li>
+<li><a href="#_dice">Dice</a></li>
+<li><a href="#_skills">Skills</a></li>
+<li><a href="#_skilltest">Skill Test</a></li>
+<li><a href="#_successandfailure">Success and Failure</a></li>
+<li><a href="#_mosmeasureofsuccess">MoS (Measure of Success)</a></li>
+<li><a href="#_loss">Loss</a></li>
+<li><a href="#_difficultylevel">Difficulty Level</a></li>
+<li><a href="#_hits">Hits</a></li>
+<li><a href="#_typesoftest">Types of Test</a></li>
+<li><a href="#_statictest">Static Test</a></li>
+<li><a href="#_opposedtest">Opposed Test</a></li>
+<li><a href="#_openendedtest">Open-Ended Test</a></li>
+<li><a href="#_rollingtest">Rolling Test</a></li>
+<li><a href="#_assistedtest">Assisted Test</a></li>
+<li><a href="#_grouptest">Group Test</a></li>
+<li><a href="#_composedtest">Composed Test</a></li>
+<li><a href="#_mixedtest">Mixed Test</a></li>
+<li><a href="#_bonusandmalus">Bonus and Malus</a></li>
+<li><a href="#_resoundingsuccess">Resounding Success</a></li>
+<li><a href="#_completefailure">Complete Failure</a></li>
+<li><a href="#_spirit">Spirit</a></li>
+<li><a href="#_improvingskillsandattributes">Improving Skills and Attributes</a></li>
+</ul>
+</li>
+<li><a href="#_skills2">Skills</a>
+<ul class="sectlevel3">
+<li><a href="#_acrobatics">Acrobatics</a></li>
+</ul>
+</li>
+<li><a href="#_combat">Combat</a>
+<ul class="sectlevel3">
+<li><a href="#_initiative">Initiative</a></li>
+<li><a href="#_rounds">Rounds</a></li>
+<li><a href="#_actions">Actions</a></li>
+<li><a href="#_reaction">Reaction</a></li>
+<li><a href="#_freeactions">Free Actions</a></li>
+<li><a href="#_movement">Movement</a></li>
+<li><a href="#_surprise">Surprise</a></li>
+<li><a href="#_rangeofattack">Range of Attack</a></li>
+<li><a href="#_meleeattack">Melee Attack</a></li>
+<li><a href="#_rangeattack">Range Attack</a></li>
+<li><a href="#_damage">Damage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_spells">3. Spells</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction2">Introduction</a></li>
+<li><a href="#_spelldescription">Spell Description</a>
+<ul class="sectlevel3">
+<li><a href="#_fireball">Fireball</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_appendices">4. Appendices</a>
+<ul class="sectlevel2">
+<li><a href="#_test">Appendix A: Test</a></li>
+<li><a href="#_lexicon">Appendix B: Lexicon</a></li>
+<li><a href="#_index">Index</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div id="preamblePoem" class="verseblock">
+<pre class="content">There&#8217;s a race of men that don&#8217;t fit in,
+A race that can&#8217;t stay still;
+So they break the hearts of kith and kin,
+And they roam the world at will.
+They range the field and they rove the flood,
+And they climb the mountain&#8217;s crest;
+Theirs is the curse of the gypsy blood,
+And they don&#8217;t know how to rest.
+
+If they just went straight they might go far;
+They are strong and brave and true;
+But they&#8217;re always tired of the things that are,
+And they want the strange and new.
+They say:  "Could I find my proper groove,
+What a deep mark I would make!"
+So they chop and change, and each fresh move
+Is only a fresh mistake.
+
+And each forgets, as he strips and runs
+With a brilliant, fitful pace,
+It&#8217;s the steady, quiet, plodding ones
+Who win in the lifelong race.
+And each forgets that his youth has fled,
+Forgets that his prime is past,
+Till he stands one day, with a hope that&#8217;s dead,
+In the glare of the truth at last.
+
+He has failed, he has failed; he has missed his chance;
+He has just done things by half.
+Life&#8217;s been a jolly good joke on him,
+And now is the time to laugh.
+Ha, ha!  He is one of the Legion Lost;
+He was never meant to win;
+He&#8217;s a rolling stone, and it&#8217;s bred in the bone;
+He&#8217;s a man who won&#8217;t fit in.</pre>
+<div class="attribution">
+&#8212; Robert W. Service<br>
+<cite>The Spell of the Ykuon and Other Verses (1911)</cite>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prologue"><a class="anchor" href="#_prologue"></a>1. Prologue</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h3>
+<hr>
+<div class="paragraph">
+<p>My name is Max Boivin.
+I am the creator of <span class="lexicWord">WinterDawn</span> and the <span class="lexicWord">SdA system</span> and I would like to begin this book by thanking you for your interest in <span class="lexicWord">WinterDawn</span>.
+I hope you and your friends will get countless hours of enjoyment and excitement from this game.
+Make sure to visit our website at <a href="http://WinterDawnRPG.com">WinterDawnRPG.com</a> for printable character sheets, cheat sheets and other game help.</p>
+</div>
+<div class="sect3">
+<h4 id="_whatisaroleplayinggame"><a class="anchor" href="#_whatisaroleplayinggame"></a>What is a Role Playing Game?</h4>
+<div class="paragraph">
+<p>The chances are that most of you are already familiar with the concept of role-playing game (RPG) but it seems to be a tradition that every RPG book start with an explanation of what is an RPG.</p>
+</div>
+<div class="paragraph">
+<p>If you have picked up this book without any prior knowledge of what it is about, hopefully this section will enlighten you.
+If you are a veteran role player, you may safely skip this section but, reading it might give you a clue as to how I perceive role-playing.</p>
+</div>
+<div class="paragraph">
+<p>A role-playing game, as the name indicate, is a game where you play a role.
+Players create a <span class="lexicWord">character</span> with their own personality, qualities, flaws, past, <span class="lexicWord">skills</span>, etc.
+Those <span class="lexicWord">characters</span> will venture together, overcome obstacles, gather treasures, defeat villains, become villains, save the day, fail and sometimes die.</p>
+</div>
+<div class="paragraph">
+<p>Unlike most games, the players don&#8217;t compete against each other and there are no winners and losers.
+Role playing games are fundamentally collaborative group games.
+There is no well define goal to reach, number of points to get or conditions for victory; the goal of the game is to create an interesting and entertaining story as a group and the only way to “win the game” is by having fun.</p>
+</div>
+<div class="paragraph">
+<p>Since there is no clear end-point in a role-playing game, the length of the game can vary greatly; some games will last for only a few hours but most games will extend on many play session of a few hours each and can end up lasting years!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_thegamemaster"><a class="anchor" href="#_thegamemaster"></a>The Game Master</h4>
+<div class="paragraph">
+<p>
+Another big particularity of RPGs is that one of the player hold a special role: the Game Master (<span class="lexicWord">GM</span>).
+Unlike the other players, the <span class="lexicWord">GM</span> does not play a specific <span class="lexicWord">character</span> but will give life to all the secondary <span class="lexicWord">characters</span> and antagonists the <span class="lexicWord">characters</span> of the other player will meet and face.
+Those <span class="lexicWord">characters</span> are called <span class="lexicWord">non-player characters</span> or <span class="lexicWord">NPCs</span>.
+The <span class="lexicWord">GM</span> also create and populate the world in which the adventures take place and will describe the sceneries and events of this world to the other players.
+The <span class="lexicWord">GM</span> has the responsibility to prepare some kind of adventure for the <span class="lexicWord">characters</span>, propose the players hooks to allow their <span class="lexicWord">character</span> to jump on such adventures and present encounters and challenges for the <span class="lexicWord">characters</span> to overcome.The <span class="lexicWord">GM</span> will also act in a way as a referee for the game.
+In a RPG, players can have their <span class="lexicWord">characters</span> attempt to do anything.
+It would be impossible to try to cover every situation with a clear cut rule describing how such situation is to be resolved.
+This is where the <span class="lexicWord">GM</span> as referee comes in; <span class="lexicWord">GMs</span> have the responsibility to interpret the rules and decide how the plans of the players can be translated to the available mechanics.
+The <span class="lexicWord">GM</span> also possesses a veto on basically everything in the game.
+They can decide to change or ignore a rule or to declare the plan of a player as unrealistic and not allow it.
+This power should be used with parsimony and restrained; if you want to alter or ignore a rule, make sure to discuss it with your player before encountering a situation where the rule is called upon (ideally before starting the game).
+If a player wants to attempt some crazy actions, instead of saying a strict no, the <span class="lexicWord">GM</span> can try to tweak this action with the player to try to bring it back at an appropriate level of realism for the game being played or make the action extremely unlikely to succeed.
+If the <span class="lexicWord">GM</span> decides to take this later road, once they allowed a player to attempt an action, even if they attributed to this action a difficulty level they were sure the <span class="lexicWord">character</span> would fail, if this last one succeed by good fortune, the <span class="lexicWord">GM</span> need to let the action be accomplished; it is now to late for veto.
+Being the <span class="lexicWord">GM</span> of a group is more work but it is extremely gratifying.
+You get to create a world and present it to the other players, control many <span class="lexicWord">characters</span>, and you take your friends on great adventure.
+Although it is the job of the <span class="lexicWord">GM</span> to bring opposition to the <span class="lexicWord">characters</span>, they do not oppose the players; <span class="lexicWord">GM</span> and the other players work together to create a dramatic story.
+For this story to be interesting it will need challenges to overcome and this is the main responsibility of the <span class="lexicWord">GM</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_whatmaterialdoyouneedtoplayrpgs"><a class="anchor" href="#_whatmaterialdoyouneedtoplayrpgs"></a>What Material Do You Need to Play RPGs?</h4>
+<div class="paragraph">
+<p>
+In order to play a role-playing game in general, you will need pencils, erasers, paper and dice.
+Some specific games require special material like playing cards, tokens, jenga&#8482; blocks, etc.</p>
+</div>
+<div class="paragraph">
+<p>To play <span class="lexicWord">WinterDawn</span> specifically, all you need is the basic material required by most RPGs: something to write with, something to write on and <span class="lexicWord">polyhedral dice</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Polyhedral dice</span> are dice of various shape and number of face.
+The classic set of polyhedral dice comes with 6 or 7 dice and include one die with 4 faces (d4, shaped as a pyramid), one die with 6 faces (d6, the cube used by so many games), one die with 8 faces (d8), one or two dice with 10 faces (d10, when two are included, one will usually be marked with “00”, “10”, “20”, “30”,&#8230;&#8203; , up to “90”; this dice is sometime referred as a percentile dice, d% or d00), one die with 12 faces (d12) and one die with 20 faces (d20).
+<span class="lexicWord">WinterDawn</span> uses all those dice (except the percentile one) and it would facilitate play to own a few full sets.</p>
+</div>
+<div class="paragraph">
+<p>Although they are not required, many groups use miniatures for a visual representation of combats and other situation where knowing the precise position of each member of the party is important.
+Of course, any kind of distinctive token can used in place of miniatures.
+Some groups will also completely forgo the use of such visual aids and rely completely on imagination and accurate description.
+There is no right or wrong answer here and this is simply a matter of preferences.</p>
+</div>
+<div class="paragraph">
+<p>One more thing you will need to play a role-playing game is at least one other person; you need to be at least two <span class="lexicWord">players</span>, one impersonating a <span class="lexicWord">character</span> and the other one taking the role of the <span class="lexicWord">GM</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_whyiplayrpgsandwhyyoushouldgiveitatry"><a class="anchor" href="#_whyiplayrpgsandwhyyoushouldgiveitatry"></a>Why I Play RPGs And Why You Should Give it a Try?</h4>
+<div class="paragraph">
+<p>There is no other type of games that give you more freedom than role playing games.
+In RPGs, you are truly solely limited by your and your friends imagination.
+Video games can be a great hobby but your option will always be limited by what the developer thought off (or by the bugs they left in that you can exploit).
+Board games are also a lot of fun but you have clearly defined actions you can do and strict rules framing and narrowing your possibilities.</p>
+</div>
+<div class="paragraph">
+<p>In role-playing games, you can have your <span class="lexicWord">character</span> attempt to do almost anything (doesn&#8217;t mean they&#8217;re going to succeed).
+Whenever you face an obstacle, the obvious solution is not always the best and the best approach can be different from <span class="lexicWord">character</span> to <span class="lexicWord">character</span>.
+RPGs really encourage the <span class="lexicWord">players</span> to think outside of the box and <span class="lexicWord">GM</span> should rewards imaginative solution (as long as they are realistic in the <span class="lexicWord">game world</span>).</p>
+</div>
+<div class="paragraph">
+<p>Role playing games are also a good way to spend some social time with live people, away from the screen (of course, nowadays you can play online through video call but at least you are looking at someone&#8217;s face).
+The fact that RPGs have so little limits as to the actions you can take and the story you can create, each game is truly unique and will create long-lasting shared memories with your friends.</p>
+</div>
+<div class="paragraph">
+<p>There are other benefits from playing role-playing games that may be more specific to certain situations.
+Since playing RPGs is about getting into the skin of somebody else (your <span class="lexicWord">character</span>), it can help develop empathy and empathy is what will save the world (or the lack thereof will doom it).</p>
+</div>
+<div class="paragraph">
+<p>There is also many stories of stutterers who, while impersonating their <span class="lexicWord">character</span>, lose their stutter, and sometimes, like in my own personal case, they can learn to lose their stutter in everyday life as well.</p>
+</div>
+<div class="paragraph">
+<p>Role playing game can also be a fantastic teaching and learning tool.
+They can be used with children to have them solve problems in an engaging way, or to help them realize that their actions have consequences.
+It can also be used among adults to explore different “what if” scenarii or philosophical ideas and bring them to their logical conclusions in a ludic manner.</p>
+</div>
+<div class="paragraph">
+<p>RPGs can also help anybody playing them develop their imagination, their problem solving skills, their confidence, their creative writing, their improvisation skill, their acting, their outgoingness and many other useful qualities.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_whatqualitiesdoyouneedtoplayrpgs"><a class="anchor" href="#_whatqualitiesdoyouneedtoplayrpgs"></a>What Qualities Do You Need to Play RPGs?</h4>
+<div class="paragraph">
+<p>The only quality you really need to a RPG is to be able to spend a few hours with your fellow <span class="lexicWord">players</span> without arguing and fighting over menial things.</p>
+</div>
+<div class="paragraph">
+<p>Being imaginative and outgoing help but don&#8217;t worry if you are not; those qualities will develop over time as you play.</p>
+</div>
+<div class="paragraph">
+<p>Playing <span class="lexicWord">WinterDawn</span> may require you to do some additions and subtractions but I tried to keep those to a minimum and to keep all maths very simple.
+The maths involved should be accessible to everybody able to count to a hundred and then some.</p>
+</div>
+<div class="paragraph">
+<p>So, if you are able to spend an evening with some friends without it devolving into chaos and violence, congratulations, you have what it takes to play role-playing games.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_whydidicreatethissystemandwrotethisbook"><a class="anchor" href="#_whydidicreatethissystemandwrotethisbook"></a>Why Did I Create this System and Wrote this Book?</h4>
+<div class="paragraph">
+<p>There is many role-playing systems (rule set) and games out there and a lot of them are very good, so why create a new one?
+Because there are many systems out there containing wonderful ideas.
+I admit it, I shamelessly pillage a lot of ideas from my favourite RPG systems, tweaked them and mashed them together to create <span class="lexicWord">WinterDawn</span>.
+I also added some of my original ideas that I came up with over my years of playing RPGs.</p>
+</div>
+<div class="paragraph">
+<p>I also had the desire to create a system more realist than many popular RPGs while keeping it simple enough to not be overcome with rules and details and to not slow the pace of the game too much.</p>
+</div>
+<div class="paragraph">
+<p>While developing the <span class="lexicWord">SdA system</span>, I tired to homogenize the rules so <span class="lexicWord">players</span> have fewer mechanics to learn and the vast majority of the time, whenever they have to roll dice, the same mechanics are going to be used; almost everything in the <span class="lexicWord">SdA system</span> is a <span class="lexicWord">skill check</span>.
+The name <span class="lexicWord">SdA</span> refers to the way most RPGs using polyhedral dice describe the number and type of dice to roll.
+5d6 means to roll 5 dice with 6 faces.
+The “S” in SdA represents the <span class="lexicWord">skill</span> level (+1) the <span class="lexicWord">player</span> is about to test and the “A” represent the <span class="lexicWord">attribute</span> governing this <span class="lexicWord">skill</span>.
+For example, a <span class="lexicWord">character</span> with an <span class="lexicWord">acrobatics</span> <span class="lexicWord">skill</span> of 2 and an <span class="lexicWord">agility</span> (the <span class="lexicWord">attribute</span> governing <span class="lexicWord">acrobatics</span>) of 6, will roll 3d6 whenever they need to test their <span class="lexicWord">acrobatics</span>.
+Combat will work in the same way, as casting magic, as resisting the effect of a spell or from the elements; all those are <span class="lexicWord">skills</span> based.</p>
+</div>
+<div class="paragraph">
+<p>The reason I went with this dice system is that it gives a good tactile feedback of the ability of your <span class="lexicWord">character</span>.
+You can feel in your hand, before you roll, the difference between a task you are good at and one you are mediocre.
+Unlike when you are always rolling a 20 sided dice and adding different number to represent your competency, you can feel the varying odd of success, in you favour when you roll 5d12, not so much if you can only roll 1d4.</p>
+</div>
+<div class="paragraph">
+<p>The other things that was important for me to include in the <span class="lexicWord">SdA systems</span> were a dynamic combat based on choice and trade-off from the player where you don’t just spend your time waiting for your <span class="lexicWord">initiative</span> number, damage and <span class="lexicWord">injuries</span> with consequences, different types of armours and weapons which matter for more than cosmetic reasons, <span class="lexicWord">characters</span> not based on classes and a progression not based on level but where <span class="lexicWord">skills</span> increase as they are used.
+Most of those mechanics exist in other systems in one way or another, I recognize that, but I wanted to bring them all together in harmony, in the same system, in a coherent and easy to learn manner.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_thesdasystemengineofthegame"><a class="anchor" href="#_thesdasystemengineofthegame"></a>2. The SdA system: Engine of the Game</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="_basicmechanics"><a class="anchor" href="#_basicmechanics"></a>Basic Mechanics</h3>
+<div class="paragraph">
+<p>In order to add some objectivity and some randomness to role-playing games, some mechanics are used to define what a <span class="lexicWord">character</span> can and can&#8217;t do, how well-equipped they are to overcome different challenges and if they succeed or fail at whatever they are trying to accomplish.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="_attributes"><a class="anchor" href="#_attributes"></a>Attributes</h4>
+<div class="paragraph">
+<p>Six <span class="lexicWord">attributes</span> define every <span class="lexicWord">character</span>.
+Those are <span class="lexicWord">agility</span>, <span class="lexicWord">power</span>, <span class="lexicWord">constitution</span>, <span class="lexicWord">erudition</span>, <span class="lexicWord">persona</span> and <span class="lexicWord">sagacity</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Attributes</span> for a humanoid <span class="lexicWord">character</span> will usually vary between 4 and 12.
+The highest the <span class="lexicWord">attribute</span> score the better.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Scores below 4 are crippling, since no test with that attribute can be rolled.</p>
+</li>
+<li>
+<p>Scores of 5 or 4 are considered weak.</p>
+</li>
+<li>
+<p>An average attribute has a value of 6 or 7.</p>
+</li>
+<li>
+<p>Scores of 8 or 9 are considered strong.</p>
+</li>
+<li>
+<p>Scores of 10 or 11 are considered exceptional.</p>
+</li>
+<li>
+<p>Scores of 12 are considered heroic.</p>
+</li>
+<li>
+<p>Scores of 20 or higher are considered supernatural.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_agility"><a class="anchor" href="#_agility"></a>Agility</h5>
+<div class="paragraph">
+<p>This <span class="lexicWord">attribute</span> represents the dexterity and nimbleness of the <span class="lexicWord">character</span>.
+It covers fine motor skills, eye-hand coordination and balance.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_power"><a class="anchor" href="#_power"></a>Power</h5>
+<div class="paragraph">
+<p><span class="lexicWord">Power</span> represents the physical strength and explosiveness of a <span class="lexicWord">character</span>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_constitution"><a class="anchor" href="#_constitution"></a>Constitution</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span>'s <span class="lexicWord">constitution</span> represent not only his health but also their resistance to different types of punishment.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Constitution</span> also affect the rate at which a <span class="lexicWord">character</span> recover from injuries.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_erudition"><a class="anchor" href="#_erudition"></a>Erudition</h5>
+<div class="paragraph">
+<p><span class="lexicWord">Erudition</span> is the <span class="lexicWord">attribute</span> for formal learning, academic knowledge and book-smartness.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_persona"><a class="anchor" href="#_persona"></a>Persona</h5>
+<div class="paragraph">
+<p>This <span class="lexicWord">attribute</span> represents the strength of personality and charisma of the <span class="lexicWord">character</span>.
+<span class="lexicWord">Characters</span> with a high persona score tend to be very polarizing individuals and will leave a strong impression on the people they meet.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_sagacity"><a class="anchor" href="#_sagacity"></a>Sagacity</h5>
+<div class="paragraph">
+<p><span class="lexicWord">Sagacity</span> is the wisdom and common sense of the <span class="lexicWord">character</span>.
+A down to earth, no non-sense, resourceful <span class="lexicWord">character</span> would be one with a high <span class="lexicWord">sagacity</span> score.</p>
+</div>
+<div class="paragraph">
+<p>If <span class="lexicWord">erudition</span> is the book-smart, <span class="lexicWord">sagacity</span> will cover the street-smart.
+While <span class="lexicWord">erudition</span> is very theoretical, <span class="lexicWord">sagacity</span> is the practical side of things.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dice"><a class="anchor" href="#_dice"></a>Dice</h4>
+<div class="paragraph">
+<p>WinterDawn is played with <span class="lexicWord">polyhedral dice</span>.
+6 types of dice are used: 4 sided, 6 sided, 8 sided, 10 sided, 12 sided and 20 sided.</p>
+</div>
+<div class="paragraph">
+<p>Those dice are usually referred to by the letter “d” followed by the number of faces (d4, d6, d8, etc).
+If a number is noted before the letter “d”, it is to represent the number of dice.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>“3d12” means 3 12 sided dice.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_skills"><a class="anchor" href="#_skills"></a>Skills</h4>
+<div class="paragraph">
+<p>A large array of different <span class="lexicWord">skills</span> covers what a <span class="lexicWord">character</span> can reasonably be expected to do.
+Each of those <span class="lexicWord">skills</span> is linked to one or, sometime, two or three <span class="lexicWord">attributes</span>.</p>
+</div>
+<div class="paragraph">
+<p>Some <span class="lexicWord">skills</span> have five <span class="lexicWord">specialities</span> under them.
+Those <span class="lexicWord">specialities</span> are added to the <span class="lexicWord">parent skill</span> when relevant.</p>
+</div>
+<div class="paragraph">
+<p>Each <span class="lexicWord">skill</span> is going to be described in the following chapter.</p>
+</div>
+<div class="sect4">
+<h5 id="_skillspecialities"><a class="anchor" href="#_skillspecialities"></a>Skill specialities</h5>
+<div class="paragraph">
+<p>Some <span class="lexicWord">skills</span> are subdivided into <span class="lexicWord">specialities</span>.
+Those <span class="lexicWord">skills</span> should not be tested directly but tests should be made with one of the sub-skills.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">ranks</span> of the <span class="lexicWord">skill</span> and of the <span class="lexicWord">speciality</span> being tested should always be added together.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_skilltest"><a class="anchor" href="#_skilltest"></a>Skill Test</h4>
+<div class="paragraph">
+<p>Whenever a <span class="lexicWord">player</span> desires to attempt an action with a chance of failure, the <span class="lexicWord">GM</span> can ask to perform a <span class="lexicWord">skill test</span>.</p>
+</div>
+<div class="paragraph">
+<p>The number of dice to be rolled for a <span class="lexicWord">skill test</span> is 1 + the number of <span class="lexicWord">ranks</span> in the <span class="lexicWord">skill</span> being tested.
+The type of dice is determined by the <span class="lexicWord">attribute[lexicWord]</span> governing the <span class="lexicWord">skill</span> being tested; the dice used must have no more face than the value of the <span class="lexicWord">attribute</span>.</p>
+</div>
+<div class="paragraph">
+<p>The combination of number of dice plus type of dice is called the <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>Some <span class="lexicWord">skills</span> are governed by more than one <span class="lexicWord">attribute</span>.
+In some cases, the circumstances will determine the appropriate <span class="lexicWord">attribute</span> to use while in other, the choice will be left to the <span class="lexicWord">player</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">skill</span> with a rank of 3 will allow the <span class="lexicWord">player</span> to roll 4 dice.
+If this <span class="lexicWord">skill</span> is governed by an <span class="lexicWord">attribute</span> with a value of 7, the <span class="lexicWord">player</span> can roll 6 sided dice.
+His <span class="lexicWord">dice-pool</span> for this test would then be of 4d6.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Even if a <span class="lexicWord">character</span> has no rank in a <span class="lexicWord">skill</span>, the <span class="lexicWord">player</span> can always at least roll 1 die.</p>
+</div>
+<div class="paragraph">
+<p>A test can involve more than one <span class="lexicWord">roll</span> and/or more than one <span class="lexicWord">dice-pool</span>.
+The different types of test will be discussed later in this chapter.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">skill test</span> should only be asked for if the success or failure of an action will impact the narrative outcome.</p>
+</div>
+<div class="sect4">
+<h5 id="_dicepoolandroll"><a class="anchor" href="#_dicepoolandroll"></a>Dice Pool and Roll</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">dice-pool</span> represents the number and type of dice available to a <span class="lexicWord">player</span> for their <span class="lexicWord">character</span> to perform a certain task or action.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">roll</span> is the actual dice used to perform the task or action.</p>
+</div>
+<div class="paragraph">
+<p>In most circumstances <span class="lexicWord">dice-pools</span> and <span class="lexicWord">rolls</span> will be the same but in some cases, a <span class="lexicWord">player</span> can decide to roll fewer dice than their <span class="lexicWord">dice-pool</span> would allow.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_successandfailure"><a class="anchor" href="#_successandfailure"></a>Success and Failure</h4>
+<div class="paragraph">
+<p>To succeed on a <span class="lexicWord">skill test</span>, a number of <span class="lexicWord">measure of success (MoS)</span> equal or superior to a <span class="lexicWord">difficulty level</span> must be obtained.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_mosmeasureofsuccess"><a class="anchor" href="#_mosmeasureofsuccess"></a>MoS (Measure of Success)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Every dice showing 4 through 7, inclusively, represent 1 <span class="lexicWord">MoS</span>.</p>
+</li>
+<li>
+<p>Dice showing from 8 to 11 represent 2 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>Dice showing between 12 and 15 count for 3 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>Dice showing between 16 and 19 count for 4 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>Dice showing 20 count for 5 <span class="lexicWord">MoSes</span>.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_loss"><a class="anchor" href="#_loss"></a>Loss</h4>
+<div class="paragraph">
+<p>Dice showing 1 subtract 1 <span class="lexicWord">MoS</span>.
+It is possible to end up with a negative number of <span class="lexicWord">MoSes</span> which are called <span class="lexicWord">losses</span>.</p>
+</div>
+<div class="paragraph">
+<p>Many situations have dire consequences for rolling <span class="lexicWord">losses</span>.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_difficultylevel"><a class="anchor" href="#_difficultylevel"></a>Difficulty Level</h4>
+<div class="paragraph">
+<p>There is a vast difference in difficulty between different tasks; some are mundane and some can be near impossible.</p>
+</div>
+<div class="paragraph">
+<p><strong>Easy tasks</strong> need 1 <span class="lexicWord">MoS</span> to be accomplished.</p>
+</div>
+<div class="paragraph">
+<p>Such tasks have 50% chance of being successful when attempted by an average <span class="lexicWord">character</span> untrained in the <span class="lexicWord">skill</span> used.</p>
+</div>
+<div class="paragraph">
+<p><strong>Moderate tasks</strong> need 2 <span class="lexicWord">MoSes</span> to be accomplished.
+An average <span class="lexicWord">character</span> need to be at least initiated in the <span class="lexicWord">skill</span> to be tested to be able to succeed at such a task.</p>
+</div>
+<div class="paragraph">
+<p><strong>Difficult tasks</strong> need 3 <span class="lexicWord">MoSes</span> to be accomplished.
+Those tasks will be challenging for any average <span class="lexicWord">character</span>, even if this one is well-trained in the <span class="lexicWord">skill</span> being tested.</p>
+</div>
+<div class="paragraph">
+<p><strong>Very difficult</strong> tasks need 4 <span class="lexicWord">MoSes</span> to be accomplished.
+Even a <span class="lexicWord">character</span> highly trained in the <span class="lexicWord">skill</span> being tested can be expected to fail such tasks about 2 times out of 3.</p>
+</div>
+<div class="paragraph">
+<p><strong>Near impossible</strong> tasks need 5 <span class="lexicWord">MoSes</span> to be accomplished.
+A <span class="lexicWord">character</span> accomplishing such a task in front of an audience will leave them in awe.</p>
+</div>
+<div class="paragraph">
+<p><strong>Legendary tasks</strong> need 6 or more <span class="lexicWord">MoSes</span> to be accomplished.
+Witnesses of such accomplishment will have a hard time finding people to believe their recounting of the event.</p>
+</div>
+<div class="paragraph">
+<p>Those numbers are for simple tasks which can be done in one action, in a short amount of time.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">difficulty level</span> is either determined by the <span class="lexicWord">GM</span>, by a <span class="lexicWord">roll</span> made by an opponent or by different environmental factors.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_hits"><a class="anchor" href="#_hits"></a>Hits</h4>
+<div class="paragraph">
+<p><span class="lexicWord">MoSes</span> exceeding the <span class="lexicWord">difficulty level</span> are called <span class="lexicWord">hits</span>.</p>
+</div>
+<div class="paragraph">
+<p>Many <span class="lexicWord">skills</span>, <span class="lexicWord">spells</span> and other abilities have varying degree of effectiveness depending on the number of <span class="lexicWord">hits</span> obtained on a <span class="lexicWord">roll</span>.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_typesoftest"><a class="anchor" href="#_typesoftest"></a>Types of Test</h4>
+<div class="paragraph">
+<p>Not all situation call for the same type of test; in some situations a <span class="lexicWord">character</span> can take their time to overcome a static obstacle while in other circumstances time is of the essence.
+Sometimes an additional <span class="lexicWord">character</span> will work against them or assist them.
+Some tasks are complex and will involve multiple <span class="lexicWord">skills</span> and some others don’t have a precise objective and a <span class="lexicWord">character</span> will simply try to do as good as they can.</p>
+</div>
+<div class="paragraph">
+<p>The different types of tests for those different situations are described below.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_statictest"><a class="anchor" href="#_statictest"></a>Static Test</h4>
+<div class="paragraph">
+<p>A <span class="lexicWord">static test</span> is a roll made against a <span class="lexicWord">difficulty level</span> determined by the <span class="lexicWord">GM</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Difficulty level</span> should be based on the inherent difficulty of task, not on how difficult the task should be for the <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">skills</span> chapter and adventuring chapter offer guidelines to determine <span class="lexicWord">difficulty level</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_opposedtest"><a class="anchor" href="#_opposedtest"></a>Opposed Test</h4>
+<div class="paragraph">
+<p>An <span class="lexicWord">opposed test</span> is one where two <span class="lexicWord">characters</span> are working against each other for the completion of a task.</p>
+</div>
+<div class="paragraph">
+<p>A roll is made for each <span class="lexicWord">character</span>.
+The difference between those rolls become the number of <span class="lexicWord">hits</span> scored by the <span class="lexicWord">characters</span> with the most <span class="lexicWord">MoSes</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Losses</span> are added to the <span class="lexicWord">hits</span> of the winning party.</p>
+</div>
+<div class="paragraph">
+<p>If both <span class="lexicWord">characters</span> roll the same number of <span class="lexicWord">MoSes</span>, the status quo is preserved.</p>
+</div>
+<div class="paragraph">
+<p>In some circumstances, it is impossible or unclear to determine the status quo.
+In those occurrences, the <span class="lexicWord">GM</span> should determine if one of the <span class="lexicWord">characters</span> has the <span class="lexicWord">advantage</span>; this <span class="lexicWord">character</span> will win the <span class="lexicWord">opposed test</span> in case of a tie.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A rogue tries to sneak in a manor.
+Their <span class="lexicWord">stealth</span> test will be opposed by a <span class="lexicWord">perception &amp; vigilance</span> made by the <span class="lexicWord">characters</span> who could spot him.
+The guards expecting intruders and looking for them will have <span class="lexicWord">advantage</span> on their tests while the rogue will have <span class="lexicWord">advantage</span> when opposed by the unsuspecting occupants of the manor.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_openendedtest"><a class="anchor" href="#_openendedtest"></a>Open-Ended Test</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Open-ended tests</span> don’t have <span class="lexicWord">difficulty levels</span> but the number of <span class="lexicWord">MoSes</span> will determine how well the task is performed.
+In essence, every <span class="lexicWord">MoS</span> is a <span class="lexicWord">hit</span>.</p>
+</div>
+<div class="paragraph">
+<p>Examples of tasks for which an <span class="lexicWord">open-ended test</span> would be appropriate would include playing a musical instrument, running as fast as one can, cooking a nice meal, building a shelter to spend the night, etc.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_rollingtest"><a class="anchor" href="#_rollingtest"></a>Rolling Test</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Rolling test</span> are tests that can be made in multiple rolls.
+The <span class="lexicWord">MoSes</span> from every roll are added together to beat the <span class="lexicWord">difficulty level</span>.
+They are used for tasks which can be worked on over time.
+Each roll will represent a certain amount of time passed.</p>
+</div>
+<div class="paragraph">
+<p>Two types of <span class="lexicWord">rolling test</span> exist: <span class="lexicWord">first fail</span> and <span class="lexicWord">step back</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_firstfailrollingtest"><a class="anchor" href="#_firstfailrollingtest"></a>First Fail Rolling Test</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">first fail rolling test</span> allows the <span class="lexicWord">player</span> to keep rolling and adding their <span class="lexicWord">MoSes</span> until one roll get no <span class="lexicWord">MoSes</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A thief trying to pick a lock could do so as a <span class="lexicWord">first fail rolling test</span>; for every roll 6 seconds pass, if a roll obtain no <span class="lexicWord">MoSes</span> before they reach the <span class="lexicWord">difficulty level</span> they fail and have to start again.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_stepbackrollingtest"><a class="anchor" href="#_stepbackrollingtest"></a>Step Back Rolling Test</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">step back rolling test</span> does not fail upon a roll with no <span class="lexicWord">MoSes</span> or on a roll with <span class="lexicWord">loses</span>.
+The <span class="lexicWord">loses</span> are simply subtracted from the <span class="lexicWord">MoSes</span> accumulated.
+If the number of accumulated <span class="lexicWord">MoSes</span> drop to 0, the test fails.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A woodworker is building a cart.
+Every day they can make a <span class="lexicWord">Woodworking</span> roll.
+If on a day they score some <span class="lexicWord">loses</span>, they not only make no progress on that day but damage something they already built.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_assistedtest"><a class="anchor" href="#_assistedtest"></a>Assisted Test</h4>
+<div class="paragraph">
+<p>In some circumstances two or more <span class="lexicWord">characters</span> can work together on a task.
+When doing so, each <span class="lexicWord">character</span> can make a roll and the <span class="lexicWord">MoSes</span> are added together to beat a <span class="lexicWord">difficulty level</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">GM</span> can put a limit on the number of <span class="lexicWord">characters</span> who can effectively work on a task.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Two <span class="lexicWord">characters</span> try to move a large log; they can work together and add their <span class="lexicWord">MoSes</span> to beat the <span class="lexicWord">difficulty level</span>.</p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_assistedtesthalved"><a class="anchor" href="#_assistedtesthalved"></a>Assisted Test, Halved</h5>
+<div class="paragraph">
+<p><span class="lexicWord">Halved assisted test</span> are used for tasks where an assistant help but does not double the efficiency of the work being done.
+In those cases, the main performer of the task count their <span class="lexicWord">MoSes</span> normally while the assistants will only add half their <span class="lexicWord">MoSes</span> to the total.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_grouptest"><a class="anchor" href="#_grouptest"></a>Group Test</h4>
+<div class="paragraph">
+<p>A <span class="lexicWord">group</span> test is in order when multiple allied <span class="lexicWord">characters</span> are trying to perform the same action and are covering for each other.</p>
+</div>
+<div class="paragraph">
+<p>Each <span class="lexicWord">player</span> makes a roll.
+The <span class="lexicWord">MoSes</span> from every roll are added and compared to the <span class="lexicWord">difficulty level</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">difficulty level</span> for a group should be equivalent to the <span class="lexicWord">difficulty level[lexicWord]</span> for a single <span class="lexicWord">character</span> to perform the task multiplied by the number of individuals in the group.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A group of 5 <span class="lexicWord">characters</span> need to cross a narrow catwalk over a chasm.
+The <span class="lexicWord">difficulty level</span> for an individual <span class="lexicWord">character</span> to cross the catwalk would be of 2 on an <span class="lexicWord">acrobatics</span> test.
+If the party decide to do it as a group, the <span class="lexicWord">difficulty level</span> become 10 but the <span class="lexicWord">MoSes</span> of every <span class="lexicWord">player</span> are added together.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_composedtest"><a class="anchor" href="#_composedtest"></a>Composed Test</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Composed test</span> are tests which require two or more rolls made with different <span class="lexicWord">skills</span>.
+The <span class="lexicWord">MoSes</span> are added together to beat the <span class="lexicWord">difficulty level</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Disabling a trap can be made with a <span class="lexicWord">composed test</span> of <span class="lexicWord">mechanics</span>, to understand the trap design, and <span class="lexicWord">sleight of hands</span>, to disable it without triggering it.</p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_rollingcomposedtest"><a class="anchor" href="#_rollingcomposedtest"></a>Rolling Composed Test</h5>
+<div class="paragraph">
+<p>In some case, a test is both composed and rolling.</p>
+</div>
+<div class="paragraph">
+<p>In such a situation, the <span class="lexicWord">skills</span> involved are alternated.</p>
+</div>
+<div class="paragraph">
+<p>At least one roll of each <span class="lexicWord">Skill</span> must be made.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Picking a lock will require <span class="lexicWord">mechanics</span> to understand the lock and <span class="lexicWord">sleight of hand</span> to pick it.
+Difficult lock will have high <span class="lexicWord">difficulty level</span> and will require multiple roll.
+The <span class="lexicWord">player</span> will have to alternate between <span class="lexicWord">mechanics</span> and <span class="lexicWord">sleight of hand</span> every roll, until the lock is unlocked or until they fail the roll.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mixedtest"><a class="anchor" href="#_mixedtest"></a>Mixed Test</h4>
+<div class="paragraph">
+<p>A <span class="lexicWord">mixed test</span> is simply a test that combines more than one of the previous types.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>If two <span class="lexicWord">characters</span> are working on building a cart, they can make an <span class="lexicWord">open-ended assisted test</span>.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_bonusandmalus"><a class="anchor" href="#_bonusandmalus"></a>Bonus and Malus</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> can gain bonus or suffer malus depending on the situation they have to perform a task.</p>
+</div>
+<div class="paragraph">
+<p>Bonuses come in two form: Additional <span class="lexicWord">MoSes</span> or additional dice to a <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>Bonuses to <span class="lexicWord">MoSes</span> are noted by a simple +1 <span class="lexicWord">MoS</span>.
+Bonuses to a <span class="lexicWord">dice-pool</span> are noted as +1d.</p>
+</div>
+<div class="paragraph">
+<p>To benefit from bonus <span class="lexicWord">MoSes</span> a player must have dice leftover in their <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>Bonuses giving extra dice can be used even with a depleted <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>Malus removes <span class="lexicWord">MoSes</span> from a roll.  They are noted as -1 <span class="lexicWord">MoS</span>.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_resoundingsuccess"><a class="anchor" href="#_resoundingsuccess"></a>Resounding Success</h4>
+<div class="paragraph">
+<p>For a roll to be considered a <span class="lexicWord">resounding success</span> two conditions must be met:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The task attempted must be successful and</p>
+</li>
+<li>
+<p>The number of <span class="lexicWord">MoSes</span> obtained on the roll (before adding any bonus <span class="lexicWord">MoSes</span>) must be equal or greater to the number of dice granted by the <span class="lexicWord">dice-pool</span> for this task.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Resounding success</span> can be used to regain <span class="lexicWord">spirit</span> or gain <span class="lexicWord">experience</span>.
+Details are given further in this chapter.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_completefailure"><a class="anchor" href="#_completefailure"></a>Complete Failure</h4>
+<div class="paragraph">
+<p>A roll ending up with <span class="lexicWord">Losses</span> (before any malus has been applied) is a <span class="lexicWord">complete failure</span> of the <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">complete failure</span> can cause a lost of <span class="lexicWord">spirit</span> or a gain of <span class="lexicWord">experience</span>.
+While outside of combat, if a player rolls a <span class="lexicWord">complete failure</span> they must make a <span class="lexicWord">Confidence &amp; ego</span> test with a <span class="lexicWord">difficulty level</span> equals to 1 + the number of <span class="lexicWord">losses</span>.
+If this roll is successful, the <span class="lexicWord">player</span> can put an <span class="lexicWord">experience points</span> in the failed <span class="lexicWord">skill</span>.
+If the roll is unsuccessful, the <span class="lexicWord">character</span> loses 1 <span class="lexicWord">spirit point</span> per <span class="lexicWord">ranks</span> in the failed <span class="lexicWord">skill</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Complete failures</span> can also imply a complication.
+Some examples are given in the description of certain tasks.</p>
+</div>
+<div class="paragraph">
+<p>In case of a <span class="lexicWord">complete failure</span> on an <span class="lexicWord">opposed test</span>, the <span class="lexicWord">losses</span> are generally added to the roll of the opposing <span class="lexicWord">character</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_spirit"><a class="anchor" href="#_spirit"></a>Spirit</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Spirit points</span> represent both the stamina and moral of a <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">dice-pool</span> can never contain more dice than the current number of <span class="lexicWord">spirit points</span> of the <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>The maximum amount of <span class="lexicWord">spirit points</span> for a <span class="lexicWord">character</span> is equal to the sum of his <span class="lexicWord">constitution</span>, <span class="lexicWord">persona</span> and <span class="lexicWord">sagacity</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Spirit</span> will fluctuate vastly during play.
+Many circumstances can drain or raise the <span class="lexicWord">spirit</span> of a <span class="lexicWord">character</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_spiritdrain"><a class="anchor" href="#_spiritdrain"></a>Spirit Drain</h5>
+<div class="paragraph">
+<p>Common causes of loss of <span class="lexicWord">spirit points</span> include fighting, long travel, restless nights, starvation, extreme weather, seeing an ally falls in combat, etc.
+Each will be described in their appropriate section.</p>
+</div>
+<div class="paragraph">
+<p>While outside of combat, rolling a <span class="lexicWord">complete failure</span> can cause a lost of <span class="lexicWord">spirit</span>.
+Details in the <span class="lexicWord">complete failure</span> section.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_increasingdicepoolwithspirit"><a class="anchor" href="#_increasingdicepoolwithspirit"></a>Increasing Dice Pool with Spirit</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">player</span> can also spend the <span class="lexicWord">spirit</span> of their <span class="lexicWord">character</span> to add dice to a <span class="lexicWord">dice-pool</span> (before any roll is made).
+One die can be added at a cost equal to the current number of dice in the <span class="lexicWord">dice-pool</span>.
+A <span class="lexicWord">player</span> can add to a <span class="lexicWord">dice-pool</span> a number of dice equal to the <span class="lexicWord">rank</span> of the <span class="lexicWord">skill</span> being tested.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> with a <span class="lexicWord">cooking skill</span> of 3 would have a <span class="lexicWord">dice-pool</span> of 4 dice.
+If the <span class="lexicWord">player</span> wants to increase their chance of succeeding at creating a sumptuous meal, they could decide to spend 4 <span class="lexicWord">spirit points</span> to add a die, 9 <span class="lexicWord">spirit points</span> to add two additional dice (4 + 5) or 15 <span class="lexicWord">spirit points</span> (4 + 5 + 6) to raise their <span class="lexicWord">dice-pool</span> to 7 dice.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_regainingspirit"><a class="anchor" href="#_regainingspirit"></a>Regaining Spirit</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can replenish their <span class="lexicWord">spirit</span> in many ways: A good night of sleep, eating a good meal, being victorious in combat, witnessing a beautiful artistic performance, etc.
+Details about the different ways to regain <span class="lexicWord">spirit</span> will be given in their respective sections.</p>
+</div>
+<div class="paragraph">
+<p>Whenever a <span class="lexicWord">character</span> wake up from a prolonged sleep, the player can regain half their constitution worth of <span class="lexicWord">spirit points</span>.</p>
+</div>
+<div class="paragraph">
+<p>While outside of combat, whenever a player rolls a <span class="lexicWord">resounding success</span>, they can decide to regain 2 <span class="lexicWord">spirit point</span> per <span class="lexicWord">MoSes</span> instead of getting an <span class="lexicWord">experience point</span>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_improvingskillsandattributes"><a class="anchor" href="#_improvingskillsandattributes"></a>Improving Skills and Attributes</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Experience</span> is gained per <span class="lexicWord">skills</span> and per <span class="lexicWord">attributes</span> and cannot be transferred.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can gain <span class="lexicWord">experience</span> for their <span class="lexicWord">skills</span> in a few different ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>While outside combat, rolling a <span class="lexicWord">resounding success</span> grant 1 <span class="lexicWord">experience point</span> in the <span class="lexicWord">skill</span> used.</p>
+</li>
+<li>
+<p>While outside combat, a <span class="lexicWord">player</span> rolling a <span class="lexicWord">complete failure</span> could gain an <span class="lexicWord">experience point</span> if they succeed a <span class="lexicWord">Confidence &amp; ego</span> test.
+Details in the <span class="lexicWord">complete failure</span> section.</p>
+</li>
+<li>
+<p>At the end of a combat, the <span class="lexicWord">GM</span> should count the number of <span class="lexicWord">injuries boxes</span>, major and minor, of all the <span class="lexicWord">characters</span> opposing the party of <span class="lexicWord">players</span>.
+This sum represents the number of <span class="lexicWord">experience points</span> to be divided among the <span class="lexicWord">players</span>.
+The <span class="lexicWord">players</span> are free to distribute the <span class="lexicWord">experience</span> they receive between the <span class="lexicWord">skills</span> they used during this combat as they see fit.</p>
+</li>
+<li>
+<p>Finally, the <span class="lexicWord">GM</span> is free to award <span class="lexicWord">experience points</span> to a <span class="lexicWord">player</span> when this one uses a <span class="lexicWord">skill</span> in an original manner to advance a significant plot point.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">player</span> can raise the <span class="lexicWord">rank</span> of a <span class="lexicWord">skill</span> at any moment by spending an amount of <span class="lexicWord">experience points</span> linked to that <span class="lexicWord">skill</span> equal to the current <span class="lexicWord">rank</span> of the <span class="lexicWord">skill</span> plus 1, multiplied by 4.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">skill</span> at a <span class="lexicWord">rank</span> of 2 will cost 12 <span class="lexicWord">experience points</span> ((2 + 1)*4) to be raised to 3.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Skills</span> subdivided in <span class="lexicWord">specialities</span> does not directly gain <span class="lexicWord">experience</span> but <span class="lexicWord">experience</span> is attributed to the <span class="lexicWord">speciality</span> being tested.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">speciality ranks</span> are raised in the same manner as for <span class="lexicWord">skills</span> but the <span class="lexicWord">rank</span> of the <span class="lexicWord">parent skill</span> should always be added to the <span class="lexicWord">rank</span> of the <span class="lexicWord">speciality</span> for calculation of the cost.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Skills</span> subdivided in <span class="lexicWord">specialites</span> are raised by lowering the rank of three different child <span class="lexicWord">specialities</span> by 1 to raise the <span class="lexicWord">parent skill</span> rank by 1.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> with an <span class="lexicWord">athleticism</span> rank of 1, with the <span class="lexicWord">specialities</span> <span class="lexicWord">climbing</span> 2, <span class="lexicWord">running</span> 1 and <span class="lexicWord">jumping</span> 1, can subtract 1 from those three <span class="lexicWord">specialities</span>, brining back <span class="lexicWord">climbing</span> to 1, <span class="lexicWord">jumping</span> and <span class="lexicWord">running</span> to 0 to increase <span class="lexicWord">athleticism</span> to 2.
+This will not affect the <span class="lexicWord">dice-pool</span> of any of the three <span class="lexicWord">specialities</span> which were part of the trade but will increase the <span class="lexicWord">dice-pool</span> of the other two <span class="lexicWord">athleticism</span> <span class="lexicWord">specialities</span>, <span class="lexicWord">lifting &amp; pushing</span> and <span class="lexicWord">swimming</span>.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Every time a <span class="lexicWord">player</span> uses <span class="lexicWord">experience</span> to raise the level of a <span class="lexicWord">skill</span> or a <span class="lexicWord">speciality</span>, they can add 2 <span class="lexicWord">experience points</span> in the <span class="lexicWord">attribute</span> governing this <span class="lexicWord">skill</span>.
+If this <span class="lexicWord">skill</span> is governed by more than one <span class="lexicWord">attribute</span>, the <span class="lexicWord">experience</span> can be split between the governing <span class="lexicWord">attributes</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Attributes</span> can be raised by spending an amount of <span class="lexicWord">experience points</span> equal to the current level of the <span class="lexicWord">attribute</span>.</p>
+</div>
+<div class="paragraph">
+<p>Some <span class="lexicWord">traits</span> can be purchased using <span class="lexicWord">skill</span> or <span class="lexicWord">attribute experience</span>.
+Details in the <span class="lexicWord">character creation</span> section.</p>
+</div>
+<div class="paragraph">
+<p>Whenever a <span class="lexicWord">player</span> spend <span class="lexicWord">experience</span>, either to raise a <span class="lexicWord">skill</span>, raise an <span class="lexicWord">attribute</span> or purchase a <span class="lexicWord">trait</span>, they should note the amount of <span class="lexicWord">experience</span> spent in the <span class="lexicWord">experience spent</span> space of the <span class="lexicWord">character</span> sheet.
+This has no mechanical advantages and serve solely for the <span class="lexicWord">GM</span> to balance the challenges presented to the <span class="lexicWord">players</span>.</p>
+</div>
+<div class="paragraph">
+<p>Lowering <span class="lexicWord">specialities ranks</span> to increase the <span class="lexicWord">parent skill</span> does not give <span class="lexicWord">attribute experience</span> and should not be included in then <span class="lexicWord">experience spent</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_mentoring"><a class="anchor" href="#_mentoring"></a>Mentoring</h5>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can help another improve a <span class="lexicWord">skill</span> by <span class="lexicWord">mentoring</span>.
+The mentor’s <span class="lexicWord">skill rank</span> must be above the <span class="lexicWord">skill rank</span> of the apprentice by at least 2.</p>
+</div>
+<div class="paragraph">
+<p>When the mentor uses the <span class="lexicWord">skill</span> to perform a task, the apprentice has a chance of <span class="lexicWord">gaining experience</span>.</p>
+</div>
+<div class="paragraph">
+<p>If the task is of a type which can be <span class="lexicWord">assisted</span>, the apprentice must assist with their own <span class="lexicWord">dice-pool</span>.
+Whenever the mentor rolls a <span class="lexicWord">resounding success</span>, both him and the apprentice can gain an <span class="lexicWord">experience point</span> in the <span class="lexicWord">skill</span>.
+If the apprentice rolls a <span class="lexicWord">resounding success</span>, the normal rule apply.</p>
+</div>
+<div class="paragraph">
+<p>If the task is one where <span class="lexicWord">assistance</span> is impossible or impractical, the apprentice must looks closely.
+If the mentor rolls a <span class="lexicWord">resounding success</span>, the <span class="lexicWord">experience point</span> is <span class="lexicWord">attributed</span> to the apprentice.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_trainingandsparing"><a class="anchor" href="#_trainingandsparing"></a>Training and sparing</h5>
+<div class="paragraph">
+<p>Two <span class="lexicWord">characters</span> can work together to improve <span class="lexicWord">skills</span> which require <span class="lexicWord">opposed test</span> (can be the same or two different <span class="lexicWord">skills</span>).</p>
+</div>
+<div class="paragraph">
+<p>The two <span class="lexicWord">characters</span> each make their roll normally but, whenever one of them rolls a <span class="lexicWord">resounding success</span> both can put an <span class="lexicWord">experience points</span> in the <span class="lexicWord">skill</span> they were training.</p>
+</div>
+<div class="paragraph">
+<p>Sparing is training for combat <span class="lexicWord">skills</span>.
+The rules are the same as for regular combat but damage does not have to be rolled.
+For the <span class="lexicWord">characters</span> to be eligible to gain any <span class="lexicWord">experience</span> the combat must last 5 <span class="lexicWord">rounds</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">characters</span> sparring do not gain <span class="lexicWord">experience</span> based on the <span class="lexicWord">injuries boxes</span> of their opponent but on the number of round they sparred.</p>
+</div>
+<div class="paragraph">
+<p>For every 5 <span class="lexicWord">rounds</span>, each <span class="lexicWord">character</span> gain 1 <span class="lexicWord">experience point</span>.</p>
+</div>
+<div class="paragraph">
+<p>Sparing is not limited to two <span class="lexicWord">characters</span>.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">What is a character made off?</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Name: What the <span class="lexicWord">character</span> is known as.</p>
+</li>
+<li>
+<p><span class="lexicWord">Race</span>: The racial make up of the <span class="lexicWord">character</span>.
+Chose between High-Man, Highland Half-Man, Lowland Half-Man, Orc, Goblin, Hobgoblin, Elf, Faun and Troll.</p>
+</li>
+<li>
+<p>Description: The gender, age, height, weight and other details of the physical appearance of the <span class="lexicWord">character</span>.</p>
+</li>
+<li>
+<p><span class="lexicWord">Attributes</span>: <span class="lexicWord">Agility</span>, <span class="lexicWord">power</span>, <span class="lexicWord">constitution</span>, <span class="lexicWord">erudition</span>, <span class="lexicWord">sagacity</span> and <span class="lexicWord">persona</span>.
+Those represent the base disposition of the <span class="lexicWord">character</span> in each of these domains.</p>
+</li>
+<li>
+<p><span class="lexicWord">Skills</span>: The list of <span class="lexicWord">skills</span> the <span class="lexicWord">character</span> knows or has <span class="lexicWord">experience</span> in.</p>
+</li>
+<li>
+<p><span class="lexicWord">Experience spent</span>: The amount of <span class="lexicWord">experience points</span> the <span class="lexicWord">player</span> spent to purchase <span class="lexicWord">skills</span>, <span class="lexicWord">attributes</span> or <span class="lexicWord">traits</span></p>
+</li>
+<li>
+<p><span class="lexicWord">Traits</span>: Special features making the <span class="lexicWord">character</span> unique.
+Some are gained on <span class="lexicWord">character creation</span> while others can be gained while playing.</p>
+</li>
+<li>
+<p><span class="lexicWord">Spirit</span>: A mix between moral and stamina, this is what keep the <span class="lexicWord">character</span> going.</p>
+</li>
+<li>
+<p>Health: The number and type of <span class="lexicWord">injuries</span> the <span class="lexicWord">character</span> is currently suffering from as well as the different effects caused by those <span class="lexicWord">injuries</span>.</p>
+</li>
+<li>
+<p>Arsenal: The list of weapons the <span class="lexicWord">character</span> currently has on them ready to use.</p>
+</li>
+<li>
+<p>Armour: The current armour worn by the <span class="lexicWord">character</span> and the tally of the total passive defence offered by this one.</p>
+</li>
+<li>
+<p>Equipment: All the different piece of equipment the <span class="lexicWord">character</span> carries on their person.</p>
+</li>
+<li>
+<p>Wealth: The money carried by the <span class="lexicWord">character</span> by denomination.
+Three types of coins exist: Copper, Silver and Gold.</p>
+</li>
+<li>
+<p><span class="lexicWord">Encumbrance</span>: A mix of weight and inconvenience of the equipment carried by the <span class="lexicWord">character</span> including the weapons, armour, money, food and water.</p>
+</li>
+<li>
+<p><span class="lexicWord">Morality</span>: Where the <span class="lexicWord">character</span> falls on the good and evil axis, their honour and faith.</p>
+</li>
+<li>
+<p><span class="lexicWord">Vice &amp; Virtues</span>: Represent the inclination of the character towards different <span class="lexicWord">vices and virtues</span>.
+Each virtue lies between two vice.
+The five virtues are <span class="lexicWord">courage</span>, <span class="lexicWord">temperance</span>, <span class="lexicWord">generosity</span>, <span class="lexicWord">magnanimity</span> and <span class="lexicWord">friendliness</span>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_skills2"><a class="anchor" href="#_skills2"></a>Skills</h3>
+<div class="paragraph">
+<p><span class="lexicWord">Skills</span> are a big part of what defines a <span class="lexicWord">character</span>.
+They are the interface with which the characters interact with the world around them.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Skills</span> can be used in many ways, to overcome many types of obstacles.
+It may sometimes seem obvious which skill to use in a certain situation but a <span class="lexicWord">player</span> can always think outside the box and take a different approach to solve the problem at hand.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Skills</span> (and <span class="lexicWord">attributes</span>) can also give information about how the <span class="lexicWord">character</span> should be (role) played; a character with a high <span class="lexicWord">Confidence &amp; ego</span> will act differently than one with no <span class="lexicWord">ranks</span> in this <span class="lexicWord">skill</span>.</p>
+</div>
+<div class="paragraph">
+<p>In the following chapter, each <span class="lexicWord">skill</span> is going to be briefly described and given some example of use.
+Like everything in this book, those are simply guidelines and should not limit the <span class="lexicWord">players</span> or <span class="lexicWord">GM</span> in the way they want to use the <span class="lexicWord">skills</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">skills</span> are presented in alphabetical order.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="_acrobatics"><a class="anchor" href="#_acrobatics"></a>Acrobatics</h4>
+<div class="paragraph">
+<div class="title"><strong><em>Attributes: Agility</em></strong></div>
+<p><span class="lexicWord">Acrobatics</span> represents the capacity of a <span class="lexicWord">character</span> to tumble, roll and balance themself.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Acrobatics</span> can be used to mitigate damage from falls, to walk on narrow ledges or pathways or to move while avoiding range attacks.</p>
+</div>
+<div class="paragraph">
+<p>Every <span class="lexicWord">MoS</span> rolled on an acrobatics test can negate one die from a damage roll <span class="lexicWord">dice-pool</span> from falling (falling damage are explained in the adventuring chapter).</p>
+</div>
+<div class="paragraph">
+<p>While performing a <span class="lexicWord">dodge roll manoeuvre</span>, every <span class="lexicWord">MoS</span> allow the <span class="lexicWord">character</span> to move 1 metre.
+For every metre moved in this way, one <span class="lexicWord">MoS</span> is subtracted from every range attack targeting the <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>Narrow ledge and pathway may reduced <span class="lexicWord">movement speed</span> dramatically (details in the adventuring chapter).
+Every <span class="lexicWord">MoS</span> on an <span class="lexicWord">acrobatics</span> roll can add 1 meters per <span class="lexicWord">rounds</span> to the <span class="lexicWord">movement speed</span>, up to the regular <span class="lexicWord">movement speed</span> of the <span class="lexicWord">character</span>.</p>
+</div>
+<hr>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Skills</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Acrobatics (Agility)</span>: Balance and nimbleness.
+Used to mitigate fall damage and for doge rolling.</p>
+</li>
+<li>
+<p><span class="lexicWord">Appraise (Sagacity)</span>: Used to determine the value and quality of things.</p>
+</li>
+<li>
+<p><span class="lexicWord">Arts &amp; Performance (Persona)</span>: Capacity to entertain or move an audience through art.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Acting</span>: Used to play a role, impersonate, disguise or lie.</p>
+</li>
+<li>
+<p><span class="lexicWord">Dancing</span>: The art of gracious movement.</p>
+</li>
+<li>
+<p><span class="lexicWord">Drawing &amp; Painting</span>: Creating visual image with paint, ink or charcoal.</p>
+</li>
+<li>
+<p><span class="lexicWord">Music &amp; singing</span>: Using musical instruments and one&#8217;s voice to make beautiful sounds.</p>
+</li>
+<li>
+<p><span class="lexicWord">Oration &amp; Poetry</span>: Composing verses and reciting in an appealing manner.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Athleticism (Power)</span>: The pure physical aptitude of a <span class="lexicWord">character</span>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Climbing</span>: The ability to move over more or less vertical surface.</p>
+</li>
+<li>
+<p><span class="lexicWord">Jumping</span>: Either vertical or horizontal, useful to go over some obstacles.</p>
+</li>
+<li>
+<p><span class="lexicWord">Lifting &amp; Pushing</span>: Moving heavy objects.</p>
+</li>
+<li>
+<p><span class="lexicWord">Running</span>: Used to cover distance rapidly using one&#8217;s legs.</p>
+</li>
+<li>
+<p><span class="lexicWord">Swimming</span>: The ability to move in water.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Charm &amp; Persuasion (Persona)</span>: Convincing and seducing people.</p>
+</li>
+<li>
+<p><span class="lexicWord">Cooking (Sagacity)</span>: Preparing fancy feast or large quantity of food.</p>
+</li>
+<li>
+<p><span class="lexicWord">Confidence &amp; ego (Persona or Sagacity)</span>: Resisting fear and intimidation.</p>
+</li>
+<li>
+<p><span class="lexicWord">Crafting (Sagacity)</span>: Using raw material to create finished objects.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Metalworking</span>: Range from pot and horseshoes to weapons, armour and jewellery.</p>
+</li>
+<li>
+<p><span class="lexicWord">Scribing</span>: Writing texts, copying books and everything related to those activities.</p>
+</li>
+<li>
+<p><span class="lexicWord">Stone-cutting</span>: Cutting stones, from basics rocks to precious gems.</p>
+</li>
+<li>
+<p><span class="lexicWord">Tailoring</span>: Making clothes, sails, drapery and anything made with textile, canvas or leather.</p>
+</li>
+<li>
+<p><span class="lexicWord">Woodworking</span>: From framing house to carving spoon, anything made out of wood.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Detect Motive (Sagacity)</span>: Used to figure out if somebody is lying, to resist being conned or to resist taunt.</p>
+</li>
+<li>
+<p><span class="lexicWord">Elementalism (Erudition or Persona)</span>: Magic relying on the study and control of the elements.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Aether</span>: The element of the spirit and soul, mainly used to control mind.</p>
+</li>
+<li>
+<p><span class="lexicWord">Air</span>: Can be controlled to create terrible gust of winds or to fly.</p>
+</li>
+<li>
+<p><span class="lexicWord">Earth</span>: Can shape the ground and stone.</p>
+</li>
+<li>
+<p><span class="lexicWord">Fire</span>: Control of the flame to devastating effects.</p>
+</li>
+<li>
+<p><span class="lexicWord">Water</span>: Can shape and manipulate water to create big wave or to calm the sea.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Insult &amp; Intimidation (Persona)</span>: To cause fear in someone, to influence them to do as told or to demoralize them and have them flee.</p>
+</li>
+<li>
+<p><span class="lexicWord">Knowledge (Erudition)</span>: The mastery and knowledge of the facts of the world.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Geography</span>: Knowledge of the features of the land and ability to draw and read maps.</p>
+</li>
+<li>
+<p><span class="lexicWord">Heraldry &amp; Nobility</span>: Knowledge of the lords and nobles and how to recognize their coat of arms.</p>
+</li>
+<li>
+<p><span class="lexicWord">History</span>: Knowledge of the past events.</p>
+</li>
+<li>
+<p><span class="lexicWord">Linguistic</span>: Knowledge of different languages.</p>
+</li>
+<li>
+<p><span class="lexicWord">Religions</span>: Knowledge of the different systems of beliefs and of their rituals.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Laws &amp; Legal System (Erudition, Persona or Sagacity)</span>: Mastery of the laws and ability to argue them.</p>
+</li>
+<li>
+<p><span class="lexicWord">Luck (Persona)</span>: The inherent good fortune of a character.
+Used in gambling or if a player take wild guess.</p>
+</li>
+<li>
+<p><span class="lexicWord">Mechanics (Sagacity)</span>: Ability to understand and repair mechanical devices, notably traps and locks.</p>
+</li>
+<li>
+<p><span class="lexicWord">Melee Combat (Agility or Power)</span>: Fighting up close.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">1-Handed Swords</span>: Fighting with swords wielded in one hand.</p>
+</li>
+<li>
+<p><span class="lexicWord">2-Handed Swords</span>: Fighting with swords wielded in two hands.</p>
+</li>
+<li>
+<p><span class="lexicWord">Axes, Clubs &amp; Maces</span>: Fighting with tip heavy weapons wielded in one hand.</p>
+</li>
+<li>
+<p><span class="lexicWord">Brawling</span>: Fighting unarmed or with really short weapons.
+Useful for grapple.</p>
+</li>
+<li>
+<p><span class="lexicWord">Polearms</span>: Fighting with longer, hafted weapons, either in one or two hands.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Mysticism (Persona or Sagacity)</span>: Magic taking its source from the gods.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Bless &amp; Curses</span>: Used to give benefits or penalty to allies and enemies.</p>
+</li>
+<li>
+<p><span class="lexicWord">Divination</span>: Used to see remotely or peek in the past or future.</p>
+</li>
+<li>
+<p><span class="lexicWord">Cure &amp; Heal</span>: Used to cure diseases and heal injuries.</p>
+</li>
+<li>
+<p><span class="lexicWord">Necromancy</span>: Speaking to, controlling and raising the dead.</p>
+</li>
+<li>
+<p><span class="lexicWord">Retribution</span>: Bringing divine furry to defeat one&#8217;s foes.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Natural Healing (Constitution)</span>: The capacity of the character to recover from injuries without help.</p>
+</li>
+<li>
+<p><span class="lexicWord">Range Combat (Agility or Power)</span>: Fighting from afar, at a distance.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Bows</span>: Used with arrows, can reach long distance without sacrificing speed.</p>
+</li>
+<li>
+<p><span class="lexicWord">Crossbows &amp; Firearms</span>: Powerful but long to reload, once loaded, aim and shoot.</p>
+</li>
+<li>
+<p><span class="lexicWord">Javelins &amp; Spears</span>: Long hafted weapons to be thrown.</p>
+</li>
+<li>
+<p><span class="lexicWord">Slings</span>: A piece of fabrics used to accelerate and launch stones or bullets.</p>
+</li>
+<li>
+<p><span class="lexicWord">Thrown</span>: Used for throwing knives, axes, darts or small improvised projectiles.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Reflex (Agility)</span>: Can be used for initiative or to avoid dangers.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Cold (Constitution)</span>: Used to prevent damage and lost of spirit from extreme cold.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Fatigue (Constitution)</span>: Used to resist the hardship of long travel and lack of sleep.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Heat (Constitution)</span>: Used to prevent damage and lost of spirit from extreme heat.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Hunger (Constitution)</span>: Used to prevent damage and lost of spirit from starvation.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Pain (Constitution)</span>: Used to ignore pain and avoid penalties from suffering.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Poison (Constitution)</span>: Used to resist toxins, poisons, spoiled food and anything harmful to the body while ingested or once in the blood stream.</p>
+</li>
+<li>
+<p><span class="lexicWord">Resist Shock (Constitution)</span>: Used to resist concussive force and being stunned.</p>
+</li>
+<li>
+<p><span class="lexicWord">Ridding (Agility)</span>: The ability to ride horses and other mounts.</p>
+</li>
+<li>
+<p><span class="lexicWord">Science (Erudition)</span>: The mastery of concepts and theories regarding the natural world.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Alchemy &amp; Chemistry</span>: Used to create and analyse potions and explosives, so long as they do not rely on magic.</p>
+</li>
+<li>
+<p><span class="lexicWord">Botany</span>: Knowledge of plants, their property and how to care for them.</p>
+</li>
+<li>
+<p><span class="lexicWord">Engineering &amp; Physics</span>: Used to calculate ballistics trajectory or load bearing for structures.</p>
+</li>
+<li>
+<p><span class="lexicWord">Medicine</span>: Used to heal serious and life threatening injuries and diseases.</p>
+</li>
+<li>
+<p><span class="lexicWord">Zoology</span>: Knowledge of animals, their habitats, their mode of living, their nutrition, etc.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Seamanship (Sagacity)</span>: Everything one need to know to operate a ship or a boat.</p>
+</li>
+<li>
+<p><span class="lexicWord">Shamanism (Sagacity)</span>: A form of magic coming from the spirits inhabiting nature.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Ancestors</span>: Allows a shaman to see remote events or to peek in the past or future.</p>
+</li>
+<li>
+<p><span class="lexicWord">Beast</span>: Allows the shaman to temporarily gain features from an animal.</p>
+</li>
+<li>
+<p><span class="lexicWord">Lakes &amp; Rivers</span>: Allows a shaman to control water.</p>
+</li>
+<li>
+<p><span class="lexicWord">Mountains &amp; Rocks</span>: Allows a shaman to shape the ground and stones.</p>
+</li>
+<li>
+<p><span class="lexicWord">Plants &amp; Trees</span>: Allows a shaman to control the growth of plants or to animate vegetation.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Sleight of Hands (Agility)</span>: Manual dexterity, used notably for pickpocketing, cheating while gambling and reloading firearms.</p>
+</li>
+<li>
+<p><span class="lexicWord">Sorcery (Persona)</span>: A form of magic coming from pacts with occult force.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Abyssal Magic</span>: Dealing with demons and devils, the sorcerer can summon them to do their bidding.</p>
+</li>
+<li>
+<p><span class="lexicWord">Blood Magic</span>: The sorcerer use the power of fresh blood to control and twist minds and bodies.</p>
+</li>
+<li>
+<p><span class="lexicWord">Chaos Magic</span>: The sorcerer tap from the primordial force of the universe to transform and destroys things.</p>
+</li>
+<li>
+<p><span class="lexicWord">Death Magic</span>: Dealing directly with Death, the sorcerer can gain power over undeads.</p>
+</li>
+<li>
+<p><span class="lexicWord">The Unknown</span>: A mysterious force allowing the sorcerer to see remote events, peek in the future or the past or to drive their opponent insane.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Stealth (Agility)</span>: The ability to move unseen or unnoticed.</p>
+</li>
+<li>
+<p><span class="lexicWord">Survival (Sagacity)</span>: The ability to survive and thrive in the wild.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">First-Aid</span>: Used to heal superficial wounds and to stop light bleeding.</p>
+</li>
+<li>
+<p><span class="lexicWord">Foraging &amp; Hunting</span>: Used to find food while in the wild.</p>
+</li>
+<li>
+<p><span class="lexicWord">Navigation</span>: Used to avoid getting lost while travelling.</p>
+</li>
+<li>
+<p><span class="lexicWord">Sheltering</span>: Used to make camps and rest comfortably while in the wild.</p>
+</li>
+<li>
+<p>[lexicWord]#Tracking*: Used to follow signs and trails left by a character or creature.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Taming &amp; Training (Persona)</span>: The ability to domesticate wild animals and to teach tricks to domesticated ones.</p>
+</li>
+<li>
+<p><span class="lexicWord">Torture (Persona or Sagacity)</span>: Used to inflict pain without killing, either to extract information or simply for pleasure.</p>
+</li>
+<li>
+<p><span class="lexicWord">Witchcraft (Erudition or Sagacity)</span>: A form of magic used to create magical trinkets, wands, potions, etc.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Balms &amp; Potions</span>: Used to create balms and potions with all kind of effects.</p>
+</li>
+<li>
+<p><span class="lexicWord">Curios</span>: Used to create magical objects.</p>
+</li>
+<li>
+<p><span class="lexicWord">Fumes &amp; Phials</span>: Used to create bottles of liquid and gas to be thrown and broken to release the effect,</p>
+</li>
+<li>
+<p><span class="lexicWord">Third Eye</span>: Used to see remotely or peek in the past or future.</p>
+</li>
+<li>
+<p><span class="lexicWord">Wands &amp; Staffs</span>: Used to create magical wands and staffs.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="lexicWord">Wizardry (Erudition)</span>: Form of magic based on the study of ancient formulas and rituals.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Abjuration</span>: Protective and defensive form of magic.</p>
+</li>
+<li>
+<p><span class="lexicWord">Conjuration</span>: Allows a wizard to summons creatures and have them serve them or to move instantaneously from one point to another.</p>
+</li>
+<li>
+<p><span class="lexicWord">Enchantment</span>: Used to alter the abilities of allies, enemies or objects.</p>
+</li>
+<li>
+<p><span class="lexicWord">Evocation</span>: Allows a wizard to create energy from nothing, mainly used to cause damage and destruction.</p>
+</li>
+<li>
+<p><span class="lexicWord">Illusion</span>: Used to confound people and create images and sounds that aren&#8217;t there.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_combat"><a class="anchor" href="#_combat"></a>Combat</h3>
+<div class="paragraph">
+<p>A good story requires drama.
+Drama is conflict and conflicts can often turn to combats.</p>
+</div>
+<div class="paragraph">
+<p>Different <span class="lexicWord">characters</span> can adopt different approach to combat but the end goal is usually the same: survival.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="_initiative"><a class="anchor" href="#_initiative"></a>Initiative</h4>
+<div class="paragraph">
+<p>At the start of a combat, <span class="lexicWord">initiative</span> should be rolled for every <span class="lexicWord">character</span>.
+An <span class="lexicWord">initiative</span> roll is an <span class="lexicWord">open-ended composed test</span>  of <span class="lexicWord">reflex</span> and <span class="lexicWord">perception &amp; vigilance</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> act in order of their <span class="lexicWord">initiative</span>, from the highest to the lowest.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">initiative number</span> of a <span class="lexicWord">character</span> can change during a combat.
+The prevalent causes of <span class="lexicWord">initiative</span> change are detailed further in this chapter.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_rounds"><a class="anchor" href="#_rounds"></a>Rounds</h4>
+<div class="paragraph">
+<p>Combats are divided in <span class="lexicWord">rounds</span>.
+A <span class="lexicWord">round</span> is about 6 seconds (there are 10 rounds in a minute).
+This is more of an average than a fix measure.</p>
+</div>
+<div class="paragraph">
+<p>Every <span class="lexicWord">round</span>, the <span class="lexicWord">GM</span> should called <span class="lexicWord">initiative number</span> from the highest <span class="lexicWord">initiative</span> counting down to the lowest.</p>
+</div>
+<div class="paragraph">
+<p>When a <span class="lexicWord">character&#8217;s</span> <span class="lexicword">initiative number</span> comes up, it is their <span class="lexiword">turn</span> to act.
+On their turn, a character can perform actions and move up to their <span class="lexicword">movement speed</span>.</p>
+</div>
+<div class="paragraph">
+<p>If their <span class="lexicword">initiative</span> is greater than 0, a <span class="lexicword">character</span> can delay their turn to the negative of their <span class="lexicword">initiative number</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> delay their turn, their <span class="lexicWord">initiative</span> return to normal on the following <span class="lexicWord">round</span>.</p>
+</div>
+<div class="paragraph">
+<p>If two or more have the same <span class="lexicWord">initiative</span> score, the <span class="lexicWord">character</span> with the most <span class="lexicWord">spirit</span> acts first.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> with an <span class="lexicWord">initiative</span> of 3 could decide to wait to act at -3.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_actions"><a class="anchor" href="#_actions"></a>Actions</h4>
+<div class="paragraph">
+<p>Every <span class="lexicWord">round</span>, a <span class="lexicWord">character</span> can choose amongst the following actions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Melee Attack</p>
+</li>
+<li>
+<p>Range Attack</p>
+</li>
+<li>
+<p>Relaoding a firearm or crossbow</p>
+</li>
+<li>
+<p>Casting a <span class="lexicWord">Spell</span></p>
+</li>
+<li>
+<p><span class="lexicWord">Athleticism</span> or <span class="lexicWord">Acrobatics</span> action</p>
+</li>
+<li>
+<p>Stop bleeding through <span class="lexicWord">Medicine</span> or <span class="lexicWord">First Aid</span></p>
+</li>
+<li>
+<p><span class="lexicWord">Intimidation</span></p>
+</li>
+<li>
+<p><span class="lexicWord">Taunt</span></p>
+</li>
+<li>
+<p>Inspire their ally</p>
+</li>
+<li>
+<p><span class="lexicWord">Reassess the situation</span></p>
+</li>
+<li>
+<p>Use or interact with an object</p>
+</li>
+<li>
+<p>Any other action that can realistically be performed inside of roughly 6 seconds, at the <span class="lexicWord">GM</span> discretion.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Those actions will be described in more details further in this chapter.</p>
+</div>
+<hr>
+<div class="sect4">
+<h5 id="_performingtwoactions"><a class="anchor" href="#_performingtwoactions"></a>Performing Two Actions</h5>
+<div class="paragraph">
+<p>If a <span class="lexicword">character</span> has an <span class="lexicword">initiative</span> greater than 0, they can choose to split their turn between their regular <span class="lexicword">initiative number</span> and the negative of their <span class="lexicword">initiative number</span>.
+By splitting their turn, a <span class="lexicword">character</span> can perform two actions, divide their movement or both.  If the <span class="lexicword">player</span> decide to perform two actions, the total number of dice used for both actions cannot be greater than the largest <span class="lexicword">dice-pool</span> of those two actions.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicword">character</span> with an <span class="lexicword">initiative</span> of 4 decide to split their turn in two.
+On their <span class="lexicword">initiative number</span> they will <span class="lexicword">intimidate</span> an opponent.  Their <span class="lexicword">insult &amp; intimidation skill</span> grant them a <span class="lexicword">dice-pool</span> of 5d6.
+They also intend to perform a <span class="lexicword">melee attack</span> as their second action, at -4 <span class="lexicword">initiative</span>.
+Their relevant <span class="lexicword">melee attack skill</span> grant them 6d8.
+The total number of dice used for both actions can therefore not exceed 6 dice.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicword">player</span> decide to use 4 dice for the <span class="lexicword">intimidation</span> and the remaining 2 for the <span class="lexicword">melee attack</span>.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_reaction"><a class="anchor" href="#_reaction"></a>Reaction</h4>
+<div class="paragraph">
+<p><span class="lexicword">Reactions</span> are actions performed out of turn.
+They do not count as part of the actions a <span class="lexicword">character</span> can perform and have their own <span class="lexicword">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>The most common <span class="lexicword">reactions</span> a player can perform in a rounds are the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Defending against a melee attack</p>
+</li>
+<li>
+<p>Avoiding a range attack or spell attack</p>
+</li>
+<li>
+<p>Performing an <span class="lexicWord">attack of opportunity</span></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>More details about the specific of those <span class="lexicWord">reactions</span> further in this chapter.</p>
+</div>
+<div class="paragraph">
+<p>The total number of dice used for <span class="lexicword">reactions</span> in a <span class="lexicword">round</span> cannot exceed the number of dice granted by the <span class="lexicword">reaction</span> granting the largest <span class="lexicword">dice-pool</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> is being targeted by a <span class="lexicWord">range attack</span> and decide to <span class="lexicWord">dodge</span>.
+Their <span class="lexicWord">acrobatics skill</span> grant them 2d6, the <span class="lexicWord">player</span> decides to use them.</p>
+</div>
+<div class="paragraph">
+<p>Later in the same <span class="lexicWord">round</span>, some circumstances would grant an <span class="lexicWord">attack of opportunity</span> to the <span class="lexicWord">character</span>.
+The relevant <span class="lexicWord">melee attack skill</span> of the <span class="lexicWord">character</span> would allow them 3d10.
+Since they already used 2 dice for a <span class="lexicWord">reaction</span>, they can only roll 1 die for their <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_freeactions"><a class="anchor" href="#_freeactions"></a>Free Actions</h4>
+<div class="paragraph">
+<p><span class="lexicWord">Free actions</span> are actions which are either very swift to perfrom or can be done in simultanouesly to an other <span class="lexicWord">action</span> or <span class="lexicWord">movement</span>.</p>
+</div>
+<div class="paragraph">
+<p>Talking, drawing a weapon (but not sheathing one) or dropping a held object are examples of common <span class="lexicWord">free actions</span>.
+Those <span class="lexicWord">free actions</span> does not requiere any dice roll.</p>
+</div>
+<div class="paragraph">
+<p>In some case, a <span class="lexicWord">character</span> can be entitled to a <span class="lexicWord">free actions</span> which will requiere a dice roll.
+Resisting an <span class="lexicWord">intimidation</span> or <span class="lexicWord">taunt</span> attempt are typical exemples of <span class="lexicWord">free actions</span> calling for a <span class="lexicWord">test</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">free action</span> require a <span class="lexicWord">test</span>, the dice used do not count as part of the dice used for <span class="lexicWord">actions</span> nor <span class="lexicWord">reactions</span>.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_movement"><a class="anchor" href="#_movement"></a>Movement</h4>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can move up to their <span class="lexicWord">movement speed</span> in a <span class="lexicWord">round</span>.
+This <span class="lexicWord">movement</span> can be split, evenly or not, part of it being performed at the <span class="lexicWord">initiative number</span>, the rest happening at the negative of the <span class="lexicWord">initiative</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">movement</span> can be made before or after an action or on its own.</p>
+</div>
+<div class="paragraph">
+<p>Most humanoid <span class="lexicWord">characters</span> have a <span class="lexicWord">movement speed</span> of 9 meters per <span class="lexicWord">rounds</span>.</p>
+</div>
+<div class="paragraph">
+<p>The type of terrain can affect the distance a <span class="lexicWord">character</span> can move in a <span class="lexicWord">round</span>.
+Details will be provided further in this chapter.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_surprise"><a class="anchor" href="#_surprise"></a>Surprise</h4>
+<div class="paragraph">
+<p>If some <span class="lexicWord">characters</span> are surprised at the start of a combat, they roll <span class="lexicWord">initiative</span> normally but every dice used for the <span class="lexicWord">perception &amp; vigilance</span> roll are calculated as part of the <span class="lexicWord">actions</span> <span class="lexicWord">dice-pool</span> and the dice rolled for the <span class="lexicWord">reflex</span> roll are counted as part of the <span class="lexicWord">reaction</span> <span class="lexicWord">dice-pool</span> for the first round.
+The <span class="lexicWord">player</span> can choose to roll less than the normal amount of dice granted by their <span class="lexicWord">perception &amp; vigilance</span> or <span class="lexicWord">reflex</span> in order to keep more dice available for their <span class="lexicWord">action</span> and <span class="lexicWord">reaction</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> is being ambushed by some opponents.
+They would have acces to 3 and 2 dice from their <span class="lexicWord">perception &amp; vigilance</span> and <span class="lexicWord">reflex</span> <span class="lexicWord">skills</span> respectively.
+The <span class="lexicWord">player</span> decide to roll 2 dice for each, keeping an extra dice for their <span class="lexicWord">action</span>.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_rangeofattack"><a class="anchor" href="#_rangeofattack"></a>Range of Attack</h4>
+<div class="paragraph">
+<p>The <span class="lexicWord">range of attack</span> represent the distance at which a weapon can effectively attack.
+Every weapon has at least one <span class="lexicWord">range of attack</span> but some are effective at more than one <span class="lexicWord">range of attack</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Range of attacks</span> are divided into four types: <span class="lexicWord">close</span>, <span class="lexicWord">medium</span>, <span class="lexicWord">long</span> and <span class="lexicWord">far</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_closemediumandlongranges"><a class="anchor" href="#_closemediumandlongranges"></a>Close, Medium and Long Ranges</h5>
+<div class="paragraph">
+<p>Those ranges are used for melee combat.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lexicWord">Close range</span> is for unarmed combat or very short weapons like knives and daggers.
+In <span class="lexicWord">close range</span> the opponent face each other with no more than a metre between them.</p>
+</li>
+<li>
+<p>In <span class="lexicWord">medium range</span> the opponent are facing each other with 1 and 2 metres between them.
+Most swords, mace and one handed axes are most effective in medium range.</p>
+</li>
+<li>
+<p>When two opponents are facing each other with 2 or 3 metres between them they are considered at <span class="lexicWord">long range</span>.
+Spears, halberds and great swords are at their best at <span class="lexicWord">long range</span>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If a weapon is noted with a <span class="lexicWord">range of attack</span> followed by a negative number, the weapon can still be used at this range (and cause damage) but <span class="lexicWord">MoSes</span> are subtracted from any attack roll made at this range.</p>
+</div>
+<div class="paragraph">
+<p>More details about melee combat further in this chapter.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_farrange"><a class="anchor" href="#_farrange"></a>Far Range</h5>
+<div class="paragraph">
+<p><span class="lexicWord">Far range</span> is for thrown or projectile weapons.</p>
+</div>
+<div class="paragraph">
+<p>Every weapon effective at far range will be noted with a number next to the far range mention.
+This number represents the range increment in metres.</p>
+</div>
+<div class="paragraph">
+<p>More details about the far range and range increment further in this chapter.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_meleeattack"><a class="anchor" href="#_meleeattack"></a>Melee Attack</h4>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> has an opponent inside the <span class="lexicWord">range of attack</span> of a wielded melee weapon, they can attack this opponent on their <span class="lexicWord">initiative</span> turn.</p>
+</div>
+<div class="paragraph">
+<p>Every melee weapon has one or more melee combat <span class="lexicWord">specialities</span> associated with it; the <span class="lexicWord">player</span> choose one of those <span class="lexicWord">specialities</span> to perform the attack.
+If an <span class="lexicWord">attribute</span> is noted next to a <span class="lexicWord">speciality</span>, this <span class="lexicWord">attribute</span> must be used to build the <span class="lexicWord">dice-pool</span>, otherwise, the <span class="lexicWord">player</span> can choose between using <span class="lexicWord">power</span> or <span class="lexicWord">agility</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_defendingagainstmeleeattack"><a class="anchor" href="#_defendingagainstmeleeattack"></a>Defending Against Melee Attack</h5>
+<div class="paragraph">
+<p>If the <span class="lexicWord">character</span> targeted by the attack has not used their whole <span class="lexicWord">dice-pool</span> on this <span class="lexicWord">round</span>, as a <span class="lexicWord">reaction</span>, they can make a melee combat roll of their own to defend against the attack.</p>
+</div>
+<div class="paragraph">
+<p>If the attacker is outside the <span class="lexicWord">range of attack</span> of the defender, the defender will suffer malus to their roll.
+1 <span class="lexicWord">MoSes</span> is subtracted per difference in the <span class="lexicWord">range of attack</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A defender with a <span class="lexicWord">close range</span> weapon defending against a <span class="lexicWord">long range</span> weapon will suffer -2 <span class="lexicWord">MoSes</span> from the melee combat roll while a defender wielding a <span class="lexicWord">medium range</span> weapon fighting at <span class="lexicWord">close range</span> will receive -1 <span class="lexicWord">MoS</span> on their roll.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_attackerdefender"><a class="anchor" href="#_attackerdefender"></a>Attacker &amp; Defender</h5>
+<div class="paragraph">
+<p>Whenever two <span class="lexicWord">characters</span> are facing each other, one is considered the attacker while the other is considered the defender.</p>
+</div>
+<div class="paragraph">
+<p>The attacker has to announce the number of dice they intend to use for the attack before they roll.
+The defender can use this information to select the number of dice they are going to use for their defence.
+The defender cannot change the number of dice used for their defence after the attacker made their roll.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">character</span> acting on their <span class="lexicWord">initiative</span> turn to attack will be considered the attacker while the <span class="lexicWord">character</span> acting out of turn as a <span class="lexicWord">reaction</span> is considered the defender.</p>
+</div>
+<div class="paragraph">
+<p>In the case where the two <span class="lexicWord">characters</span> have the same <span class="lexicWord">initiative</span> number, they are both considered attackers.
+In this situation, the <span class="lexicWord">character</span> with the most <span class="lexicWord">spirit</span> announce the number of dice they are going to use first.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> uses a reaction to perform an <span class="lexicWord">attack of opportunity</span>, they are considered the attacker while the target is considered the defender.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_flankingandrearing"><a class="anchor" href="#_flankingandrearing"></a>Flanking and Rearing</h5>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> is attacked by from the side or the back, they can still defend against the attack but will receive malus to their roll.</p>
+</div>
+<div class="paragraph">
+<p>If attacked from the flanks, they receive -1 <span class="lexicWord">MoS</span> on their roll.</p>
+</div>
+<div class="paragraph">
+<p>If attacked from the rear, they receive -2 <span class="lexicWord">MoSes</span> on their roll.</p>
+</div>
+<div class="paragraph">
+<p>If they win the engagement or on their turn, a <span class="lexicWord">character</span> can pivot to face their opponent without spending any <span class="lexicWord">movement</span> or causing <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_resolvingameleeattack"><a class="anchor" href="#_resolvingameleeattack"></a>Resolving a Melee Attack</h5>
+<div class="paragraph">
+<p>The <span class="lexicWord">MoSes</span> obtained on the melee combat roll of the <span class="lexicWord">characters</span> facing each other are compared.
+The difference between the result of the two rolls is the number of <span class="lexicWord">hits</span> scored by the <span class="lexicWord">character</span> with the most <span class="lexicWord">MoSes</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> have been scored against lose 1 <span class="lexicWord">spirit points</span> per <span class="lexicWord">hits</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">hits</span> scored can also be used for control, damage or for a mix of both.</p>
+</div>
+<div class="paragraph">
+<p>Damage can only be dealt if the <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> are scored against is inside the <span class="lexicWord">range of attack</span> of the weapon used by the <span class="lexicWord">character</span> scoring the <span class="lexicWord">hits</span>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_control"><a class="anchor" href="#_control"></a>Control</h5>
+<div class="paragraph">
+<p>Control are effects to change the situation of the combat in the favour of the <span class="lexicWord">character</span> performing them.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can spend <span class="lexicWord">hits</span> to apply one or more of the following effect:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1 <span class="lexicWord">hits</span>: The <span class="lexicWord">character</span> can move 1 metre inside the <span class="lexicWord">range of attack</span> of their opponent without causing an <span class="lexicWord">attack of opportunity</span>.
+This only protect against the <span class="lexicWord">attack of opportunity</span> from the <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> has been scored against.
+This can allow a <span class="lexicWord">character</span> to move in the middle of the attack resolution.</p>
+</li>
+<li>
+<p>2 <span class="lexicWord">hits</span>: The <span class="lexicWord">initiative</span> of the <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> have been scored against is lowered by 1.</p>
+</li>
+<li>
+<p>2 <span class="lexicWord">hits</span>: The <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> have been scored against is moved by 1 metre in a direction decided by the <span class="lexicWord">player</span> which scored the <span class="lexicWord">hits</span>.
+A <span class="lexicWord">character</span> moved in this way can trigger <span class="lexicWord">attack of opportunity</span>.
+To push a <span class="lexicWord">character</span> of a ledge or in a hole in this way, 1 additional <span class="lexicWord">hit</span> must be expended.</p>
+</li>
+<li>
+<p>4 <span class="lexicWord">hits</span>: The <span class="lexicWord">character</span> the <span class="lexicWord">hits</span> have been scored against is <span class="lexicWord">disarmed</span>.
+The weapon falls at the feet of their feet.
+The <span class="lexicWord">character</span> who scored the <span class="lexicWord">hits</span> can spend additional <span class="lexicWord">hits</span> to send the weapon flying in a random direction.
+The weapon will land 1 metre away per additional <span class="lexicWord">hits</span> spent.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Multiple effects (or the same effect multiple time) can be applied on the same attack.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_rangeattack"><a class="anchor" href="#_rangeattack"></a>Range Attack</h4>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> has a line of sight on an opponent and is equipped with a range weapon, they can try to hit them from a distance.</p>
+</div>
+<div class="paragraph">
+<p>Every range weapon has one or more range combat <span class="lexicWord">specialities</span> associated with it; the <span class="lexicWord">player</span> choose one of those <span class="lexicWord">specialities</span> to perform the attack.</p>
+</div>
+<div class="paragraph">
+<p>If an <span class="lexicWord">attribute</span> is noted next to a <span class="lexicWord">speciality</span>, this <span class="lexicWord">attribute</span> must be used to build the <span class="lexicWord">dice-pool</span>, otherwise, the <span class="lexicWord">player</span> can choose between using <span class="lexicWord">power</span> or <span class="lexicWord">agility</span>.</p>
+</div>
+<div class="paragraph">
+<p>Doing a range attack in the <span class="lexicWord">range of attack</span> of an opponent will grant this one an <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+<div class="sect4">
+<h5 id="_dodgingarangeattack"><a class="anchor" href="#_dodgingarangeattack"></a>Dodging a Range Attack</h5>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> is target by a range attack and is conscious of it, they can try to avoid the projectile by doing a <span class="lexicWord">reflex</span> roll.
+The number of <span class="lexicWord">MoSes</span> obtained on that roll will be subtracted from the range combat roll of the attacker.</p>
+</div>
+<div class="paragraph">
+<p>Dodging cause <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_sizemodifier"><a class="anchor" href="#_sizemodifier"></a>Size Modifier</h5>
+<div class="paragraph">
+<p>The <span class="lexicWord">size</span> of a <span class="lexicWord">character</span> impact how hard they are to hit at range.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Range attacks targeting <span class="lexicWord">mini characters</span> receive -1 <span class="lexicWord">MoS</span>.</p>
+</li>
+<li>
+<p>Range attacks targeting <span class="lexicWord">micro characters</span> receive -2 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>Range attacks targeting <span class="lexicWord">large characters</span> receive +1 <span class="lexicWord">MoS</span>.</p>
+</li>
+<li>
+<p>Range attacks targeting <span class="lexicWord">huge characters</span> or bigger receive +2 <span class="lexicWord">MoSes</span>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_rangeincrement"><a class="anchor" href="#_rangeincrement"></a>Range Increment</h5>
+<div class="paragraph">
+<p>The <span class="lexicWord">range increment</span> of a <span class="lexicWord">far range</span> weapon represent the maximum distance at which an attack can be made without suffering any malus.</p>
+</div>
+<div class="paragraph">
+<p>Every time the range increment is passed 1 <span class="lexicWord">MoS</span> is subtracted from the attack roll.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A weapon with a <span class="lexicWord">range increment</span> of 5 metres can be used up to this distance without any malus.
+If this weapon is used between 5 and 10 metres, 1 <span class="lexicWord">MoS</span> is subtracted from the attack roll.
+If it is used between 10 and 15 metres, 2 <span class="lexicWord">MoSes</span> are subtracted from the attack roll.
+If it is used between 15 and 20 metres, 3 <span class="lexicWord">MoSes</span> are subtracted and so forth.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_resolvingrangeattack"><a class="anchor" href="#_resolvingrangeattack"></a>Resolving Range Attack</h5>
+<div class="paragraph">
+<p>The attacker rolls their attack roll with the appropriate range combat <span class="lexicWord">speciality</span>.
+From the <span class="lexicWord">MoSes</span> obtained are subtracted all the malus which apply: the <span class="lexicWord">MoSes</span> from the <span class="lexicWord">reflex</span> roll of the target, the penalty inflicted by a <span class="lexicWord">dodge</span> roll, the <span class="lexicWord">size</span> modifier and the <span class="lexicWord">range increment</span> penalty.</p>
+</div>
+<div class="paragraph">
+<p>The remaining <span class="lexicWord">MoSes</span> are the <span class="lexicWord">hits</span> of the attack.
+For every <span class="lexicWord">hit</span> one die of damage can be rolled.
+There is no control effects in range attack and the defender can’t affect the attacker.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_damage"><a class="anchor" href="#_damage"></a>Damage</h4>
+<div class="paragraph">
+<p>If the <span class="lexicWord">character</span> scoring the <span class="lexicWord">hits</span> is the attacker, they can roll 1 damage die per <span class="lexicWord">hits</span> used.
+If they are the defender, 1 damage die is rolled for every 2 <span class="lexicWord">hits</span> used.</p>
+</div>
+<div class="paragraph">
+<p>The type of dice to be used for damage can not have more face than the damage indicated by the weapon.
+If the weapon’s damage is noted as an <span class="lexicWord">attribute</span> plus a number (usually <span class="lexicWord">power</span>), the total is the maximum size of dice to be used.</p>
+</div>
+<div class="paragraph">
+<p>Before rolling the damage, the type of damage must be announced.
+Most weapons can deal one or more of the three following type of damage: <span class="lexicWord">piercing</span>, <span class="lexicWord">cutting</span> and <span class="lexicWord">bludgeoning</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a type of damage is followed by a negative number, the weapon can still cause this type of damage but <span class="lexicWord">MoSes</span> are subtracted from the damage roll.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">MoSes</span> rolled on the damage roll are compared to the corresponding passive defence of the armour of the target.
+The difference is the <span class="lexicWord">hits</span> of the damage roll.</p>
+</div>
+<div class="paragraph">
+<p>For every <span class="lexicWord">hits</span> on the damage roll the <span class="lexicWord">character</span> receiving the damage must thick one <span class="lexicWord">injury box</span>.
+All the <span class="lexicWord">injuries boxes</span> ticked must be on the same line.
+The <span class="lexicWord">character</span> receiving the injury can decide if the <span class="lexicWord">injury boxes</span> are ticked on a new line (if one is available) or if they are added to a line with previously ticked <span class="lexicWord">injury boxes</span>.</p>
+</div>
+<div class="paragraph">
+<p>If the amount of <span class="lexicWord">injury boxes</span> is greater than what is available on a line, the <span class="lexicWord">character</span> becomes <span class="lexicWord">incapacitated</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a damage roll cause a <span class="lexicWord">major injury</span> or worst, extra effects are added to the injury depending on the type of attack.</p>
+</div>
+<div class="sect4">
+<h5 id="_damageeffect"><a class="anchor" href="#_damageeffect"></a>Damage Effect</h5>
+<div class="paragraph">
+<p>If a <span class="lexicWord">major injury</span> box is ticked, an additional effect is applied depending on the type of damage.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Cutting</span> and <span class="lexicWord">piercing</span> attacks cause <span class="lexicWord">bleeding wounds</span> while <span class="lexicWord">bludgeoning</span> attack can stunned the target.</p>
+</div>
+<div class="sect5">
+<h6 id="_bleeding"><a class="anchor" href="#_bleeding"></a>Bleeding</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Piercing</span> major injuries cause a level 1 <span class="lexicWord">bleeding wounds</span> while <span class="lexicWord">cutting</span> major injuries cause a level 2 <span class="lexicWord">bleeding wounds</span>.</p>
+</div>
+<div class="paragraph">
+<p>For every <span class="lexicWord">bleeding wounds</span> a <span class="lexicWord">character</span> suffer they can either subtract one die from every <span class="lexicWord">power</span> and <span class="lexicWord">agility</span> <span class="lexicWord">dice-pool</span> or one <span class="lexicWord">bleeding wounds</span> get one level more severe.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> received 1 <span class="lexicWord">piercing</span> <span class="lexicWord">major injury</span> and 1 <span class="lexicWord">cutting</span> <span class="lexicWord">major injury</span>.
+Both are <span class="lexicWord">bleeding</span>, the first one is a level 1 wound while the second one is a level 2 wound.
+The <span class="lexicWord">character’s</span> melee combat <span class="lexicWord">dice-pool</span> is of 5d8.
+If the <span class="lexicWord">player</span> rolls the whole 5 dice, the <span class="lexicWord">bleeding wound</span> from the <span class="lexicWord">piercing</span> injury will advance to level 2 while the <span class="lexicWord">bleeding wound</span> from the <span class="lexicWord">cutting</span> injury will advance to 3.
+The <span class="lexicWord">player</span> decide to roll 4 dice.
+Their <span class="lexicWord">bleeding wounds</span> from the <span class="lexicWord">piercing</span> injury will advance to 2 but the <span class="lexicWord">bleeding wound</span> from the <span class="lexicWord">cutting</span> injury will remain at 2.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>If a level 3 <span class="lexicWord">bleeding wound</span> is aggravated, the <span class="lexicWord">character</span> becomes <span class="lexicWord">incapacitated</span> and start <span class="lexicWord">bleeding to death</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_stunned"><a class="anchor" href="#_stunned"></a>Stunned</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Bludgeoning</span> <span class="lexicWord">major injury</span> cause the <span class="lexicWord">character</span> receiving it to become <span class="lexicWord">stunned</span>.
+The <span class="lexicWord">player</span> must make a <span class="lexicWord">resist shock</span> test.
+This test does not count as part of the <span class="lexicWord">dice-pool</span> for the <span class="lexicWord">round</span> but has its own <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p>The number of <span class="lexicWord">MoSes</span> obtained is the limit of dice which can be used on the next <span class="lexicWord">round</span>.
+This limit is raised by 1 on every subsequent <span class="lexicWord">rounds</span> until the end of the combat or until every <span class="lexicWord">dice-pool</span> is back to normal.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_incapacitated"><a class="anchor" href="#_incapacitated"></a>Incapacitated</h6>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> becomes <span class="lexicWord">incapacitated</span> they fall <span class="lexicWord">prone</span>, their <span class="lexicWord">movement speed</span> is reduced to 0 and all their <span class="lexicWord">dice-pool</span> are reduced to 0 dice.
+The <span class="lexicWord">character</span> is still aware of its surrounding but cannot perform any action.
+They can only talk very low.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> becomes <span class="lexicWord">incapacitated</span> while suffering one or more <span class="lexicWord">bleeding wound</span> start <span class="lexicWord">bleeding to death</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> becomes <span class="lexicWord">incapacitated</span> through a <span class="lexicWord">bludgeoning</span> attack, they become <span class="lexicWord">unconscious</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_bleedingtodeath"><a class="anchor" href="#_bleedingtodeath"></a>Bleeding to Death</h6>
+<div class="paragraph">
+<p>When a <span class="lexicWord">character</span> starts <span class="lexicWord">bleeding to death</span>, the <span class="lexicWord">player</span> must make a <span class="lexicWord">natural healing</span> test.
+The <span class="lexicWord">character</span> will die after a number of minutes equal to the <span class="lexicWord">MoSes</span> obtained on the <span class="lexicWord">natural healing</span> test + 1.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_unconscious"><a class="anchor" href="#_unconscious"></a>Unconscious</h6>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> is made <span class="lexicWord">incapacitated</span> by a <span class="lexicWord">bludgeoning</span> weapon, they become <span class="lexicWord">unconscious</span>.</p>
+</div>
+<div class="paragraph">
+<p>While <span class="lexicWord">unconscious</span>, the <span class="lexicWord">character</span> is totally oblivious to its surrounding.
+The only action the <span class="lexicWord">character</span> can do is a <span class="lexicWord">resist shock</span> <span class="lexicWord">rolling (step back) test</span>.
+The <span class="lexicWord">character</span> regain consciousness when 10 <span class="lexicWord">MoSes</span> are accumulated or at the end of the scene.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_dead"><a class="anchor" href="#_dead"></a>Dead</h6>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> receive any damage while <span class="lexicWord">incapacitated</span>, they die.</p>
+</div>
+<div class="paragraph">
+<p>An ally can try to reanimate a dead character with a <span class="lexicWord">first-aid</span> <span class="lexicWord">static test</span> or a <span class="lexicWord">medicine</span> <span class="lexicWord">rolling (first fail) test</span>.
+The <span class="lexicWord">difficulty level</span> for both those test is equal to the number of minutes passed since the <span class="lexicWord">character</span> died plus 1.
+Each roll takes one minute.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_shielddefence"><a class="anchor" href="#_shielddefence"></a>Shield defence</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> wielding shield can, once per <span class="lexicWord">round</span>, used it to protect themselves against damage.</p>
+</div>
+<div class="paragraph">
+<p>Shield have the special attribute <span class="lexicWord">shield defence</span>, a number representing the protection offered.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">player</span> willing to cause damage to the <span class="lexicWord">character</span> using their shield must spend an amount of their attack hits equal to the <span class="lexicWord">shield defence</span> before they can spend <span class="lexicWord">hits</span> to roll damage.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> is attacking an opponent wielding a shield with a <span class="lexicWord">shield defence</span> of 1.
+The attacker scores 3 <span class="lexicWord">hits</span> on their attack roll and wants to roll damage.
+The defender decide to use their shield so the attacker must spend one <span class="lexicWord">hit</span> to overcome the <span class="lexicWord">shield defence</span> and can then roll 2 damage dice.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_damagetoarmour"><a class="anchor" href="#_damagetoarmour"></a>Damage to Armour</h6>
+<div class="paragraph">
+<p>When a <span class="lexicWord">character</span> is receiving damage, instead of ticking <span class="lexicWord">injury boxes</span> they can permanently reduce the protection of every type offered by one piece of armour by 1 per <span class="lexicWord">injury boxes</span>.</p>
+</div>
+<div class="paragraph">
+<p>If the protection of a piece armour of armour is dropped to 0 for all types, the piece is ruined and fall apart.</p>
+</div>
+<div class="paragraph">
+<p>Damage can not be reduce in this way by natural armour.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_attackofopportunity"><a class="anchor" href="#_attackofopportunity"></a>Attack of Opportunity</h5>
+<div class="paragraph">
+<p>An <span class="lexicWord">attack of opportunity</span> is a melee attack done as a <span class="lexicWord">reaction</span> to certain conditions.</p>
+</div>
+<div class="paragraph">
+<p>The most common cause of <span class="lexicWord">attack of opportunity</span> are:
+* A <span class="lexicWord">character</span> moving inside the <span class="lexicWord">range of attack</span> of an opponent.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <span class="lexicWord">character</span> doing a range attack inside the <span class="lexicWord">range of attack</span> of an opponent.</p>
+</li>
+<li>
+<p>A <span class="lexicWord">character</span> casting a <span class="lexicWord">spell</span> inside the <span class="lexicWord">range of attack</span> of an opponent.</p>
+</li>
+<li>
+<p>A <span class="lexicWord">character</span> fixing a wound inside the <span class="lexicWord">range of attack</span> of an opponent.</p>
+</li>
+<li>
+<p>A <span class="lexicWord">character</span> reloading a weapon inside the <span class="lexicWord">range of attack</span> of an opponent.</p>
+</li>
+<li>
+<p>A <span class="lexicWord">character</span> doing a <span class="lexicWord">reflex</span> roll to avoid a range attack.</p>
+</li>
+<li>
+<p>Any other action made inside the <span class="lexicWord">range of attack</span> of an opponent that require to take the attention away from this opponent.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can only do one <span class="lexicWord">attack of opportunity</span> per <span class="lexicWord">round</span>.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> is only entitled to an <span class="lexicWord">attack of opportunity</span> if the triggering condition happens in his <span class="lexicWord">line of sight</span> (in front of him or on his flanks).
+<span class="lexicWord">Attacks of opportunity</span> done on a target on one of the flank receive -1 <span class="lexicWord">MoS</span>.</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> moves inside the <span class="lexicWord">range of attack</span> of an opponent, the <span class="lexicWord">attack of opportunity</span> can only be done at the start of the <span class="lexicWord">movement</span> (if the <span class="lexicWord">character</span> is already inside the <span class="lexicWord">range of attack</span> and <span class="lexicWord">line of sight</span>) or when the <span class="lexicWord">character</span> enters the <span class="lexicWord">range of attack</span> or <span class="lexicWord">line of sight</span> (If the <span class="lexicWord">movement</span> started outside the <span class="lexicWord">range of attack</span> or <span class="lexicWord">line of sight</span>).</p>
+</div>
+<div class="paragraph">
+<p>If a <span class="lexicWord">character</span> is inside the <span class="lexicWord">range of attack</span> of multiple opponent, they can provoke multiple <span class="lexicWord">attacks of opportunity</span>.</p>
+</div>
+<div class="paragraph">
+<p>While performing an <span class="lexicWord">attack of opportunity</span>, a <span class="lexicWord">character</span> is always considered the attacker.
+The target of an <span class="lexicWord">attack of opportunity</span> is normally considered the defender, even if the attack happens on their turn.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Attacks of opportunity</span> grant the attacker +1d to their roll, therefore, even if a <span class="lexicWord">character’s</span> <span class="lexicWord">dice-pool</span> is completely depleted they can still roll at least one die (of the appropriate type for the <span class="lexicWord">attribute</span> they use for the attack).</p>
+</div>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="_grappling"><a class="anchor" href="#_grappling"></a>Grappling</h5>
+<div class="paragraph">
+<p>Grappling an opponent give access to special control effects.
+To initiate a grapple the <span class="lexicWord">character</span> must be at <span class="lexicWord">close range</span> and score at least 2 <span class="lexicWord">hits</span> on a <span class="lexicWord">brawling</span> attacks.</p>
+</div>
+<div class="paragraph">
+<p>To perform a <span class="lexicWord">brawling</span> attack the <span class="lexicWord">character</span> must be at <span class="lexicWord">close range</span> and wielding the appropriate type of weapon or have at least one free hand.</p>
+</div>
+<div class="paragraph">
+<p>Once a <span class="lexicWord">character</span> is <span class="lexicWord">grappled</span>, their <span class="lexicWord">movement speed</span> becomes 0, and they receive -1 <span class="lexicWord">MoS</span> on all their <span class="lexicWord">power</span> and <span class="lexicWord">agility</span> rolls.</p>
+</div>
+<div class="paragraph">
+<p>Both the grappler and the grappled can only attack each other (but can defend against other) and every attacks other than <span class="lexicWord">brawling</span> ones receive an additional -1 <span class="lexicWord">MoS</span>.
+Neither can use their <span class="lexicWord">shield defence</span>.</p>
+</div>
+<div class="paragraph">
+<p>A grappled <span class="lexicWord">character</span> can reverse the situation and become the grappler by spending 1 <span class="lexicWord">hit</span> from a <span class="lexicWord">brawling</span> attack against their grappler.</p>
+</div>
+<div class="paragraph">
+<p>Two or more <span class="lexicWord">characters</span> can grapple an opponent together.
+Each potential grappler must make their attack to enter grapple normally.
+The malus suffered by the grappled <span class="lexicWord">character</span> are cumulative.</p>
+</div>
+<div class="sect5">
+<h6 id="_moving"><a class="anchor" href="#_moving"></a>Moving</h6>
+<div class="paragraph">
+<p>When a <span class="lexicWord">character</span> is grappling an opponent, they can move with this last one in any direction by 1 metre per <span class="lexicWord">hit</span> scored on a <span class="lexicWord">brawling</span> roll.</p>
+</div>
+<div class="paragraph">
+<p>This control effect cannot be used to move the grappled <span class="lexicWord">character</span> off the ledge of a building or in a hole.
+To do so, the throw effect is in order.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_throw"><a class="anchor" href="#_throw"></a>Throw</h6>
+<div class="paragraph">
+<p>A throw allows a grappled to send the grappled <span class="lexicWord">character</span> to the ground.</p>
+</div>
+<div class="paragraph">
+<p>In order to do so, 2 <span class="lexicWord">hits</span> from a <span class="lexicWord">brawling</span> roll must be spent.</p>
+</div>
+<div class="paragraph">
+<p>The grappled <span class="lexicWord">character</span> is now <span class="lexicWord">prone</span>.
+The grappler can either go <span class="lexicWord">prone</span> with the thrown <span class="lexicWord">character</span> and make it <span class="lexicWord">pinned</span> or release the grapple and remain standing.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_pinned"><a class="anchor" href="#_pinned"></a>Pinned</h6>
+<div class="paragraph">
+<p>A pinned <span class="lexicWord">character</span> suffer the same restrictions as a grapple <span class="lexicWord">character</span> but receive an additional -1 <span class="lexicWord">MoS</span> on their <span class="lexicWord">power</span> and <span class="lexicWord">agility</span> roll (-2 <span class="lexicWord">MoSes</span> total).</p>
+</div>
+<div class="paragraph">
+<p>A pinned <span class="lexicWord">character</span> can reverse the situation and become the one doing the pinning by spending 2 <span class="lexicWord">hits</span> from a <span class="lexicWord">brawling</span> attack against the <span class="lexicWord">character</span> pinning them.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_choke"><a class="anchor" href="#_choke"></a>Choke</h6>
+<div class="paragraph">
+<p>A grappling <span class="lexicWord">character</span> can attempt to choke the grappled <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>To do so, the grappling <span class="lexicWord">character</span> must spend 3 <span class="lexicWord">hits</span> from a <span class="lexicWord">brawling</span> roll.</p>
+</div>
+<div class="paragraph">
+<p>A choke can be broken by the chocked <span class="lexicWord">character</span> by spending 2 <span class="lexicWord">hits</span> from a <span class="lexicWord">brawling</span> roll.</p>
+</div>
+<div class="paragraph">
+<p>A chocked <span class="lexicWord">character</span> cannot become the grappler until they break the choke.</p>
+</div>
+<div class="paragraph">
+<p>At the start of their turn, on every <span class="lexicWord">round</span>, a chocked <span class="lexicWord">character</span> must make a <span class="lexicWord">resist fatigue</span> test with a <span class="lexicWord">difficulty level</span> equal to the number of <span class="lexicWord">round</span> passed since the beginning of the choke.
+This test does not count against the <span class="lexicWord">dice-pool</span> for this <span class="lexicWord">round</span> or as an action.
+If the test is failed, the <span class="lexicWord">character</span> become <span class="lexicWord">unconscious</span>.
+The <span class="lexicWord">character</span> can regain consciousness when 10 <span class="lexicWord">MoSes</span> are accumulated on a <span class="lexicWord">resist fatigue</span> <span class="lexicWord">rolling (step back) test</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_cuttingandpiercingattackwhilegrappling"><a class="anchor" href="#_cuttingandpiercingattackwhilegrappling"></a>Cutting and Piercing Attack While Grappling</h6>
+<div class="paragraph">
+<p>If a grappling <span class="lexicWord">character</span> scored some <span class="lexicWord">hits</span> on a <span class="lexicWord">brawling</span> roll against the grappled <span class="lexicWord">character</span>, they can use some of those <span class="lexicWord">hits</span> to roll for damage.
+If the damage is of type <span class="lexicWord">cutting</span> or <span class="lexicWord">piercing</span>, the protection from the armour is ignored.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> grappling an opponent try to stab the grappled <span class="lexicWord">character</span> with a dagger.
+They score 2 <span class="lexicWord">hits</span> and decide to use them for <span class="lexicWord">piercing</span> damage.
+The damage roll result in 4 <span class="lexicWord">MoSes</span>, those do not need to be compared to armour so the grappled character must tick 4 <span class="lexicWord">injury boxes</span> on the same line.</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_spiritsurge"><a class="anchor" href="#_spiritsurge"></a>Spirit Surge</h5>
+<div class="paragraph">
+<p>At the end of a combat, every <span class="lexicWord">character</span> on the victorious side can roll either a <span class="lexicWord">resist fatigue</span> or a <span class="lexicWord">Confidence &amp; ego</span> <span class="lexicWord">open-ended test</span>.
+Each <span class="lexicWord">character</span> gains 2 <span class="lexicWord">spirit points</span> per <span class="lexicWord">MoSes</span> they obtained on their roll.</p>
+</div>
+<hr>
+</div>
+<div class="sect4">
+<h5 id="_specialmanoeuvres"><a class="anchor" href="#_specialmanoeuvres"></a>Special Manoeuvres</h5>
+<div class="paragraph">
+<p>Some special manoeuvre allow a <span class="lexicWord">character</span> to perform two actions on the same <span class="lexicWord">initiative number</span>.</p>
+</div>
+<div class="paragraph">
+<p>Special manoeuvre still require the <span class="lexicWord">character</span> to split their <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="sect5">
+<h6 id="_charge"><a class="anchor" href="#_charge"></a>Charge</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">charge</span> consist of <span class="lexicWord">running</span> followed by an attack.</p>
+</div>
+<div class="paragraph">
+<p>To perform a <span class="lexicWord">charge</span> a <span class="lexicWord">character</span> must be at a distance to their target at least equal to their <span class="lexicWord">movement speed</span>.</p>
+</div>
+<div class="paragraph">
+<p>The charging <span class="lexicWord">character</span> must make a <span class="lexicWord">running</span> test.
+Each <span class="lexicWord">MoS</span> allow the <span class="lexicWord">character</span> to move an extra 2 metres.
+The <span class="lexicWord">MoSes</span> unused to reach the target can be added to the <span class="lexicWord">charge</span> attack roll.</p>
+</div>
+<div class="paragraph">
+<p>The target of the <span class="lexicWord">charge</span> is entitled to an <span class="lexicWord">attack of opportunity</span> (if the charging <span class="lexicWord">character</span> enter their <span class="lexicWord">range of attack</span>) but both <span class="lexicWord">characters</span> are considered attackers.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">charge</span> can not cause a <span class="lexicWord">disarm</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_defensivestance"><a class="anchor" href="#_defensivestance"></a>Defensive Stance</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">defensive stance</span> is a way for a <span class="lexicWord">character</span> to trade all offensive capability for a more effective defence.</p>
+</div>
+<div class="paragraph">
+<p>To enter a <span class="lexicWord">defensive stance</span>, on their <span class="lexicWord">initiative</span> turn a <span class="lexicWord">character</span> can roll a melee combat <span class="lexicWord">open-ended test</span>.
+The <span class="lexicWord">MoSes</span> obtained can be kept until the start on the <span class="lexicWord">character</span> next turn and spent to oppose the melee attack rolls made against the <span class="lexicWord">character</span>.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> adopts a <span class="lexicWord">defensive stance</span> and rolls 4 <span class="lexicWord">MoSes</span>.
+A first opponent attack them and obtains 3 <span class="lexicWord">MoSes</span> on their attack roll.
+The defending <span class="lexicWord">character</span> uses 3 of their <span class="lexicWord">MoSes</span> to nullify the attack of the opponent.
+If a second opponent attacks the defender and obtained 2 <span class="lexicWord">MoSes</span>, the defender can use their left over <span class="lexicWord">MoS</span> to reduce the attack to 1 <span class="lexicWord">hits</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_dodgerolling"><a class="anchor" href="#_dodgerolling"></a>Dodge rolling</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can move by doing a <span class="lexicWord">dodge roll</span>, making them harder to be <span class="lexicWord">hit</span> by range attacks.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">player</span> must make an <span class="lexicWord">acrobatics</span> test.
+For every <span class="lexicWord">MoS</span> obtained the <span class="lexicWord">character</span> can <span class="lexicWord">dodge roll</span> for 1 metre.</p>
+</div>
+<div class="paragraph">
+<p>For every metre moved in this way, all range attack made against this <span class="lexicWord">character</span> during this <span class="lexicWord">round</span> receive -1 <span class="lexicWord">MoS</span>.</p>
+</div>
+<div class="paragraph">
+<p>If the <span class="lexicWord">character</span> rolling pass in the <span class="lexicWord">range of attack</span> of one or more opponents, they can make an <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_mountedcombat"><a class="anchor" href="#_mountedcombat"></a>Mounted Combat</h6>
+<div class="paragraph">
+<p>Moving with a mount does not require a test.</p>
+</div>
+<div class="paragraph">
+<p>Bringing a mount which is not combat trained in the <span class="lexicWord">range of attack</span> of an opponent require a <span class="lexicWord">riding</span> test.
+The <span class="lexicWord">difficulty level</span> of such a test is equal to 1 + 1 per <span class="lexicWord">size</span> category bigger than the mount.
+If the mount is entering the <span class="lexicWord">range of attack</span> of multiple opponents, the <span class="lexicWord">difficulty level</span> is added for all those opponents and a single test is made.
+If the test is failed, the mount refuse to enter the <span class="lexicWord">range of attack</span>.</p>
+</div>
+<div class="paragraph">
+<p>Mount have their own <span class="lexicWord">dice-pool</span> but act on the <span class="lexicWord">initiative</span> of the rider.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">charge</span> made while mounted use the <span class="lexicWord">running skill</span> and <span class="lexicWord">dice-pool</span> of the mount.</p>
+</div>
+<div class="paragraph">
+<p>Jumping over obstacles require a <span class="lexicWord">ridding</span> test from the rider and a <span class="lexicWord">jumping</span> test from the mount.
+The <span class="lexicWord">difficulty level</span> for both those tests is related to the obstacle to overcome, as per the <span class="lexicWord">athleticism</span> rules.
+The <span class="lexicWord">hits</span> from the <span class="lexicWord">riding</span> test can be transferred to the mount’s <span class="lexicWord">jumping</span> test.
+If the <span class="lexicWord">riding</span> test fails, the mount refuse to jump.
+If the <span class="lexicWord">jumping</span> test fails, the mount fails to pass the obstacle.</p>
+</div>
+<div class="paragraph">
+<p>When the mount or the rider receive a <span class="lexicWord">major injury</span> the rider must make a <span class="lexicWord">riding</span> test to remain on the mount.
+The <span class="lexicWord">difficulty level</span> for this test is equal to the number of <span class="lexicWord">major injury</span> suffered by the rider and the mount (added together).</p>
+</div>
+<div class="paragraph">
+<p>If a rider falls from a mount they may suffer damage as per the regular falling rules.</p>
+</div>
+<div class="paragraph">
+<p>Mounted <span class="lexicWord">characters</span> cannot perform <span class="lexicWord">dodge rolling</span> nor <span class="lexicWord">shield wall</span>.</p>
+</div>
+<div class="paragraph">
+<p>While fighting an opponent on foot, the mounted <span class="lexicWord">character</span> is considered to be on <span class="lexicWord">high ground</span>.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> on foot cannot <span class="lexicWord">choke</span> a mounted <span class="lexicWord">character</span> and all their control attacks cost 1 extra <span class="lexicWord">hits</span>.</p>
+</div>
+<div class="paragraph">
+<p>More detailed on mounted combat in the chapter about vehicle.</p>
+</div>
+<div class="paragraph">
+<p>==Prone</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can chose to get <span class="lexicWord">prone</span> or become <span class="lexicWord">prone</span> due to adverse circumstances.</p>
+</div>
+<div class="paragraph">
+<p>Getting <span class="lexicWord">prone</span> takes 2 metres of <span class="lexicWord">movement</span>.</p>
+</div>
+<div class="paragraph">
+<p>Getting up from being <span class="lexicWord">prone</span> takes half a <span class="lexicWord">character’s</span> <span class="lexicWord">movement</span>.</p>
+</div>
+<div class="paragraph">
+<p>While <span class="lexicWord">prone</span>, moving takes twice as much <span class="lexicWord">movement</span> (every metre moved count as 2 metres).</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">prone</span> <span class="lexicWord">character</span> receives -2 <span class="lexicWord">MoSes</span> on all melee combat rolls against a standing <span class="lexicWord">character</span>.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">prone</span> <span class="lexicWord">character</span> receives -2 <span class="lexicWord">MoSes</span> on all range combat rolls except <span class="lexicWord">crossbows &amp; firearms</span> rolls, which receive +1d.</p>
+</div>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> targeting a <span class="lexicWord">prone</span> <span class="lexicWord">character</span> with a range attack receive -1 <span class="lexicWord">MoS</span> on their attack rolls and the <span class="lexicWord">range increment</span> malus is doubled.</p>
+</div>
+<div class="paragraph">
+<p>Getting <span class="lexicWord">prone</span> behind cover can increase the protection offered, at the <span class="lexicWord">GM</span> discretion.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_kickup"><a class="anchor" href="#_kickup"></a>Kick Up</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">prone</span> <span class="lexicWord">character</span> can get up by doing an <span class="lexicWord">acrobatics</span> test.
+Every <span class="lexicWord">MoS</span> reduce the <span class="lexicWord">movement</span> needed to get up by 1 metres.
+This provoke <span class="lexicWord">attacks of opportunity</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_reassessingthesituation"><a class="anchor" href="#_reassessingthesituation"></a>Reassessing the Situation</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">player</span> can use their action or part of their action to reroll their <span class="lexicWord">initiative</span>.
+They must use the new <span class="lexicWord">initiative</span> number even if it is lower.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_inspire"><a class="anchor" href="#_inspire"></a>Inspire</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can make a short speech to motivate their allies.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">player</span> does an <span class="lexicWord">oratory &amp; poetry</span> test.
+For every <span class="lexicWord">MoS</span> they can distribute 2 <span class="lexicWord">spirit points</span> among their allies (excluding themself).</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_intimidation"><a class="anchor" href="#_intimidation"></a>Intimidation</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can try to <span class="lexicWord">intimidate</span> an opponent.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">player</span> makes an <span class="lexicWord">insult &amp; intimidation</span> roll opposed by a <span class="lexicWord">Confidence &amp; ego</span> test from the target.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">Confidence &amp; ego</span> test of the target does not count as part of their <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Intimidation</span> functions as a <span class="lexicWord">far range</span> weapon with a <span class="lexicWord">range increment</span> of 5 metres for the distance malus.</p>
+</div>
+<div class="paragraph">
+<p>There is no <span class="lexicWord">size</span> modifier.</p>
+</div>
+<div class="paragraph">
+<p>For every <span class="lexicWord">hits</span> on the <span class="lexicWord">insult &amp; intimidation</span> roll, the target lose 2 <span class="lexicWord">spirit points</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_taunt"><a class="anchor" href="#_taunt"></a>Taunt</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can provoke a target.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">player</span> must make an <span class="lexicWord">insult &amp; intimidation</span> test opposed by a <span class="lexicWord">detect motive</span> test by the target.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">detect motive</span> test of the target does not count as part of their <span class="lexicWord">dice-pool</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Taunt</span> functions as a <span class="lexicWord">far range</span> weapon with a <span class="lexicWord">range increment</span> of 5 metres for the distance malus.
+There is no <span class="lexicWord">size</span> modifier.</p>
+</div>
+<div class="paragraph">
+<p>Starting from their next turn, every action not directed against the taunting <span class="lexicWord">character</span> have a <span class="lexicWord">dice-pool</span> reduce by -1d per hits on the <span class="lexicWord">insult &amp; intimidation</span> roll.
+The <span class="lexicWord">dice-pool</span> of the target recover 1 dice per turn.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> tries to taunt an opponent.
+The taunter rolls 4 <span class="lexicWord">MoSes</span> on their <span class="lexicWord">insult &amp; intimidation</span> roll.
+The target rolls only 1 <span class="lexicWord">MoS</span> on a <span class="lexicWord">detect motive</span> rolls.
+The taunter scores 3 <span class="lexicWord">hits</span>.
+On their next turn, if the target does any action not targeted against the taunter, their <span class="lexicWord">dice-pool</span> will be reduced by 3 dice.
+On the following turn, the malus will be reduced to 2 dice, then 1 dice, then the effect will be dissipated.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_shieldwall"><a class="anchor" href="#_shieldwall"></a>Shield Wall</h6>
+<div class="paragraph">
+<p>If two or more <span class="lexicWord">characters</span> are wielding a shield with the special attribute <span class="lexicWord">hide behind shield</span>, they can form a <span class="lexicWord">shield wall</span>.</p>
+</div>
+<div class="paragraph">
+<p>Every frontal attacks made against <span class="lexicWord">characters</span> in a <span class="lexicWord">shield wall</span> receive -1 <span class="lexicWord">MoS</span>, on top of any malus granted by the <span class="lexicWord">hide behind shield</span> special.</p>
+</div>
+<div class="paragraph">
+<p>While used to make a <span class="lexicWord">shield wall</span>, shield cannot be used to reduce attack <span class="lexicWord">hits</span> for damage in their regular manner.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> in a <span class="lexicWord">shield wall</span> can only move at the speed on the slowest character.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> in a <span class="lexicWord">shield wall</span> act at their regular <span class="lexicWord">initiative</span> but every <span class="lexicWord">movement</span> must be made at the lowest <span class="lexicWord">initiative</span> among the party of the <span class="lexicWord">shield wall</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_shruggingoffwounds"><a class="anchor" href="#_shruggingoffwounds"></a>Shrugging Off Wounds</h6>
+<div class="paragraph">
+<p>A <span class="lexicWord">character</span> can decide to spend their turn or part of their turn <span class="lexicWord">shrugging off wounds</span>.</p>
+</div>
+<div class="paragraph">
+<p>To do so, the <span class="lexicWord">player</span> must chose a line of <span class="lexicWord">injury boxes</span> with <span class="lexicWord">minor injuries</span> ticked but no <span class="lexicWord">major injury</span>.
+The <span class="lexicWord">player</span> than do a <span class="lexicWord">resist pain</span> test with a <span class="lexicWord">difficulty level</span> equals to the total number of <span class="lexicWord">injury boxes</span> ticked.
+If the roll is successful, one <span class="lexicWord">injury box</span> can be unticked.</p>
+</div>
+<div class="paragraph">
+<p>In case of a <span class="lexicWord">complete failure</span>, one more <span class="lexicWord">injury box</span> is ticked for every <span class="lexicWord">loss</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_throwingnonrangeweapon"><a class="anchor" href="#_throwingnonrangeweapon"></a>Throwing Non-Range Weapon</h6>
+<div class="paragraph">
+<p>Every weapon and objects can be thrown with the <span class="lexicWord">thrown skills</span>.</p>
+</div>
+<div class="paragraph">
+<p>Every <span class="lexicWord">thrown</span> attack made with a weapon or object not specifically made for throwing receive a malus.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Small objects and weapons which can be more or less contained in one hand (knives, small rocks, tomatoes, mugs, etc) receive -1 <span class="lexicWord">MoS</span> and have a <span class="lexicWord">range increment</span> of 5 metres.</p>
+</li>
+<li>
+<p>Medium objects and weapons which are used with one hand (arming swords, skillets, books, etc) receive -2 <span class="lexicWord">MoSes</span> and have a <span class="lexicWord">range increment</span> of 4 metres.</p>
+</li>
+<li>
+<p>Large objects and weapons which usually require two hands to use (great swords, chairs, pumpkins, etc) receive -3 <span class="lexicWord">MoSes</span> and have a <span class="lexicWord">range increment</span> of 3 metres.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_twoweaponsfighting"><a class="anchor" href="#_twoweaponsfighting"></a>Two Weapons Fighting</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> equipped with a weapon in each hand can do two attacks on the same <span class="lexicWord">initiative number</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="lexicWord">dice-pool</span> must be split normally.</p>
+</div>
+<div class="paragraph">
+<p>The second attack receive -1 <span class="lexicWord">MoS</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_castingspell"><a class="anchor" href="#_castingspell"></a>Casting Spell</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Characters</span> with spell casting abilities can cast <span class="lexicWord">spells</span> in combat.</p>
+</div>
+<div class="paragraph">
+<p>Casting a <span class="lexicWord">spell</span> causes <span class="lexicWord">attack of opportunity</span>.</p>
+</div>
+<div class="paragraph">
+<p>If attack <span class="lexicWord">hits</span> are scored against a <span class="lexicWord">character</span> while they are casting a <span class="lexicWord">spell</span>, the casting fails.</p>
+</div>
+<div class="paragraph">
+<p>More details on casting spell in the magic chapter.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_terrainmodifiers"><a class="anchor" href="#_terrainmodifiers"></a>Terrain Modifiers</h5>
+<div class="paragraph">
+<p>Different types of terrain can affect combat.
+Terrain can hinder or advantage <span class="lexicWord">characters</span> depending on the situation and on how they use the different obstacles.</p>
+</div>
+<div class="sect5">
+<h6 id="_cover"><a class="anchor" href="#_cover"></a>Cover</h6>
+<div class="paragraph">
+<p><span class="lexicWord">Cover</span> makes a <span class="lexicWord">character</span> harder to hit.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Cover</span> is divided in 4 categories according to how much of the <span class="lexicWord">character’s</span> body is hidden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>¼ <span class="lexicWord">cover</span>: Attacks made against a <span class="lexicWord">character</span> behind this type of cover receive -1 <span class="lexicWord">MoS</span>.</p>
+</li>
+<li>
+<p>½ <span class="lexicWord">cover</span>: Attacks made against a <span class="lexicWord">character</span> behind this type of <span class="lexicWord">cover</span> receive -2 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>¾ <span class="lexicWord">cover</span>: Attacks made against a <span class="lexicWord">character</span> behind this type of <span class="lexicWord">cover</span> receive -3 <span class="lexicWord">MoSes</span>.</p>
+</li>
+<li>
+<p>Full <span class="lexicWord">cover</span>: Attacks cannot be made against <span class="lexicWord">character</span> fully covered.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is possible that a <span class="lexicWord">cover</span> apply to both opponents simultaneously.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Character</span> of different <span class="lexicWord">size</span> can receive different protection from the same <span class="lexicWord">cover</span>.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_difficultterrain"><a class="anchor" href="#_difficultterrain"></a>Difficult Terrain</h6>
+<div class="paragraph">
+<p>Different types of terrain can hinder the <span class="lexicWord">movement</span> of <span class="lexicWord">characters</span>.</p>
+</div>
+<div class="paragraph">
+<p><span class="lexicWord">Difficult terrains</span> are divided in four categories, according to how much they hinder <span class="lexicWord">movement</span>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minor impediment: Every 2 metres moved count for 3.
+If a <span class="lexicWord">character</span> runs on such terrain, 1 <span class="lexicWord">MoS</span> is used not to fall.</p>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Loose rocks on the ground or large exposed tree roots.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Medium impediment: Every metre moved on such terrain counts for 2.
+If a <span class="lexicWord">character</span> runs on such terrain, 2 <span class="lexicWord">MoSes</span> are used not to fall.</p>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Muddy ground or moderately steep hill.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Severe impediment: Every metre moved on such terrain counts for 3.
+If a <span class="lexicWord">character</span> runs on such terrain, 3 <span class="lexicWord">MoSes</span> are used not to fall.</p>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Icy ground or marshy land.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Extreme impediment: Every metre moved on such terrain counts for 4.
+It is impossible to run on such terrain but an <span class="lexicWord">athleticism</span> or <span class="lexicWord">acrobatics</span> test can increase the movement at the <span class="lexicWord">GM</span> discretion.</p>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>Thick bush or jagged rocks.</p>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_highground"><a class="anchor" href="#_highground"></a>High Ground</h6>
+<div class="paragraph">
+<p>Attacking a <span class="lexicWord">character</span> on lower ground gives the <span class="lexicWord">character</span> on <span class="lexicWord">high ground</span> +1d.</p>
+</div>
+<hr>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spells"><a class="anchor" href="#_spells"></a>3. Spells</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="_introduction2"><a class="anchor" href="#_introduction2"></a>Introduction</h3>
+<div class="paragraph">
+<p>This is place holder text.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spelldescription"><a class="anchor" href="#_spelldescription"></a>Spell Description</h3>
+<div class="sect3">
+<h4 id="_fireball"><a class="anchor" href="#_fireball"></a>Fireball</h4>
+<div class="paragraph">
+<p>A ball of fire explode, burning everyone in the blast radius.</p>
+</div>
+<table class="tableblock frame-none grid-none spread">
+<caption class="title">Components</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Essence:</strong> Fire<br>
+  <strong>Duration:</strong> Instantaneous</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Target:</strong> Sphere<br>
+  <strong>Effect:</strong> Damage + Burning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range:</strong> Sight<br>
+  <strong>Save:</strong> Reflex (Dodge)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="_description"><a class="anchor" href="#_description"></a>Description</h5>
+<div class="paragraph">
+<p>The radius of the sphere is 1 metre per <span class="lexicWord">MoS</span> obtained on the damage roll.
+Every <span class="lexicWord">character</span> caught in the first metre from the centre of the sphere will take the full damage rolled.
+The damage is reduced by 1 for every additional metre away from the centre.</p>
+</div>
+<div class="paragraph">
+<p>Every <span class="lexicWord">character</span> caught in the radius of the explosion can do a <span class="lexicWord">reflex</span> roll as a <span class="lexicWord">reaction</span>.
+For every <span class="lexicWord">MoS</span> obtained on that roll, the <span class="lexicWord">character</span> can move 1 metre away from the center of the explosion.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<div class="paragraph">
+<p>A sorcerer cast a <span class="lexicword">fireball</span> nearby 1 metre away from an enemy.
+Due to a good roll on casting,the Sorcerer rolls 3d8 <span class="lexicword">burning</span> damage and obtains 3 <span class="lexicWord">MoSes</span>.
+The <span class="lexicWord">fireball</span> will thus have a radius of 3 metres.</p>
+</div>
+<div class="paragraph">
+<p>The enemy situated at 1 metre from the centre of impact would then receive the full 3 level of burning injury.
+This enemy can use their <span class="lexicWord">reaction</span> to move away from the centre of the explosion; 2 <span class="lexicWord">MoSes</span>.
+Enough to move just at the edge of the blast radius and reducing the damage to 1.</p>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_appendices"><a class="anchor" href="#_appendices"></a>4. Appendices</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="_test"><a class="anchor" href="#_test"></a>Appendix A: Test</h3>
+<hr>
+<div class="paragraph">
+<p>This is a test appendix where some information need to go.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_lexicon"><a class="anchor" href="#_lexicon"></a>Appendix B: Lexicon</h3>
+<hr>
+<div class="paragraph">
+<p>Here is a list of terms which are used in very specific manner.  Every time you see a word written in <span class="lexicWord">this format</span>, you can find its definition in this section.</p>
+</div>
+<div class="dlist glossary">
+<dl>
+<dt>character</dt>
+<dd>
+<p>A person in the game, either controlled by the GM or one of the other players.</p>
+</dd>
+</dl>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_index"><a class="anchor" href="#_index"></a>Index</h3>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version v0.0.1<br>
+Last updated 2018-01-01 17:45:23 EST
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@import "components/asciidoc";
+@import "components/awesome-icons";
+@charset "UTF-8";
+
+a:link    {color:black; background-color:transparent; text-decoration:none}
+a:visited {color:grey; background-color:transparent; text-decoration:none}
+a:hover   {color:white; background-color:black; text-decoration:none}
+a:active  {color:grey; background-color:black; text-decoration:none}
+
+h1 {font-size:200%;}
+
+h2 {font-size:175%;}
+
+h3 {font-size:150%;}
+
+h4 {font-size:125%;}
+
+h5 {font-size:100%;line-height:150%}
+
+p {font-size:100%;}
+
+body {font-family:liberation;text-align:center;}
