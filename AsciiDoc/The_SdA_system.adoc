@@ -11,17 +11,17 @@ include::{root}Include.adoc[]
 
 == Basic Mechanics
 
-In order to add some objectivity and some randomness to role-playing games, some mechanics are used to define what a [lexicWord]#character# can and can't do, how well-equipped they are to overcome different challenges and if they succeed or fail at whatever they are trying to accomplish.
+In order to add both objectivity and randomness to role-playing games, game mechanics are used to define what a [lexicWord]#character# can and can't do, how well-equipped they are to overcome different challenges and if they succeed or fail at whatever they are trying to accomplish.
 
 '''
 
 === Attributes
 
 Six [lexicWord]#attributes# define every [lexicWord]#character#.
-Those are [lexicWord]#agility#, [lexicWord]#power#, [lexicWord]#constitution#, [lexicWord]#erudition#, [lexicWord]#persona# and [lexicWord]#sagacity#.
+Those are [lexicWord]#agility#, [lexicWord]#constitution#, [lexicWord]#strength#, [lexicWord]#erudition#, [lexicWord]#persona# and [lexicWord]#wisdom#.
 
 [lexicWord]#Attributes# for a humanoid [lexicWord]#character# will usually vary between 4 and 12.
-The highest the [lexicWord]#attribute# score the better.
+The highest the [lexicWord]#attribute's# score, the better.
 
 * Scores below 4 are crippling, since no test with that attribute can be rolled.
 * Scores of 5 or 4 are considered weak.
@@ -29,22 +29,22 @@ The highest the [lexicWord]#attribute# score the better.
 * Scores of 8 or 9 are considered strong.
 * Scores of 10 or 11 are considered exceptional.
 * Scores of 12 are considered heroic.
-* Scores of 20 or higher are considered supernatural.
+* Scores of 20 or higher are supernatural.
 
 ==== Agility
 
 This [lexicWord]#attribute# represents the dexterity and nimbleness of the [lexicWord]#character#.
 It covers fine motor skills, eye-hand coordination and balance.
 
-==== Power
-
-[lexicWord]#Power# represents the physical strength and explosiveness of a [lexicWord]#character#.
-
 ==== Constitution
 
 A [lexicWord]#character#'s [lexicWord]#constitution# represent not only his health but also their resistance to different types of punishment.
 
 [lexicWord]#Constitution# also affect the rate at which a [lexicWord]#character# recover from injuries.
+
+==== Strength
+
+[lexicWord]#Strength# represents the physical power and explosiveness of a [lexicWord]#character#.
 
 ==== Erudition
 
@@ -55,28 +55,32 @@ A [lexicWord]#character#'s [lexicWord]#constitution# represent not only his heal
 This [lexicWord]#attribute# represents the strength of personality and charisma of the [lexicWord]#character#.
 [lexicWord]#Characters# with a high persona score tend to be very polarizing individuals and will leave a strong impression on the people they meet.
 
-==== Sagacity
+==== Wisdom
 
-[lexicWord]#Sagacity# is the wisdom and common sense of the [lexicWord]#character#.
-A down to earth, no non-sense, resourceful [lexicWord]#character# would be one with a high [lexicWord]#sagacity# score.
+[lexicWord]#Wisdom# is the sagacity and common sense of the [lexicWord]#character#.
+A down to earth, no non-sense, resourceful [lexicWord]#character# would be one with a high [lexicWord]#wisdom# score.
 
-If [lexicWord]#erudition# is the book-smart, [lexicWord]#sagacity# will cover the street-smart.
-While [lexicWord]#erudition# is very theoretical, [lexicWord]#sagacity# is the practical side of things.
+.Erudition and Wisdom
+[NOTE]
+====
+If [lexicWord]#erudition# is related to being book-smart, [lexicWord]#wisdom# will cover the street-smart of a [lexicWord]#character#.
+While [lexicWord]#erudition# is very theoretical, [lexicWord]#wisdom# is more on the practical side of things.
+====
 
 '''
 
 === Dice
 
 {gameName} is played with [lexicWord]#polyhedral dice#.
-6 types of dice are used: 4 sided, 6 sided, 8 sided, 10 sided, 12 sided and 20 sided.
+6 types of dice are used: 4-sided, 6-sided, 8-sided, 10-sided, 12-sided and 20-sided.
 
 Those dice are usually referred to by the letter “d” followed by the number of faces (d4, d6, d8, etc).
-If a number is noted before the letter “d”, it is to represent the number of dice.
+When a number is noted before the letter “d”, it represents the number of dice to be rolled.
 
 .Example
 [caption = ""]
 ====
-“3d12” means 3 12 sided dice.
+“3d12” means 3 12-sided dice.
 ====
 
 '''
@@ -84,19 +88,26 @@ If a number is noted before the letter “d”, it is to represent the number of
 === Skills
 
 A large array of different [lexicWord]#skills# covers what a [lexicWord]#character# can reasonably be expected to do.
-Each of those [lexicWord]#skills# is linked to one or, sometime, two or three [lexicWord]#attributes#.
-
-Some [lexicWord]#skills# have five [lexicWord]#specialities# under them.
-Those [lexicWord]#specialities# are added to the [lexicWord]#parent skill# when relevant.
+Each of those [lexicWord]#skills# is linked to one or two [lexicWord]#attributes#.
 
 Each [lexicWord]#skill# is going to be described in the following chapter.
 
 ==== Skill specialities
 
-Some [lexicWord]#skills# are subdivided into [lexicWord]#specialities#.
-Those [lexicWord]#skills# should not be tested directly but tests should be made with one of the sub-skills.
+Some [lexicWord]#skills# are subdivided into five [lexicWord]#specialities#.
+
+Those [lexicWord]#skills# should not be tested directly but tests should be made with one of their [lexicWord]#speciality#.
+
+The [lexicWord]#ranks# of the parent [lexicWord]#skill# should always be added to the [lexicWord]#speciality# when this last one is being tested.
 
 The [lexicWord]#ranks# of the [lexicWord]#skill# and of the [lexicWord]#speciality# being tested should always be added together.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# needs to make a [lexicWord]#sheltering# test to build camp for the night.
+[lexicWord]#Sheltering# is a [lexicWord]#Survival speciality#; those two scores will be added together to determine the size of the [lexicWord]#dice-pool#.
+====
 
 '''
 

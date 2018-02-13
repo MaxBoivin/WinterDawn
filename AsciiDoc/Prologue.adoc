@@ -323,6 +323,7 @@ And this is not even mentioning the possible confusion between ounces and troy o
 
 If you categorically refuse to use the metric system, a conversion chart is available at the end of the book with corresponding measurement, not exact, but close enough to not break the system and simple enough to calculate mentally (1 metre become 3 feet instead of 3 feet and 3 inches, a.k.a 3¼ or 3.25 feet).
 
+'''
 <<<
 
 == Terms Definition
@@ -335,10 +336,10 @@ If you are familiar with [lexicWord]#RPGs#, those terms should already be known.
 
 [glossary]
 Attributes::
-The physical and mental aptitudes of a character.  6 attributes compose a character: Agility, Power, Constitution, Erudition. Persona and Sagacity.
+The physical and mental aptitudes of a character.  6 attributes compose a character: Agility, Constitution, Strength, Erudition, Persona and wisdom.
 
-character::
-A character refers to an individual in the game world, either controlled by the GM or by another player.
+Character::
+A character refers to an individual in the game world, either controlled by the GM (NPC) or by another player (PC).  This include humanoids, animals and monsters.
 
 GM (Game Master)::
 A player fulfilling a special role of describing the scene, impersonating the characters not controlled by the other players and acting as a referee.
@@ -347,8 +348,10 @@ Player::
 The term player refers to a real world person sitting at the table, either controlling an in-game character or being the GM.
 
 Skills::
-Represent the different types of action a character can perform and how competent they are at it.
+Represent the different levels of proficiency a character can perform actions.
 
 Test (Skill Test)::
-Whenever a player attempts an action that could succeed or fail (and if there is dramatic outcome to success or failure) a skill test can be demanded by the GM.
+Whenever a player attempts an action that could succeed or fail (and if there is dramatic outcome to success or failure), a skill test can be requested by the GM.
 Different types of test exist for different situations and each one will be covered later in this book.
+
+'''
