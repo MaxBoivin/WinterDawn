@@ -83,7 +83,7 @@ A [lexicWord]#character# on foot cannot [lexicWord]#choke# a mounted [lexicWord]
 
 More detailed on mounted combat in the chapter about vehicle.
 
-==Prone
+== Prone
 
 A [lexicWord]#character# can chose to get [lexicWord]#prone# or become [lexicWord]#prone# due to adverse circumstances.
 

@@ -547,7 +547,7 @@ Different types of terrain can hinder the [lexicWord]#movement# of [lexicWord]#c
 
 * Minor impediment: Every 2 metres moved count for 3.
 If a [lexicWord]#character# runs on such terrain, 1 [lexicWord]#MoS# is used not to fall.
-+
+
 .Example
 [caption = ""]
 ====
@@ -556,7 +556,7 @@ Loose rocks on the ground or large exposed tree roots.
 
 * Medium impediment: Every metre moved on such terrain counts for 2.
 If a [lexicWord]#character# runs on such terrain, 2 [lexicWord]#MoSes# are used not to fall.
-+
+
 .Example
 [caption = ""]
 ====
@@ -565,7 +565,7 @@ Muddy ground or moderately steep hill.
 
 * Severe impediment: Every metre moved on such terrain counts for 3.
 If a [lexicWord]#character# runs on such terrain, 3 [lexicWord]#MoSes# are used not to fall.
-+
+
 .Example
 [caption = ""]
 ====
@@ -574,7 +574,7 @@ Icy ground or marshy land.
 
 * Extreme impediment: Every metre moved on such terrain counts for 4.
 It is impossible to run on such terrain but an [lexicWord]#athleticism# or [lexicWord]#acrobatics# test can increase the movement at the [lexicWord]#GM# discretion.
-+
+
 .Example
 [caption = ""]
 ====

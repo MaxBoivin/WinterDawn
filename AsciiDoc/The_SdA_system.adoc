@@ -23,7 +23,7 @@ Those are [lexicWord]#agility#, [lexicWord]#constitution#, [lexicWord]#strength#
 [lexicWord]#Attributes# for a humanoid [lexicWord]#character# will usually vary between 4 and 12.
 The highest the [lexicWord]#attribute's# score, the better.
 
-* Scores below 4 are crippling, since no test with that attribute can be rolled.
+* Scores below 4 are crippling.
 * Scores of 5 or 4 are considered weak.
 * An average attribute has a value of 6 or 7.
 * Scores of 8 or 9 are considered strong.
@@ -80,7 +80,7 @@ When a number is noted before the letter “d”, it represents the number of di
 .Example
 [caption = ""]
 ====
-“3d12” means 3 12-sided dice.
+“3d12” means three twelve-sided dice.
 ====
 
 '''
@@ -117,34 +117,45 @@ Whenever a [lexicWord]#player# desires to attempt an action which could either s
 
 The number of dice to be rolled for a [lexicWord]#skill test# is equal to 1 + the [lexicWord]#ranks# of the [lexicWord]#skill# being tested.
 The type of dice is determined by the [lexicWord]#attribute[lexicWord]# governing the [lexicWord]#skill# being tested; the dice used must have no more face than the value of the [lexicWord]#attribute#.
+If the [lexicWord]#skill# is governed by more than one [lexicWord]#attribute#, the [lexicWord]#player# can usually choose the one to use.
+Some circumstances will force the use of one [lexicWord]#attribute# over an other.
 
-The resulting combination of the number and the type of dice is called the [lexicWord]#dice-pool#.
+The resulting combination of the number and type of dice is referred to as a [lexicWord]#dice-pool#.
 
 .Example
 [caption = ""]
 ====
 A [lexicWord]#skill# with a rank of 3 will allow the [lexicWord]#player# to roll 4 dice.
 If this [lexicWord]#skill# is governed by an [lexicWord]#attribute# with a value of 7, the [lexicWord]#player# can roll 6 sided dice.
-His [lexicWord]#dice-pool# for this test would then be of 4d6.
+His [lexicWord]#dice-pool# for this test would then be of four six-sided dice, abbreviated as 4d6.
 ====
 
-Some [lexicWord]#skills# are governed by more than one [lexicWord]#attribute#.
-In some cases, the circumstances will determine the appropriate [lexicWord]#attribute# to use while in other, the choice will be left to the [lexicWord]#player#.
+Even if a [lexicWord]#character# has no rank in a [lexicWord]#skill#, the [lexicWord]#player# can still roll 1 die, granted by the [lexicWord]#attribute#.
 
-Even if a [lexicWord]#character# has no rank in a [lexicWord]#skill#, the [lexicWord]#player# can always roll at least 1 die.
+If the [lexicWord]#attribute# is lowered than 4, the [lexicWord]#dice-pools# will still be composed of d4s, but the [lexicWord]#character# will have to spend 1 [lexicWord]#spirit point# per rank below 4, per die rolled.
+If the test is [lexicWord]#opposed#, the [lexicWord]#character# will have [lexicWord]#disadvantage#.
+
+.Example
+[caption = ""]
+====
+If a [lexicWord]#character# has an [lexicWord]#attribute# of 2 but a [lexicWord]#skill# of 1, the [lexicWord]#player# has access to a [lexicWord]#dice-pool# of 2d4 but will need to spend 4 [lexicWord]#spirit points# ((4-2)*2 = 4).
+====
 
 A test can involve more than one [lexicWord]#roll# and/or more than one [lexicWord]#dice-pool#.
 The different types of test will be discussed later in this chapter.
 
 A [lexicWord]#skill test# should only be asked for if the success or failure of an action will impact the narrative outcome.
 
-==== Dice Pool and Roll
-
-A [lexicWord]#dice-pool# represents the number and type of dice available to a [lexicWord]#player# for their [lexicWord]#character# to perform a certain task or action.
+.Dice-Pools and Rolls
+[NOTE]
+====
+A [lexicWord]#dice-pool# represents the number and type of dice available to a [lexicWord]#player# for his [lexicWord]#character# to perform a certain task or action.
 
 A [lexicWord]#roll# is the actual dice used to perform the task or action.
 
-In most circumstances [lexicWord]#dice-pools# and [lexicWord]#rolls# will be the same but in some cases, a [lexicWord]#player# can decide to roll fewer dice than their [lexicWord]#dice-pool# would allow.
+In most cases a [lexicWord]#dice-pool# and a [lexicWord]#roll# will be the same, but a [lexicWord]#player# can decide to roll fewer dice than their [lexicWord]#dice-pool# would allow.
+The reasons and circumstances a [lexicWord]#player# would choose not to [lexicWord]#roll# their full [lexicWord]#dice-pool# will be covered later in this book.
+====
 
 '''
 
@@ -152,25 +163,15 @@ In most circumstances [lexicWord]#dice-pools# and [lexicWord]#rolls# will be the
 
 To succeed on a [lexicWord]#skill test#, a number of [lexicWord]#measure of success (MoS)# equal or superior to a [lexicWord]#difficulty level# must be obtained.
 
-'''
+Each die showing a 4 or more gives one or more [lexicWord]#MoSes#.
 
-=== MoS (Measure of Success)
+.MoS (Measure of Success) Per Die
 
-* Every dice showing 4 through 7, inclusively, represent 1 [lexicWord]#MoS#.
-* Dice showing from 8 to 11 represent 2 [lexicWord]#MoSes#.
-* Dice showing between 12 and 15 count for 3 [lexicWord]#MoSes#.
-* Dice showing between 16 and 19 count for 4 [lexicWord]#MoSes#.
-* Dice showing 20 count for 5 [lexicWord]#MoSes#.
-
-
-'''
-
-=== Loss
-
-Dice showing 1 subtract 1 [lexicWord]#MoS#.
-It is possible to end up with a negative number of [lexicWord]#MoSes# which are called [lexicWord]#losses#.
-
-Many situations have dire consequences for rolling [lexicWord]#losses#.
+* Every dice showing 4 to 7, inclusively, give 1 [lexicWord]#MoS#.
+* Dice showing 8 to 11 grant 2 [lexicWord]#MoSes#.
+* Dice showing 12 to 15 count for 3 [lexicWord]#MoSes#.
+* Dice showing 16 to 19 award 4 [lexicWord]#MoSes#.
+* Dice showing 20 deliver 5 [lexicWord]#MoSes#.
 
 '''
 
@@ -178,23 +179,22 @@ Many situations have dire consequences for rolling [lexicWord]#losses#.
 
 There is a vast difference in difficulty between different tasks; some are mundane and some can be near impossible.
 
-*Easy tasks* need 1 [lexicWord]#MoS# to be accomplished.
-
+* *Easy tasks* need 1 [lexicWord]#MoS# to be accomplished.
 Such tasks have 50% chance of being successful when attempted by an average [lexicWord]#character# untrained in the [lexicWord]#skill# used.
 
-*Moderate tasks* need 2 [lexicWord]#MoSes# to be accomplished.
+* *Moderate tasks* need 2 [lexicWord]#MoSes# to be accomplished.
 An average [lexicWord]#character# need to be at least initiated in the [lexicWord]#skill# to be tested to be able to succeed at such a task.
 
-*Difficult tasks* need 3 [lexicWord]#MoSes# to be accomplished.
+* *Difficult tasks* need 3 [lexicWord]#MoSes# to be accomplished.
 Those tasks will be challenging for any average [lexicWord]#character#, even if this one is well-trained in the [lexicWord]#skill# being tested.
 
-*Very difficult* tasks need 4 [lexicWord]#MoSes# to be accomplished.
+* *Very difficult* tasks need 4 [lexicWord]#MoSes# to be accomplished.
 Even a [lexicWord]#character# highly trained in the [lexicWord]#skill# being tested can be expected to fail such tasks about 2 times out of 3.
 
-*Near impossible* tasks need 5 [lexicWord]#MoSes# to be accomplished.
+* *Near impossible* tasks need 5 [lexicWord]#MoSes# to be accomplished.
 A [lexicWord]#character# accomplishing such a task in front of an audience will leave them in awe.
 
-*Legendary tasks* need 6 or more [lexicWord]#MoSes# to be accomplished.
+* *Legendary tasks* need 6 or more [lexicWord]#MoSes# to be accomplished.
 Witnesses of such accomplishment will have a hard time finding people to believe their recounting of the event.
 
 Those numbers are for simple tasks which can be done in one action, in a short amount of time.
