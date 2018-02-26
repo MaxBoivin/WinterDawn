@@ -26,10 +26,10 @@ The highest the [lexicWord]#attribute's# score, the better.
 * Scores below 4 are crippling.
 * Scores of 5 or 4 are considered weak.
 * An average attribute has a value of 6 or 7.
-* Scores of 8 or 9 are considered strong.
-* Scores of 10 or 11 are considered exceptional.
-* Scores of 12 are considered heroic.
-* Scores of 20 or higher are supernatural.
+* Scores of 8 or 9 are relatively strong.
+* Scores of 10 or 11 are viewed as exceptional.
+* Scores of 12 are worthy of heroes.
+* Scores of 20 or higher would be supernatural.
 
 ==== Agility
 
@@ -177,35 +177,55 @@ Each die showing a 4 or more gives one or more [lexicWord]#MoSes#.
 
 === Difficulty Level
 
-There is a vast difference in difficulty between different tasks; some are mundane and some can be near impossible.
+A wide array of tasks will call for a variety of [lexicWord]#difficulty level#.
+Some will be mundane, some will be near impossible.
+
+The [lexicWord]#GM# will determine the number of [lexicWord]#MoSes# required to succeed at the task.
 
 * *Easy tasks* need 1 [lexicWord]#MoS# to be accomplished.
-Such tasks have 50% chance of being successful when attempted by an average [lexicWord]#character# untrained in the [lexicWord]#skill# used.
++
+Such tasks have 50% chance of success when attempted by an average [lexicWord]#character#, untrained in the [lexicWord]#skill# being used.
 
 * *Moderate tasks* need 2 [lexicWord]#MoSes# to be accomplished.
-An average [lexicWord]#character# need to be at least initiated in the [lexicWord]#skill# to be tested to be able to succeed at such a task.
++
+An average [lexicWord]#character# need to be at least initiated in the [lexicWord]#skill# tested to have a chance at succeeding.
 
 * *Difficult tasks* need 3 [lexicWord]#MoSes# to be accomplished.
-Those tasks will be challenging for any average [lexicWord]#character#, even if this one is well-trained in the [lexicWord]#skill# being tested.
++
+Average [lexicWord]#chracters# without proper experience in the [lexicWord]#skill# being tested cannot expect to overcome such challenge.
 
 * *Very difficult* tasks need 4 [lexicWord]#MoSes# to be accomplished.
-Even a [lexicWord]#character# highly trained in the [lexicWord]#skill# being tested can be expected to fail such tasks about 2 times out of 3.
++
+Even a [lexicWord]#character# highly trained in the [lexicWord]#skill# being tested can be expected to fail at such tasks most of the time.
 
 * *Near impossible* tasks need 5 [lexicWord]#MoSes# to be accomplished.
-A [lexicWord]#character# accomplishing such a task in front of an audience will leave them in awe.
++
+A [lexicWord]#character# accomplishing such a feat in front of an audience will leave them in awe.
 
 * *Legendary tasks* need 6 or more [lexicWord]#MoSes# to be accomplished.
-Witnesses of such accomplishment will have a hard time finding people to believe their recounting of the event.
-
-Those numbers are for simple tasks which can be done in one action, in a short amount of time.
++
+Witnesses of such accomplishments will have a hard time finding people to believe their recounting of the event.
 
 The [lexicWord]#difficulty level# is either determined by the [lexicWord]#GM#, by a [lexicWord]#roll# made by an opponent or by different environmental factors.
+
+Those numbers are for simple tasks which can be done in one action, in a short amount of time.
+More complex enterprises that can be worked on for a prolonged amount of time can have much higher [lexicWord]#difficulty level#.
+The [lexicWord]#GM# can allow a [lexicWord]#player# multiple test to achieve these kinds of undertakings.
 
 '''
 
 === Hits
 
 [lexicWord]#MoSes# exceeding the [lexicWord]#difficulty level# are called [lexicWord]#hits#.
+
+.Example
+[caption = ""]
+====
+The [lexicWord]#GM# ask a [lexicWord]#player# a test.
+He determines the task is difficult and, therefore, the [lexicWord]#difficulty level# should be 3.
+The [lexicWord]#chatacter# is quite good at the task, has a good [lexicWord]#dice-pool# and manage to roll 5 [lexicWord]#MoSes#.
+This result in a success with 2 [lexicWord]#hits#.
+====
 
 Many [lexicWord]#skills#, [lexicWord]#spells# and other abilities have varying degree of effectiveness depending on the number of [lexicWord]#hits# obtained on a [lexicWord]#roll#.
 
