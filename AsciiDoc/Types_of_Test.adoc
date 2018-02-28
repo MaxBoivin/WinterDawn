@@ -7,13 +7,13 @@
 :description: This is the description of the different type of tests.
 include::Include.adoc[]
 
-Not every context will call for the same type of test.
+Not every context calls for the same type of test.
 In some matters, a [lexicWord]#character# can take his time to overcome a static obstacle while in other, time is of the essence.
-There will be circumstances where two [lexicWord]#characters# work against each other or where they collaborate.
+There will be circumstances where two [lexicWord]#characters# either work against each other or collaborate together.
 Some tasks are complex and involve an array of [lexicWord]#skills#.
- don’t have a well determined objective and a [lexicWord]#character# will simply try to do as good as they can.
+For some situations, [lexicWord]#characters# won't have a predetermined objective and will simply try perform as good as they can.
 
-The different types of tests for those different situations are described below.
+The various types of tests for those distinct eventualities are described below.
 
 :levleoffset: +1
 
