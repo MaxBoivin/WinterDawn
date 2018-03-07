@@ -186,23 +186,23 @@ The [lexicWord]#GM# will determine the number of [lexicWord]#MoSes# required to 
 +
 Such tasks have 50% chance of success when attempted by an average [lexicWord]#character#, untrained in the [lexicWord]#skill# being used.
 
-* *Moderate tasks* need 2 [lexicWord]#MoSes# to be accomplished.
+* *Moderate tasks* need 2 or 3 [lexicWord]#MoSes# to be accomplished.
 +
 An average [lexicWord]#character# need to be at least initiated in the [lexicWord]#skill# tested to have a chance at succeeding.
 
-* *Difficult tasks* need 3 [lexicWord]#MoSes# to be accomplished.
+* *Difficult tasks* need 4 or 5 [lexicWord]#MoSes# to be accomplished.
 +
 Average [lexicWord]#chracters# without proper experience in the [lexicWord]#skill# being tested cannot expect to overcome such challenge.
 
-* *Very difficult* tasks need 4 [lexicWord]#MoSes# to be accomplished.
+* *Very difficult* tasks need 6 or 7 [lexicWord]#MoSes# to be accomplished.
 +
 Even a [lexicWord]#character# highly trained in the [lexicWord]#skill# being tested can be expected to fail at such tasks most of the time.
 
-* *Near impossible* tasks need 5 [lexicWord]#MoSes# to be accomplished.
+* *Near impossible* tasks need 8 or 9 [lexicWord]#MoSes# to be accomplished.
 +
 A [lexicWord]#character# accomplishing such a feat in front of an audience will leave them in awe.
 
-* *Legendary tasks* need 6 or more [lexicWord]#MoSes# to be accomplished.
+* *Legendary tasks* need 10 or more [lexicWord]#MoSes# to be accomplished.
 +
 Witnesses of such accomplishments will have a hard time finding people to believe their recounting of the event.
 

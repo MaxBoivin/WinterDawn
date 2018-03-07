@@ -7,8 +7,22 @@
 :description: This is the description of static test.
 include::../Include.adoc[]
 
-A [lexicWord]#static test# is a roll made against a [lexicWord]#difficulty level# determined by the [lexicWord]#GM#.
+A [lexicWord]#static test# is a single roll made against a [lexicWord]#difficulty level# determined by the [lexicWord]#GM#.
 
-[lexicWord]#Difficulty level# should be based on the inherent difficulty of task, not on how difficult the task should be for the [lexicWord]#character#.
+[lexicWord]#Difficulty level# should be based on the inherent obstacle presented by the task, not on how challenging the task should be for the [lexicWord]#character# attempting it.
 
-The [lexicWord]#skills# chapter and adventuring chapter offer guidelines to determine [lexicWord]#difficulty level#.
+.Example
+[caption = ""]
+====
+//Pushing example
+A big disk of stone is blocking the entrance of a tomb.
+A [lexicWord]#character# wants to push this stone disk.
+It is about 1.5 metre in diameter and half a meter thick.
+The [lexicWord]#GM# estimate that this carved boulder would weight about 720 kilograms (a chart is provided in the [lexicWord]#adventuring# chapter to estimate the weight of different objects).
+Since it is more or less round, it can be rolled.
+After consulting the [lexicWord]#athleticism skill# description, the [lexicWord]#GM# determines that 7 [lexicWord]#MoSes# would be necessary to move the object by 1 metre, plus 1 [lexicWord]#MoS# per additional metres.
+Pushing the boulder by 1 metre would be sufficient to give access to the tomb; 7 would then be the [lexicWord]#difficulty level# to match or beat.
+This is a very difficult task.
+====
+
+The [lexicWord]#skills#, adventuring and running the game chapters offer guidelines to determine [lexicWord]#difficulty levels#.
