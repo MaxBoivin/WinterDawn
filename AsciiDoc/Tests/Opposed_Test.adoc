@@ -10,6 +10,7 @@ include::../Include.adoc[]
 [lexicWord]#Opposed tests# are used when two [lexicWord]#characters# are working against each other.
 
 A roll is made for each [lexicWord]#character#.
+Both rolls can be made with the same [lexicWord]#skill# or each use their own.
 The roll with the most [lexicWord]#MoSes# wins.
 The difference between the two results gives the number of [lexicWord]#hits# scored by the victor.
 
@@ -19,8 +20,8 @@ If both [lexicWord]#characters# roll the same number of [lexicWord]#MoSes#, the 
 [caption = ""]
 ====
 Two [lexicWord]#character# are engaged in a tug of war.
-Both [lexicWord]#players# roll and end up with the exact same number of [lexicWord]#MoSes#.
-Neither sides gain ground, they're in a stand still.
+Both [lexicWord]#players# do a [lexicWord]#lifting# roll and end up with the exact same number of [lexicWord]#MoSes#.
+Neither side gains ground; they're in a stand still.
 ====
 
 If the circumstances make it impossible or unclear to determine the status quo, prior to the rolls being made, the [lexicWord]#GM# will declare one of the [lexicWord]#characters# has having the [lexicWord]#advantage#.
@@ -30,7 +31,7 @@ This [lexicWord]#character# will win the [lexicWord]#opposed test# in case of a 
 [caption = ""]
 ====
 A rogue tries to sneak in a manor.
-Her [lexicWord]#stealth# will be opposed by the [lexicWord]#alertness# of the [lexicWord]#characters# who could spot her.
+Her [lexicWord]#stealth# will be opposed by the [lexicWord]#awareness# of the [lexicWord]#characters# who could spot her.
 Guards on duty are actively looking out for intruders; they will have the [lexicWord]#advantage# on the test.
 Meanwhile, the rogue will have the [lexicWord]#advantage# against the unsuspecting occupants of the manor.
 ====
