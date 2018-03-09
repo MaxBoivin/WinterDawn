@@ -15,13 +15,22 @@ The difference between the two results gives the number of [lexicWord]#hits# sco
 
 If both [lexicWord]#characters# roll the same number of [lexicWord]#MoSes#, the status quo is preserved.
 
-In some circumstances, it is impossible or unclear to determine the status quo.
-In those occurrences, prior to the rolls are made, the [lexicWord]#GM# will declare one of the [lexicWord]#characters# has having the [lexicWord]#advantage#; this [lexicWord]#character# will win the [lexicWord]#opposed test# in case of a tie.
+.Example
+[caption = ""]
+====
+Two [lexicWord]#character# are engaged in a tug of war.
+Both [lexicWord]#players# roll and end up with the exact same number of [lexicWord]#MoSes#.
+Neither sides gain ground, they're in a stand still.
+====
+
+If the circumstances make it impossible or unclear to determine the status quo, prior to the rolls being made, the [lexicWord]#GM# will declare one of the [lexicWord]#characters# has having the [lexicWord]#advantage#.
+This [lexicWord]#character# will win the [lexicWord]#opposed test# in case of a tie.
 
 .Example
 [caption = ""]
 ====
 A rogue tries to sneak in a manor.
-Their [lexicWord]#stealth# test will be opposed by a [lexicWord]#perception & vigilance# made by the [lexicWord]#characters# who could spot him.
-The guards expecting intruders and looking for them will have [lexicWord]#advantage# on their tests while the rogue will have [lexicWord]#advantage# when opposed by the unsuspecting occupants of the manor.
+Her [lexicWord]#stealth# will be opposed by the [lexicWord]#alertness# of the [lexicWord]#characters# who could spot her.
+Guards on duty are actively looking out for intruders; they will have the [lexicWord]#advantage# on the test.
+Meanwhile, the rogue will have the [lexicWord]#advantage# against the unsuspecting occupants of the manor.
 ====
