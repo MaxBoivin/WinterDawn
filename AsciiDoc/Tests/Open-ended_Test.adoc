@@ -10,9 +10,7 @@ include::../Include.adoc[]
 [lexicWord]#Open-ended tests# don’t have [lexicWord]#difficulty levels# per se, but the number of [lexicWord]#MoSes# will determine how well a task is performed.
 In essence, every [lexicWord]#MoS# counts as a [lexicWord]#hit#.
 
-
-
-Examples of tasks for which an [lexicWord]#open-ended test# would be appropriate would include playing a musical instrument, running as fast as one can, cooking a nice meal, building a shelter to spend the night, etc.
+This type of test are appropriate for tasks like playing a musical instrument, running as fast as you can, cooking a feast, building a shelter for the night, etc.
 
 .Example
 [caption = ""]

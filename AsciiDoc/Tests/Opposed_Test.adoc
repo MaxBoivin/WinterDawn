@@ -35,3 +35,21 @@ Her [lexicWord]#stealth# will be opposed by the [lexicWord]#awareness# of the [l
 Guards on duty are actively looking out for intruders; they will have the [lexicWord]#advantage# on the test.
 Meanwhile, the rogue will have the [lexicWord]#advantage# against the unsuspecting occupants of the manor.
 ====
+
+If a [lexicWord]#character# suffers a [lexicWord]#malus# that would bring his result below 0 [lexicWord]#MoSes#, his result will remain at 0, but each additional [lexicWord]#malus# will allow the opposing [lexicWord]#character# to add one additional die to their roll.
+It could happen that both [lexicWord]#character# end up with negative [lexicWord]#MoSes# and grant each other additional dice.
+
+.Example
+[caption = ""]
+====
+Two [lexicWord]#characters# are attacking each other across an obstacle covering about half their bodies.
+Such type of cover will grant a 2 [lexicWord]#MoSes malus# to each fighter.
+The attacker rolls and score only 1 [lexicWord]#MoS#.
+The defender fails to score any.
+After the [lexicWord]#malus# are applied, the attacker end up with -1 [lexicWord]#MoS# and the defender has -2 [lexicWord]#MoSes#.
+The attacker rolls an extra 2 dice and score 1 [lexicWord]#MoS#, which will give her a final result of 1 [lexicWord]#MoS#.
+The defender roll an extra die, gets lucky and obtained 2 [lexicWord]#MoSes#, which will be his final result.
+The defender therefore scored 1 [lexicWord]#hit#.
+====
+
+More details about [lexicWord]#malus# will be given further in this chapter.
