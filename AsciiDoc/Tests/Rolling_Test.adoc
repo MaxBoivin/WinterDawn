@@ -7,12 +7,11 @@
 :description: This is the description of rolling test.
 include::../Include.adoc[]
 
-[lexicWord]#Rolling test# are tests that can be made in multiple rolls.
-The [lexicWord]#MoSes# from every roll are added together to beat the [lexicWord]#difficulty level#.
-They are used for tasks which can be worked on over time.
-Each roll will represent a certain amount of time passed.
+Some tasks are complex and can be worked on over a long period of time; this is what [lexicWord]#rolling tests# are for.
+Those tests can have higher [lexicWord]#difficulty level# and be achieved in multiple rolls.
+Each roll will represent a certain amount of time passed, depending on the type of undertaking.
 
-Two types of [lexicWord]#rolling test# exist: [lexicWord]#first fail# and [lexicWord]#step back#.
+There are two types of [lexicWord]#rolling test#: [lexicWord]#first fail# and [lexicWord]#setback#.
 
 == First Fail Rolling Test
 
@@ -24,7 +23,7 @@ A [lexicWord]#first fail rolling test# allows the [lexicWord]#player# to keep ro
 A thief trying to pick a lock could do so as a [lexicWord]#first fail rolling test#; for every roll 6 seconds pass, if a roll obtain no [lexicWord]#MoSes# before they reach the [lexicWord]#difficulty level# they fail and have to start again.
 ====
 
-== Step Back Rolling Test
+== Setback Rolling Test
 
 A [lexicWord]#step back rolling test# does not fail upon a roll with no [lexicWord]#MoSes# or on a roll with [lexicWord]#loses#.
 The [lexicWord]#loses# are simply subtracted from the [lexicWord]#MoSes# accumulated.
