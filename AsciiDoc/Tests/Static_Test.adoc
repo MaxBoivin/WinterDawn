@@ -17,7 +17,7 @@ A [lexicWord]#static test# is a single roll made against a [lexicWord]#difficult
 //Pushing example
 A disc of stone is blocking the entrance of a tomb.
 A [lexicWord]#character# wants to push it out of the way.
-This boulder is about 1.5 metres in diameter and half a meter thick and the [lexicWord]#GM# estimates that it weight about 720 kilograms (charts are provided in the adventuring chapter to estimate the weight of different objects).
+This boulder is about 1.5 metres in diameter and half a meter thick and the [lexicWord]#GM# estimates that it weight about 800 kilograms (charts are provided in the adventuring chapter to estimate the weight of different objects).
 Since it is roughly rounded, it can be rolled.
 After consulting the [lexicWord]#athleticism skill# description, the [lexicWord]#GM# determines that 7 [lexicWord]#MoSes# are required to move this stone by 1 metre.
 This is a very difficult task.

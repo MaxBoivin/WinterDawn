@@ -17,5 +17,10 @@ Those actions have effect for every [lexicWord]#hit# scored.
 .Example
 [caption = ""]
 ====
-//To Do: Put up an example of open-ended test.  Maybe running. 
+A [lexicWord]#character# wants to put as much distance between her and an enemy.
+The [lexicWord]#player# makes a [lexicWord]#running test#.
+Each [lexicWord]#MoS# will allow the [lexicWord]#character# to add half their [lexicWord]#speed# to their movement.
+The roll result in 3 [lexicWord]#MoSes.
+The [lexicWord]#character# has a [lexicWord]#movement speed# of 9 metres.
+She can therefore move 22.5 metres in a round (9 * 0.5 * 3 + 9).
 ====
