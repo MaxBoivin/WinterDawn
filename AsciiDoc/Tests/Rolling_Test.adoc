@@ -16,18 +16,23 @@ There are two types of [lexicWord]#rolling test#: [lexicWord]#first fail# and [l
 == First Fail Rolling Test
 
 A [lexicWord]#first fail rolling test# allows the [lexicWord]#player# to keep rolling and adding their [lexicWord]#MoSes# until one roll get no [lexicWord]#MoSes#.
+At that point, all the previous [lexicWord]#MoSes# are lost.
 
 .Example
 [caption = ""]
 ====
-A thief trying to pick a lock could do so as a [lexicWord]#first fail rolling test#; for every roll 6 seconds pass, if a roll obtain no [lexicWord]#MoSes# before they reach the [lexicWord]#difficulty level# they fail and have to start again.
+Picking a lock would require a [lexicWord]#first fail rolling test#.
+The lock will have a [lexicWord]#difficulty level# assigned to it.
+For every roll, a round passes.
+If a roll obtains no [lexicWord]#MoSes# before the thief reaches the [lexicWord]#difficulty level#, he will have to start over from 0.
 ====
 
 == Setback Rolling Test
 
-A [lexicWord]#step back rolling test# does not fail upon a roll with no [lexicWord]#MoSes# or on a roll with [lexicWord]#loses#.
-The [lexicWord]#loses# are simply subtracted from the [lexicWord]#MoSes# accumulated.
-If the number of accumulated [lexicWord]#MoSes# drop to 0, the test fails.
+A [lexicWord]#setback rolling test# does not fail upon a roll with no [lexicWord]#MoSes#.
+The [lexicWord]#character# simply fails to progress.
+
+If a
 
 .Example
 [caption = ""]
