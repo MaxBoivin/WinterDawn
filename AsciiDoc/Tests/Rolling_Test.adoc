@@ -32,12 +32,13 @@ If a roll obtains no [lexicWord]#MoSes# before the thief reaches the [lexicWord]
 A [lexicWord]#setback rolling test# does not fail upon a roll with no [lexicWord]#MoSes#.
 The [lexicWord]#character# simply fails to progress.
 
-If a
+If [lexicWord]#roll# is subjected to some [lexicWord]#malus# greater than the number of [lexicWord]#MoSes# obtained, the difference is subtracted from the tally of the previous [lexicWord]#rolls#.
 
 .Example
 [caption = ""]
 ====
 A woodworker is building a cart.
-Every day they can make a [lexicWord]#Woodworking# roll.
-If on a day they score some [lexicWord]#loses#, they not only make no progress on that day but damage something they already built.
+The [lexicWord]#GM# decides that on a number of [lexicWord]#MoSes# required to complete the car.
+The [lexicWord]#character# will be allowed to roll once per day spent working on the cart.
+The number or rolls made to reach the [lexicWord]#difficulty level# will represent the number of days that have been necessary to complete the construction.
 ====
