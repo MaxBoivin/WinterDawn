@@ -7,18 +7,31 @@
 :description: This is the description of assisted test.
 include::../Include.adoc[]
 
-In some circumstances two or more [lexicWord]#characters# can work together on a task.
-When doing so, each [lexicWord]#character# can make a roll and the [lexicWord]#MoSes# are added together to beat a [lexicWord]#difficulty level#.
+[lexicWord]#Characters# will have a lot of opportunity to collaborate on arduous exercise.
+In those situations, every [lexicWord]#player# will make a roll and the [lexicWord]#MoSes# are aggregated to beat the [lexicWord]#difficulty level#.
 
 The [lexicWord]#GM# can put a limit on the number of [lexicWord]#characters# who can effectively work on a task.
 
 .Example
 [caption = ""]
 ====
-Two [lexicWord]#characters# try to move a large log; they can work together and add their [lexicWord]#MoSes# to beat the [lexicWord]#difficulty level#.
+A big fallen tree is blocking a road the [lexicWord]#characters# are travelling on.
+They are going to all work together to free the way.
+The tree being big enough, everybody can contribute fully.
+All their [lexicWord]#MoSes# will be added together to beat the [lexicWord]#difficulty level#.
 ====
 
 == Assisted Test, Halved
 
-[lexicWord]#Halved assisted test# are used for tasks where an assistant help but does not double the efficiency of the work being done.
-In those cases, the main performer of the task count their [lexicWord]#MoSes# normally while the assistants will only add half their [lexicWord]#MoSes# to the total.
+In some situations, a [lexicWord]#character# can assist an other but at reduce efficiency.
+For those instances, a [lexicWord]#halved assisted test# can be performed.
+
+One [lexicWord]#character# will be designed as the main actor; his [lexicWord]#MoSes# will be counted fully.
+For the other [lexicWord]#characters# assisting, one [lexicWord]#MoS# will be tallied for every two [lexicWord]#MoSes# rolled.
+
+.Example
+[caption = ""]
+====
+A thief is attempting to disarm a trap.
+The [lexicWord]#GM# decides that due to the nature of the trap, one [lexicWord]#character# can assist but halved.
+====

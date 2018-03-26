@@ -7,17 +7,34 @@
 :description: This is the description of group test.
 include::../Include.adoc[]
 
-A [lexicWord]#group# test is in order when multiple allied [lexicWord]#characters# are trying to perform the same action and are covering for each other.
-
-Each [lexicWord]#player# makes a roll.
-The [lexicWord]#MoSes# from every roll are added and compared to the [lexicWord]#difficulty level#.
-
-The [lexicWord]#difficulty level# for a group should be equivalent to the [lexicWord]#difficulty level[lexicWord]# for a single [lexicWord]#character# to perform the task multiplied by the number of individuals in the group.
+[lexicWord]#Group tests# are used for situations where multiple allied [lexicWord]#characters# are simultaneously performing the same task.
+Part of the [lexicWord]#MoSes# scored by one [lexicWord]#character# can be transferred to one or more ally.
 
 .Example
 [caption = ""]
 ====
-A group of 5 [lexicWord]#characters# need to cross a narrow catwalk over a chasm.
-The [lexicWord]#difficulty level# for an individual [lexicWord]#character# to cross the catwalk would be of 2 on an [lexicWord]#acrobatics# test.
-If the party decide to do it as a group, the [lexicWord]#difficulty level# become 10 but the [lexicWord]#MoSes# of every [lexicWord]#player# are added together.
+A party of 3 adventurers need to cross over a chasm on a fallen tree.
+The [lexicWord]#difficulty level# to cross this improvised bridge without falling is 3.
+Each [lexicWord]#player# makes an [lexicWord]#acrobatics# roll.
+The result obtained are 5, 4 and 0 [lexicWord]#MoSes#.
+The [lexicWord]#player# with the 5 [lexicWord]#MoSes# will help the one who score none; 2 of his [lexicWord]#MoSes# will be transfer to the less fortunate [lexicWord]#character#.
+The [lexicWord]#player# with 4 [lexicWord]#MoSes# can also asist and transfer a single [lexicWord]#MoS#.
+This will result in a final tally for the party of 3 [lexicWord]#MoSes# for each party member.
+Working together, they all succeed in overcoming this obstacle.
 ====
+
+////
+.Example
+[caption = ""]
+====
+A party of 3 adventurers is trying to sneak pass a troop of guards patrolling the streets.
+The more stealthy [lexicWord]#characters# will help those who are less apt to avoid detection.
+After, if the guards spot one of them, the whole gang will be caught.
+A [lexicWord]#group test# is thus in order.
+
+Each [lexicWord]#players# make a roll; they obtain 6, 4 and 1 [lexicWord]#MoSes#.
+The [lexicWord]#player# with the 6 [lexicWord]#MoSes# will help the one who score a single [lexicWord]#MoS#; 2 of his [lexicWord]#MoSes# will be transfer to the less fortunate [lexicWord]#character#.
+This will result in a final tally for the party of 4, 4 and 3 [lexicWord]#MoSes#.
+
+====
+////
