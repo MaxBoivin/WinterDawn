@@ -7,11 +7,17 @@
 :description: This is the description of mixed test.
 include::../Include.adoc[]
 
+Test types can be combined together in a [lexicWord]#mixed test#.
+You can make [lexicWord]#open-ended assisted test#, [lexicWord]#rolling first fail opposed test#, [lexicWord]#composed group test# or any other combination.
 
-A [lexicWord]#mixed test# is simply a test that combines more than one of the previous types.
+In the case of a [lexicWord]#composed group tests# or [lexicWord]#assisted composed tests#, [lexicWord]#characters# can each focus on one specific [lexicWord]#skill#.
 
 .Example
 [caption = ""]
 ====
-If two [lexicWord]#characters# are working on building a cart, they can make an [lexicWord]#open-ended assisted test#.
+Two [lexicWord]#characters# are facing a locked door.
+Picking a lock is [lexicWord]#composed test# of [lexicWord]#mechanics# and [lexicWord]#sleight of hand#.
+The [lexicWord]#characters# decide to work together; one will observe and study the lock, while the other will follow the instructions to move the tumblers in their unlocked position.
+The [lexicWord]#GM# decide that this will be an [lexicWord]#half-assisted composed test#; only half the [lexicWord]#MoSes# scored by the [lexicWord]#player# rolling for [lexicWord]#mechanics#.
+The [lexicWord]#MoS# rolled by the [lexicWord]#character# in charge of the sleight of hand will be counted in full.
 ====

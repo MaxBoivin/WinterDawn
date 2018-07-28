@@ -1,0 +1,123 @@
+= Virtues
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of the virtues mechanics.
+include::Include.adoc[]
+
+[lexicWord]#Virtues# help define the personality of a [lexicWord]#character# and enforce consistency in his behaviour.
+They can also be a good way of gauging the evolution and arc of a [lexicWord]#character#, or serve as a goal to achieve.
+
+There is five [lexicWord]#virtues# defining a [lexicWord]#character#.
+They all exist betweenm two vices, one being the lack of the [lexicWord]#virtue#, the other being the excess.
+Those vices and virtues are the following:
+
+.Vices and Virtues
+[cols="3*^",options="header", caption ="", width = 50%, align="center"]
+|===
+| Lack of | Virtue | Excess of
+| Cowardly | Brave | Reckless
+| Surly | Friendly | Servile
+| Niggardly | Generous | Lavish
+| Meek | Proud | Vain
+| Debauched | Temperate | Ascetic
+|===
+
+For each of those [lexicWord]#virtue#, a [lexicWord]#character# is positioned on its spectrum.
+Those spectra are divided in 6 steps:
+
+* The complete lack of the [lexicWord]#virtue#
+* Leaning towards the lack of the [lexicWord]#virtue#
+* The two median step represent the balance between the two vices
+* Leaning towards the excess of the [lexicWord]#virtue#
+* The extreme excess of the [lexicWord]#virtue#
+
+When a [lexicWord]#virtue# is challenged, it is always by one of its extreme.
+The type of die to be used to resist this temptation is determined by the placement of the [lexicWord]#character# on the spectrum of this [lexicWord]#virtue#.
+The further away he is from the extreme being challenged, the bigger the dice the [lexicWord]#player# can use.
+If the [lexicWord]#character# is place on the spectrum at the same extreme as he is being challenge, the [lexicWord]#test# will have to be done with d4s.
+If he is at the opposite extreme, he will be entitled to d12s.
+
+.Die types for [lexicWord]#Virtue# tests
+[cols="^.^3, ^.^2, ^.^2", caption ="", width = 50%, align="center"]
+|===
+.2+h| Placement on the spectrum 2+h| Tempted by
+h| a lack of virtue h| an excess of virtue
+| Complete lack | d4 | d12
+| Leaning towards a lack | d6 | d10
+| Balanced | d8 |d8
+| Leaning towards an excess | d10 | d6
+| Extreme excess | d12 | d4
+|===
+
+[lexicWord]#Virtues test's dice-pool# are always composed of one die.
+A [lexicWord]#player# can add dice by spending a number of [lexicWord]#spirit points# equals to the current number of dice in the [lexicWord]#dice-pool#.
+
+.Example
+[caption =  ""]
+====
+A [lexicWord]#character# is leaning towards [lexicWord]#cowardice#.
+If she is in a situation that could trigger a cowardly reaction but wants to resist, the [lexicWord]#player# can roll a [lexicWord]#dice-pool# of 1d6.
+
+If the same [lexicWord]#character# is instead in a situation that could tempt her to act [lexicWord]#recklessly#, the [lexicWord]#dice-pool# will be of 1d10.
+
+In both situations, an additional die can be added to the [lexicWord]#dice-pool# by spending 1 [lexicWord]#spirit point#, two dice can be added by spending 3 [lexicWord]#spirit points# (1 + 2), or three dice for 6 [lexicWord]#spirit points# (1 + 2 + 3), etc.
+====
+
+[lexicWord]#Virtue tests# can be provoke by some actions from a [lexicWord]#character# (those will be described in their appropriate section) or simply requested by the [lexicWord]#GM# based on an extraordinary situation.
+In the first case, the [lexicWord]#difficulty level# will be determined by the result of the actions triggering the [lexicWord]#test#.
+In the other case, the [lexicWord]#difficulty level# is left to the [lexicWord]#GM# to decide.
+[lexicWord]#GM# called [lexicWord]#virtue test# should not be abused so they don't lose their impact.
+
+If the [lexicWord]#test# is successful, the [lexicWord]#character# can resist the temptation and the [lexicWord]#player# can choose to move the [lexicWord]#virtue# tested towards the opposite end of the temptation.
+
+If the [lexicWord]#test# is failed, the [lexicWord]#player# can choose to either have his [lexicWord]#character# succumb to the temptation or to resist at the cost of [lexicWord]#spirit points# equal to the size of the dice rolled.
+In either case, the virtue of the [lexicWord]#character# is going to be moved towards the extreme of the temptation.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# is being seduced by a succubus.
+
+The succubus will do a [lexicWord]#persuasion test# opposed by the [lexicWord]#character's ego#.
+The succubus score 3 [lexicWord]#hits#; this will become the [lexicWord]#difficulty level# of a [lexicWord]#temperate (debauched) test#.
+
+The [lexicWord]#character# is [lexicWord]#leaning towards ascetic#, he will therefore use d10 for the test.
+The [lexicWord]#player# decides to purchase two additional dice, spending 3 [lexicWord]#spirit points#.
+The [lexicWord]#dice-pool# for the [lexicWord]#temperate (debauched) test# will be of 3d10.
+
+If the [lexicWord]#character# pass the [lexicWord]#test#, he can resist the succubus and remain chaste.
+His [lexicWord]#temperance# can also be move one step towards [lexicWord]#ascetic#, bringing it to the extreme (at the choice of the [lexicWord]#player#).
+
+If the [lexicWord]#virtue test# fails, the [lexicWord]#temperance# of the [lexicWord]#character# will be moved one step towards [lexicWord]#debauched#, which will bring it to balanced.
+The [lexicWord]#player# must also choose between capitulating to the charm of the succubus or sacrificing 10 [lexicWord]#spirit points# (since the [lexicWord]#dice-pool# was composed of d10s).
+====
+
+A [lexicWord]#player# can chose to not make a [lexicWord]#virtue test# and just have their [lexicWord]#character# act as if they have failed the test.
+The advantage of doing so is that the [lexicWord]#virtue# does not have to be moved (but the [lexicWord]#player# can chose to do so).
+
+== Bravery
+
+The archetypal virtues of heroes, it is often elevated to such an extend that even the excess of it will be seen as desirable, but throwing you life away facing a hopeless situation is no more virtuous than cowering in terror at the sight of any danger.
+
+The [lexicWord]#GM# can ask a [lexicWord]#player# to do a [lexicWord]#cowardice test# if his [lexicWord]#character# is confronted by supernatural monsters or by an overwhelming enemy force but wants to stand his ground.
+
+A [lexicWord]#recklessness test# is in order if a [lexicWord]#character# is facing enemies he intended to attack but, maybe due to unfavourable odds of victory, wants to postpone the fight.
+
+== Friendliness
+
+The best way to have friends is to be one.
+Obviously, you don't want to be turned into a push-over.
+
+A [lexicWord]#surly test# is justified if a [lexicWord]#character# tries to act in an amiable manner towards someone they dislike.
+It may be to remain on the good side of an disagreeable lord or to tolerate an obnoxious drunk in a tavern.
+
+A [lexicWord]#player# can be asked to do a [lexicWord]#servile test# if his [lexicWord]#character# wants to refuse a favour, confront or be harsh to someone they particularly like.
+
+== Generosity
+
+== Pride
+
+== Temperance

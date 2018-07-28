@@ -237,90 +237,89 @@ include::Types_of_Test.adoc[leveloffset=+2]
 
 === Bonus and Malus
 
-[lexicWord]#Characters# can gain bonus or suffer malus depending on the situation they have to perform a task.
+[lexicWord]#Dice-pools# and [lexicWord]#rolls# can be modified by [lexicWord]#bonuses# and [lexicWord]#maluses# based on the situations the [lexicWord]#characters# find themselves in.
 
-Bonuses come in two form: Additional [lexicWord]#MoSes# or additional dice to a [lexicWord]#dice-pool#.
+[lexicWord]#Bonuses# grant additional dice to a [lexicWord]#dice-pool#.
+If a [lexicWord]#bonuses# is applied to a [lexicWord]#rolling test#, it will benefit every [lexicWord]#rolls#, until the situation changes.
 
-Bonuses to [lexicWord]#MoSes# are noted by a simple +1 [lexicWord]#MoS#.
-Bonuses to a [lexicWord]#dice-pool# are noted as +1d.
+.Example
+[caption = ""]
+====
+//TO DO!!!
+====
 
-To benefit from bonus [lexicWord]#MoSes# a player must have dice leftover in their [lexicWord]#dice-pool#.
+[lexicWord]#Maluses# remove [lexicWord]#MoSes# from the [lexicWord]#roll#.
+If a [lexicWord]#malus# affects a [lexicWord]#rolling test#, it will be applied to every [lexicWord]#roll#, unless the situation changes between [lexicWord]#rolls#.
 
-Bonuses giving extra dice can be used even with a depleted [lexicWord]#dice-pool#.
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# is looking for tracks in the woods at night without a proper light source.
+The [lexicWord]#tracking rolls# will receive a -2 [lexicWord]#MoSes malus#.
+====
 
-Malus removes [lexicWord]#MoSes# from a roll.  They are noted as -1 [lexicWord]#MoS#.
+If a [lexicWord]#character# involved in an [lexicWord]#opposed test# suffer [lexicWord]#maluses# that would bring his total [lexicWord]#MoSes# below 0, his opponent can add a number of [lexicWord]#bonus# dice equal to the remainder of the [lexicWord]#malus# to their roll.
+
+.Example
+[caption = ""]
+====
+An assassin sneaked up on her target to stab him in the back.
+Being [lexicWord]#reared#, the mark would suffer a [lexicWord]#malus# of 2 [lexicWord]#MoSes# on his defence.
+Since he is unaware of the attacker, he is not allowed a roll and the assassin will add 2 dice to her [lexicWord]#dice-pool#.
+====
 
 '''
 
-=== Resounding Success
+=== Flawless Success
 
-For a roll to be considered a [lexicWord]#resounding success# two conditions must be met:
+For a roll to be considered a [lexicWord]#flawless success# two conditions must be met:
 
-. The task attempted must be successful and
-. The number of [lexicWord]#MoSes# obtained on the roll (before adding any bonus [lexicWord]#MoSes#) must be equal or greater to the number of dice granted by the [lexicWord]#dice-pool# for this task.
+. Every dice rolled must grant at least one [lexicWord]#MoS# and
+. The task attempted must be successful.
 
-[lexicWord]#Resounding success# can be used to regain [lexicWord]#spirit# or gain [lexicWord]#experience#.
-Details are given further in this chapter.
+[lexicWord]#Flawless successes# can be used to either regain a number of [lexicWord]#spirit points# equal to the number of [lexicWord]#MoSes# obtained or gain one [lexicWord]#experience point# in the [lexicWord]#skill# tested.
 
 === Complete Failure
 
-A roll ending up with [lexicWord]#Losses# (before any malus has been applied) is a [lexicWord]#complete failure# of the [lexicWord]#character#.
+If no dice in a [lexicWord]#roll# grant any [lexicWord]#MoS#, it is considered a [lexicWord]#complete failure#.
 
-A [lexicWord]#complete failure# can cause a lost of [lexicWord]#spirit# or a gain of [lexicWord]#experience#.
-While outside of combat, if a player rolls a [lexicWord]#complete failure# they must make a [lexicWord]#Confidence & ego# test with a [lexicWord]#difficulty level# equals to 1 + the number of [lexicWord]#losses#.
-If this roll is successful, the [lexicWord]#player# can put an [lexicWord]#experience points# in the failed [lexicWord]#skill#.
-If the roll is unsuccessful, the [lexicWord]#character# loses 1 [lexicWord]#spirit point# per [lexicWord]#ranks# in the failed [lexicWord]#skill#.
+In case of a [lexicWord]#complete failure#, the player must do an [lexicWord]#ego test# as a [lexicWord]#free roll#.
+The [lexicWord]#difficulty level# of the [lexicWord]#ego test# is equal to the [lexicWord]#rank# of the [lexicWord]#skill# which caused the [lexicWord]#completeFailure#.
 
-[lexicWord]#Complete failures# can also imply a complication.
-Some examples are given in the description of certain tasks.
+If the [lexicWord]#ego test# is successful, the [lexicWord]#character# gains one [lexicWord]#experience point# in the [lexicWord]#skill# which caused the [lexicWord]#complete failure#.
+If the [lexicWord]#ego test# is failed, the [lexciWord]#character# loses a number of [lexicWord]#spirit points# equal to the rank of the [lexicWord]#skill# that caused the [lexicWord]#complete failure#.
 
-In case of a [lexicWord]#complete failure# on an [lexicWord]#opposed test#, the [lexicWord]#losses# are generally added to the roll of the opposing [lexicWord]#character#.
+If a [lexicWord]#character# obtains a [lexicWord]#complete failure# on a [lexicWord]#skill# with no [lexicWord]#ranks#, the [lexicWord]#ego test# cannot fail.
+It is still worth rolling the [lexicWord]#ego test# as it can be subject to [lexicWord]#flawless success# and [lexicWord]#complete failure#.
+
+.Exaqmple
+[caption = ""]
+====
+During a fight, a [lexicWord]#character# wants to flip a table to take cover behind it.
+The [lexicWord]#GM# announces a single [lexicWord]#MoS# will be necessary.
+The [lexicWord]#character# has an [lexicWord]#athelticism# score of 2, allowing 3 dice to roll.
+The [lexicWord]#player# decides to only use one die, in order to keep more dice available for defence.
+The [lexicWord]#roll# grants no [lexicWord]#MoSes#, forcing the [lexicWord]#player# to make an [lexicWord]#ego test#.
+The [lexicWord]#difficulty level# is 2, the [lexicWord]#athleticism# level of the [lexicWord]#character#.
+If the [lexicWord]#ego test# is successful, 1 [lexicWord]#experience point# will be gained in the [lexicWord]#athleticism skill#.
+If it is failed, 2 [lexicWord]#spirit points# will be lost.
+====
 
 include::Spirit.adoc[leveloffset=+2]
 
 include::Improving_Skills_and_Attributes.adoc[leveloffset=+2]
 
-.{sidebarTitle}What is a character made off?
-[sidebar]
-****
-* Name: What the [lexicWord]#character# is known as.
-* [lexicWord]#Race#: The racial make up of the [lexicWord]#character#.
-Chose between High-Man, Highland Half-Man, Lowland Half-Man, Orc, Goblin, Hobgoblin, Elf, Faun and Troll.
+include::Virtues.adoc[leveloffset=+2]
 
-* Description: The gender, age, height, weight and other details of the physical appearance of the [lexicWord]#character#.
+<<<
 
-* [lexicWord]#Attributes#: [lexicWord]#Agility#, [lexicWord]#power#, [lexicWord]#constitution#, [lexicWord]#erudition#, [lexicWord]#sagacity# and [lexicWord]#persona#.
-Those represent the base disposition of the [lexicWord]#character# in each of these domains.
+include::SideBarPages/Basic_Rules.adoc[leveloffset=+2,lines=2..-1]
 
-* [lexicWord]#Skills#: The list of [lexicWord]#skills# the [lexicWord]#character# knows or has [lexicWord]#experience# in.
+////
+<<<
 
-* [lexicWord]#Experience spent#: The amount of [lexicWord]#experience points# the [lexicWord]#player# spent to purchase [lexicWord]#skills#, [lexicWord]#attributes# or [lexicWord]#traits#
-
-* [lexicWord]#Traits#: Special features making the [lexicWord]#character# unique.
-Some are gained on [lexicWord]#character creation# while others can be gained while playing.
-
-* [lexicWord]#Spirit#: A mix between moral and stamina, this is what keep the [lexicWord]#character# going.
-
-* Health: The number and type of [lexicWord]#injuries# the [lexicWord]#character# is currently suffering from as well as the different effects caused by those [lexicWord]#injuries#.
-
-* Arsenal: The list of weapons the [lexicWord]#character# currently has on them ready to use.
-
-* Armour: The current armour worn by the [lexicWord]#character# and the tally of the total passive defence offered by this one.
-
-* Equipment: All the different piece of equipment the [lexicWord]#character# carries on their person.
-
-* Wealth: The money carried by the [lexicWord]#character# by denomination.
-Three types of coins exist: Copper, Silver and Gold.
-
-* [lexicWord]#Encumbrance#: A mix of weight and inconvenience of the equipment carried by the [lexicWord]#character# including the weapons, armour, money, food and water.
-
-* [lexicWord]#Morality#: Where the [lexicWord]#character# falls on the good and evil axis, their honour and faith.
-
-* [lexicWord]#Vice & Virtues#: Represent the inclination of the character towards different [lexicWord]#vices and virtues#.
-Each virtue lies between two vice.
-The five virtues are [lexicWord]#courage#, [lexicWord]#temperance#, [lexicWord]#generosity#, [lexicWord]#magnanimity# and [lexicWord]#friendliness#.
-****
-
+include::SideBarPages/What_Is_A_Character_Made_Of.adoc[leveloffset=+2,lines=2..-1]
+////
 <<<
 
 include::Skills.adoc[leveloffset=+1]

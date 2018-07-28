@@ -1,0 +1,121 @@
+= Basic Rules
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-05-19
+:root: ../
+:description: This is a summary of the basic rules.  It should aim to fit on 2 pages.
+include::../Include.adoc[]
+
+.{sidebarTitle}Basic Rules
+[sidebar]
+****
+* Every [lexicWord]#character# is defined by six [lexicWord]#attributes#:, [lexicWord]#Agility#, [lexicWord]#Constitution#, [lexicWord]#Strength#, [lexicWord]#Erudition#, [lexicWord]#Persona# and [lexicWord]#Wisdom#.
+
+* A multitude of [lexicWord]#skills# determine the different level of competency of the [lexicWord]#characters# at different tasks.
+
+* When a [lexicWord]#character# attempts a task that could result in a failure, a test is in order.
+
+** This test is made by rolling a [lexicWord]#dice-pool# composed of a number of dice equals to the [lexicWord]#rank# of the [lexicWord]#skill# associated with the task.
+
+*** If a [lexicWord]#skill# is subdivided in [lexicWord]#specilities#, the number of dice in the [lexicWord]#dice-pool# is equal to the [lexicWord]#ranks# of the [lexicWord]#speciality# plus the [lexicWord]#ranks# of the [lexicWord]#parent skill#.
+
+** The type of dice to be used cannnot have more faces than the [lexicWord]#rank# of the [lexicWord]#attribute# governing the [lexicWord]#Skill#.
+
+** Every dice can grant a certain number of [lexicWord]#Measure of success (MoS)# depending on the value they show:
+
+*** Between 4 and 7 (inclusively) grants 1 [lexicWord]#MoS#.
+
+*** Between 8 and 11 (inclusively) grants 2 [lexicWord]#MoSes#.
+
+*** Between 12 and 15 (inclusively) grants 3 [lexicWord]#MoSes#.
+
+*** Between 16 and 19 (inclusively) grants 4 [lexicWord]#MoSes#.
+
+*** a 20 grants 5 [lexicWord]#MoSes#.
+
+** If the number of [lexicWord]#MoSes# equal or surpass a [lexicWord]#diffiuclty level# determined by the [lexicWord]#GM#, the task is successful.
+
+*** Easy tasks require 1 [lexicWord]#MoS#.
+
+*** Moderate tasks require 2 to 3 [lexicWord]#MoSes#.
+
+*** Difficult tasks require 4 to 5 [lexicWord]#MoSes#.
+
+*** Very difficult tasks require 6 to 7 [lexicWord]#MoSes#.
+
+*** Near impossible tasks require 8 to 9 [lexicWord]#MoSes#.
+
+*** Legendary tasks require 10 or more [lexicWord]#MoSes#.
+
+** [lexicWord]#MoSes# over the [lexicWord]#difficulty level# are called [lexicWord]#hits# and can impact the result of a task.
+
+* Different situations can call for different types of test.
+
+** [lexicWord]#Static tests# have a simple [lexicWord]#difficulty level# than must be beaten in a single [lexicWord]#roll#.
+
+** [LexicWord]#Opposed tests# involves two [lexicWord]#characters#, each rolling their own [lexicWord]#dice-pool#.
++
+The [lexicWord]#character# with the most [lexicWord]#MoSes# succeed.
++
+The difference in [lexicWord]#MoSes# between the two rolls are the [lexicWord]#hits# of the winner.
+
+** [lexicWord]#Open-ended tests# don't have a [lexicWord]#difficulty level# to beat, but the number of [lexicWord]#MoSes# will influence how well a task is performed.
+
+** [lexicWord]#Rolling tests# can be made with multiple [lexicWord]#dice-pools#, adding the [lexicWord]#MoSes# together to beat the [lexicWord]#difficulty level#.
+
+*** [lexicWord]#First fail rolling test# will fail if one roll result in no [lexicWord]#MoS# before beating the [lexicWord]#difficulty level#.
+
+*** [lexicWord]#Setback rolling test# will not fail if a roll result in no [lexicWord]#MoS#, but no progress will be made.
+
+** [lexicWord]#Assisted test# are for situations where [lexicWord]#characters# can work together.
++
+They each roll their own [lexicWord]#dice-pool# and add their [lexicWord]#MoSes# together to beat the [lexicWord]#difficulty level#.
+
+*** [lexicWord]#Halved assisted tests# are like [lexicWord]#assisted tests# but the assisting [lexicWord]#characters# will only add half their [lexicWord]#MoSes# to those of the main [lexicWord]#character# undertaking the task.
+
+** [lexicWord]#Group tests# are used for when multiple [lexicWord]#characters# attempt the same task, can assist each other in succeeding, but will succeed or fail individualy.
++
+[lexicWord]#Characters# can transfer part of their [lexicWord]#MoSes# to each other.
+
+** [lexicWord]#Composed tests# are for complex tasks relying on two different [lexicWord]#skills#.
++
+At least two rolls must be made, one with each [lexicWord]#skill#, and their [lexicWord]#MoSes# are added together.
+
+** [lexicWord]#Mixed tests# are two or more of the previous types of tests combined together.
+
+* Some circumstances can give [lexicWord]#bonuses# to a roll.
++
+They will add dice to the [lexicWord]#character# [lexicWord]#dice-pool#.
+
+* Other circumstances will impose [lexicWord]#maluses# to a roll, subtracting [lexicWord]#MoSes# from the result.
+
+* When every dice in a roll show at least one [lexicWord]#MoS# and the attempted task is successful, this is considered a [lexicWord]#flawless successes#.
++
+The [lexicWord]#player# who rolled the [lexicWord]#flawless success# can chose to either regain one [lexicWord]#spirit point# per [lexicWord]#MoS# on the roll or to gain one [lexicWord]#experience point# in the [lexicWord]#skill# rolled.
+
+* If a roll grants no [lexicWord]#MoSes#, it is considered a [lexicWord]#complete failure#.
++
+This will have the [lexicWord]#player# rolls an [lexicWord]#ego test# with a [lexicWord]#difficulty level# equals to the [lexicWord]#rank level# of the failed [lexicWord]#skill#.
+
+** If the [lexicWord]#ego test# is successful, the failed [lexicWord]#skill# gains one [lexicWord]#experience point#.
+
+** If the [lexicWord]#ego test# fails, the [lexicWord]#character# loses a number of [lexicWord]#spirit points# equal to the [lexicWord]#rank# of the failed [lexicWord]#skill#.
+
+* A [lexicWord]#dice-pool# can never contains more [lexicWord]#dice# than the current amount of [lexicWord]#spirit points# held by the [lexicWord]#character#.
+
+** A [lexicWord]#player# can add dice to a [lexicWord]#dice-pool# by spending an amount of [lexicWord]#spirit points# equal to the number of dice currently in the [lexicWord]#dice-pool#.
++
+A [lexicWord]#dice-pool# can be doubled in this way.
+
+** A full night of sleep allows a [lexicWord]#character# to double his remaining [lexicWord]#spirit points#, up to his maximum.
+
+* [LexicWord]#Skills#, [lexicWord]#specialities# and [lexicWord]#attributes# all gain their own [lexicWord]#experience points#.
+
+** [lexicWord]#Skills# with no specialities are increased by spending a number of its [lexicWord]#experience points# equal to its [lexicWord]#rank# plus 1, multiplied by 4.
+
+** [lexicWord]#Specialities# are increased byspending a number of its [lexicWord]#experience points# equal to its [lexicWord]#ranks# plus the [lexicWord]#ranks# of its parent [lexicWord]#skill# plus 1, multiplied by 4.
+
+** Parent [lexicWord]#skills# of [lexicWord]#specialities# don't earn their own experience and are increased by subtracting one rank from 3 of its [lexicWord]#specialites#.
+
+****

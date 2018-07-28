@@ -13,7 +13,7 @@ Part of the [lexicWord]#MoSes# scored by one [lexicWord]#character# can be trans
 .Example
 [caption = ""]
 ====
-A party of 3 adventurers need to cross over a chasm on a fallen tree.
+A party of 3 adventurers needs to cross over a chasm on a fallen tree.
 The [lexicWord]#difficulty level# to cross this improvised bridge without falling is 3.
 Each [lexicWord]#player# makes an [lexicWord]#acrobatics# roll.
 The result obtained are 5, 4 and 0 [lexicWord]#MoSes#.

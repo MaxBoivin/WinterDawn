@@ -7,41 +7,38 @@
 :description: This is the description of the spirit mechanics.
 include::Include.adoc[]
 
-[lexicWord]#Spirit points# represent both the stamina and moral of a [lexicWord]#character#.
+[lexicWord]#Spirit points# represent both the stamina and morale of a [lexicWord]#character#.
 
 A [lexicWord]#dice-pool# can never contain more dice than the current number of [lexicWord]#spirit points# of the [lexicWord]#character#.
 
-The maximum amount of [lexicWord]#spirit points# for a [lexicWord]#character# is equal to the sum of his [lexicWord]#constitution#, [lexicWord]#persona# and [lexicWord]#sagacity#.
+The maximum amount of [lexicWord]#spirit points# for a [lexicWord]#character# is equal to the sum of his [lexicWord]#constitution#, [lexicWord]#persona# and [lexicWord]#wisdom#.
 
 [lexicWord]#Spirit# will fluctuate vastly during play.
 Many circumstances can drain or raise the [lexicWord]#spirit# of a [lexicWord]#character#.
 
 == Spirit Drain
 
-Common causes of loss of [lexicWord]#spirit points# include fighting, long travel, restless nights, starvation, extreme weather, seeing an ally falls in combat, etc.
+Common causes of loss of [lexicWord]#spirit points# include [lexicWord]#complete failure#, fighting, long travel, restless nights, starvation, extreme weather, seeing an ally falls in combat, etc.
 Each will be described in their appropriate section.
-
-While outside of combat, rolling a [lexicWord]#complete failure# can cause a lost of [lexicWord]#spirit#.
-Details in the [lexicWord]#complete failure# section.
 
 == Increasing Dice Pool with Spirit
 
-A [lexicWord]#player# can also spend the [lexicWord]#spirit# of their [lexicWord]#character# to add dice to a [lexicWord]#dice-pool# (before any roll is made).
+A [lexicWord]#player# can spend the [lexicWord]#spirit# of his [lexicWord]#character# to add dice to a [lexicWord]#dice-pool# (before any [lexicWord]#roll# is made).
 One die can be added at a cost equal to the current number of dice in the [lexicWord]#dice-pool#.
-A [lexicWord]#player# can add to a [lexicWord]#dice-pool# a number of dice equal to the [lexicWord]#rank# of the [lexicWord]#skill# being tested.
+A [lexicWord]#player# can double his [lexicWord]#dice-pool# in this way (but not purchase more dice than his [lexicWord]#dice-pool# originally grants him.).
 
 .Example
 [caption = ""]
 ====
 A [lexicWord]#character# with a [lexicWord]#cooking skill# of 3 would have a [lexicWord]#dice-pool# of 4 dice.
-If the [lexicWord]#player# wants to increase their chance of succeeding at creating a sumptuous meal, they could decide to spend 4 [lexicWord]#spirit points# to add a die, 9 [lexicWord]#spirit points# to add two additional dice (4 + 5) or 15 [lexicWord]#spirit points# (4 + 5 + 6) to raise their [lexicWord]#dice-pool# to 7 dice.
+If the [lexicWord]#player# wants to increase his chance of succeeding at creating a sumptuous meal, he could decide to spend 4 [lexicWord]#spirit points# to add a die, 9 [lexicWord]#spirit points# to add two additional dice (4 + 5) or 15 [lexicWord]#spirit points# (4 + 5 + 6) to raise his [lexicWord]#dice-pool# to 7 dice or go all in and spend 22 [lexicWord]#spirit points# (4 + 5 + 6 + 7) to double his [lexicWord]#dice-pool# and get 8 dice.
 ====
 
 == Regaining Spirit
 
-A [lexicWord]#character# can replenish their [lexicWord]#spirit# in many ways: A good night of sleep, eating a good meal, being victorious in combat, witnessing a beautiful artistic performance, etc.
+A [lexicWord]#character# can replenish his [lexicWord]#spirit# in many ways: A good night of sleep, eating a good meal, being victorious in combat, witnessing a beautiful artistic performance, etc.
 Details about the different ways to regain [lexicWord]#spirit# will be given in their respective sections.
 
-Whenever a [lexicWord]#character# wake up from a prolonged sleep, the player can regain half their constitution worth of [lexicWord]#spirit points#.
-
-While outside of combat, whenever a player rolls a [lexicWord]#resounding success#, they can decide to regain 2 [lexicWord]#spirit point# per [lexicWord]#MoSes# instead of getting an [lexicWord]#experience point#.
+Whenever a [lexicWord]#character# wake up from a full night of sleep,he double his remaining [lexicWord]#spirit points#  (up to his maximum).
+A [lexicWord]#character# with no [lexicWord]#spirit points# left is depressed and won't be able to regain [lexicWord]#spirit# solely by resting.
+He will some cheering up from a companion to start his recovery.

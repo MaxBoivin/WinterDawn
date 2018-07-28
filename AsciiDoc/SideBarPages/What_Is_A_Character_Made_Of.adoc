@@ -1,0 +1,49 @@
+= What is a character made of?
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-05-19
+:root: ../
+:description: This is a summary of what a character consist of.
+include::../Include.adoc[]
+
+.{sidebarTitle}What is a character made of?
+[sidebar]
+****
+* Name: What the [lexicWord]#character# is known as.
+* [lexicWord]#Race#: The racial make up of the [lexicWord]#character#.
+Chose between High-Man, Highland Half-Man, Lowland Half-Man, Orc, Goblin, Hobgoblin, Elf, Faun and Troll.
+
+* Description: The gender, age, height, weight and other details of the physical appearance of the [lexicWord]#character#.
+
+* [lexicWord]#Attributes#: [lexicWord]#Agility#, [lexicWord]#power#, [lexicWord]#constitution#, [lexicWord]#erudition#, [lexicWord]#sagacity# and [lexicWord]#persona#.
+Those represent the base disposition of the [lexicWord]#character# in each of these domains.
+
+* [lexicWord]#Skills#: The list of [lexicWord]#skills# the [lexicWord]#character# knows or has [lexicWord]#experience# in.
+
+* [lexicWord]#Experience spent#: The amount of [lexicWord]#experience points# the [lexicWord]#player# spent to purchase [lexicWord]#skills#, [lexicWord]#attributes# or [lexicWord]#traits#
+
+* [lexicWord]#Traits#: Special features making the [lexicWord]#character# unique.
+Some are gained on [lexicWord]#character creation# while others can be gained while playing.
+
+* [lexicWord]#Spirit#: A mix between moral and stamina, this is what keep the [lexicWord]#character# going.
+
+* Health: The number and type of [lexicWord]#injuries# the [lexicWord]#character# is currently suffering from as well as the different effects caused by those [lexicWord]#injuries#.
+
+* Arsenal: The list of weapons the [lexicWord]#character# currently has on them ready to use.
+
+* Armour: The current armour worn by the [lexicWord]#character# and the tally of the total passive defence offered by this one.
+
+* Equipment: All the different piece of equipment the [lexicWord]#character# carries on their person.
+
+* Wealth: The money carried by the [lexicWord]#character# by denomination.
+Three types of coins exist: Copper, Silver and Gold.
+
+* [lexicWord]#Encumbrance#: A mix of weight and inconvenience of the equipment carried by the [lexicWord]#character# including the weapons, armour, money, food and water.
+
+* [lexicWord]#Morality#: Where the [lexicWord]#character# falls on the good and evil axis, their honour and faith.
+
+* [lexicWord]#Vice & Virtues#: Represent the inclination of the character towards different [lexicWord]#vices and virtues#.
+Each virtue lies between two vice.
+The five virtues are [lexicWord]#courage#, [lexicWord]#temperance#, [lexicWord]#generosity#, [lexicWord]#magnanimity# and [lexicWord]#friendliness#.
+****
