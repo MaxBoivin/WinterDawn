@@ -1,0 +1,24 @@
+= Tempo
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is the description of the passage of time and cadence in the game.
+include::Include.adoc[]
+
+When playing {gameName}, like in other RPGs (or in novels), the time in game does not pass at the same rate as the real world time.
+A two days journeys can be resolved in one minute while a one minute combat can take a quarter hour to go through.
+
+There is three type of tempo for play: [lexicWord]#action#, [lexicWord]#interaction# and [lexicWord]#transition#.
+
+== Action
+
+This is the tempo for when there is a need to keep track of the time in a more precise manner.
+Combat is the main example of this, but this tempo can also be useful for races, infiltration missions, escapes form collapsing building, etc.
+
+Rules for [lexicWord]#initiatives# will be detailed in the [lexicWord]#combat# section.
+
+== Interaction
+
+This tempo is for when actions is

@@ -39,6 +39,6 @@ If the [lexicWord]#player# wants to increase his chance of succeeding at creatin
 A [lexicWord]#character# can replenish his [lexicWord]#spirit# in many ways: A good night of sleep, eating a good meal, being victorious in combat, witnessing a beautiful artistic performance, etc.
 Details about the different ways to regain [lexicWord]#spirit# will be given in their respective sections.
 
-Whenever a [lexicWord]#character# wake up from a full night of sleep,he double his remaining [lexicWord]#spirit points#  (up to his maximum).
+Whenever a [lexicWord]#character# wake up from a full night of sleep, he doubles his remaining [lexicWord]#spirit points#  (up to his maximum).
 A [lexicWord]#character# with no [lexicWord]#spirit points# left is depressed and won't be able to regain [lexicWord]#spirit# solely by resting.
-He will some cheering up from a companion to start his recovery.
+He will need some cheering up from a companion to start his recovery.
