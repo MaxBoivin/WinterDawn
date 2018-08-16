@@ -3,7 +3,7 @@
 include::Include.adoc[]
 
 [[preamblePoem]]
-[verse, "Robert W. Service", "The Spell of the Ykuon and Other Verses (1911)"]
+[verse, "Robert W. Service", "The Spell of the Yukon and Other Verses (1911)"]
 ____
 There's a race of men that don't fit in,
 A race that can't stay still;

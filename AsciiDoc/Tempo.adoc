@@ -21,4 +21,15 @@ Rules for [lexicWord]#initiatives# will be detailed in the [lexicWord]#combat# s
 
 == Interaction
 
-This tempo is for when actions is
+This tempo is for when actions are to be resolved one after the other, as they are performed, but the exact timing is not so important.
+This is the perfect tempo for social interactions, puzzle solving, exploration of a limited space, etc.
+
+A scene can go between [lexicWord]#interaction# and [lexicWord]#action# tempo (and vice-versa).
+
+== Transition
+
+This is the tempo for when long period of time will pass without much happening.
+[lexicWord]#Characters# can often work on long-term projects, sometimes more than one simultaneously.
+This is the appropriate temp for long travel, period of rest or dead-time between adventures.
+
+[lexicWord]#Transition# is usually for in-between scenes.

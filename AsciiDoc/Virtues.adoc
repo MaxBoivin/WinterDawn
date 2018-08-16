@@ -20,14 +20,30 @@ This is why the extremes are presented with a pair of terms, one being more posi
 [cols="3*^.^",options="header", caption ="", width = 50%, align="center"]
 |===
 | Virtues | Lack of | Excess of
-| Bravery | Craven / Prudent | Reckless / Daring
+| Courage | Craven / Prudent | Daring / Reckless
 // | Etiquette | Rude / Frank | Tamed / Polite
-| Faith | Iconoclast / Skeptic | Zealot / Devotee
+| Faith | Iconoclast / Skeptic | Devoted / Zealot
 // | Friendliness | Aloof / Reserved | Fawning / Caring
-| Integrity | Devious / Cunning | Intransigent / Honourable
-| Pride | Meek / Humble | Vain / Dignified
-| Temperance | Debauched / Epicurean | Insensitive / Disciplined
+| Integrity | Devious / Cunning | Frank / Pedantic
+| Pride | Meek / Humble | Dignified / Vain
+| Temperance | Debauched / Epicurean | Disciplined / Insensitive
 |===
+
+////
+
+//I might want to rewrite the virtue section to replace the two tables by this one:
+
+.Vices and Virtues
+[cols="6*^.^",options="header", caption ="", width = 90%, align="center"]
+|===
+| d12 / d4 | d10 / d6 | d8 / d8 | d8 / d8 | d6 / d10 | d4 / d12
+| Craven | Prudent 2+| Courageous | Daring | Reckless
+| Iconoclast | Skeptic 2+| Faithful | Devoted | Zealot
+| Devious | Cunning 2+| Honest | Frank | Pedantic
+| Meek | Humble 2+| Proud | Dignified | Vain
+| Debauched | Epicurean 2+| Tempered | Disciplined | Insensitive
+|===
+////
 
 Each spectrum is divided in 6 steps; the [lexicWord]#character# will be place on one of those step for each [lexicWord]#virtue#.
 
@@ -93,16 +109,97 @@ He will also lose a number of [lexicWord]#spirit points# equal to the size of th
 .Example
 [caption = ""]
 ====
-If our earlier [lexicWord]#character# manages to avoid the combat by running away or hiding, at the end of the scene, she will regain 10 [lexicWord]#spirit points# and her [lexicWord]#bravery# will be move one step toward [lexicWord]#craven / prudent#, birnging it to the complete lack of the [lexicWord]#virtue#.
+If our earlier [lexicWord]#character# manages to avoid the combat by running away or hiding, at the end of the scene, she will regain 10 [lexicWord]#spirit points# and her [lexicWord]#courage# will be move one step toward [lexicWord]#craven/prudent#, birnging it to the complete lack of the [lexicWord]#virtue#.
 
-If the scene is resolved in a different manner, if there is a confrontation or if it conclude at the disadvantage of the [lexicWord]#character#, this last one will lose 10 [lexicWord]#spirit points# and her [lexicWord]#virtue# will be moved one step towards [lexicWord]#reckless / daring#, bringing her to [lexicWord]#balanced#.
+If the scene is resolved in a different manner, if there is a confrontation or if it conclude at the disadvantage of the [lexicWord]#character#, this last one will lose 10 [lexicWord]#spirit points# and her [lexicWord]#virtue# will be moved one step towards [lexicWord]#daring/reckless#, bringing her to [lexicWord]#balanced#.
 ====
 
 Calling upon a [lexicWord]#virtue# can grant a powerful advantage, but committing to one extreme interpretation of a [lexicWord]#virtue# is also inherently risky.
 
-== Bravery
+== Courage
 
-[lexicWord]#Bravery# represent the way a [lexicWord]#character# will react in face of danger.
-
+[lexicWord]#Bravery# represent the way a [lexicWord]#character# will react in face of danger and their tolerance towards risk.
 
 === Craven / Prudent
+
+Only a fool would rush into danger without thinking twice about it,
+[lexicWord]#Prudent characters# know when it is best to avoid a perilous situation.
+If they're truly [lexicWord]#craven#, this will be every threatening situations.
+
+They can call upon their [lexicWord]#craven/prudent# when they want to avoid a risky situation.
+It could be to avoid a combat by hiding or even yielding.
+It could also be called upon for situations take extra precautions to reduce the inherent danger of a situation, like taking the time to securely rope the party before walking on a narrow ledge.
+
+If after calling upon their [lexicWord]#craven/prudent# they have to change their approach and face the danger, their [lexicWord]#bonus# will be changed into [lexicWord]#malus#.
+
+=== Daring / Reckless
+
+The quintessential quality of heroes, many will overlook the folly of a [lexicWord]#character# blindly facing danger and admire his bravery.
+
+[lexicWord]#Daring/reckless# can be called upon when undertaking significantly risky tasks without taking proper precautions or when facing an overwhelming enemy force.
+
+It is not appropriate to call upon this [lexicWord]#virtue# to attack an inferior force or to perform an enterprise with a calculated and reasonable risk.
+It should be reserved for when the [lexicWord]#character's# life is on the line (or at least for when they risk severe bodily harm).
+
+If the [lexicWord]#character# realizes than he bit more than he could chew and now desire to mitigate risk, his [lexicWord]#bonus# will be changed into a [lexicWord]#malus#.
+
+== Faith
+
+Traditionally, in medieval-fantastic setting, [lexicWord]#faith# play an integral part in the life of most people.
+The fact that there is some form of divine magic would imply that some form of divinity do exist, but doesn't not necessarily imply that everybody will worship or even worship it.
+
+=== Iconoclast / Skeptic
+
+A [lexicWord]#skeptic character# will have doubt towards the existence of the gods, or if confronted with their reality, will question if they are truly divine.
+He might recognise them as powerful entity, but reject the claim that they are immortal, all powerful, omniscient or other extraordinary claim made about them.
+
+The [lexicWord]#iconoclast# will not only resist worship but will oppose every form of it.
+
+A [lexicWord]#player# can call upon his [lexicWord]#character's Iconoclast/Skeptic# if this one is acting against an organized religion or cult, in a way to disprove superstitious beliefs or directly against a divinity (or someone claiming to be).
+
+Again, if the situation change and the [lexicWord]#character# realizes the error of his way, the [lexicWord]#bonus# he had will turn to a [lexicWord]#malus#.
+
+=== Devoted / Zealot
+
+While the average person will follow the major tenets of their faith, the [lexicWord]#devotee# will pay attention to even the smallest and more obscure principles.
+
+The [lexicWord]#zealot# might even gets thing further and try to impose his faith, all the way to the minima; details, on people around him.
+
+[lexicWord]#Devoted/zealot# can be called upon if the [lexicWord]#character# is acting in a way that promote their faith.
+If their resolve fluster and they have to infringe upon the dictates they should follow, the [lexicWord]#bonus# they gained is turned into a [lexicWord]#malus#.
+
+== Honesty
+
+Not everybody has the same relationship with the truth.
+Some will hold it as the most sacred principle, while other will see it only as necessary as it is convenient.
+
+=== Devious / Cunning
+
+The [lexicWord]#cunning character# will know how to use half truths and full lies to reach his goals, however commendable or ignoble those are.
+None should trust a fully [lexicWord]#devious character#; the problem being that he will be quite able at hiding their chicaneries.
+
+[lexicWord]#Devious/cunning# can be called upon when lying, deceiving or being sly.
+If the [lexicWord]#character# finally decides to submit to the truth, the bonus he had to pass his lies as facts will now be a malus to have his message accepted as real.
+
+=== Frank / Pedantic
+
+The [lexicWord]#frank character# will tend to favour the truth, even when this one is harsh or unpleasant.
+If he's [lexicWord]#pedantic#, he will be obsessed with the accuracy of the facts, all the way to their smaller details.
+For him, a mistake in the minutia of a fact can be seen the same as an outright lie.
+
+[lexicWord]#Frank/pedantic# can be called upon when the [lexicWord]#character# is trying to convince someone he is telling the truth or worthy of trust.
+
+If the [lexicWord]#character# wants to be less than truthfull after calling upon this virtue, the [lexicWord]#bonus# he was granted will be turned into a [lexicWord]#malus#.
+
+== Pride
+
+It is good for one to be aware of their worth, but it is not easy to properly asses it.
+
+=== Meek / Humble
+
+People will tend to think that the [lexicWord]#humble character# underestimates his importance.
+If this is brought to the point of being [lexicWord]#meek#, the [lexicWord]#character# might feels like he have no value at all.
+
+[lexicWord]#Meek/humble# can be called upon when a [lexicWord]#character# tries to resist provocation or [lexicWord]#taunt# or to make himself pass as insignificant.
+
+=== Dignified / Vain
