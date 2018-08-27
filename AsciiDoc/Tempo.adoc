@@ -8,7 +8,7 @@
 include::Include.adoc[]
 
 When playing {gameName}, like in other RPGs (or in novels), the time in game does not pass at the same rate as the real world time.
-A two days journeys can be resolved in one minute while a one minute combat can take a quarter hour to go through.
+A two days journeys can be resolved in one minute while a one minute combat can take a quarter hour (or more) to go through.
 
 There is three type of tempo for play: [lexicWord]#action#, [lexicWord]#interaction# and [lexicWord]#transition#.
 

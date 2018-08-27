@@ -2,7 +2,7 @@
 //:author: Max Boivin
 //:email: <max.boivin@winterdawn.com>
 :revnumber: v0.0.1
-:revdate: 2017-12-09
+:revdate: 2018-08-20
 :root: ./
 :description: This is the description of the virtues mechanics.
 include::Include.adoc[]
@@ -22,9 +22,9 @@ This is why the extremes are presented with a pair of terms, one being more posi
 | Virtues | Lack of | Excess of
 | Courage | Craven / Prudent | Daring / Reckless
 // | Etiquette | Rude / Frank | Tamed / Polite
-| Faith | Iconoclast / Skeptic | Devoted / Zealot
+| Faith | Iconoclast / Skeptic | Devout / Zealot
 // | Friendliness | Aloof / Reserved | Fawning / Caring
-| Integrity | Devious / Cunning | Frank / Pedantic
+| Honesty | Devious / Cunning | Frank / Pedantic
 | Pride | Meek / Humble | Dignified / Vain
 | Temperance | Debauched / Epicurean | Disciplined / Insensitive
 |===
@@ -38,10 +38,10 @@ This is why the extremes are presented with a pair of terms, one being more posi
 |===
 | d12 / d4 | d10 / d6 | d8 / d8 | d8 / d8 | d6 / d10 | d4 / d12
 | Craven | Prudent 2+| Courageous | Daring | Reckless
-| Iconoclast | Skeptic 2+| Faithful | Devoted | Zealot
+| Iconoclast | Skeptic 2+| Faithful | Devout | Zealot
 | Devious | Cunning 2+| Honest | Frank | Pedantic
 | Meek | Humble 2+| Proud | Dignified | Vain
-| Debauched | Epicurean 2+| Tempered | Disciplined | Insensitive
+| Debauched | Epicurean 2+| Mild | Disciplined | Insensitive
 |===
 ////
 
@@ -159,7 +159,7 @@ A [lexicWord]#player# can call upon his [lexicWord]#character's Iconoclast/Skept
 
 Again, if the situation change and the [lexicWord]#character# realizes the error of his way, the [lexicWord]#bonus# he had will turn to a [lexicWord]#malus#.
 
-=== Devoted / Zealot
+=== Devout / Zealot
 
 While the average person will follow the major tenets of their faith, the [lexicWord]#devotee# will pay attention to even the smallest and more obscure principles.
 
@@ -203,3 +203,32 @@ If this is brought to the point of being [lexicWord]#meek#, the [lexicWord]#char
 [lexicWord]#Meek/humble# can be called upon when a [lexicWord]#character# tries to resist provocation or [lexicWord]#taunt# or to make himself pass as insignificant.
 
 === Dignified / Vain
+
+[lexicWord]#Dignified characters# know how to present themselves to command respect without crossing the line and being seen as [lexicWord]#vain#.
+
+[lexicWord]#Dignified/Vain# can be called upon to resist [lexicWord]#intimidation# or if the [lexicWord]#character# has to save face.
+
+If, in the end, the [lexicWord]#character# decide to belittle himself, the [lexicWord]#bonus# is turned into a [lexicWord]#malus#.
+
+== Temperance
+
+There is multiple competing theory of how much should one indulge in carnal pleasure.
+[lexicWord]#Temperance# reflects a [lexicWord]#character's# position to this question.
+
+=== Debauched / Epicurean
+
+The [lexicWord]#epicurean character# sure knows how to enjoy the good things of life; the [lexicWord]#debauched# one, doesn't know how to resist them.
+
+[lexicWord]#Debauched/Epicurean# can be called upon when the [lexicWord]#character# is merrymaking, feasting or partaking in other pleasures of the flesh.
+It can also be called upon to help convince other of indulging.
+
+If the [lexicWord]#character# judges that the situation slipped into extravagant luxury and wants to moderate himself, the [lexicWord]#bonus# he obtained will now be treated as a [lexicWord]#malus#.
+
+=== Disciplined / Insensitive
+
+[lexicWord]#Disciplined characters# will make a point of controlling their behaviour and resist temptation.
+If they push it to the point of being [lexicWord]#insensitive#, they might become detached from simple pleasures.
+
+[lexicWord]#Disciplined/insensitive# can be called upon to resist temptation or to endure hardship (lack of sleep, hunger, bitter cold, blistering heat, etc).
+
+If, after closing himself to sensual pleasures, a [lexicWord]#character# wants to enjoy the good life, the [lexicWord]#bonus# he was granted will now be treated as [lexicWord]#malus#.

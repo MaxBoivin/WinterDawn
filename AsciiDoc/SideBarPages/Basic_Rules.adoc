@@ -2,25 +2,25 @@
 //:author: Max Boivin
 //:email: <max.boivin@winterdawn.com>
 :revnumber: v0.0.1
-:revdate: 2018-05-19
+:revdate: 2018-08-22
 :root: ../
 :description: This is a summary of the basic rules.  It should aim to fit on 2 pages.
-include::../Include.adoc[]
+include::{root}Include.adoc[]
 
 .{sidebarTitle}Basic Rules
 [sidebar]
 ****
 * Every [lexicWord]#character# is defined by six [lexicWord]#attributes#:, [lexicWord]#Agility#, [lexicWord]#Constitution#, [lexicWord]#Strength#, [lexicWord]#Erudition#, [lexicWord]#Persona# and [lexicWord]#Wisdom#.
 
-* A multitude of [lexicWord]#skills# determine the different level of competency of the [lexicWord]#characters# at different tasks.
+* A multitude of [lexicWord]#skills# determine the different level of competency of the [lexicWord]#character# at different tasks.
 
 * When a [lexicWord]#character# attempts a task that could result in a failure, a test is in order.
 
-** This test is made by rolling a [lexicWord]#dice-pool# composed of a number of dice equals to the [lexicWord]#rank# of the [lexicWord]#skill# associated with the task.
+** This test is made by rolling a [lexicWord]#dice-pool# composed of a number of dice equals to the [lexicWord]#rank# of the [lexicWord]#skill# associated with the task plus one.
 
-*** If a [lexicWord]#skill# is subdivided in [lexicWord]#specilities#, the number of dice in the [lexicWord]#dice-pool# is equal to the [lexicWord]#ranks# of the [lexicWord]#speciality# plus the [lexicWord]#ranks# of the [lexicWord]#parent skill#.
+*** If a [lexicWord]#skill# is part of a [lexicWord]#group#, the [lexicWord]#ranks# of the [lexicWord]#group# are added to the [lexicWord]#ranks# of the [lexicWord]#skill#.
 
-** The type of dice to be used cannnot have more faces than the [lexicWord]#rank# of the [lexicWord]#attribute# governing the [lexicWord]#Skill#.
+** The type of dice to be used cannot have more faces than the [lexicWord]#rank# of the [lexicWord]#attribute# governing the [lexicWord]#skill#.
 
 ** Every dice can grant a certain number of [lexicWord]#Measure of success (MoS)# depending on the value they show:
 
@@ -52,7 +52,7 @@ include::../Include.adoc[]
 
 * Different situations can call for different types of test.
 
-** [lexicWord]#Static tests# have a simple [lexicWord]#difficulty level# than must be beaten in a single [lexicWord]#roll#.
+** [lexicWord]#Static tests# have a simple [lexicWord]#difficulty level# and must be beaten in a single [lexicWord]#roll#.
 
 ** [LexicWord]#Opposed tests# involves two [lexicWord]#characters#, each rolling their own [lexicWord]#dice-pool#.
 +
@@ -74,7 +74,7 @@ They each roll their own [lexicWord]#dice-pool# and add their [lexicWord]#MoSes#
 
 *** [lexicWord]#Halved assisted tests# are like [lexicWord]#assisted tests# but the assisting [lexicWord]#characters# will only add half their [lexicWord]#MoSes# to those of the main [lexicWord]#character# undertaking the task.
 
-** [lexicWord]#Group tests# are used for when multiple [lexicWord]#characters# attempt the same task, can assist each other in succeeding, but will succeed or fail individualy.
+** [lexicWord]#Group tests# are used for when multiple [lexicWord]#characters# attempt the same task, can assist each other in succeeding, but will succeed or fail individually.
 +
 [lexicWord]#Characters# can transfer part of their [lexicWord]#MoSes# to each other.
 
@@ -86,13 +86,13 @@ At least two rolls must be made, one with each [lexicWord]#skill#, and their [le
 
 * Some circumstances can give [lexicWord]#bonuses# to a roll.
 +
-They will add dice to the [lexicWord]#character# [lexicWord]#dice-pool#.
+They will add dice to the [lexicWord]#character's# [lexicWord]#dice-pool#.
 
 * Other circumstances will impose [lexicWord]#maluses# to a roll, subtracting [lexicWord]#MoSes# from the result.
 
-* When every dice in a roll show at least one [lexicWord]#MoS# and the attempted task is successful, this is considered a [lexicWord]#flawless successes#.
-+
-The [lexicWord]#player# who rolled the [lexicWord]#flawless success# can chose to either regain one [lexicWord]#spirit point# per [lexicWord]#MoS# on the roll or to gain one [lexicWord]#experience point# in the [lexicWord]#skill# rolled.
+* When every dice in a [lexicWord]#roll# with a complete [lexicWord]#dice-pool# show at least one [lexicWord]#MoS# and the attempted task is successful, this is considered a [lexicWord]#flawless successes#.
+
+** The [lexicWord]#player# who rolled the [lexicWord]#flawless success# can chose to either regain one [lexicWord]#spirit point# per [lexicWord]#MoS# on the roll or to gain one [lexicWord]#experience point# in the [lexicWord]#skill# rolled.
 
 * If a roll grants no [lexicWord]#MoSes#, it is considered a [lexicWord]#complete failure#.
 +
@@ -110,12 +110,56 @@ A [lexicWord]#dice-pool# can be doubled in this way.
 
 ** A full night of sleep allows a [lexicWord]#character# to double his remaining [lexicWord]#spirit points#, up to his maximum.
 
-* [LexicWord]#Skills#, [lexicWord]#specialities# and [lexicWord]#attributes# all gain their own [lexicWord]#experience points#.
+* [LexicWord]#Skills# and [lexicWord]#attributes# each gain their own [lexicWord]#experience points#.
 
-** [lexicWord]#Skills# with no specialities are increased by spending a number of its [lexicWord]#experience points# equal to its [lexicWord]#rank# plus 1, multiplied by 4.
+** [lexicWord]#Skills# are increased by spending a number of its [lexicWord]#experience points# equal to its [lexicWord]#rank# plus 1 (plus the [lexicWord]#rank# of its [lexicWord]#group# if applicable), multiplied by 4.
 
-** [lexicWord]#Specialities# are increased byspending a number of its [lexicWord]#experience points# equal to its [lexicWord]#ranks# plus the [lexicWord]#ranks# of its parent [lexicWord]#skill# plus 1, multiplied by 4.
+** [lexicWord]#Skills group# don't earn their own experience and are increased by subtracting one rank from 3 of its [lexicWord]#skills#.
 
-** Parent [lexicWord]#skills# of [lexicWord]#specialities# don't earn their own experience and are increased by subtracting one rank from 3 of its [lexicWord]#specialites#.
+* [lexicWord]#Characters# are ranked on five [lexicWord]#virtues#, each on a spectrum between the lack and the excess of it.
+
+** [lexicWord]#Players# can call upon their [lexicWord]#character's virtues# if they're in a situation where they want to act in accordance to one of the extreme of the [lexicWord]#virtues#.
+
+** They can make a [lexicWord]#virtue roll# to gain a [lexicWord]#bonus# to every actions in accordance to the side of the [lexicWord]#virtue# called upon.
+
+** The [lexicWord]#dice-pool# for the [lexicWord]#virtue roll# is composed of one die by default.
+
+** The type of dice is determined by the ranking on the spectrum of the virtue; the closer to the end being called upon the bigger the die.
++
+The spectra are divided in 6 steps (including two balanced step), presented here with the die granted for calling on the lack of the [lexicWord]#virtue# / the excess of it:
+
+*** Complete lack (d12 / d4)
+
+*** Lack (d10 / d6)
+
+*** Balanced (d8 / d8)
+
+*** Balanced (d8 / d8)
+
+*** Excess (d6 / d10)
+
+*** Complete excess (d4 / d12)
+
+** Additional dice can be purchased with [lexicWord]#spirit points# in the same way as for [lexicWord]#skill dice-pools# except that there is no limit on the number of dice that can be purchased.
+
+** The five virtues and their spectrum are the following:
+
+*** [lexicWord]#Courage#: Craven -> Prudent -> Brave -> Daring -> Reckless
+
+*** [lexicWord]#Faith#: Iconoclast -> Skeptic -> Faithful -> Devout -> Zealot
+
+*** [lexicWord]#Honesty#: Devious -> Cunning -> Honest -> Frank -> Pedantic
+
+*** [lexicWord]#Pride#: Meek -> Humble -> Proud -> Dignified -> Vain
+
+*** [lexicWord]#Temperance#: Debauched -> Epicurean -> Mild -> Disciplined -> Insensitive
+
+* The rhythm at which play is happening is divided in three tempo:
+
+** [lexicWord]#Action#, for when [lexicWord]#initiative# has been rolled and the order of operations are track precisely.
+
+** [lexicWord]#Reaction#, for when the deeds of the [lexicWord]#characters# are resolved one after the other, as their intention is expressed, but the exact timing is not so important.
+
+** [lexicWord]#Transition#, for in-between scene, when multiple tasks can be undertaken and resolved in a deferred way. 
 
 ****

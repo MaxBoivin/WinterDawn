@@ -9,6 +9,8 @@ include::Include.adoc[]
 
 [lexicWord]#Experience# is gained per [lexicWord]#skills# and per [lexicWord]#attributes# and cannot be transferred.
 
+== Improving Skills
+
 A [lexicWord]#character# can gain [lexicWord]#experience# for his [lexicWord]#skills# in a few different ways:
 
 * Rolling a [lexicWord]#flawless success# grant 1 [lexicWord]#experience point# in the [lexicWord]#skill# used.
@@ -26,6 +28,25 @@ A [lexicWord]#player# can raise the [lexicWord]#rank# of a [lexicWord]#skill# at
 A [lexicWord]#skill# at a [lexicWord]#rank# of 2 will cost 12 [lexicWord]#experience points# ((2 + 1) * 4) to be raised to a [lexicWord]#rank# of 3.
 ====
 
+If a [lexicWord]#skill# is part of a [lexicWord]#skill group#, the [lexicWord]#rank# of the [lexicWord]#group# should be added to the [lexicWord]#skill# when calculating the [lexicWord]#experience# cost.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#skill# with a [lexicWord]#rank# of 3, under a [lexicWord]#group# with a [lexicWord]#rank# of 2 would cost 24 [lexicWord]#experience points# ((3+2+1)*4) to raise to a [lexicWord]#rank# of 4.
+====
+
+== Improving Skill Groups
+
+When 3 [lexicWord]#skills# in a [lexicWord]#group# have at least one [lexicWord]#rank#, they must be each reduced by one [lexicWord]#rank# to increase the [lexicWord]#rank# of the [lexicWord]#group# by one.
+
+.Example
+[caption = ""]
+====
+A [lexicWord]#character# with [lexicWord]#climbing# 2, [lexicWord]#running# 1 and [lexicWord]#jumping# 1, all under the [lexicWord]#athleticism group#, must subtract 1 from those three [lexicWord]#skills#, bringing them back to [lexicWord]#climbing# 1, [lexicWord]#jumping# and [lexicWord]#running# 0 to increase [lexicWord]#athleticism# bt 1.
+This will not affect the [lexicWord]#dice-pool# of any of the three [lexicWord]#skills# which were part of the trade, but it will increase the [lexicWord]#dice-pool# of the other two [lexicWord]#skills# under [lexicWord]#athleticism#, [lexicWord]#lifting# and [lexicWord]#swimming#.
+====
+////
 [lexicWord]#Skills# subdivided in [lexicWord]#specialities# does not directly gain [lexicWord]#experience#, but [lexicWord]#experience# is attributed to the [lexicWord]#speciality# being tested.
 
 [lexicWord]#speciality ranks# are raised in the same manner as the [lexicWord]#skills#, but the [lexicWord]#rank# of the [lexicWord]#parent skill# should always be added to the [lexicWord]#rank# of the [lexicWord]#speciality# for calculation of the cost.
@@ -44,7 +65,28 @@ A [lexicWord]#speciality# with a [lexicWord]#rank# of 2, governed by a [lexicWor
 A [lexicWord]#character# with an [lexicWord]#athleticism# rank of 1, with the [lexicWord]#specialities# [lexicWord]#climbing# 2, [lexicWord]#running# 1 and [lexicWord]#jumping# 1, can subtract 1 from those three [lexicWord]#specialities#, bringing back [lexicWord]#climbing# to 1, [lexicWord]#jumping# and [lexicWord]#running# to 0 to increase [lexicWord]#athleticism# to 2.
 This will not affect the [lexicWord]#dice-pool# of any of the three [lexicWord]#specialities# which were part of the trade, but it will increase the [lexicWord]#dice-pool# of the other two [lexicWord]#athleticism# [lexicWord]#specialities#, [lexicWord]#lifting# and [lexicWord]#swimming#.
 ====
+////
 
+== Improving Attributes
+
+One point of [lexicWord]#attribute experience# is gained by rolling the highest number possible on at least one die in a [lexicWord]#roll#.
+Only one point of [lexicWord]#attribute experience# can be gained per roll.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# with [lexicWord]#cooking# 2 and a [lexicWord]#wisdom# of 8 would have a [lexicWord]#dice-pool# of 3d8.
+If one or more of those 3 dice shows a 8, the [lexicWord]#player# can mark one [lexicWord]#wisdom experience point#.
+====
+
+An [lexicWord]#attribute# can be raised by one [lexicWord]#rank# by spending a number of [lexicWord]#experience points# equal to the current [lexicWord]#rank# of the [lexicWord]#attribute#.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# with a [lexicWord]#wisdom# of 8 will need to spend 8 [lexicWord]#wisdom experience points# to increase it to 9.
+====
+////
 Every time a [lexicWord]#player# uses [lexicWord]#experience# to raise the level of a [lexicWord]#skill# or of a [lexicWord]#speciality#, he can add 2 [lexicWord]#experience points# in the [lexicWord]#attribute# governing this [lexicWord]#skill#.
 If this [lexicWord]#skill# is governed by more than one [lexicWord]#attribute#, the [lexicWord]#experience# can be split between two governing [lexicWord]#attributes#.
 
@@ -60,6 +102,7 @@ Some [lexicWord]#traits# can be purchased using [lexicWord]#skill# or [lexicWord
 Details will be provided in the [lexicWord]#character creation# section.
 
 Lowering [lexicWord]#specialities ranks# to increase their [lexicWord]#parent skill# does not give [lexicWord]#attribute experience#.
+////
 
 == Mentoring
 

@@ -17,4 +17,4 @@
 :pdf-style: WinterDawn-theme.yml
 :pdf-fontsdir: fonts
 //:pdfmark:
-:sidebarTitle:
+:sidebarTitle: On the Side: 

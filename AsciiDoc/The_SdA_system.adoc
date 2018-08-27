@@ -2,7 +2,7 @@
 //:author: Max Boivin
 //:email: <max.boivin@winterdawn.com>
 :revnumber: v0.0.1
-:revdate: 2017-12-09
+:revdate: 2018-08-21
 :root: ./
 :description: This is the base mechanics of the game.
 include::{root}Include.adoc[]
@@ -92,7 +92,8 @@ Each of those [lexicWord]#skills# is linked to one or two [lexicWord]#attributes
 
 Each [lexicWord]#skill# is going to be described in the following chapter.
 
-==== Skill specialities
+////
+==== Skill Specialties
 
 Some [lexicWord]#skills# are subdivided into five [lexicWord]#specialities#.
 
@@ -101,12 +102,18 @@ Those [lexicWord]#skills# should not be tested directly but tests should be made
 The [lexicWord]#ranks# of the parent [lexicWord]#skill# should always be added to the [lexicWord]#speciality# when this last one is being tested.
 
 The [lexicWord]#ranks# of the [lexicWord]#skill# and of the [lexicWord]#speciality# being tested should always be added together.
+////
+
+==== Skill Groups
+
+Some [lexicWord]#skills# are gathered together under a [lexicWord]#skill group#.
+Those [lexicWord]#skill groups# will have a [lexicWord]#rank# that should be added to every [lexicWord]#skill# underneath when making a [lexicWord]#roll# and when calculating the cost of increasing the [lexicWord]#skill's rank#.
 
 .Example
 [caption = ""]
 ====
 A [lexicWord]#character# needs to make a [lexicWord]#sheltering# test to build camp for the night.
-[lexicWord]#Sheltering# is a [lexicWord]#Survival speciality#; those two scores will be added together to determine the size of the [lexicWord]#dice-pool#.
+[lexicWord]#Sheltering# is in the [lexicWord]#Survival group#; those two scores will be added together to determine the size of the [lexicWord]#dice-pool#.
 ====
 
 '''
@@ -263,8 +270,9 @@ Since he is unaware of the attacker, he is not allowed a roll and the assassin w
 
 === Flawless Success
 
-For a roll to be considered a [lexicWord]#flawless success# two conditions must be met:
+For a roll to be considered a [lexicWord]#flawless success# three conditions must be met:
 
+. The full [lexicWord]#dice-pool# must be rolled and
 . Every dice rolled must grant at least one [lexicWord]#MoS# and
 . The task attempted must be successful.
 
@@ -327,6 +335,8 @@ include::Virtues.adoc[leveloffset=+2]
 '''
 
 include::Tempo.adoc[leveloffset=+2]
+
+'''
 
 <<<
 
