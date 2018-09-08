@@ -5,13 +5,17 @@
 :revdate: 2017-12-09
 :root: ../
 :description: This is the Acrobatics skill individual file.
-include::../Include.adoc[]
+include::{root}Include.adoc[]
 
 .*_Attributes: Agility_*
 
-[lexicWord]#Acrobatics# represents the capacity of a [lexicWord]#character# to tumble, roll and balance themself.
+[lexicWord]#Acrobatics# represents the capacity of a [lexicWord]#character# to tumble, roll and balance himself.
+
+== Example of Uses
 
 [lexicWord]#Acrobatics# can be used to mitigate damage from falls, to walk on narrow ledges or pathways or to move while avoiding range attacks.
+
+=== Falling
 
 Every [lexicWord]#MoS# rolled on an acrobatics test can negate one die from a damage roll [lexicWord]#dice-pool# from falling (falling damage are explained in the adventuring chapter).
 

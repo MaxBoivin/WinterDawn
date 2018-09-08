@@ -1,0 +1,67 @@
+= Herding
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Herding skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+Controlling a large group of animals, driving them in a specific direction is not an easy task.
+[lexicWord]#Herding# is the specialized [lexicWord]#skill# to achieve this task.
+
+== Driving a Herd
+
+The [lexicWord]#character# trying to drive the herd must do a [lexicWord]#herding first-fail rolling test#.
+He can be assisted by other [lexicWord]#characters# or by trained dogs (the [lexicWord]#herding skill# of the dog is added to the [lexicWord]#character's#).
+
+If the herd has a pack leader (an alpha), this one can do an [lexicWord]#ego test# to resist being driven.
+The result of this [lexicWord]#ego test# will be subtracted to every [lexicWord]#herding roll# of the [lexicWord]#character#, has a [lexicWord]#malus#.
+If the herd doesn't have a leader, the [lexicWord]#ego test# is made with the [lexicWord]#skill# of the average member of the herd.
+
+For every [lexicWord]#MoSes#, the [lexicWord]#character# can drive [lexicWord]#half an order of magnitude# of beast:
+
+* 1 [lexicWord]#MoS#: 1 animal
+* 2 [lexicWord]#MoSes#: 3 animals
+* 3 [lexicWord]#MoSes#: 10 animals
+* 4 [lexicWord]#MoSes#: 30 animals
+* 5 [lexicWord]#MoSeS#: 100 animals
+* 6 [lexicWord]#MoSeS#: 300 animals
+* 7 [lexicWord]#MoSeS#: 1000 animals
+
+[NOTE]
+====
+In most situations, the number of animals to be herded should be estimated rather than precisely accounted for.
+A half order of magnitude represent a quantity of beasts around the number given above.
+If the number is twice the number of a step given above, it should probably be considered as the step above.
+
+For example, a group of 20 animals would be too large to drive with 3 [lexicWord]#MoSes#, since it is twice the half order of magnitude of 10.
+If the herd was of 17 individuals, the [lexicWord]#GM# could allow the [lexicWord]#character# to control them with 3 [lexicWord]#MoSes#.
+====
+
+Once the [lexicWord]#player# suceeded in gathering the required [;exicWord]#MoSes# to control the herd, he doesn't have to reroll until he stops or until the circumstances change.
+
+If the [lexicWord]#player# fails the [lexicWord]#herding test#, he can retry, simply having wasted some time.
+
+Each [lexicWord]#herding rolls# will take a quarter-hour.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# wants to herd 400 sheep.
+Her [lexicWord]#herding skill# has 1 [lexicWord]#ranks# and she is helped by a well trained shepherd dog with 2 [lexicWord]#ranks# in [lexicWord]#herding#.
+Those are not wold sheep; they have a [lexicWord]#herding skill# of 2, which can be added to the number of dice to be rolled.
+Her [lexicWord]#persona# is 9, giving her access to a [lexicWord]#dice-pool# of 6d8 (1 (base) + 1 (skill) + 2 (dog) + 2 (sheep)).
+
+The average sheep of this herd as an [lexicWord]#ego dice-pool# of 2d4, which the [lexicWord]#GM# rolls for 1 [lexicWord]#MoS#.
+Every [lexicWord]#herding roll# made by the [lexicWord]#player# will suffer a 1 [lexicWord]#MoS malus#.
+
+The [lexicWord]#player# will need to accumulate 6 [lexicWord]#MoSes# to successfully drive the herd.
+
+The first [lexicWord]#roll# yield 4 [lexicWord]#MoSes#, minus 1 for the [lexicWord]#ego# of the herd.
+The [lexicWord]#player# is halfway there.
+A second [lexicWord]#roll# will grant 5 [lexicWord]#MoSes#, minus 1, for a grand total of 7.
+The [lexicWord]#character# successfully gather the herd after half an hour of work.
+====

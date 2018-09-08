@@ -5,7 +5,7 @@
 :revdate: 2017-12-09
 :root: ./
 :description: This is the description of the different skills.
-include::Include.adoc[]
+include::{root}Include.adoc[]
 :sectnums!:
 
 [lexicWord]#Skills# are a big part of what defines a [lexicWord]#character#.
@@ -14,18 +14,23 @@ They are the interface with which the characters interact with the world around 
 [lexicWord]#Skills# can be used in many ways, to overcome many types of obstacles.
 It may sometimes seem obvious which skill to use in a certain situation but a [lexicWord]#player# can always think outside the box and take a different approach to solve the problem at hand.
 
-[lexicWord]#Skills# (and [lexicWord]#attributes#) can also give information about how the [lexicWord]#character# should be (role) played; a character with a high [lexicWord]#Confidence & ego# will act differently than one with no [lexicWord]#ranks# in this [lexicWord]#skill#.
+[lexicWord]#Skills# (and [lexicWord]#attributes#) can also give information about how the [lexicWord]#character# should be (role) played; a character with a high [lexicWord]#ego# will act differently than one with no [lexicWord]#ranks# in this [lexicWord]#skill#.
 
 In the following chapter, each [lexicWord]#skill# is going to be briefly described and given some example of use.
 Like everything in this book, those are simply guidelines and should not limit the [lexicWord]#players# or [lexicWord]#GM# in the way they want to use the [lexicWord]#skills#.
 
-The [lexicWord]#skills# are presented in alphabetical order.
+The [lexicWord]#skills# are presented as part of their [lexicWord]#skill groups#.
+Those will be sorted alphabetically.
 
 :leveloffset: +1
 
 '''
 
-include::Skills/Acrobatics.adoc[]
+include::Skills/Acumen/Acumen.adoc[]
+
+'''
+
+include::Skills/AnimalHandling/Animal_Handling.adoc[]
 
 '''
 

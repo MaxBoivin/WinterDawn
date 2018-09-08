@@ -20,7 +20,7 @@ Details in the [lexicWord]#complete failure# section.
 
 * Finally, the [lexicWord]#GM# is free to award [lexicWord]#experience points# to a [lexicWord]#player# when this one uses a [lexicWord]#skill# in an original manner to advance a significant plot point.
 
-A [lexicWord]#player# can raise the [lexicWord]#rank# of a [lexicWord]#skill# at any moment by spending an amount of [lexicWord]#experience points# linked to that [lexicWord]#skill# equal to the current [lexicWord]#rank# of the [lexicWord]#skill# plus 1, multiplied by 4.
+A [lexicWord]#player# can raise the [lexicWord]#rank# of a [lexicWord]#skill# at any moment by spending an amount of [lexicWord]#experience points# linked to that [lexicWord]#skill# equal to the current [lexicWord]#rank# of the [lexicWord]#skill# (including the [lexicWord]#group's rank#) plus 1, multiplied by 4.
 
 .Example
 [caption = ""]
@@ -28,17 +28,9 @@ A [lexicWord]#player# can raise the [lexicWord]#rank# of a [lexicWord]#skill# at
 A [lexicWord]#skill# at a [lexicWord]#rank# of 2 will cost 12 [lexicWord]#experience points# ((2 + 1) * 4) to be raised to a [lexicWord]#rank# of 3.
 ====
 
-If a [lexicWord]#skill# is part of a [lexicWord]#skill group#, the [lexicWord]#rank# of the [lexicWord]#group# should be added to the [lexicWord]#skill# when calculating the [lexicWord]#experience# cost.
-
-.Example
-[caption=""]
-====
-A [lexicWord]#skill# with a [lexicWord]#rank# of 3, under a [lexicWord]#group# with a [lexicWord]#rank# of 2 would cost 24 [lexicWord]#experience points# ((3+2+1)*4) to raise to a [lexicWord]#rank# of 4.
-====
-
 == Improving Skill Groups
 
-When 3 [lexicWord]#skills# in a [lexicWord]#group# have at least one [lexicWord]#rank#, they must be each reduced by one [lexicWord]#rank# to increase the [lexicWord]#rank# of the [lexicWord]#group# by one.
+When 3 [lexicWord]#skills# in a [lexicWord]#group# have at least one [lexicWord]#rank# (not including the [lexicWord]#group's rank#), they must be each reduced by one [lexicWord]#rank# to increase the [lexicWord]#rank# of the [lexicWord]#group# by one.
 
 .Example
 [caption = ""]

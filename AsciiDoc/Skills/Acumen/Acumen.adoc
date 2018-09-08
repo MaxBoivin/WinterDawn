@@ -1,0 +1,22 @@
+= Acumen
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-27
+:root: ../../
+:description: This is the Acumen skill group individual file.
+include::{root}Include.adoc[]
+
+The [lexicWord]#acumen# of a [lexicWord]#character# is all about his capacity to make good judgment and appropriate decisions.
+
+:leveloffset: +1
+
+include::Appraise.adoc[]
+
+include::Logic.adoc[]
+
+include::Perception.adoc[]
+
+include::Tactics.adoc[]
+
+:leveloffset: -1

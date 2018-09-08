@@ -1,0 +1,27 @@
+= Animal Handling
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-27
+:root: ../../
+:description: This is the Animal Handling skill group individual file.
+include::{root}Include.adoc[]
+
+The sapient species have domesticated a variety of beasts to assist them in different enterprises.
+
+.Animal Handling for Animals
+[NOTE]
+====
+Animals who have been trained will have points in the [lexicWord]#animal handling skills#.
+The [lexicWord]#ranks# in those [lexicWord]#skills# can be added to the corresponding [lexicWord]#character's skill#, considered as [lexicWord]#bonuses#.
+====
+
+:leveloffset: +1
+
+include::Falconry.adoc[]
+
+include::Herding.adoc[]
+
+include::Riding.adoc[]
+
+:leveloffset: -1

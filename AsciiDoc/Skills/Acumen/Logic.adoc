@@ -1,0 +1,29 @@
+= Logic
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-29
+:root: ../../
+:description: This is the Logic skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+The [lexicWord]#logic skill# represents the capacity of a [lexicWord]#character# to reason, deduce and draw conclusion.
+
+This [lexicWord]#skill# is there to allow a [lexicWord]#player# to interpret a [lexicWord]#character# which is a better logician than he his.
+It should be used with parsimony.
+
+== Solving an Ancient Puzzle
+
+A [lexicWord]#GM# may want to present the player with some logic puzzle.
+This is often included in the form of mysterious doors in a dungeon that can only be open by solving some riddle.
+
+[lexicWord]#Players# should be given a chance to solve it on their own, however, if they get stuck, the [lexicWord]#GM# may want to allow them a [lexicWord]#logic test#.
+[lexicWord]#MoSes# should grant the [lexicWord]#player# clues rather than directly giving them the solution.
+
+== Investigating a Crime
+
+If the [lexicWord]#characters# are investigating a crime, the [lexicWord]#perception skill# will allows them to notice different pieces of evidence, but, if the [lexicWord]#players# have a hard time connecting the dot, the [lexicWord]#GM# could allow a [lexicWord]#logic test# to give some leads, based on the number of [lexicWord]#MoSes#.
+
+As for the solving of puzzles, the [lexicWord]#GM# should try to avoid simply giving the solution, but rather gently push the [lexicWord]#players# in the right direction.

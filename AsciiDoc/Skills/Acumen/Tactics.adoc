@@ -1,0 +1,25 @@
+= Tactics
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-30
+:root: ../../
+:description: This is the Tactics skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Erudition / Wisdom_*
+
+Military strategy and manoeuvres are covered by the [lexicWord]#tactics skill#.
+It involves more than just logic; there is also an elements of reading your opponent's intention and subverting their expectations.
+
+== Preparing a Battle
+
+If two sides are about to take part in a battle with enough time in advance to plan, the commander on each side can do an [lexicWord]#half-assisted tactics opposed test#.
+If the battlefield has obvious advantages, they should be detailed by the [lexicWord]#GM# to the commander with the most [lexicWord]#MoSes#.
+For every [lexicWord]#hits#, the winning side can do one of the following manoeuvres:
+
+//TO DO: Define the details of the benefits gained.  Idea: Moving a unit, putting stake, digging a trench, creating a barricade, increase moral.  I will need to define a mechanic for battles.
+
+* Move a unit
+
+== Abstracting a Battle

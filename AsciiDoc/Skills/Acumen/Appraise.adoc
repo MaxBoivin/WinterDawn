@@ -1,0 +1,100 @@
+= Appraise
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-29
+:root: ../../
+:description: This is the Appraise skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+When [lexicWord]#characters# spent time raiding and exploring, they'll get opportunity to collect booty.
+The values of all thing is subjective, but the [lexicWord]#appraise skill# will allow a [lexicWord]#character# to estimate the equilibrium price of the market he is in for his loot.
+
+== Assessing the Value of an item
+
+If a [lexicWord]#character# wants to gain an idea of how an item is valued, he can do an [lexicWord]#appraise static test#.
+The [lexicWord]#difficulty level# is determined by the following factors:
+
+* Rarity of the item
+
+** Everyday item (food item, farming tools, piece of clothing): +0
+
+** Specialty item (traps, locks, weapons, tools for a specialized trade or activity): +1
+
+** Luxury item (fancy clothing, gemstones, spices, highly decorated weapons): +2
+
+** Unique item (custom made item, mysterious item, art item): +3
+
+** Magical item (Items that have been identified as magical and their properties are known): +4
+
+* Age of the item (This is relative to the normal life cycle of the product and, obviously, some item are perishable and see their value go to 0)
+
+** Just produced: +0
+
+** Not new but still relevant: +1
+
+** Obsolete: +2
+
+** Antique: +3
+
+* Condition of the item
+
+** Never used and well maintained: +0
+
+** Used but well maintained: +1
+
+** Normal wear and tear: +2
+
+** Some sign of abuse: +3
+
+** Damaged and currently unusable, but could be repaired: +4
+
+* History of the item
+
+** No specific history: +0
+
+** Well known item of historical significance: +2
+
+** Object of significance to a niche market: +4
+
+* Special circumstances of the market
+
+** Normal circumstances: +0
+
+** The item's price is affected by the seasons: +1
+
+** There is an excess or a penury of the item: +3
+
+* Familiarity with the market or object (can be more than one)
+
+** The appraiser deal regularly with the type of item: -2
+
+** The appraiser is in a familiar market: -2
+
+** The appraiser does not regularly deal with the item: +0
+
+** The seller is in a foreign market: +2
+
+The [lexicWord]#GM# can determine the [lexicWord]#difficulty level# secretly, without giving all the details to the [lexicWord]#player# so this one is not certain of how accurate his appraisal is.
+
+No matter the number of missing [lexicWord]#MoSes# on a [lexicWord]#player's roll#, a [lexicWord]#character# is not going to appraise an identified magical item as worthless or a rotten cabbage as highly desirable.
+Missing [lexicWord]#MoSes# can mean that an item is perceived as in the wrong categories or, if it should be in the top range of its category it is appraised as being at the bottom and vice-versa.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# is trying to [lexicWord]#appraise# a beautifully decorated sword.
+The weapon as been used but as been well maintained.
+It is known to have belonged to a famous hero.
+
+The [lexicWord]#GM# determined that the [lexicWord]#difficulty level# of the [lexicWord]#appraise test# would be 9 (luxury item, antique, used but well maintained, of historical significance).
+
+The [lexicWord]#player# rolls 5 [lexicWord]#MoSes#, 4 short of getting the most precise appraisal for the circumstances.
+
+The [lexicWord]#GM# determine that because of his missing [lexicWord]#MoSes#, the [lexicWord]#character# will evaluate the weapon's light sign of use as normal wear and tear, will ignore the historical significance and will not factor on how intricate the decorations are.
+This will lead the [lexicWord]#character# to seriously under evaluate the worth of the object.
+====
+
+More details about the value of items will be given in the equipment chapter.

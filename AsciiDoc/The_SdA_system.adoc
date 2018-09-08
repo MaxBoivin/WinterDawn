@@ -88,22 +88,20 @@ When a number is noted before the letter “d”, it represents the number of di
 === Skills
 
 A large array of different [lexicWord]#skills# covers what a [lexicWord]#character# can reasonably be expected to do.
-Each of those [lexicWord]#skills# is linked to one or two [lexicWord]#attributes#.
+Each of those [lexicWord]#skills# linked to one or two [lexicWord]#attributes#.
+They are also grouped 4, 5 or 6 together in [lexicWord]#skill groups# (except for [lexicWord]#luck# being on its own).
 
-Each [lexicWord]#skill# is going to be described in the following chapter.
+When a rule refer to the [lexicWord]#rank# of a [lexicWord]#skill#, the [lexicWord]#rank# of the [lexicWord]#skill group# it is part of should always be added, unless specified otherwise.
+
+.Example
+[caption=""]
+====
+The [lexicWord]#rank# of [lexicWord]#folklore# always included the [lexicWord]#ranks# of its [lexicWord]#group#, [lexicWord]#knowledge#.
+====
+
+Each [lexicWord]#skill# is going to be described in the following chapter with some example of uses.
 
 ////
-==== Skill Specialties
-
-Some [lexicWord]#skills# are subdivided into five [lexicWord]#specialities#.
-
-Those [lexicWord]#skills# should not be tested directly but tests should be made with one of their [lexicWord]#speciality#.
-
-The [lexicWord]#ranks# of the parent [lexicWord]#skill# should always be added to the [lexicWord]#speciality# when this last one is being tested.
-
-The [lexicWord]#ranks# of the [lexicWord]#skill# and of the [lexicWord]#speciality# being tested should always be added together.
-////
-
 ==== Skill Groups
 
 Some [lexicWord]#skills# are gathered together under a [lexicWord]#skill group#.
@@ -115,7 +113,7 @@ Those [lexicWord]#skill groups# will have a [lexicWord]#rank# that should be add
 A [lexicWord]#character# needs to make a [lexicWord]#sheltering# test to build camp for the night.
 [lexicWord]#Sheltering# is in the [lexicWord]#Survival group#; those two scores will be added together to determine the size of the [lexicWord]#dice-pool#.
 ====
-
+////
 '''
 
 === Skill Test
@@ -132,7 +130,7 @@ The resulting combination of the number and type of dice is referred to as a [le
 .Example
 [caption = ""]
 ====
-A [lexicWord]#skill# with a rank of 3 will allow the [lexicWord]#player# to roll 4 dice.
+A [lexicWord]#skill# with a rank of 2 in a [lexicWord]#skill group# with a rank of 1 will allow the [lexicWord]#player# to roll 4 dice (2 + 1  + 1).
 If this [lexicWord]#skill# is governed by an [lexicWord]#attribute# with a value of 7, the [lexicWord]#player# can roll 6 sided dice.
 His [lexicWord]#dice-pool# for this test would then be of four six-sided dice, abbreviated as 4d6.
 ====
@@ -243,7 +241,9 @@ If a [lexicWord]#bonuses# is applied to a [lexicWord]#rolling test#, it will ben
 .Example
 [caption = ""]
 ====
-//TO DO!!!
+A [lexicWord]#character# is climbing a large tree.
+He is using a specialized spikes and harness which grant him 1 die [lexicWord]#bonus#.
+Climbing this tree can take multiple rolls; the equipment will grant the [lexicWord]#bonus# to each one.
 ====
 
 [lexicWord]#Maluses# remove [lexicWord]#MoSes# from the [lexicWord]#roll#.

@@ -14,11 +14,11 @@ include::{root}Include.adoc[]
 
 * A multitude of [lexicWord]#skills# determine the different level of competency of the [lexicWord]#character# at different tasks.
 
+** Skills are grouped together in [lexicWord]#groups# of 4 to 6.
+
 * When a [lexicWord]#character# attempts a task that could result in a failure, a test is in order.
 
-** This test is made by rolling a [lexicWord]#dice-pool# composed of a number of dice equals to the [lexicWord]#rank# of the [lexicWord]#skill# associated with the task plus one.
-
-*** If a [lexicWord]#skill# is part of a [lexicWord]#group#, the [lexicWord]#ranks# of the [lexicWord]#group# are added to the [lexicWord]#ranks# of the [lexicWord]#skill#.
+** This test is made by rolling a [lexicWord]#dice-pool# composed of a number of dice equals to the [lexicWord]#rank# of the [lexicWord]#skill# associated with the task plus the [lexicWord]#rank# of the [lexicWord]#group# it is part of, plus 1.
 
 ** The type of dice to be used cannot have more faces than the [lexicWord]#rank# of the [lexicWord]#attribute# governing the [lexicWord]#skill#.
 
@@ -112,15 +112,15 @@ A [lexicWord]#dice-pool# can be doubled in this way.
 
 * [LexicWord]#Skills# and [lexicWord]#attributes# each gain their own [lexicWord]#experience points#.
 
-** [lexicWord]#Skills# are increased by spending a number of its [lexicWord]#experience points# equal to its [lexicWord]#rank# plus 1 (plus the [lexicWord]#rank# of its [lexicWord]#group# if applicable), multiplied by 4.
+** [lexicWord]#Skills# are increased by spending a number of its [lexicWord]#experience points# equal to 1 plus its [lexicWord]#rank# (including the [lexicWord]#rank# of its [lexicWord]#group#), multiplied by 4.
 
-** [lexicWord]#Skills group# don't earn their own experience and are increased by subtracting one rank from 3 of its [lexicWord]#skills#.
+** [lexicWord]#Skills group# are increased by subtracting one rank from 3 of its [lexicWord]#skills#.
 
 * [lexicWord]#Characters# are ranked on five [lexicWord]#virtues#, each on a spectrum between the lack and the excess of it.
 
 ** [lexicWord]#Players# can call upon their [lexicWord]#character's virtues# if they're in a situation where they want to act in accordance to one of the extreme of the [lexicWord]#virtues#.
 
-** They can make a [lexicWord]#virtue roll# to gain a [lexicWord]#bonus# to every actions in accordance to the side of the [lexicWord]#virtue# called upon.
+** They can make a [lexicWord]#virtue roll# to gain a [lexicWord]#bonus# to every actions in accordance to the side of the [lexicWord]#virtue# called upon for the duration of the scene.
 
 ** The [lexicWord]#dice-pool# for the [lexicWord]#virtue roll# is composed of one die by default.
 
@@ -160,6 +160,6 @@ The spectra are divided in 6 steps (including two balanced step), presented here
 
 ** [lexicWord]#Reaction#, for when the deeds of the [lexicWord]#characters# are resolved one after the other, as their intention is expressed, but the exact timing is not so important.
 
-** [lexicWord]#Transition#, for in-between scene, when multiple tasks can be undertaken and resolved in a deferred way. 
+** [lexicWord]#Transition#, for in-between scene, when multiple tasks can be undertaken and resolved in a deferred way.
 
 ****

@@ -1,0 +1,30 @@
+= Riding
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Riding skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Agility_*
+
+Travelling on a mount, usually a horse, is much less tiring for the rider than walking.
+A warrior apt at fighting on a specially trained horse is much more dangerous than the typical infantryman.
+
+== Moving With a Mount
+
+If an animal is trained to be ridden (it has at least 1 [lexicWord]#rank# in [lexicWord]#riding#), no [lexicWord]#test# is required to simply move around.
+[lexicWord]#Tests# are needed for more complex activity or tasks that the mount could have reasons to avoid.
+
+When a [lexicWord]#character# is mounted, he must use the movement of the mount instead of his own.
+
+== Sprinting
+
+== Travelling Long Distance
+
+== Jumping Over a Cliff
+
+== Mounted Combat
+
+== Riding an Untrained Mount

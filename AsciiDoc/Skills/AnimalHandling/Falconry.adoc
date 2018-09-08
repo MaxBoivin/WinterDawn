@@ -1,0 +1,23 @@
+= Falconry
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-30
+:root: ../../
+:description: This is the Falconry skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+Birds of prey can be trained to hunt for their owners.
+[lexicWord]#Falconry# is the [lexicWord]#skill# related to this specialized type of hunting and the caring of those raptors.
+
+== Hunting With a Bird of Prey
+
+A [lexicWord]#character# trying to hunt with a raptor will have to make a [lexicWord]#falconry test# opposed by the [lexicWord]#ego# of the bird.
+If this last one has [lexicWord]#falconry ranks#, they can be added to the [lexicWord]#skill# of the [lexicWord]#character#.
+If the [lexicWord]#character# is successful, the animal will have to make a [lexicWord]#hunting test# to get food for its handler.
+The [lexicWord]#dice-pool# of the bird is limited by the number of [lexicWord]#hits# scored by the [lexicWord]#character# on his [lexicWord]#falconry test#.
+
+The specific of [lexicWord]#hunting# will be detailed under the description of the [lexicWord]#skill#.
+Just keep in mind of the limitation of the bird (due to size and strength).

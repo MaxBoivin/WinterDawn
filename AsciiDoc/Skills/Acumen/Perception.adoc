@@ -1,0 +1,67 @@
+= Perception
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-29
+:root: ../../
+:description: This is the Perception skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+Being aware of your surrounding is an important part of staying alive, especially when exploring dangerous locations or dealing with shady individuals, like [lexicWord]#player's character# tend to do.
+
+It covers everything that has to do with the basic senses; sight, hearing, smell, touch and taste.
+
+[lexicWord]#Perception# can either be active or passive.
+
+Active [lexicWord]#perception test# will usually be initiated by a [lexicWord]#player#.
+Cue like "I check for traps", "I inspect the wall", "I take a little taste of the drink", "I look around in every corner", can justify such a test.
+Active [lexicWord]#perception# result last only for the task they have been made for.
+
+Passive [lexicWord]#perception test# are generally called upon by the [lexicWord]#GM# and will often be done by the every [lexicWord]#players#.
+They will be used to determine the situational awareness of the [lexicWord]#characters#.
+The result of the [lexicWord]#test# should stand for the whole scene, or until the situation change significantly.
+Therefore, the [lexicWord]#test# doesn't have to be done at the exact moment when there is something to detect.
+
+.Example
+[caption=""]
+====
+A group of [lexicWord]#characters# are exploring an ancient ruin of a lost civilization.
+The [lexicWord]#GM# asks everyone to do a [lexicWord]#perception test#; this is going to be their passive [lexicWord]#perception# as they explore.
+If they walk by a trap or a secret door, their [lexicWord]#concealment value# will be compared to those results (really, only the highest one matter, but keep note of all of them in case the [lexicWord]#characters# split).
+
+The party ends up in a dead-end with a hidden door with a concealment value of 3.
+The [lexicWord]#player# with the highest [lexicWord]#perception# result got 3 [lexicWord]#MoSes#.
+Since it is passive [lexicWord]#perception#, matching the [lexicWord]#difficulty level# is not enough.
+After a considering backtracking, one of the [lexicWord]#character# decides to inspect the wall.
+The [lexicWord]#GM# then ask her to make another [lexicWord]#perception test#.
+The [lexicWord]#player# gets 3 [lexicWord]#MoSes#, just enough to find the door.
+====
+
+== Spotting an Hidden Individual
+
+If someone is trying to sneak pass a [lexicWord]#character#, the [lexicWord]#GM# should ask the [lexicWord]#player# to make a [lexicWord]#perception test#.
+This test will usually rely on both sight and hearing.
+
+The [lexicWord]#test# is opposed by the [lexicWord]#stealth# test of the sneak.
+If the [lexicWord]#character# is actively on the look out for hidden individuals, matching the [lexicWord]#stealth roll# will reveal them.
+If the [lexicWord]#perception# is just passive, the [lexicWord]#roll# must beat the [lexicWord]#stealth#.
+
+If there is multiple people sneaking, the [lexicWord]#player# is only required to do one [lexicWord]#test#.
+The result of this one will compared to each [lexicWord]#stealth# result.
+
+== Detecting a Poison
+
+Every poison has a [lexicWord]#concealment value#, usually coming from the person who created it.
+If a [lexicWord]#character# is drinking or eating something that has been poisoned, he can detect it with a [lexicWord]#perception test#.
+
+This [lexicWord]#test# can be either active or passive, as described above.
+The [lexicWord]#character# will know something is not right if he match (in case of an active [lexicWord]#test#), or surpass (for passive ones) the [lexicWord]#concealment value# of the poison.
+
+== Looking for a Needle in a Haystack
+
+If a [lexicWord]#character# is searching for something, like the proverbial needele in the haystack, [lexicWord]#perception test# can be done as a [lexicWord]#rolling test#.
+The [lexicWord]#GM# should predetermine a [lexicWord]#difficulty level# to be achieved with each [lexicWord]#roll# representing the passing of some time.
+
+If multiple [lexicWord]#characters# are working together to find the missing object, they can add their [lexicWord]#MoSes# together.
