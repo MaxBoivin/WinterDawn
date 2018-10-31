@@ -322,6 +322,10 @@ If the roll result in 2 [lexicWord]#MoSes#, after the [lexicWord]#malus# is appl
 
 '''
 
+include::AutomaticSuccess.adoc[leveloffset=+2]
+
+'''
+
 include::Spirit.adoc[leveloffset=+2]
 
 '''
@@ -335,6 +339,10 @@ include::Virtues.adoc[leveloffset=+2]
 '''
 
 include::Tempo.adoc[leveloffset=+2]
+
+'''
+
+include::OrderOfMagnitude.adoc[levelOffset=+2]
 
 '''
 

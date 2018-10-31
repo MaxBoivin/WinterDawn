@@ -1,0 +1,48 @@
+= Order of Magnitude and Half-Order of Magnitude
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is an introduction to the concept of order of magnitude and half-order of magnitude.
+include::{root}Include.adoc[]
+
+Order of magnitude (OM) and half-order of magnitude (HOM) are mathematical concept that you might find used in those rules.
+
+Both are generally used in situations that can have a vastly varying degrees of effect and where the exact precise number affected is not so critical.
+The duration of certain spells, the number of sheep that can be herded, or people that will be inspired by a rousing speech will all be determined by the number of [lexicWord]#MoSes# rolled and will increase in a non-linear manner.
+
+Order of magnitude simply represent the number of digits in a number.
+Number from 1 to 9 (inclusively) are in the same order of magnitude, while those from 10 to 99 are in the following one and 100 to 999 representing the next one.
+
+Half order of magnitude are a little less intuitive but very useful.
+Between each order of magnitude, an additional step is added.
+However, this step is not directly in the middle of the range but at 3/10 of it.
+This means the steps would go as follow: 1, 3, 10, 30, 100, 300, 1000, 3000, etc.
+It is easier to distribute collections of unknown exact quantity in those half-order of magnitude since they work better with how the human brain perceives things.
+If a group has twice the number of individuals then the step, it should probably be moved to the next step.
+
+HOMs are about estimation but if precise number are needed to avoid endless arguments, the following guide should be followed:
+
+.Half-Order of Magnitude Cut-Off
+[cols="4*^.^",options="header", caption ="", width = 50%, align="center"]
+|===
+| Step | HOM Step | Lower Limit | Upper Limit
+| 1 | 1 | 1 | 1
+| 2 | 3 | 2 | 5
+| 3 | 10 | 6 | 19
+| 4 | 30 | 20 | 59
+| 5 | 100 | 60 | 199
+| 6 | 300 | 200 | 599
+| 7 | 1000 | 600 | 1999
+| 8 | 3000 | 2000 | 5999
+|===
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# wants to cast a spell with a duration of 1 round, increasing in HOM steps.
+He wants to stretch the duration to an hour; this is 600 rounds!
+A minimum of 7 [lexicWord]#hits# will be needed to extend the duration by that much.
+At that point, it would cost the same to make the spell last for just under three hours and twenty minutes (1999 rounds).
+====

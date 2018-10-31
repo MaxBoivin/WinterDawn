@@ -1,0 +1,31 @@
+= Poetry
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Poetry skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+The [lexicWord]#poetry skill# govern everything that has to do with creative writing, including writing songs or plays.
+
+== Writing a Poem or Novel
+
+Writing a poem or a novel of a sufficient quality to be grant uplift the [lexicWord]#spirit# of the reader, a [lexicWord]#rolling poetry test# must be made.
+Each [lexicWord]#roll# takes 6 hour and only one [lexicWord]#roll# can be made in a day.
+
+The [lexicWord]#difficulty level# of the [lexicWord]#test# depends on the number of page to be written; for every half-order of magnitude of pages, the [lexicWord]#difficulty level# is raised by 1 (so, 1 for 1 pages, 2 for 3 pages, 3 for 10 pages, 4 for 30 pages, etc).
+
+The number of [lexicWord]#hits# scored of the [lexicWord]#test# will represent the quality of the work.
+Whenever a [lexicWord]#character# other than the author read the work, he will gain a number of [lexicWord]#spirit points# equals to the number of [lexicWord]#hits# scored by the author.
+This bonus is granted every time the reader read an half-order of magnitude of pages.
+
+The average [lexicWord]#character# should be able to read 30 pages of text an hour.
+Reading faster is possible, but to gain the bonus in [lexicWord]#spirit#, the reader must take the time to appreciate the writing.
+
+== Bonus from Something Written
+
+If actors are performing a play, musicians singing a song or orator doing a public reading of a poem, they can benefits from well crafted words.
+They can add one [lexicWord]#bonus# die for every half-order of magnitude of [lexicWord]#hits# the author scored (1 die for 1 [lexicWord]#hit#, 2 dice for 3 [lexicWord]#hits#, 3 dice for 10 [lexicWord]#hits#, etc).

@@ -1,0 +1,47 @@
+= Training
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Training skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+[lexicWord]#Training# an animal to collaborate better with sapient species is very useful.
+Without it, some task are completely impossible to have the beast perform, other are simply more difficult.
+
+== Training an Animal
+
+//Need to figure out how training works.  Probably have the character make a training test (can add the skill of the beast) opposed by the ego of the animals.  For every hits, the character can mentor the animal, maybe one test by hits and you can train until the animal wins the opposed test.  The animal can keep it's MoSes from his ego test.
+
+If a [lexicWord]#character# wants to train an animal the [lexicWord]#player# will first have to make a series of [lexicWord]#training test# opposed by the [lexicWord]#ego# of the animal.
+The [lexicWord]#player# can keep on making [lexicWord]#training test# as long as he is scoring [lexicWord]#hits#.
+Those [lexicWord]#hits# need to be tallied.
+For every [lexicWord]#test# after the first, the animal receive a cumulative 1 die [lexicWord]#bonus#.
+Each [lexicWord]#test# will represent 1 hour of [lexicWord]#training#.
+
+Once the [lexicWord]#player# is done doing [lexicWord]#training test#, either because the animal won a [lexicWord]#test# or because he doesn't want to invest more time, he can [lexicWord]#mentor# the animal, doing one [lexicWord]#test# with the [lexicWord]#skill# to be trained per [lexicWord]#hit# accumulated.
+This [lexicWord]#mentoring# is done has a non assisted task.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# wants to train a horse for [lexicWord]#riding#.
+The [lexicWord]#player# will first have to make [lexicWord]#training test#, opposed by the [lexicWord]#ego# of the horse.
+
+On the first [lexicWord]#roll#, the [lexicWord]#player# scores 4 [lexicWord]#MoSes# while the [lexicWord]#GM# gets 2 [lexicWord]#MoSes# for the horse.
+The [lexicWord]#player# scored 2 [lexicWord]#hits#.
+On the following [lexicWord]#roll#, the horse benefits from a 1 die [lexicWord]#bonus#, but the [lexicWord]#player# manage to score another 3 [lexicWord]#hits#.
+On the third roll, the [lexicWord]#bonus# to the horse [lexicWord]#ego# is now 2 dice and the [lexicWord]#player# fails to score any [lexicWord]#hits#; that is all the [lexicWord]#training# he can do.
+His total number of [lexicWord]#hits# will be 5 and, since it has been achieved in two [lexicWord]#rolls#, this will represent 2 hours of active training.
+
+Now, if the [lexicWord]#character's riding skill# is at least 2 [lexicWord]#ranks# higher than that on the horse, the [lexicWord]#player# can do 5 [lexicWord]#riding test# (one for every [lexicWord]#hit# scored).
+Every time one of those [lexicWord]#riding roll# result in a [lexicWord]#flawless success#, the [lexicWord]#experience point# will be attributed to the horse.
+====
+
+== Having an Animal Performs a Trick
+
+If a [lexicWord]#character#  is trying to have an animal perform a trick, he can do a [lexicWord]#training test# (and add the [lexicWord]#training ranks# of the animal to his [lexicWord]#dice-pool#) opposed by the [lexicWord]#ego# of the beast.
+The [lexicWord]#GM# decides the [lexicWord]#difficulty level#  based on the complexity of the trick; the more steps are involved in performing the trick, the higher the [lexicWord]#difficulty level# should be.

@@ -1,0 +1,34 @@
+= Drawing
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Drawing skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+Everything that has to do with producing artistic images, would it be with a stylus or with paint and brushes, is govern by the [lexicWord]#drawing skill#.
+
+== Creating a Work of Art
+
+If a [lexicWord]#character# desires to create a drawing or painting of high enough quality to have an impact on people admiring it, he must make a [lexicWord]#first-fail rolling drawing test#, each [lexicWord]#roll# taking 6 hours.
+
+Once the piece is created, [lexicWord]#characters# spending 15 minutes admiring it can regain 1 [lexicWord]#spirit points# per [lexicWord]#MoSes# scored while creating the piece.
+
+If a [lexicWord]#character# already benefited from the artwork, they can benefit from hit again after a half-order of magnitude of days (a second time after 3 days, a third time after 10 days, a fourth time after 30 days, etc).
+Each time he admires the work, the number of [lexicWord]#spirit points# receive is reduced by 1.
+
+== Creating a Portrait
+
+If the objective of a drawing is not to raise [lexicWord]#spirit# but to be in the likeness of someone, a quick drawing can be made.
+This can be done via a [lexicWord]#first-fail rolling drawing test#, each [lexicWord]#roll# taking half an hour.
+If the subject of the portrait is not present, the artist will suffer a [lexicWord]#malus# to his roll; -1 [lexicWord]#MoS# if he is well acquainted to the subject, -2 if he has seen the subject only a few times.
+
+If the artist never saw the subject but is solely working from the description of someone else, this other person will have to make a [lexicWord]#perception test#.
+The number of [lexicWord]#MoSes# obtained on this test will limit the number of dice the artist can used for his [lexicWord]#drawing test#.
+This [lexicWord]#drawing test# will also suffer a -3 [lexicWord]#MoSes malus# for not knowing the subject.
+
+Once the drawing is complete, an observer can try to recognize the subject by rolling a [lexicWord]#perception test#.
+The number of dice that can be used for that [lexicWord]#test# is limited by the [lexicWord]#MoSes# obtained by the artist while creating the drawing.

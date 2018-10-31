@@ -1,0 +1,42 @@
+= Labouring
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Labouring skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Constitution or Strength_*
+
+[lexicWord]#Labouring# is a catch-all [lexicWord]#skill# for hard physical work that doesn't require an extensive amount of technical knowledge to be executed.
+It will usually be repetitive labour that ruin the back and bore the mind.
+
+== Mining and Digging Holes
+
+It could be to prepare latrines, to mines for precious material or to lay a trap, digging a hole is an unpleasant but often time necessary task.
+The speed at which a hole can be dug will depends on the material being dug in.
+The time given below assume the [lexicWord]#character# digging is using the appropriate tools.
+
+* Digging 1m³ in dirt or sand: 6 [lexicWord]#MoSes#
+* Mining 1m³ in rock: 9 [lexicWord]#MoSes#
+
+Digging and mining is done via [lexicWord]#step-back rolling labouring test#, each [lexicWord]#roll# representing an hour of work.
+This [lexicWord]#test# can be [lexicWord]#assisted#.
+
+Some circumstances can inpose a [lexicWord]#malus# of the [lexicWord]#rolls#.
+Densely pack ground or ground rich in clay could grant a 1 [lexicWord]#MoS malus# while digging.
+Digging in a ground full of rocks or roots could grant a 2 [lexicWord]#MoSes malus#.
+Mining into hard rock, like marble, could grant a 1 [lexicWord]#MoS malus#, while very hard rock, like granite, could grant a 2 [lexicWord]#MoSes malus#.
+
+Scoring a negative result on a [lexicWord]#roll# mean the tool used gets damaged or break.
+
+A [lexicWord]#character# can dig or mine less than a metre cube; if a only a small hole is dug, it might not be necessary to have the [lexicWord]#player# rolls.
+
+Situations where digging or mining could be interesting enough to require [lexicWord]#rolls# would include a [lexicWord]#character# trying to dispose of a body, create a pit trap, tunnel under a castle or dig up a treasure, all those under time pressure.
+
+== Tiling the Ground
+
+
+
+== Chopping Wood

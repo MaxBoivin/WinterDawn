@@ -19,5 +19,7 @@ If this last one has [lexicWord]#falconry ranks#, they can be added to the [lexi
 If the [lexicWord]#character# is successful, the animal will have to make a [lexicWord]#hunting test# to get food for its handler.
 The [lexicWord]#dice-pool# of the bird is limited by the number of [lexicWord]#hits# scored by the [lexicWord]#character# on his [lexicWord]#falconry test#.
 
+It is impossible to hunt with a bird that has no [lexicWord]#ranks# in [lexicWord]#falconry#.
+
 The specific of [lexicWord]#hunting# will be detailed under the description of the [lexicWord]#skill#.
 Just keep in mind of the limitation of the bird (due to size and strength).

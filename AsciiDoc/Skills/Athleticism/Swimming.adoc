@@ -1,0 +1,41 @@
+= Swimming
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Swimming skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Strength_*
+
+[lexicWord]#Swimming tests# are appropriate for when a [lexicWord]#character# try to swim fast, swim in troubled water, swim while encumbered or other situations making threading water difficult.
+
+An approprietly dressed [lexicWord]#character# leisurely [lexicWord]#swimming# in calm water wouldn't call for a [lexicWord]#test#.
+In those circumstances, a [lexicWord]#character# can move half his [lexicWord]#movement speed#.
+
+== Rapid Swim
+
+A [lexicWord]#character# trying to swim as fast as he can will be able to move half his [lexicWord]#movement speed# plus 1 metre per [lexicWord]#MoS# scored on a [lexicWord]#swimming roll#.
+
+== Swimming While Burdened
+
+While he his [lexicWord]#swimming#, the [lexiWord]#character# suffers a one [lexicWord]#MoS malus# if they carry more than half their [lexicWord]#burden limit#, on top of the regular [lexicWord]#burden penalty#.
+
+== Troubled Water
+
+The condition of the water (or other liquid) can influence the difficulty and speed of the [lexicWord]#swimming#.
+
+The speed of the river should be added or subtracted to the [lexicWord]#movement speed# of the [lexicWord]#character# (depending if this one goes with or against the current).
+Typical rivers will have a flow between 0.5 metre (3 metres per round) per second to 2 metres per second (12 metres per round).
+Obviously, water can be completely still or move much faster.
+
+A turbulent and fast moving water can inflict [lexicWord]#maluses# on the swimmer, especially if there is multiple obstacle in its flow.
+The [lexicWord]#GM# can decide to impose a 1 or 2 [lexicWord]#MoSes malus# on every [lexicWord]#swimming roll#.
+
+== Failing a Swimming Test
+
+If a [lexicWord]#player# end up with a negative result on a [lexicWord]#swimming test# (due to [lexicWprd]#maluses#), he will sink.
+He will be able to resurface on their next round, unless his next [lexicWord]#swimming test# also end up with negative [lexicWord]#MoSes#.
+
+Rules for [lexicWord]#drowning# will be provided in the [lexicWord]#adventuring# section.

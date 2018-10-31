@@ -19,12 +19,23 @@ If an animal is trained to be ridden (it has at least 1 [lexicWord]#rank# in [le
 
 When a [lexicWord]#character# is mounted, he must use the movement of the mount instead of his own.
 
-== Sprinting
+== Mounted Actions
 
-== Travelling Long Distance
-
-== Jumping Over a Cliff
+If a mounted [lexicWord]#character# wants to have his mount perform some actions that would require a [lexicWord]#test#, it could be [lexicWord]#running#, [lexicWord]#jumping#, travelling long distance, etc, the [lexicWord]#test# is made using the [lexicWord]#skills# of the mount but, its [lexicWord]#dice-pool# is limited by the number of [lexicWord]#MoSes# obtained on a [lexicWord]#riding test# made by the rider.
 
 == Mounted Combat
 
+Mounted combat will be discussed in the combat section.
+
 == Riding an Untrained Mount
+
+An animal that hasn't been trained to ride cannot be ridden.
+If a [lexicWord]#character# nonetheless tries to ride such a beast, this last one will try to throw the him off.
+The rider thus need to make a [lexicWord]#riding test# opposed by either a [lexicWord]#lifting test# or an [lexicWord]#acrobatics test# (whichever gives the best [lexicWord]#dice-pool#).
+
+If the beast scores [lexicWord]#hits#, the rider is thrown 1 metre per [lexicWord]#hits# in a random direction.
+
+If the [lexicWord]#rider# scores [lexicWord]#hits#, the [lexicWord]#spirit points# of the mount are drained 1 points per [lexicWord]#hit#.
+
+If the [lexicWord]#spirit# of the beast is drained to a point that its [lexicWord]#dice-pool# is reduced, it will stop fighting.
+This doesn't allow the rider to control the beast.

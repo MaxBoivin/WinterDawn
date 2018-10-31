@@ -24,4 +24,6 @@ include::Herding.adoc[]
 
 include::Riding.adoc[]
 
+include::Training.adoc[]
+
 :leveloffset: -1

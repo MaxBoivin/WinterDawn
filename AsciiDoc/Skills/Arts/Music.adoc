@@ -1,0 +1,28 @@
+= Music
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Music skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+The [lexicWord]#Music skill# govern everything that has to do with performing or composing melodies.
+This include all musical instruments (including the voice) and the theory.
+
+== Merrymaking
+
+One or more [lexicWord]#characters# can perform musically to raise the [lexicWord]#spirit# of the people present.
+This is done by an [lexicWord]#assisted rolling music test#, each test taking 15 minutes.
+
+For every [lexicWord]#MoSes# scored, everyone present, including the musicians, can gain 1 [lexicWord]#spirit point#, if they're not hostile to any of the musicians.
+
+If one of the musician is using an instrument he is not familiar with, the [lexicWord]#GM# can impose a 2 [lexicWord]#MoSes malus#.
+If the instrument is unfamiliar to the musician but in the same family as an instrument he is familiar with, this [lexicWord]#malus# should be reduced to 1 [lexicWord]#MoS#.
+
+== Spell Singing
+
+[lexicWord]#Characters# with the [lexicWord]#spell singing trait# and the ability to cast spells can have their [lexicWord]#music skills# contribute to their spell casting.
+Details will be given in the [lexicWord]#traits# section, under the character creation chapter.

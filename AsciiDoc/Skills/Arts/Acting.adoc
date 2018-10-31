@@ -1,0 +1,58 @@
+= Acting
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Acting skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+Reciting lines and impersonating a character, performing on stage or in more private setting is all done with the [lexicWord]#acting skill#.
+
+== Inspiring Allies With a Moving Performance
+
+If one or more [lexicWord]#characters# want to perform a play, they can do a series of [lexicWord]#rolling assisted acting test#.
+Every actors can do a [lexicWord]#roll# for 10 minutes of performance plus 5 minutes per individual involved.
+A single [lexicWord]#character# will have to monologue for 15 minutes to hope to have a notable effect, while two [lexicWord]#performers# will need to dialogue for 20 minutes.
+
+Once the performance is over, every member of the audience who are not hostile towards the performers can regain one [lexicWord]#spirit point# per [lexicWord]#hit# scored.
+
+== Impersonating Someone
+
+[lexicWord]#Acting# can also be used to disguise oneself or impersonate someone specific.
+It is done by a [lexicWord]#rolling acting test#.
+Each roll will take 30 minutes of preparation and the actor needs to have access to the appropriate material (costume, make-up, padding, etc).
+
+If the [lexicWord]#character# is trying to impersonate someone specific, the [lexicWord]#difficulty level# of the [lexicWord]#test# is determined by how different the [lexicWord]#character# is to the individual to be impersonated.
+The following factors will have impact:
+
+* Age: +1 per stage of life apart (teenager, young adult, middle aged, senior, ancient, etc)
+
+* Gender
+** Opposite gender for non-elves: +3
+** Opposite gender for elves: +1
+
+* Race
+** Same race and subrace: +0
+** Same race, different subrace: +1
+** Different race, same culture: +2
+** Different race, different culture: +3
+** One of the race is Faun or Troll: +4
+
+* Size
+** One size difference: +2
+** More than one size difference: +4
+
+* Brawn: + The difference between the strength of the actor and the impersonated individual divided by 4.
+
+* Language
+** The actor share the same mother tongue as the character: +0
+** The actor is fluent in the mother tongue of the character: +1
+** The actor has basic notion of the mother tongue of the character: +2
+** The character mother tongue is unknown to the actor: +3
+
+The number of [lexicWord]#hits# rolled will serve as [lexicWord]#difficulty level# for [lexicWord]#characters# who could recognize them or notice that someone is costumed.
+Those last one will have to perform a [lexicWord]#vigilance test#, with the [lexicWord]#advantage# if they have a reason to be suspicious, without otherwise.
+If they know the disguised [lexicWord]#character# or who the person they're impersonating, they get a 1 die [lexicWord]#bonus#, 2 dice if they know him well.

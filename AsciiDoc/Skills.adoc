@@ -34,6 +34,16 @@ include::Skills/AnimalHandling/Animal_Handling.adoc[]
 
 '''
 
+include::Skills/Arts/Arts.adoc[]
+
+'''
+
+include::Skills/Athleticism/Athleticism.adoc[]
+
+'''
+
+include::Skills/Crafting/Crafting.adoc[]
+
 :leveloffset: -1
 
 .{sidebarTitle}Skills

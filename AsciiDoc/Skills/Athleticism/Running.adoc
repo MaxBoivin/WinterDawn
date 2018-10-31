@@ -1,0 +1,35 @@
+= Running
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Running skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Strength_*
+
+Whenever a [lexicWord]#character# needs to move rapidly, they can resort to [lexicWord]#running#.
+
+This skills is mostly to be used in [lexicWord]#action tempo#.
+If some [lexicWord]#characters# are involved in a long drawn-out pursuit, the [lexicWord]#resist fatigue skill# is probably more appropriate.
+
+== Moving Fast
+
+A [lexicWord]#character# running can move half their [lexicWord]#movement speed# per [lexicWord]#MoSes# scored on a [lexicWord]#running test#.
+This is in addition to the regular movement he his entitled to.
+
+== Racing
+
+If two or more [lexicWord]#characters# are racing, the [lexicWord]#GM# should just determine the distance to be covered and each [lexicWord]#player# can make successive [lexicWord]#running tests# and tally the number of metres travelled.
+The first one to reach the objective will win one the race.
+
+== Chasing
+
+If a [lexicWord]#character# is trying to catch another one,
+the distance between both should be noted.
+Every rounds, this distance either grow or shrink by 1 metre per [lexicWord]#MoS#, depending on which side got the better [lexicWord]#running test#.
+
+== Charging
+
+Rules for [lexicWord]#charging# will be discussed in the [lexicWord]#combat# section.

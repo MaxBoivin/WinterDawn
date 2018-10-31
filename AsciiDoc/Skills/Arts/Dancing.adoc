@@ -1,0 +1,34 @@
+= Dancing
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Dancing skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Persona_*
+
+[lexicWord]#Dancing# is about the expression of emotions or entertaining through graceful movement of the body.
+
+Unlike [lexicWord]#acting#, where it's benefit an audience, a [lexicWord]#character# needs to take part in the [lexicWord]#dance# to regain [lexicWord]#spirit#.
+
+== Group Dancing
+
+A very popular past time in most community is group dancing.
+Every people have their own folk dances.
+
+Every [lexicWord]#character# participating in the dance can take part in a [lexicWord]#rolling group test#.
+Each [lexicWord]#rolls# take 15 minutes.
+Once the [lexicWord]#MoSes# have distributed and divided, each [lexicWord]#character# gains a number of [lexicWord]#spirit points# equals to their [lexicWord]#MoSes#.
+
+== Sensual Dancing
+
+A [lexicWord]#character# can sensually dance for a passive [lexicWord]#character#.
+The [lexicWord]#dancing character# can do a [lexicWord]#first fail rolling dance test#, each [lexicWord]#roll# taking 5 minutes.
+For every [lexicWord]#MoSes# scored, either the dancing [lexicWord]#character# or the recipient of the dance can gain 1 [lexicWord]#spirit point#.
+
+== Blade Dancing
+
+[lexicWord]#Character# with the [lexicWord]#blade dancing trait# can have their [lexicWord]#dancing skill# contribute to their [lexicWord]#melee combat skills#.
+Details will be given in the [lexicWord]#traits# section, under the character creation chapter.

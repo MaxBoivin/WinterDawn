@@ -1,0 +1,27 @@
+= Arts
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-27
+:root: ../../
+:description: This is the Arts skill group individual file.
+include::{root}Include.adoc[]
+
+Some [lexicWord]#characters# have a penchant for creative endeavours and expressing beauty.
+This talents will be represented by their [lexicWord]#art skills#.
+
+[lexicWord]#Art skills# are really useful to help [characters]#characters# regain [lexicWord]#spirit points#.
+
+:leveloffset: +1
+
+include::Acting.adoc[]
+
+include::Dancing.adoc[]
+
+include::Drawing.adoc[]
+
+include::Music.adoc[]
+
+include::Poetry.adoc[]
+
+:leveloffset: -1

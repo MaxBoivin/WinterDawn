@@ -1,0 +1,62 @@
+= Gemcutting
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Gemcutting skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+Rough precious stones can see their values greatly increased by being precisely cutting and polishing it.
+[lexicWord]#Gemcutting# is the [lexicWord]#skill# used to perform this delicate operation.
+It can also be used to carve or engrave stones.
+
+== Cutting a Precious Stone
+
+If a [lexicWord]#character# is in possession of a rough stone he can refine it into a proper cut gemstone.
+The rough stone will have a size (expressed in term of burden) and a quality (flawed, decent, good, exceptional).
+
+The [lexicWord]#difficulty level# of the [lexicWord]#test# depends on the size of the final stone the [lexicWord]#character# wants to achieve;
+
+* 10% of the rough stone: 2
+* 20% of the rough stone: 4
+* 30% of the rough stone: 6
+* 40% of the rough stone: 8
+* 50% of the rough stone: 10
+
+The resulting jewel will be of the same quality than the rough stone.
+A [lexicWord]#character# can try to improve the quality of the stone, cutting around impurity, doing more precise cuts or polishing to a greater level.
+For every level of improvement on the quality, a [lexicword]#malus# of 2 [lexicWord]#MoSes# will be applied to every [lexicWord]#roll#.
+
+* Flawed to decent, decent to good or good to exceptional: 2 [lexicWord]#MoSes malus#
+* Flawed to good or decent to exceptional: 4 [lexicWord]#MoSes malus#
+* Flawed to exceptional: 6 [lexicWord]#MoSes malus#
+
+Once the [lexicWord]#player# decided on the yield and quality he wants to achieve, he can do a [lexicWord]#first-fail rolling gemcutting test#, each [lexicWord]#roll# taking 1 hour per level of quality to be achieve (1 our for poor, 2 hours for decent, 3 hours for good, 4 hours exceptional).
+
+.Example
+[caption=""]
+====
+A [lexicWord]#character# has a rough stone representing 1 point of [lexicWord]#burden# and of a decent quality.
+He decides to try to cut a piece of a good quality and to try to make a jewel of a exceptional quality, preserving as much of the stone as possible.
+The [lexicWord]#player# decide to settle on a 50% yield, making the [lexicWord]#difficulty level# to 10 [lexicWord]#MoSes#.
+Bringing the result from decent to exceptional will impose a [lexicWord]#malus# of 4 [lexicWord]#MoSes#.
+Every [lexicWord]#roll# will represent 4 hours.
+
+The [lexicWord]#gemtcutting dice-pool# of the [lexicWord]#character# is of 5d10.
+The first [lexicWord]#roll# grants 1 [lexicWord]#MoS# (once the [lexicWord]#malus# is subtracted).
+The next [lexicWord]#roll# grants 3 [lexicWord]#MoSes#, bringing the tally to 4.
+The third [lexicWord]#roll# end-up with negative 2 [lexicWord]#MoSes# after the [lexicWord]#malus# being applied; the [lexicWord]#character# failed to create a proper jewel and wasted precious material and half a day.
+====
+
+In the case of a failure, it is possible to try again, however, the rough stone is reduced to the size of the jewel the [lexicWord]#character# was trying to achieve.
+
+.Example
+[caption=""]
+====
+Our [lexicWord]#character# from the previous example could retry to cut the remainder of the stone on which they previously failed.
+The material they have now only represent ½ point of [lexicWord]#burden#.
+If the [lexicWord]#player# still want to try for a 50% yield, he will end up with 25% of the original rough stone.
+====

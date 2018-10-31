@@ -1,0 +1,76 @@
+= Jumping
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Jumping skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Strength_*
+
+Many situations can have a [lexicWord]#character# jump; it could be to pass over a fissure in the ground, to get on top of a table in a swift motion, to pass over a fence, etc.
+[LexicWord]#Jumping# comes in three flavours: horizontal, vertical and diagonal (which is a mix of the previous two).
+
+== Vertical Jump
+
+If a [lexicWord]#character# wants to make a standing vertical jump, the [lexicWord]#player# must do a [lexicWord]#jumping test#.
+Humanoid [lexicWord]#characters# can jump about a quarter of their height, plus one quarter for every half-order of magnitude of [lexicWord]#MoSes#.
+
+* 0 [lexicWord]#MoS#: Knee high
+* 1 [lexicWord]#MoS#: Groin high
+* 3 [lexicWord]#MoSes#: Sternum high
+* 10 [lexicWord]#MoSes#: Crown high
+* 30 [lexicWord]#MoSes#: 1¼ times their height
+
+[NOTE]
+[lexicWord]#Jumping# height shouldn't be tracked too precisely; a broad estimation is usually sufficient.
+The height listed above should be enough to cover most situations that should arise: knee high is about a chair or stool, groin high work for a table and sternum high for a small wall.
+The crown high is hardly achievable but would allow a [lexicWord]#character# to jump on top of someone of the same race.
+1¼ time the height of the [lexicWord]#character# shouldn't be achievable naturally, but would allow to jump on top of a privacy wall.
+
+If the [lexicWord]#character# has a running start, the [lexicWord]#player# can add a [lexicWord]#bonus# die to his [lexicWord]#jumping test# for every 2 [lexicWord]#MoSes# used for moving on their last [lexicWord]#running roll#.
+
+
+== Horizontal Jump
+
+If a [lexicWord]#character# is to do a standing long jump, he can land 1 metre away plus 1 metre for every half-order of magnitude of [lexicWord]#MoSes#.
+
+* 0 [lexicWord]#MoS#: 1 metre
+* 1 [lexicWord]#MoS#: 2 metres
+* 3 [lexicWord]#MoSes#: 3 metres
+* 10 [lexicWord]#MoSes#: 4 metres
+* 30 [lexicWord]#MoSes#: 5 metres
+
+[NOTE]
+As for the vertical jump, distance shouldn't be tracked to minutely.
+Breaking down distance in smaller increment than the metre will tend to slow down the game without bringing any meaningful depth.
+
+Like for vertical [lexicWord]#jumping#, if the [lexicWord]#character# has a running start, the [lexicWord]#player# can add a [lexicWord]#bonus# die to his [lexicWord]#jumping test# for every 2 [lexicWord]#MoSes# used for moving on their last [lexicWord]#running roll#.
+
+== Diagonal Jump
+
+Diagonal jumps are just a mix of an horizontal and vertical jump.
+From a single [lexicWord]#jumping test#, the [lexicWord]#MoSes# can be divided between the height and length of the jump.
+
+The [lexicWord]#character# can do either a one metre long jump or jump a quarter of their height high, plus one metre long or a quarter of their height high per half-order of magnitude of [lexicWord]#MoSes#.
+
+* 1 [lexicWord]#MoS#: 1 metre long and knee high
+* 3 [lexicWord]#MoSes#: 1 metre long and groin high +
+or 2 metres long knee high
+* 10 [lexicWord]#MoSes#: 1 metre long and sternum high +
+or 2 metres long and groin high +
+or 3 metres and knee high
+* 30 [lexicWord]#MoSes#: 1 metre long and crown high +
+or 2 metres long sternum high +
+or 3 metres long and groin high +
+or 4 metres long and knee high
+
+.Example
+[caption=""]
+====
+A [lexicWord]#player# rolls 5 [lexicWord]#MoSes# on a [lexicWord]#jumping test#.
+Those [lexicWord]#MoSes# will allow her [lexicWord]#character# to either make a vertical jump sternum height, a 3 metres long horizontal jump, or a diagonal jump between those two.
+
+This diagonal jump could be a 2 metres long knee height jump or a 1 metre long groin height jump.
+====

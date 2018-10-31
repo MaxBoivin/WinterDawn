@@ -1,0 +1,30 @@
+= Automatic Success
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2017-12-09
+:root: ./
+:description: This is section about when should a task just be considered successful without the need of a roll.
+include::{root}Include.adoc[]
+
+If a [lexicWord]#character# wants to attempt a task they're quite skilled at, a [lexicWord]#skill test# might not be required.
+If his allowed [lexicWord]#dice-pool# contains a sufficient number of dice and if he is not under stress, the task should simply be considered as successful.
+
+The required amount of dice in the [lexicWord]#dice-pool# per [lexicWord]#difficulty level# per type of dice are the following:
+
+.Requirement for Automatic Success
+[cols="7*^.^",options="header", caption ="", width = 50%, align="center"]
+|===
+| Difficulty Level | d4 | d6 | d8 | d10 | d12 | d20
+| 1 | 6 | 3 | 2 | 2 | 2 | 1
+| 2 | 11 | 5 | 4 | 3 | 3 | 2
+| 3 | 16 | 8 | 6 | 4 | 4 | 2
+| 4 | 21 | 10 | 7 | 5 | 5 | 3
+| 5 | 26 | 12 | 9 | 7 | 6 | 3
+| 6 | 31 | 15 | 10 | 8 | 6 | 4
+| 7 | 35 | 17 | 12 | 9 | 7 | 5
+| 8 | 40 | 19 | 13 | 10 | 8 | 5
+| 9 | 44 | 21 | 15 | 11 | 9 | 6
+|===
+
+The threshold for automatic success is if the probability are over 80%.

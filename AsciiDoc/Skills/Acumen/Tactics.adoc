@@ -23,3 +23,5 @@ For every [lexicWord]#hits#, the winning side can do one of the following manoeu
 * Move a unit
 
 == Abstracting a Battle
+
+//Medieval battle could have between 4 and 20 thounsands man.  Skimirsh would be much smaller.  Maybe I could have something like an opposed test, the dice to be used determined by the number of troops and the number of dice by the a tactics roll...

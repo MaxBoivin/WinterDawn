@@ -1,0 +1,47 @@
+= Lifting
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Lifting skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Strength_*
+
+While adventuring, there is a lot of situations where a [lexicWord]#character# may need to move heavy objects.
+It could be removing a fallen tree blocking a road, pushing a big stone sealing a tomb or loading a chest full of gold onto a cart.
+All those are going to be done using the [lexicWord]#lifting skill#.
+
+Guide for weight estimation of different objects will be given in the [lexicWord]#appendix#.
+
+== Lifting an Heavy Object
+
+If one or more [lexicWord]#characters# are trying to lift an heavy object, they can lift 45kg plus 45kg per [lexicWord]#MoSes# scored on a [lexicWord]#lifiting roll#.
+The [lexicWord]#GM# can determine if the [lexicWord]#test# is fully [lexicWord]#assisted# or [lexicWord]#half-assisted#.
+Depending on the size and shape of the object to be moved, the contribution of multiple lifters can be reduced.
+There could also be a limit on the number of [lexicWord]#character# that can contribute, or the [lexicWord]#GM# could allow a few [lexicWord]#characters# to fully [lexicWord]#assist# and a few more to [lexicWord]#half-assist#.
+Common sense must be used.
+
+If the object is slippery or has no good grips, a 1 or 2 dice [lexicWord]#malus# can be applied.
+
+If the [lexicWord]#characters# want to move the object after it being lifted, they can move 1 metre per [lexicWord]#MoSes# over what is needed to lift the object.
+If the [lexicWord]#lifting# is done while in [lexicWord]#action tempo#, the [lexicWord]#test# needs to be redone every round, even if the object is not put down.
+
+== Pushing a Flat Object
+
+Pushing a flat object follows the same rules and principles as [lexicWord]#lifting# an heavy object.
+Multiple [lexicWord]#characters# can work together, depending on the object being pushed.
+
+The pushers can move an object weighting 45kg + 45kg per [lexicWord]#MoSes# scored.
+This will allow them to push the object 1 metre.
+They can push for an additional metre for every extra [lexicWord]#MoSes#.
+
+If the pushing is happening in [lexicWord]#action tempo#, the [lexicWord]#test# needs to be redone every round.
+
+== Pushing a Rolling Object
+
+If the object being pushed is relatively round, that can roll, the weight that can be pushed is 90kg + 90kg per [lexicWord]#MoSes#.
+
+If the pushing is happening in [lexicWord]#action tempo#, the [lexicWord]#test# need to be redone every round, but the [lexicWord]#characters# can move the object 1 extra metre every round (in a cumulative manner).
+Ounce the object is already in motion, it can pick up momentum.

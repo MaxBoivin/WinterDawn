@@ -1,0 +1,24 @@
+= Crafting
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-08-27
+:root: ../../
+:description: This is the Athleticism skill group individual file.
+include::{root}Include.adoc[]
+
+Whether it be to make profit or to create an item needed on the adventuring path, [lexicWord]#crafting# can be a useful [lexicWord]#skill# for many walk of life.
+
+:leveloffset: +1
+
+include::Gemcutting.adoc[]
+
+include::Labouring.adoc[]
+////
+include::Lifting.adoc[]
+
+include::Running.adoc[]
+
+include::Swimming.adoc[]
+////
+:leveloffset: -1
