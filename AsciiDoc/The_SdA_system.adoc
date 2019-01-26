@@ -322,7 +322,15 @@ If the roll result in 2 [lexicWord]#MoSes#, after the [lexicWord]#malus# is appl
 
 '''
 
-include::AutomaticSuccess.adoc[leveloffset=+2]
+////include::AutomaticSuccess.adoc[leveloffset=+2]
+
+'''////
+
+include::OrderOfMagnitude.adoc[leveloffset=+2]
+
+'''
+
+include::Extended_Tasks.adoc[leveloffset=+2]
 
 '''
 
@@ -342,10 +350,6 @@ include::Tempo.adoc[leveloffset=+2]
 
 '''
 
-include::OrderOfMagnitude.adoc[levelOffset=+2]
-
-'''
-
 <<<
 
 include::SideBarPages/Basic_Rules.adoc[leveloffset=+2,lines=2..-1]
@@ -357,10 +361,10 @@ include::SideBarPages/What_Is_A_Character_Made_Of.adoc[leveloffset=+2,lines=2..-
 ////
 <<<
 
-include::Skills.adoc[leveloffset=+1]
+include::Combat.adoc[leveloffset=+1]
 
 <<<
 
-include::Combat.adoc[leveloffset=+1]
+include::Skills.adoc[leveloffset=+1]
 
 <<<

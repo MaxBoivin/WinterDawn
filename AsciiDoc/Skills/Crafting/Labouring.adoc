@@ -24,7 +24,7 @@ The time given below assume the [lexicWord]#character# digging is using the appr
 Digging and mining is done via [lexicWord]#step-back rolling labouring test#, each [lexicWord]#roll# representing an hour of work.
 This [lexicWord]#test# can be [lexicWord]#assisted#.
 
-Some circumstances can inpose a [lexicWord]#malus# of the [lexicWord]#rolls#.
+Some circumstances can impose a [lexicWord]#malus# of the [lexicWord]#rolls#.
 Densely pack ground or ground rich in clay could grant a 1 [lexicWord]#MoS malus# while digging.
 Digging in a ground full of rocks or roots could grant a 2 [lexicWord]#MoSes malus#.
 Mining into hard rock, like marble, could grant a 1 [lexicWord]#MoS malus#, while very hard rock, like granite, could grant a 2 [lexicWord]#MoSes malus#.
@@ -37,6 +37,39 @@ Situations where digging or mining could be interesting enough to require [lexic
 
 == Tiling the Ground
 
+Getting the ground properly ready for seeding is primordial to have a good crop yield.
 
+The amount of ground a [lexciWord]#character# can tilt in a hour depend on the condition of the terrain.
+
+* Ground that has been tilted the year before: 2m² per [lexicWord]#MoSes#
+* Ground that hasn't been broken before: 1m² per [lexicWord]#MoSes#
+
+Every [lexicWord]#roll# represents an hour of work.
+
+If it is new ground and it is stony, 1 [lexicWord]#MoS malus# should be imposed.
+This [lexicWord]#malus# should be raised to 2 [lexicWord]#MoSes# if the ground is full of roots.
+
+If a [lexicWord]#roll# end up with a negative amount of [lexicWord]#MoSes# once the [lexicWord]#malus# is applied, the tool of the [lexicWord]#character# is damaged or breaks.
 
 == Chopping Wood
+
+If a [lexicWord]#character# needs to stock up on firewood for winter, this can be done with a [lexicWord]#labouring test#.
+To prepare a stère (1m³) of wood, 10 [lexicWord]#MoSes# need to be accumulated on a [lexicWord]#step-back rolling test#, each [lexicWord]#roll# taking 1 hour.
+
+Gathering trees in order to build a log cabin would also be a [lexicWord]#labouring# task.
+Building a small cabin would require about 40 average size trees (about 30cm diameter).
+You can gather those trees by doing a [lexicWord]#step-back rolling labouring test#, each [lexicWord]#roll# representing 2h of work.
+Those [lexicWord]#roll# can be [lexicWord]#assisted#.
+For every [lexicWord]#MoS# scored, 1 tree is cut down, delimbed and transported to a pile.
+
+Remember that for building a long lasting log cabin or to produce proper firewood, the wood needs to be seasoned before use.
+
+If a [lexicWord]#character# wants to cut a tree in [lexicWord]#action time#, an average tree should be cut down with 60 [lexicword]#MoSes#.
+This can take quite a long time if done during combat and will occupy a [lexicWord]#character# for a long time (and might not be the funnest thing for the [lexicWord]#player#).
+
+Chopping wood requires a tree felling axe.
+If a [lexicWord]#character# tries to do so without an other type of axe (a fighting axe for example), a 1 [lexicWord]#MoS malus# could be imposed.
+If he is using a non-axe type of blade, the [lexicWord]#malus# should be of 2 [lexicWord]#MoSes#.
+In case of a [lexicWord]#roll# resulting with negative [lexicWord]#MoSes#, the tool used could be damaged or broken.
+
+For gathering wood for a campfire, [lexicWord]#foraging# would be more appropriate.

@@ -1,0 +1,64 @@
+= Masonry
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Masonry skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+The [lexicWord]#masonry skill# covers everything that has to do with building in stone.
+It includes stone cutting and mortar mixing as well as laying them to make basic walls or complex arches.
+
+== Hewing Stones
+
+Getting a rough stone from a quarry involves reading the stone to find fracture line, drilling around those lines and inserting wedge in those holes to split the stone.
+Mechanically, this can be done with a [lexicWord]#first-fail rolling masonry test#, each [lexicWord]#roll# taking a day.
+This [lexicWord]#test# has a [lexicWord]#difficulty level# of 6 [lexicWord]#MoSes#.
+
+Facing a rough stone is done by a [lexicWord]#first-fail rolling masonry test#, every [lexicWord]#roll# taking 8h.
+The stone will be done when 6 [lexicWord]#MoSes# per side to be faced are accumulated.
+For most stone in a wall, only one side has to be faced.
+
+If a [lexicWord]#roll# grants no [lexicWord]#MoSes#, the mason chipped or fractured the stone, making it unusable.
+
+== Building a Basic Wall
+
+The speed at which a [lexicWord]#character# can lay a wall will depend on the thickness and type of construction.
+There are two big family of stone wall construction: mortared and dry.
+
+Dry walls are made of flat stones, carfully stacked in 'A' shape, with throught stone at regular interval.
+The base of the wall should be twice as wide as its top  snd will therefore take twice as long to build.
+A dry wall can be 1½ times as high as its base is wide.
+
+Mortared walls are composed of stones held togheter by a mixture of lime and sand.
+Those walls don't have to be tappered as dry walls, so the speed of laying them is more consistent, regardless of the height of the wall.
+
+Stone walls are built with a [lexicWord]#step-back rolling masonry test#, each [lexicWord]#roll# taking 4h.
+This [lexicWord]#test# can be assisted.
+With 5 [lexicWord]#MoSes#, a [lexicWord]#character# can build roughly 1m³ of wall.
+
+The [lexicWord]#character# must have access to the prepared stones needed for the project.
+The times listed above does not include the time needed to build scaffolding necessary to work on taller structures.
+
+== Building Complex Structures
+
+If a [lexicWord]#character# desires to build an arch or a bridge or if he desires to created a decorated window frame, this can be done with a [lexicWord]#first-fail rolling masonry test#, each [lexicWord]#roll# taking 4h.
+This [lexicWord]#test# can be assisted.
+The number of [lexicWord]#MoSes# required depend on the size and complexity of the structure.
+1 [lexicWord]#MoS# per 1m³ of the structure should be talied.
+
+The complexity of the project should impose [lexicWord]#malus# on every roll.
+Here are some example of complex projects and the [lexicWord]#malus# they would impose:
+
+* A small arch for a window or doorway: 1 [lexicWord]#MoS#
+* A large arch for a bridge: 2 [lexicWord]#MoSes#
+* A vaulted ceiling: 3 [lexicWord]#MoSes#
+
+== Destroying a Stone Structure
+
+Having a good knowledge of masonry can help a [lexicWord]#character# identify a weak point in a stone structure.
+This is done via a [lexicWord]#first-fail rolling masonry test#, each [lexicWord]#roll# taking 1 [lexicWord]#round#.
+For every half-order of magnitude of [lexicWord]#MoSes#, one [lexicWord]#bonus# die can be added to every attack made to the structure by the [lexicWord]#character# and by his allies whom he informed of the points to be attacked.

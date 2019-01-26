@@ -1,0 +1,41 @@
+= Extended Tasks
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2019-01-24
+:root: ../
+:description: This is the description of extented task.
+include::../Include.adoc[]
+
+If a [lexicWord]#character# is working on a particularly lengthy endeavour, something done through a [lexicWord]#rolling test# that would require a large amount of [lexicWord]#rolls#, the [lexicWord]#player# can decide to multiply the number of [lexicWord]#MoSes# obtained on every [lexicWord]#roll# by multiplying the time passed for each of those [lexicWord]#roll# by the same amount.
+
+The [lexicWord]#player# can multiply the [lexicWord]#MoSes# of their [lexicWord]#rolls# by the half-order of magnitude below the goal to reach.
+He can also chose to multiply his results by a smaller HOM.
+This could be a good approach if the [lexicWord]#character# is highly skilled, if multiple [lexicWord]#characters# are cooperating or if a number of [lexicWord]#MoSes# has already been accumulated.
+
+.Example
+[caption=""]
+====
+A [lexicWord]#chracter# is building a stone wall.  1m³ of wall for every 5 [lexicWord]#MoSes# obtained on a [lexicWord]#masonry rolling test#, every [lexicWord]#roll# taking 1 hour.
+If the [lexicWord]#character# wants to build a 80m³, he would need to collect 400 [lexicWord]#MoSes# to do so.
+Asking the [lexicWord]#player# to sit there and roll all those would be unreasonable; this is a good case to multiply the [lexicWord]#MoSes#.
+
+Since 400 [lexicWord]#MoSes# would fall in the 300 HOM, the HOM bellow would be 100.
+The result of every [lexicWord]#roll# can be multiplied by 100.
+This would also mean that each [lexicWord]#roll# would take a 100 hours of work, 10 days of full time work.
+
+The [lexicWord]#player# do a first [lexicWord]#roll# and obtains 3 [lexicWord]#MoSes#, turned to 300.
+Those first 10 days of work got him 60m³ of wall.
+100 more [lexicWord]#MoSes# are required to complete the job undertaken.
+This would be easily done with another [lexicWord]#roll#, but the [lexicWord]#player# feels like he could acheived it in less than 10 days.
+Using a multiplier of a 100 would mean spending another 10 days of work.
+Bringing the multiplier down to 30 could have the job completed in 3 more days of work if he can score 4 [lexicWord]#MoSes#.
+
+Unfortunately, again, only 3 [lexicWord]#MoSes# are scored; that brings the total to 390 [lexicWord]#MoSes#.
+The [lexicWord]#player# decides to bring his multiplier an other HOM down, to 10.
+He rolls and gets 2 [lexicWord]#MoSes#, bringing his total to 410.
+
+After 3 [lexicWord]#rolls# for the player and 14 full days of work for the [lexicWord]#character#, the wall is completed.
+====
+
+If [lexicWord]#maluses# have to be applied, they should be before the multiplication.  

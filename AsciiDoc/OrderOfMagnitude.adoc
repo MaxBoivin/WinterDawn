@@ -7,9 +7,9 @@
 :description: This is an introduction to the concept of order of magnitude and half-order of magnitude.
 include::{root}Include.adoc[]
 
-Order of magnitude (OM) and half-order of magnitude (HOM) are mathematical concept that you might find used in those rules.
+Order of magnitude (OM) and half-order of magnitude (HOM) are one of the more advnaced mathematical concepts used in the [lexicWord]#SdA system#.
 
-Both are generally used in situations that can have a vastly varying degrees of effect and where the exact precise number affected is not so critical.
+Both are used in situations which can have a widely varying degrees of effect and where the exact precise number affected is not so critical.
 The duration of certain spells, the number of sheep that can be herded, or people that will be inspired by a rousing speech will all be determined by the number of [lexicWord]#MoSes# rolled and will increase in a non-linear manner.
 
 Order of magnitude simply represent the number of digits in a number.

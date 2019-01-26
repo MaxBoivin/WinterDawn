@@ -1,0 +1,14 @@
+= Woodworking
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Woodworking skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+
+
+== Creating a Wooden Object

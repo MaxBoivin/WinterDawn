@@ -44,6 +44,8 @@ include::Skills/Athleticism/Athleticism.adoc[]
 
 include::Skills/Crafting/Crafting.adoc[]
 
+'''
+
 :leveloffset: -1
 
 .{sidebarTitle}Skills

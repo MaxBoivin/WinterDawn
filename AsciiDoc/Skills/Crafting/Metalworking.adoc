@@ -1,0 +1,19 @@
+= Metalworking
+//:author: Max Boivin
+//:email: <max.boivin@winterdawn.com>
+:revnumber: v0.0.1
+:revdate: 2018-09-05
+:root: ../../
+:description: This is the Metalworking skill individual file.
+include::{root}Include.adoc[]
+
+.*_Attributes: Wisdom_*
+
+Be it forging a simple horseshoe, a golden ring, a whole set of armour or a sharp weapon, it is all done with the [lexicWord]#metal working skill#.
+Repairs or modifications of such objects are also done with the [lexicWorld]#skill#.
+
+== Creating a Metal Object
+
+// a competent character should be able to create a simple metal object in a few minutes (a hook, a horseshoe, a nail), a slightly more complex item in a couple hours (an axe, a tool, a hinge) and a complex object in a couple of days (a sword or a piece of armour).  Samll simple object should be done by a roll during an hour, the number of MoSes indicate how many have been produced.  For more complex objects, the roll should last half a day.  Maybe the solution is to allow to multiply the MoSes by the number of hours the roll takes.  If I do this, I'll need to include this mechanics in previous task.
+
+== Reparing a Damaged Object

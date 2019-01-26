@@ -24,7 +24,7 @@ Rules for [lexicWord]#initiatives# will be detailed in the [lexicWord]#combat# s
 This tempo is for when actions are to be resolved one after the other, as they are performed, but the exact timing is not so important.
 This is the perfect tempo for social interactions, puzzle solving, exploration of a limited space, etc.
 
-A scene can go between [lexicWord]#interaction# and [lexicWord]#action# tempo (and vice-versa).
+A scene can go between [lexicWord]#interaction# and [lexicWord]#action time# (and vice-versa).
 
 == Transition
 

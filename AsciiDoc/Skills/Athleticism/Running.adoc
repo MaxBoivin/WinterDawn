@@ -11,7 +11,7 @@ include::{root}Include.adoc[]
 
 Whenever a [lexicWord]#character# needs to move rapidly, they can resort to [lexicWord]#running#.
 
-This skills is mostly to be used in [lexicWord]#action tempo#.
+This skills is mostly to be used in [lexicWord]#action time#.
 If some [lexicWord]#characters# are involved in a long drawn-out pursuit, the [lexicWord]#resist fatigue skill# is probably more appropriate.
 
 == Moving Fast

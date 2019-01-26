@@ -12,7 +12,7 @@ include::{root}Include.adoc[]
 While adventuring, there could be many reason that a [lexicWord]#character# would need to [lexicWord]#climb#.
 It could be scaling a castle wall, getting down a sheer cliff or simply getting up a tree, it all falls under the [lexicWord]#climbing skill#.
 
-== Climbing in Action Tempo
+== Climbing in Action Time
 
 If a [lexicWord]#character# needs to climb while it is important to keep track of precise timing, the [lexicWord]#player# must do a [lexicWord]#climbing test# each [lexicWord]#round#.
 The type of structure, surface or the environmental conditions will grant [lexicWord]#malus# to the climber.
@@ -33,7 +33,7 @@ If a [lexicWord]#character# is not taking any action that require a dice [lexicW
 
 Note that a structure can change quality as the [lexicWord]#character# climbs it; a tree can have a naked trunk for the first few metres and then have many branches, or a cliff could have a pile of rubble at his base before transitioning to a sheer cliff.
 
-== Climbing in Transaction Tempo
+== Climbing in Transaction Time
 
 If a [lexicWord]#character# needs to climb while it is not primordial to follow the exact timing of the climb but just to see if he succeeded or not, the [lexicWord]#test# should be done as a [lexicWord]#first-fail rolling climbing test#.
 

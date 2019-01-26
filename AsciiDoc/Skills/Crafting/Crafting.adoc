@@ -14,11 +14,11 @@ Whether it be to make profit or to create an item needed on the adventuring path
 include::Gemcutting.adoc[]
 
 include::Labouring.adoc[]
-////
-include::Lifting.adoc[]
 
-include::Running.adoc[]
+include::Masonry.adoc[]
 
-include::Swimming.adoc[]
-////
+include::Metalworking.adoc[]
+
+include::Woodworking.adoc[]
+
 :leveloffset: -1
